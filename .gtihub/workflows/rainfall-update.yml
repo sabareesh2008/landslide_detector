@@ -38,7 +38,7 @@ jobs:
         run: npm ci
 
       - name: Build React application
-        run: npm run build
+        run: npm run vite:build
 
       - name: Setup GitHub Pages
         uses: actions/configure-pages@v5
