@@ -1,0 +1,6 @@
+{
+  "name": "Landslide Sentinel AI",
+  "description": "AI-Powered Landslide Detection, GIS Risk Heatmapping & Early-Warning Platform for North Eastern India (Arunachal Pradesh, Assam, Manipur, Meghalaya, Mizoram, Nagaland, Sikkim, Tripura)",
+  "requestFramePermissions": ["camera", "geolocation"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
