@@ -1,10 +1,9 @@
-name: Deploy React App to GitHub Pages
+name: Deploy Landslide Sentinel AI
 
 on:
   push:
     branches:
       - main
-
   workflow_dispatch:
 
 permissions:
@@ -17,7 +16,7 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
-  deploy:
+  build-and-deploy:
     runs-on: ubuntu-latest
 
     environment:
@@ -37,13 +36,24 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: Build React application
-        run: npm run vite:build
+      # IMPORTANT:
+      # Build ONLY the Vite React frontend.
+      - name: Build React frontend
+        run: npx vite build --base=/landslide_detector/
+
+      # Verify that Vite actually created the production bundle
+      - name: Verify Vite build
+        run: |
+          echo "===== DIST CONTENT ====="
+          find dist -maxdepth 2 -type f | sort
+
+          echo "===== DIST INDEX ====="
+          cat dist/index.html
 
       - name: Setup GitHub Pages
         uses: actions/configure-pages@v5
 
-      - name: Upload website
+      - name: Upload dist folder
         uses: actions/upload-pages-artifact@v4
         with:
           path: ./dist
