@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-09-07T16:43:00.063288+00:00",
+  "generated_at_utc": "2026-09-07T16:48:52.482166+00:00",
   "source": "NASA GPM IMERG Early Run & Copernicus DEM",
   "model_version": "HistGradientBoosting v1.0.0 (Calibrated)",
   "overall_corridor_risk": {
@@ -14,7 +14,7 @@
       "location": "Rangpo",
       "latitude": 27.177,
       "longitude": 88.533,
-      "timestamp_utc": "2026-09-07T16:43:00.063288+00:00",
+      "timestamp_utc": "2026-09-07T16:48:52.482136+00:00",
       "latest_observation_utc": "2026-09-07T16:30:00+00:00",
       "data_status": "CONNECTED",
       "risk_probability": 0.364,
@@ -41,7 +41,7 @@
       "location": "Singtam",
       "latitude": 27.234,
       "longitude": 88.501,
-      "timestamp_utc": "2026-09-07T16:43:00.063288+00:00",
+      "timestamp_utc": "2026-09-07T16:48:52.482158+00:00",
       "latest_observation_utc": "2026-09-07T16:30:00+00:00",
       "data_status": "CONNECTED",
       "risk_probability": 0.484,
