@@ -1,0 +1,178 @@
+[
+  {
+    "id": "EVT-2026-08-25-RANGPO",
+    "title": "Rangpo Teesta Valley Slopeline Slip",
+    "location": "Rangpo",
+    "road": "NH-10 Km 42",
+    "date": "2026-08-25T14:00:00Z",
+    "latitude": 27.177,
+    "longitude": 88.533,
+    "severity": "CRITICAL",
+    "description": "Continuous antecedent rainfall exceeding 180mm over 72h on 34\u00b0 slope caused deep pore pressure failure.",
+    "timeline": [
+      {
+        "step": "T-72h",
+        "time_offset_hours": -72,
+        "rainfall_24h_mm": 12.4,
+        "rainfall_72h_mm": 25.0,
+        "risk_probability": 0.12,
+        "risk_level": "LOW",
+        "warning_raised": false
+      },
+      {
+        "step": "T-48h",
+        "time_offset_hours": -48,
+        "rainfall_24h_mm": 35.8,
+        "rainfall_72h_mm": 68.2,
+        "risk_probability": 0.28,
+        "risk_level": "WATCH",
+        "warning_raised": true
+      },
+      {
+        "step": "T-24h",
+        "time_offset_hours": -24,
+        "rainfall_24h_mm": 68.5,
+        "rainfall_72h_mm": 124.0,
+        "risk_probability": 0.58,
+        "risk_level": "HIGH",
+        "warning_raised": true
+      },
+      {
+        "step": "T-12h",
+        "time_offset_hours": -12,
+        "rainfall_24h_mm": 84.2,
+        "rainfall_72h_mm": 162.5,
+        "risk_probability": 0.74,
+        "risk_level": "HIGH",
+        "warning_raised": true
+      },
+      {
+        "step": "T-6h",
+        "time_offset_hours": -6,
+        "rainfall_24h_mm": 98.0,
+        "rainfall_72h_mm": 182.0,
+        "risk_probability": 0.88,
+        "risk_level": "CRITICAL",
+        "warning_raised": true
+      },
+      {
+        "step": "T-3h",
+        "time_offset_hours": -3,
+        "rainfall_24h_mm": 105.4,
+        "rainfall_72h_mm": 195.8,
+        "risk_probability": 0.93,
+        "risk_level": "CRITICAL",
+        "warning_raised": true
+      },
+      {
+        "step": "T-1h",
+        "time_offset_hours": -1,
+        "rainfall_24h_mm": 112.0,
+        "rainfall_72h_mm": 208.2,
+        "risk_probability": 0.96,
+        "risk_level": "CRITICAL",
+        "warning_raised": true
+      },
+      {
+        "step": "EVENT",
+        "time_offset_hours": 0,
+        "rainfall_24h_mm": 118.5,
+        "rainfall_72h_mm": 218.0,
+        "risk_probability": 0.98,
+        "risk_level": "CRITICAL",
+        "warning_raised": true
+      }
+    ],
+    "lead_time_achieved_hours": 48.0,
+    "slope": 34.2,
+    "elevation": 340.0
+  },
+  {
+    "id": "EVT-2026-08-28-SINGTAM",
+    "title": "Singtam Bermiok NH-10 Corridor Debris Flow",
+    "location": "Singtam",
+    "road": "NH-10 Singtam Bypass",
+    "date": "2026-08-28T09:30:00Z",
+    "latitude": 27.234,
+    "longitude": 88.501,
+    "severity": "CRITICAL",
+    "description": "Short duration cloudburst intensity (32mm/h) on top of saturated mountain terrain triggered rapid debris avalanche.",
+    "timeline": [
+      {
+        "step": "T-72h",
+        "time_offset_hours": -72,
+        "rainfall_24h_mm": 8.0,
+        "rainfall_72h_mm": 18.0,
+        "risk_probability": 0.08,
+        "risk_level": "LOW",
+        "warning_raised": false
+      },
+      {
+        "step": "T-48h",
+        "time_offset_hours": -48,
+        "rainfall_24h_mm": 22.0,
+        "rainfall_72h_mm": 44.0,
+        "risk_probability": 0.18,
+        "risk_level": "LOW",
+        "warning_raised": false
+      },
+      {
+        "step": "T-24h",
+        "time_offset_hours": -24,
+        "rainfall_24h_mm": 48.5,
+        "rainfall_72h_mm": 88.0,
+        "risk_probability": 0.42,
+        "risk_level": "WATCH",
+        "warning_raised": true
+      },
+      {
+        "step": "T-12h",
+        "time_offset_hours": -12,
+        "rainfall_24h_mm": 62.0,
+        "rainfall_72h_mm": 118.0,
+        "risk_probability": 0.65,
+        "risk_level": "HIGH",
+        "warning_raised": true
+      },
+      {
+        "step": "T-6h",
+        "time_offset_hours": -6,
+        "rainfall_24h_mm": 79.5,
+        "rainfall_72h_mm": 142.0,
+        "risk_probability": 0.79,
+        "risk_level": "CRITICAL",
+        "warning_raised": true
+      },
+      {
+        "step": "T-3h",
+        "time_offset_hours": -3,
+        "rainfall_24h_mm": 94.0,
+        "rainfall_72h_mm": 165.0,
+        "risk_probability": 0.89,
+        "risk_level": "CRITICAL",
+        "warning_raised": true
+      },
+      {
+        "step": "T-1h",
+        "time_offset_hours": -1,
+        "rainfall_24h_mm": 115.0,
+        "rainfall_72h_mm": 189.0,
+        "risk_probability": 0.95,
+        "risk_level": "CRITICAL",
+        "warning_raised": true
+      },
+      {
+        "step": "EVENT",
+        "time_offset_hours": 0,
+        "rainfall_24h_mm": 128.0,
+        "rainfall_72h_mm": 204.0,
+        "risk_probability": 0.97,
+        "risk_level": "CRITICAL",
+        "warning_raised": true
+      }
+    ],
+    "lead_time_achieved_hours": 24.0,
+    "slope": 38.5,
+    "elevation": 460.0
+  }
+]

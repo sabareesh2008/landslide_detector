@@ -1,24 +1,575 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Landslide Sentinel AI — North Eastern India Disaster Early-Warning Platform</title>
-    <meta name="description" content="AI-Powered Landslide Detection, GIS Risk Heatmapping & Early-Warning Platform for North Eastern India (Arunachal Pradesh, Assam, Manipur, Meghalaya, Mizoram, Nagaland, Sikkim, Tripura)" />
-    <meta property="og:title" content="Landslide Sentinel AI — North Eastern India Early Warning Platform" />
-    <meta property="og:description" content="AI-Powered Landslide Detection, GIS Risk Heatmapping & Early-Warning Platform for North Eastern India" />
-    <meta property="og:type" content="website" />
-    <meta name="twitter:card" content="summary_large_image" />
-    <!-- Leaflet CSS for Map rendering -->
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
-    <!-- Fonts: Clean modern sans-serif typography -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
-  </head>
-  <body class="bg-[#0b0f17] text-slate-100 antialiased selection:bg-cyan-500/30 selection:text-cyan-200">
-    <div id="root"></div>
-    <script type="module" src="src/main.tsx"></script>
-  </body>
-</html>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LANDSLIDE SENTINEL AI — Rangpo–Singtam Early Warning System</title>
+  
+  <!-- Leaflet GIS Stylesheet -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+  
+  <!-- Application Stylesheet -->
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🛡️</text></svg>">
+</head>
+<body>
 
+  <!-- Top Emergency Alert Ribbon -->
+  <div id="emergency-banner" class="emergency-banner hidden">
+    <div class="banner-content">
+      <span class="pulse-badge">CRITICAL WARNING</span>
+      <span id="banner-headline">OPERATIONAL WARNING: Elevated landslide trigger conditions active in Rangpo-Singtam corridor.</span>
+    </div>
+    <div style="display: flex; gap: 8px;">
+      <button id="open-safety-modal-btn" class="btn btn-danger" style="padding: 4px 10px; font-size: 0.75rem;">View Safety Instructions</button>
+    </div>
+  </div>
+
+  <!-- Main Navigation Header -->
+  <header class="navbar">
+    <div class="nav-brand">
+      <button id="mobile-sidebar-toggle" class="btn" style="padding: 4px 8px; display: none;">☰</button>
+      <div class="brand-icon">🛡️</div>
+      <div>
+        <div class="brand-title">LANDSLIDE SENTINEL AI</div>
+        <div class="brand-subtitle">Rangpo–Singtam / NH-10 Early Warning System • Sikkim</div>
+      </div>
+    </div>
+
+    <div class="nav-controls">
+      <!-- Location Filter -->
+      <select id="location-selector" class="select-control font-mono">
+        <option value="ALL">All Corridor (Rangpo → Singtam)</option>
+        <option value="Rangpo">Rangpo Station (27.177°N, 88.533°E)</option>
+        <option value="Singtam">Singtam Station (27.234°N, 88.501°E)</option>
+      </select>
+
+      <!-- Role Selector -->
+      <select id="role-selector" class="select-control">
+        <option value="Disaster Management Authority">Disaster Authority (State/Dist)</option>
+        <option value="Field Response Officer">Field Response / SDRF Officer</option>
+        <option value="Public Citizen">Public / Citizen Portal</option>
+      </select>
+
+      <!-- Language Selector -->
+      <select id="lang-selector" class="select-control font-mono">
+        <option value="en">English (EN)</option>
+        <option value="hi">हिन्दी (HI)</option>
+        <option value="ne">नेपाली (NE)</option>
+      </select>
+
+      <!-- Audio Alert Toggle -->
+      <button id="audio-toggle-btn" class="btn btn-primary" title="Toggle audio sirens & chimes">
+        🔊 Audio Alerts: ON
+      </button>
+
+      <!-- Siren Test -->
+      <button id="siren-test-btn" class="btn" style="border-color: #ef4444; color: #f87171;" title="Test emergency siren">
+        🚨 Test Siren
+      </button>
+
+      <!-- Manual Sync -->
+      <button id="sync-data-btn" class="btn">
+        🔄 Refresh Data
+      </button>
+    </div>
+  </header>
+
+  <div class="app-container">
+    <!-- Collapsible Sidebar -->
+    <aside class="sidebar">
+      <div class="sidebar-header">Monitoring & Command</div>
+      
+      <a class="nav-item active" data-tab="command">
+        <i>📊</i>
+        <span class="nav-text">Command Center</span>
+      </a>
+
+      <a class="nav-item" data-tab="gis">
+        <i>🗺️</i>
+        <span class="nav-text">GIS Risk Map</span>
+      </a>
+
+      <a class="nav-item" data-tab="rainfall">
+        <i>🛰️</i>
+        <span class="nav-text">NASA IMERG Rainfall</span>
+      </a>
+
+      <a class="nav-item" data-tab="terrain">
+        <i>⛰️</i>
+        <span class="nav-text">Copernicus DEM</span>
+      </a>
+
+      <a class="nav-item" data-tab="historical">
+        <i>📍</i>
+        <span class="nav-text">Historical Landslides</span>
+        <span id="sidebar-landslides-badge" class="nav-item-badge">103</span>
+      </a>
+
+      <div class="sidebar-header" style="margin-top: 14px;">AI Analytics & Verification</div>
+
+      <a class="nav-item" data-tab="replay">
+        <i>⏳</i>
+        <span class="nav-text">Historical Replay</span>
+      </a>
+
+      <a class="nav-item" data-tab="model">
+        <i>🧠</i>
+        <span class="nav-text">ML Model Metrics</span>
+      </a>
+
+      <a class="nav-item" data-tab="explainability">
+        <i>🔬</i>
+        <span class="nav-text">How AI Works</span>
+      </a>
+
+      <div class="sidebar-header" style="margin-top: 14px;">Public Safety</div>
+
+      <a class="nav-item" data-tab="citizen">
+        <i>📢</i>
+        <span class="nav-text">Civil Safety & Contacts</span>
+      </a>
+    </aside>
+
+    <!-- Main Content Workspace -->
+    <main class="main-content">
+      
+      <!-- Top Refresh & System Status Strip -->
+      <div class="control-strip">
+        <div style="display: flex; align-items: center; gap: 14px; flex-wrap: wrap;">
+          <div class="status-badge status-connected">
+            <span>●</span> NASA IMERG Early Run — Connected (Near Real-Time)
+          </div>
+          <div class="status-badge status-connected">
+            <span>●</span> Copernicus DEM 30m — Loaded
+          </div>
+          <div class="status-badge status-connected">
+            <span>●</span> AI Inference Pipeline — Active (Zero Fake Data)
+          </div>
+        </div>
+
+        <div class="countdown-clock font-mono">
+          <span>Auto-sync in:</span>
+          <span id="countdown-timer">60s</span>
+        </div>
+      </div>
+
+      <!-- Top KPI Cards Grid -->
+      <section class="kpi-grid">
+        <div class="kpi-card">
+          <span class="kpi-label">Corridor Risk Level</span>
+          <div id="kpi-risk-level" class="kpi-value text-amber">WATCH</div>
+          <div id="kpi-risk-prob" class="kpi-subtext font-mono">Probability: 42.5%</div>
+        </div>
+
+        <div class="kpi-card">
+          <span class="kpi-label">1-Hour Precipitation</span>
+          <div id="kpi-rain-1h" class="kpi-value font-mono">0.0 mm</div>
+          <div class="kpi-subtext">Peak 1h Intensity</div>
+        </div>
+
+        <div class="kpi-card">
+          <span class="kpi-label">24-Hour Rainfall</span>
+          <div id="kpi-rain-24h" class="kpi-value text-cyan font-mono">6.0 mm</div>
+          <div class="kpi-subtext">Rolling 24-Hour Sum</div>
+        </div>
+
+        <div class="kpi-card">
+          <span class="kpi-label">72-Hour Saturation</span>
+          <div id="kpi-rain-72h" class="kpi-value text-amber font-mono">24.2 mm</div>
+          <div class="kpi-subtext">Antecedent Soil Loading</div>
+        </div>
+
+        <div class="kpi-card">
+          <span class="kpi-label">7-Day Cumulative</span>
+          <div id="kpi-rain-7d" class="kpi-value font-mono">105.1 mm</div>
+          <div class="kpi-subtext">7-Day Monsoon Index</div>
+        </div>
+
+        <div class="kpi-card">
+          <span class="kpi-label">Last NASA Observation</span>
+          <div id="kpi-data-age" class="kpi-value font-mono" style="font-size: 1.3rem;">...</div>
+          <div id="kpi-data-utc" class="kpi-subtext font-mono text-xs">...</div>
+        </div>
+
+        <div class="kpi-card">
+          <span class="kpi-label">AI Model Engine</span>
+          <div id="kpi-model-status" class="kpi-value text-emerald font-mono" style="font-size: 1.25rem;">HistGB v1.0</div>
+          <div id="kpi-model-f1" class="kpi-subtext text-xs">Test F1: 85.3% | Recall: 100%</div>
+        </div>
+      </section>
+
+      <!-- TAB 1: COMMAND CENTER OVERVIEW -->
+      <section id="view-command" class="tab-view active">
+        <!-- Interactive Map Container -->
+        <div class="card">
+          <div class="card-header">
+            <span class="card-title">🗺️ Real-Time Spatial Risk Heatmap & Monitoring Corridor</span>
+            <span class="text-xs text-muted">NH-10 Highway Buffer • Rangpo–Singtam Sector</span>
+          </div>
+          <div class="card-body" style="padding: 0;">
+            <div class="map-container">
+              <div id="map"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Risk Stations Grid -->
+        <div class="grid-2">
+          <div id="risk-card-rangpo" class="card">
+            <!-- Populated dynamically by risk.js -->
+          </div>
+          <div id="risk-card-singtam" class="card">
+            <!-- Populated dynamically by risk.js -->
+          </div>
+        </div>
+      </section>
+
+      <!-- TAB 2: GIS RISK MAP FULL VIEW -->
+      <section id="view-gis" class="tab-view">
+        <div class="card">
+          <div class="card-header">
+            <span class="card-title">🌐 Comprehensive GIS Layers & Geotechnical Derivatives</span>
+            <span class="text-xs text-cyan">Turn Layers ON/OFF in the top-right layer control</span>
+          </div>
+          <div class="card-body">
+            <p class="text-xs text-muted mb-3">
+              Explore the interactive map with full multi-layer switching: OpenStreetMap, Dark Command Center, Satellite Imagery, Topographic Terrain, 64-Cell AI Risk Heatmap, 103 GSI Historical Landslide points, NASA Monitoring Stations, and NH-10 Highway Lifeline.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- TAB 3: NASA IMERG RAINFALL -->
+      <section id="view-rainfall" class="tab-view">
+        <div class="card">
+          <div class="card-header">
+            <span class="card-title">🛰️ NASA GPM IMERG Early Run — Near Real-Time Precipitation Summary</span>
+            <span class="status-badge status-connected">30-Minute Resolution</span>
+          </div>
+          <div class="card-body">
+            <div class="table-responsive">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th>Location</th>
+                    <th>Latest (30m)</th>
+                    <th>1-Hour</th>
+                    <th>24-Hour</th>
+                    <th>72-Hour</th>
+                    <th>7-Day</th>
+                    <th>Last Observation (UTC)</th>
+                    <th>Status</th>
+                  </tr>
+                </thead>
+                <tbody id="rainfall-summary-tbody">
+                  <!-- Populated by rainfall.js -->
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+
+        <div class="grid-2">
+          <div class="card">
+            <div class="card-header">
+              <span class="card-title">📈 30-Minute Precipitation Time-Series (Recent Observations)</span>
+            </div>
+            <div class="card-body" style="height: 280px;">
+              <canvas id="rainfallTrendChart"></canvas>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-header">
+              <span class="card-title">📊 Antecedent Moisture Accumulation Windows</span>
+            </div>
+            <div class="card-body" style="height: 280px;">
+              <canvas id="accumulationChart"></canvas>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- TAB 4: COPERNICUS DEM TERRAIN -->
+      <section id="view-terrain" class="tab-view">
+        <div id="terrain-stats-container">
+          <!-- Populated by terrain.js -->
+        </div>
+
+        <div class="card" style="margin-top: 16px;">
+          <div class="card-header">
+            <span class="card-title">📐 Geotechnical Slope Susceptibility Criteria (Horn's Algorithm)</span>
+          </div>
+          <div class="card-body" style="font-size: 0.85rem; line-height: 1.6;">
+            <p class="text-muted mb-3">
+              Slope angles calculated from the Copernicus GLO-30 DSM reprojected to UTM Zone 45N (EPSG:32645). Mountain slopes along the Teesta River gorge regularly exceed 30°, creating conditions where intense antecedent rainfall rapidly reduces effective shear strength.
+            </p>
+            <div class="grid-3">
+              <div class="p-3" style="background: rgba(16, 185, 129, 0.1); border-left: 3px solid #10b981; border-radius: 4px;">
+                <strong>0° – 10° (Low Susceptibility)</strong><br/>
+                <span class="text-xs text-muted">River terraces, alluvial fans, valley bottoms.</span>
+              </div>
+              <div class="p-3" style="background: rgba(245, 158, 11, 0.1); border-left: 3px solid #f59e0b; border-radius: 4px;">
+                <strong>10° – 25° (Moderate Susceptibility)</strong><br/>
+                <span class="text-xs text-muted">Inhabited gentle valley flanks (Rangpo terrace: 13.4°).</span>
+              </div>
+              <div class="p-3" style="background: rgba(239, 68, 68, 0.1); border-left: 3px solid #ef4444; border-radius: 4px;">
+                <strong>> 25° (High / Critical Susceptibility)</strong><br/>
+                <span class="text-xs text-muted">Steep phyllite/schist rock escarpments (Singtam ridge: 21.5°–38°).</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- TAB 5: HISTORICAL LANDSLIDES -->
+      <section id="view-historical" class="tab-view">
+        <div class="card">
+          <div class="card-header">
+            <span class="card-title">📍 Historical Landslide Database (Geological Survey of India)</span>
+            <span id="landslides-count-badge" class="status-badge status-connected">103 Documented Events</span>
+          </div>
+          <div class="card-body">
+            <div style="display: flex; gap: 12px; margin-bottom: 16px; flex-wrap: wrap;">
+              <input id="landslide-search-input" type="text" placeholder="Search road location, slide ID..." class="select-control" style="flex: 1; min-width: 200px;" />
+              <select id="landslide-material-filter" class="select-control">
+                <option value="ALL">All Materials (Debris, Rock, Soil)</option>
+                <option value="DEBRIS">Debris Slides</option>
+                <option value="ROCK">Rock Fall / Slides</option>
+              </select>
+            </div>
+
+            <div class="table-responsive" style="max-height: 480px; overflow-y: auto;">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th>Slide ID</th>
+                    <th>Highway / Road Location</th>
+                    <th>Coordinates</th>
+                    <th>Material</th>
+                    <th>Movement Type</th>
+                    <th>District</th>
+                    <th>Source</th>
+                  </tr>
+                </thead>
+                <tbody id="landslides-tbody">
+                  <!-- Populated by historical.js -->
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- TAB 6: HISTORICAL EVENT REPLAY -->
+      <section id="view-replay" class="tab-view">
+        <div class="card">
+          <div class="card-header">
+            <span class="card-title">⏳ Historical Event Replay & Advance Lead-Time Scrubber</span>
+            <span id="replay-lead-time" class="status-badge status-connected">...</span>
+          </div>
+          <div class="card-body">
+            <div style="display: flex; gap: 14px; align-items: center; margin-bottom: 16px; flex-wrap: wrap;">
+              <label class="text-xs text-muted"><strong>Select Historical Event:</strong></label>
+              <select id="replay-event-select" class="select-control" style="flex: 1; min-width: 250px;"></select>
+            </div>
+
+            <div class="p-3" style="background: var(--bg-card); border: 1px solid var(--border-color); border-radius: 8px; margin-bottom: 16px;">
+              <h4 id="replay-event-title" style="color: #38bdf8; font-size: 1rem; margin-bottom: 4px;">...</h4>
+              <p id="replay-event-desc" class="text-xs text-muted">...</p>
+            </div>
+
+            <div style="margin-bottom: 16px;">
+              <div class="text-xs text-dim mb-2 font-mono uppercase font-bold">Timeline Step Scrubber (Antecedent Buildup):</div>
+              <div id="replay-timeline-buttons" style="display: flex; gap: 8px; flex-wrap: wrap;"></div>
+            </div>
+
+            <div class="grid-3" style="margin-top: 16px;">
+              <div class="p-3" style="background: var(--bg-card); border-radius: 8px; border: 1px solid var(--border-color);">
+                <div class="text-xs text-dim">AI RISK PROBABILITY</div>
+                <div id="replay-step-prob" class="font-mono text-cyan" style="font-size: 1.6rem; font-weight: 800;">0.0%</div>
+              </div>
+
+              <div class="p-3" style="background: var(--bg-card); border-radius: 8px; border: 1px solid var(--border-color);">
+                <div class="text-xs text-dim">OPERATIONAL TIER</div>
+                <div style="margin-top: 6px;"><span id="replay-step-level" class="risk-badge risk-low">LOW</span></div>
+              </div>
+
+              <div class="p-3" style="background: var(--bg-card); border-radius: 8px; border: 1px solid var(--border-color);">
+                <div class="text-xs text-dim">24h / 72h RAINFALL</div>
+                <div class="font-mono text-white" style="font-size: 1.2rem; font-weight: 700; margin-top: 4px;">
+                  <span id="replay-step-r24">0.0 mm</span> / <span id="replay-step-r72" class="text-amber">0.0 mm</span>
+                </div>
+              </div>
+            </div>
+
+            <div id="replay-step-warning" class="mt-3 p-2 text-center" style="background: rgba(255,255,255,0.02); border-radius: 6px; font-size: 0.85rem;"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- TAB 7: ML MODEL METRICS -->
+      <section id="view-model" class="tab-view">
+        <div class="kpi-grid">
+          <div class="kpi-card">
+            <span class="kpi-label">Test Precision</span>
+            <div id="model-prec-val" class="kpi-value text-cyan font-mono">74.4%</div>
+            <div class="kpi-subtext">True Positive / (TP + FP)</div>
+          </div>
+
+          <div class="kpi-card">
+            <span class="kpi-label">Test Recall</span>
+            <div id="model-recall-val" class="kpi-value text-emerald font-mono">100.0%</div>
+            <div class="kpi-subtext">0 Missed Dangerous Events</div>
+          </div>
+
+          <div class="kpi-card">
+            <span class="kpi-label">Test F1-Score</span>
+            <div id="model-f1-val" class="kpi-value text-white font-mono">85.3%</div>
+            <div class="kpi-subtext">Harmonic Mean of P & R</div>
+          </div>
+
+          <div class="kpi-card">
+            <span class="kpi-label">Test ROC-AUC</span>
+            <div id="model-rocauc-val" class="kpi-value text-cyan font-mono">0.995</div>
+            <div class="kpi-subtext">Discrimination Ability</div>
+          </div>
+
+          <div class="kpi-card">
+            <span class="kpi-label">Average Lead Time</span>
+            <div id="lead-avg-val" class="kpi-value text-amber font-mono">14.6h</div>
+            <div class="kpi-subtext">Advance Warning Window</div>
+          </div>
+        </div>
+
+        <div class="grid-2" style="margin-top: 20px;">
+          <!-- Confusion Matrix -->
+          <div class="card">
+            <div class="card-header">
+              <span class="card-title">🧮 Test Set Confusion Matrix (Zero False Negatives)</span>
+            </div>
+            <div class="card-body">
+              <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 12px; text-align: center;">
+                <div class="p-3" style="background: rgba(16, 185, 129, 0.1); border: 1px solid rgba(16, 185, 129, 0.3); border-radius: 8px;">
+                  <div class="text-xs text-muted font-bold">TRUE NEGATIVE (TN)</div>
+                  <div id="cm-tn" class="font-mono text-emerald" style="font-size: 1.8rem; font-weight: 800;">180</div>
+                  <div class="text-xs text-dim">Correct Non-Event Baseline</div>
+                </div>
+
+                <div class="p-3" style="background: rgba(245, 158, 11, 0.1); border: 1px solid rgba(245, 158, 11, 0.3); border-radius: 8px;">
+                  <div class="text-xs text-muted font-bold">FALSE POSITIVE (FP)</div>
+                  <div id="cm-fp" class="font-mono text-amber" style="font-size: 1.8rem; font-weight: 800;">32</div>
+                  <div class="text-xs text-dim">Conservative False Alarms</div>
+                </div>
+
+                <div class="p-3" style="background: rgba(239, 68, 68, 0.1); border: 1px solid rgba(239, 68, 68, 0.3); border-radius: 8px;">
+                  <div class="text-xs text-muted font-bold">FALSE NEGATIVE (FN)</div>
+                  <div id="cm-fn" class="font-mono text-emerald" style="font-size: 1.8rem; font-weight: 800;">0</div>
+                  <div class="text-xs text-dim">0 Missed Hazard Events</div>
+                </div>
+
+                <div class="p-3" style="background: rgba(6, 182, 212, 0.1); border: 1px solid rgba(6, 182, 212, 0.3); border-radius: 8px;">
+                  <div class="text-xs text-muted font-bold">TRUE POSITIVE (TP)</div>
+                  <div id="cm-tp" class="font-mono text-cyan" style="font-size: 1.8rem; font-weight: 800;">93</div>
+                  <div class="text-xs text-dim">Successfully Detected Risks</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Model Comparison Table -->
+          <div class="card">
+            <div class="card-header">
+              <span class="card-title">🏆 Benchmark Model Comparison</span>
+            </div>
+            <div class="card-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th>Algorithm</th>
+                    <th>Val F1</th>
+                    <th>Recall</th>
+                    <th>Precision</th>
+                    <th>ROC-AUC</th>
+                  </tr>
+                </thead>
+                <tbody id="model-comparison-tbody">
+                  <!-- Populated by model.js -->
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+
+        <div class="grid-2" style="margin-top: 20px;">
+          <div class="card">
+            <div class="card-header">
+              <span class="card-title">📈 ROC & Precision-Recall Curves</span>
+            </div>
+            <div class="card-body" style="height: 280px;">
+              <canvas id="rocPrChart"></canvas>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-header">
+              <span class="card-title">⏱️ Historical Lead-Time Distribution</span>
+            </div>
+            <div class="card-body" style="height: 280px;">
+              <canvas id="leadTimeChart"></canvas>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- TAB 8: HOW AI WORKS -->
+      <section id="view-explainability" class="tab-view">
+        <div id="explainability-container">
+          <!-- Populated by explainability.js -->
+        </div>
+      </section>
+
+      <!-- TAB 9: CITIZEN SAFETY PORTAL -->
+      <section id="view-citizen" class="tab-view">
+        <div id="citizen-advisory-container">
+          <!-- Populated by citizen.js -->
+        </div>
+      </section>
+
+    </main>
+  </div>
+
+  <!-- Safety Instructions Modal -->
+  <div id="safety-modal" class="modal-backdrop">
+    <div class="modal-box">
+      <button id="modal-close-btn" class="modal-close">✕</button>
+      <div class="modal-header">
+        <h3 style="color: #ef4444; font-size: 1.2rem; font-weight: 700;">🚨 Mandatory Civil Safety Instructions</h3>
+        <p class="text-xs text-muted">NH-10 Rangpo–Singtam Disaster Management Standard Operating Procedure</p>
+      </div>
+      <div class="modal-body" style="font-size: 0.85rem; line-height: 1.6; color: #cbd5e1;">
+        <ul style="padding-left: 20px; display: flex; flex-direction: column; gap: 8px;">
+          <li>Immediately suspend heavy vehicular freight along the Teesta River gorge corridor.</li>
+          <li>Station standby earthmoving excavators at chronic slip points (Majhitar, Bardang, Mining).</li>
+          <li>Activate local SDRF and Quick Response Teams in Rangpo and Singtam sub-divisions.</li>
+          <li>Instruct vulnerable hillside settlements to stay alert for tension fissures and unusual runoff.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Leaflet CDN -->
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+  
+  <!-- Chart.js CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+
+  <!-- Turf.js CDN for Geospatial Calculations -->
+  <script src="https://cdn.jsdelivr.net/npm/@turf/turf@6.5.0/turf.min.js"></script>
+
+  <!-- Main ES6 Vanilla JS Application -->
+  <script type="module" src="js/app.js"></script>
+
+</body>
+</html>

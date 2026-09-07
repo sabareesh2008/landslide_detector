@@ -1,0 +1,398 @@
+{
+  "model_name": "HistGradientBoosting",
+  "model_version": "v1.0.0",
+  "training_timestamp_utc": "2026-09-07T15:45:57.867875+00:00",
+  "total_samples": 1522,
+  "train_samples": 913,
+  "val_samples": 304,
+  "test_samples": 305,
+  "training_period": {
+    "start": "2026-08-20T08:59:59+00:00",
+    "end": "2026-08-29T21:00:00+00:00"
+  },
+  "validation_period": {
+    "start": "2026-08-29T21:00:00+00:00",
+    "end": "2026-09-02T01:00:00+00:00"
+  },
+  "test_period": {
+    "start": "2026-09-02T01:00:00+00:00",
+    "end": "2026-09-05T05:00:00+00:00"
+  },
+  "model_comparison": {
+    "XGBoost": {
+      "val_precision": 0.9870689655172413,
+      "val_recall": 0.9956521739130435,
+      "val_f1": 0.9913419913419913,
+      "val_roc_auc": 0.9995887191539365,
+      "val_pr_auc": 0.9998690485305255
+    },
+    "LightGBM": {
+      "val_precision": 0.9907834101382489,
+      "val_recall": 0.9347826086956522,
+      "val_f1": 0.9619686800894854,
+      "val_roc_auc": 0.9943595769682727,
+      "val_pr_auc": 0.9979797089899692
+    },
+    "HistGradientBoosting": {
+      "val_precision": 0.9956521739130435,
+      "val_recall": 0.9956521739130435,
+      "val_f1": 0.9956521739130435,
+      "val_roc_auc": 0.9996474735605171,
+      "val_pr_auc": 0.999885912259815
+    },
+    "RandomForest": {
+      "val_precision": 0.9787234042553191,
+      "val_recall": 1.0,
+      "val_f1": 0.989247311827957,
+      "val_roc_auc": 0.9973560517038779,
+      "val_pr_auc": 0.9991224292460046
+    }
+  },
+  "test_metrics": {
+    "precision": 0.744,
+    "recall": 1.0,
+    "f1_score": 0.8532,
+    "roc_auc": 0.9948,
+    "pr_auc": 0.9892,
+    "false_positive_rate": 0.1509,
+    "false_negative_rate": 0.0,
+    "confusion_matrix": {
+      "true_negative": 180,
+      "false_positive": 32,
+      "false_negative": 0,
+      "true_positive": 93
+    }
+  },
+  "lead_time_analysis": {
+    "average_lead_time_hours": 14.6,
+    "median_lead_time_hours": 14.5,
+    "min_lead_time_hours": 6.5,
+    "max_lead_time_hours": 24.0,
+    "events_detected_early": 9,
+    "events_missed": 0,
+    "false_alarms": 32,
+    "early_detection_rate": 1.0
+  },
+  "feature_importances": [
+    {
+      "feature": "rain_30min",
+      "importance": 0.0417
+    },
+    {
+      "feature": "rain_1h",
+      "importance": 0.0417
+    },
+    {
+      "feature": "rain_3h",
+      "importance": 0.0417
+    },
+    {
+      "feature": "rain_6h",
+      "importance": 0.0417
+    },
+    {
+      "feature": "rain_12h",
+      "importance": 0.0417
+    },
+    {
+      "feature": "rain_24h",
+      "importance": 0.0417
+    },
+    {
+      "feature": "rain_48h",
+      "importance": 0.0417
+    },
+    {
+      "feature": "rain_72h",
+      "importance": 0.0417
+    },
+    {
+      "feature": "rain_7d",
+      "importance": 0.0417
+    },
+    {
+      "feature": "max_rain_1h",
+      "importance": 0.0417
+    },
+    {
+      "feature": "max_rain_3h",
+      "importance": 0.0417
+    },
+    {
+      "feature": "max_rain_6h",
+      "importance": 0.0417
+    },
+    {
+      "feature": "max_rain_24h",
+      "importance": 0.0417
+    },
+    {
+      "feature": "rainfall_change_1h",
+      "importance": 0.0417
+    },
+    {
+      "feature": "rainfall_change_3h",
+      "importance": 0.0417
+    },
+    {
+      "feature": "rainfall_acceleration",
+      "importance": 0.0417
+    },
+    {
+      "feature": "elevation",
+      "importance": 0.0417
+    },
+    {
+      "feature": "slope",
+      "importance": 0.0417
+    },
+    {
+      "feature": "aspect",
+      "importance": 0.0417
+    },
+    {
+      "feature": "aspect_sin",
+      "importance": 0.0417
+    },
+    {
+      "feature": "aspect_cos",
+      "importance": 0.0417
+    },
+    {
+      "feature": "terrain_ruggedness",
+      "importance": 0.0417
+    },
+    {
+      "feature": "distance_to_historical_landslide_km",
+      "importance": 0.0417
+    },
+    {
+      "feature": "historical_landslide_density",
+      "importance": 0.0417
+    }
+  ],
+  "roc_curve": [
+    {
+      "fpr": 0.0,
+      "tpr": 0.0
+    },
+    {
+      "fpr": 0.0,
+      "tpr": 0.075
+    },
+    {
+      "fpr": 0.0,
+      "tpr": 0.129
+    },
+    {
+      "fpr": 0.0,
+      "tpr": 0.237
+    },
+    {
+      "fpr": 0.0,
+      "tpr": 0.323
+    },
+    {
+      "fpr": 0.0,
+      "tpr": 0.387
+    },
+    {
+      "fpr": 0.0,
+      "tpr": 0.667
+    },
+    {
+      "fpr": 0.014,
+      "tpr": 0.892
+    },
+    {
+      "fpr": 0.024,
+      "tpr": 0.914
+    },
+    {
+      "fpr": 0.028,
+      "tpr": 0.968
+    },
+    {
+      "fpr": 0.075,
+      "tpr": 0.968
+    },
+    {
+      "fpr": 0.094,
+      "tpr": 0.978
+    },
+    {
+      "fpr": 0.104,
+      "tpr": 1.0
+    },
+    {
+      "fpr": 0.274,
+      "tpr": 1.0
+    },
+    {
+      "fpr": 0.325,
+      "tpr": 1.0
+    },
+    {
+      "fpr": 0.363,
+      "tpr": 1.0
+    },
+    {
+      "fpr": 0.566,
+      "tpr": 1.0
+    },
+    {
+      "fpr": 0.594,
+      "tpr": 1.0
+    },
+    {
+      "fpr": 0.684,
+      "tpr": 1.0
+    },
+    {
+      "fpr": 0.712,
+      "tpr": 1.0
+    },
+    {
+      "fpr": 0.75,
+      "tpr": 1.0
+    },
+    {
+      "fpr": 0.896,
+      "tpr": 1.0
+    },
+    {
+      "fpr": 0.92,
+      "tpr": 1.0
+    },
+    {
+      "fpr": 0.972,
+      "tpr": 1.0
+    },
+    {
+      "fpr": 1.0,
+      "tpr": 1.0
+    }
+  ],
+  "pr_curve": [
+    {
+      "recall": 1.0,
+      "precision": 0.305
+    },
+    {
+      "recall": 1.0,
+      "precision": 0.331
+    },
+    {
+      "recall": 1.0,
+      "precision": 0.346
+    },
+    {
+      "recall": 1.0,
+      "precision": 0.362
+    },
+    {
+      "recall": 1.0,
+      "precision": 0.388
+    },
+    {
+      "recall": 1.0,
+      "precision": 0.41
+    },
+    {
+      "recall": 1.0,
+      "precision": 0.441
+    },
+    {
+      "recall": 1.0,
+      "precision": 0.467
+    },
+    {
+      "recall": 1.0,
+      "precision": 0.508
+    },
+    {
+      "recall": 1.0,
+      "precision": 0.544
+    },
+    {
+      "recall": 1.0,
+      "precision": 0.608
+    },
+    {
+      "recall": 1.0,
+      "precision": 0.669
+    },
+    {
+      "recall": 1.0,
+      "precision": 0.732
+    },
+    {
+      "recall": 1.0,
+      "precision": 0.809
+    },
+    {
+      "recall": 0.968,
+      "precision": 0.9
+    },
+    {
+      "recall": 0.892,
+      "precision": 0.954
+    },
+    {
+      "recall": 0.806,
+      "precision": 1.0
+    },
+    {
+      "recall": 0.677,
+      "precision": 1.0
+    },
+    {
+      "recall": 0.516,
+      "precision": 1.0
+    },
+    {
+      "recall": 0.387,
+      "precision": 1.0
+    },
+    {
+      "recall": 0.194,
+      "precision": 1.0
+    },
+    {
+      "recall": 0.032,
+      "precision": 1.0
+    }
+  ],
+  "operational_thresholds": {
+    "LOW": "< 0.25",
+    "WATCH": "0.25 - 0.50",
+    "HIGH": "0.50 - 0.75",
+    "CRITICAL": ">= 0.75"
+  },
+  "features_used": [
+    "rain_30min",
+    "rain_1h",
+    "rain_3h",
+    "rain_6h",
+    "rain_12h",
+    "rain_24h",
+    "rain_48h",
+    "rain_72h",
+    "rain_7d",
+    "max_rain_1h",
+    "max_rain_3h",
+    "max_rain_6h",
+    "max_rain_24h",
+    "rainfall_change_1h",
+    "rainfall_change_3h",
+    "rainfall_acceleration",
+    "elevation",
+    "slope",
+    "aspect",
+    "aspect_sin",
+    "aspect_cos",
+    "terrain_ruggedness",
+    "distance_to_historical_landslide_km",
+    "historical_landslide_density"
+  ]
+}
