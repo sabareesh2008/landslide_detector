@@ -1,6 +1,6 @@
 {
   "type": "FeatureCollection",
-  "generated_at_utc": "2026-09-07T17:26:33.316477+00:00",
+  "generated_at_utc": "2026-09-07T20:16:13.087691+00:00",
   "crs": {
     "type": "name",
     "properties": {
@@ -45,9 +45,9 @@
         "elevation_m": 338.1,
         "slope_degrees": 12.7,
         "aspect_degrees": 307.9,
-        "rainfall_24h_mm": 10.4,
-        "rainfall_72h_mm": 36.3,
-        "risk_probability": 0.422,
+        "rainfall_24h_mm": 10.5,
+        "rainfall_72h_mm": 36.8,
+        "risk_probability": 0.425,
         "risk_level": "WATCH",
         "model_version": "HistGradientBoosting v1.0.0"
       }
@@ -89,9 +89,9 @@
         "elevation_m": 333.6,
         "slope_degrees": 5.0,
         "aspect_degrees": 305.7,
-        "rainfall_24h_mm": 10.4,
-        "rainfall_72h_mm": 35.9,
-        "risk_probability": 0.223,
+        "rainfall_24h_mm": 10.5,
+        "rainfall_72h_mm": 36.5,
+        "risk_probability": 0.226,
         "risk_level": "LOW",
         "model_version": "HistGradientBoosting v1.0.0"
       }
@@ -133,9 +133,9 @@
         "elevation_m": 327.6,
         "slope_degrees": 15.9,
         "aspect_degrees": 302.7,
-        "rainfall_24h_mm": 10.4,
-        "rainfall_72h_mm": 31.9,
-        "risk_probability": 0.501,
+        "rainfall_24h_mm": 10.5,
+        "rainfall_72h_mm": 32.3,
+        "risk_probability": 0.503,
         "risk_level": "HIGH",
         "model_version": "HistGradientBoosting v1.0.0"
       }
@@ -177,9 +177,9 @@
         "elevation_m": 321.0,
         "slope_degrees": 27.6,
         "aspect_degrees": 299.4,
-        "rainfall_24h_mm": 10.4,
-        "rainfall_72h_mm": 26.9,
-        "risk_probability": 0.791,
+        "rainfall_24h_mm": 10.5,
+        "rainfall_72h_mm": 27.3,
+        "risk_probability": 0.793,
         "risk_level": "CRITICAL",
         "model_version": "HistGradientBoosting v1.0.0"
       }
@@ -221,9 +221,9 @@
         "elevation_m": 316.3,
         "slope_degrees": 20.7,
         "aspect_degrees": 297.1,
-        "rainfall_24h_mm": 10.4,
-        "rainfall_72h_mm": 24.5,
-        "risk_probability": 0.615,
+        "rainfall_24h_mm": 10.5,
+        "rainfall_72h_mm": 24.8,
+        "risk_probability": 0.617,
         "risk_level": "HIGH",
         "model_version": "HistGradientBoosting v1.0.0"
       }
@@ -265,9 +265,9 @@
         "elevation_m": 316.0,
         "slope_degrees": 5.9,
         "aspect_degrees": 296.9,
-        "rainfall_24h_mm": 10.4,
-        "rainfall_72h_mm": 26.2,
-        "risk_probability": 0.217,
+        "rainfall_24h_mm": 10.5,
+        "rainfall_72h_mm": 26.6,
+        "risk_probability": 0.219,
         "risk_level": "LOW",
         "model_version": "HistGradientBoosting v1.0.0"
       }
@@ -309,9 +309,9 @@
         "elevation_m": 319.1,
         "slope_degrees": 6.9,
         "aspect_degrees": 298.5,
-        "rainfall_24h_mm": 10.4,
-        "rainfall_72h_mm": 31.0,
-        "risk_probability": 0.251,
+        "rainfall_24h_mm": 10.5,
+        "rainfall_72h_mm": 31.4,
+        "risk_probability": 0.253,
         "risk_level": "WATCH",
         "model_version": "HistGradientBoosting v1.0.0"
       }
@@ -353,9 +353,9 @@
         "elevation_m": 323.1,
         "slope_degrees": 22.2,
         "aspect_degrees": 300.4,
-        "rainfall_24h_mm": 10.4,
-        "rainfall_72h_mm": 35.4,
-        "risk_probability": 0.692,
+        "rainfall_24h_mm": 10.5,
+        "rainfall_72h_mm": 36.0,
+        "risk_probability": 0.695,
         "risk_level": "HIGH",
         "model_version": "HistGradientBoosting v1.0.0"
       }
@@ -397,9 +397,9 @@
         "elevation_m": 447.5,
         "slope_degrees": 12.9,
         "aspect_degrees": 309.5,
-        "rainfall_24h_mm": 12.3,
-        "rainfall_72h_mm": 36.3,
-        "risk_probability": 0.446,
+        "rainfall_24h_mm": 12.4,
+        "rainfall_72h_mm": 36.8,
+        "risk_probability": 0.449,
         "risk_level": "WATCH",
         "model_version": "HistGradientBoosting v1.0.0"
       }
@@ -441,9 +441,9 @@
         "elevation_m": 442.2,
         "slope_degrees": 5.0,
         "aspect_degrees": 306.8,
-        "rainfall_24h_mm": 12.3,
-        "rainfall_72h_mm": 35.9,
-        "risk_probability": 0.237,
+        "rainfall_24h_mm": 12.4,
+        "rainfall_72h_mm": 36.5,
+        "risk_probability": 0.239,
         "risk_level": "LOW",
         "model_version": "HistGradientBoosting v1.0.0"
       }
@@ -485,9 +485,9 @@
         "elevation_m": 433.8,
         "slope_degrees": 15.9,
         "aspect_degrees": 302.6,
-        "rainfall_24h_mm": 12.3,
-        "rainfall_72h_mm": 31.9,
-        "risk_probability": 0.52,
+        "rainfall_24h_mm": 12.4,
+        "rainfall_72h_mm": 32.3,
+        "risk_probability": 0.522,
         "risk_level": "HIGH",
         "model_version": "HistGradientBoosting v1.0.0"
       }
@@ -529,9 +529,9 @@
         "elevation_m": 422.1,
         "slope_degrees": 27.3,
         "aspect_degrees": 296.8,
-        "rainfall_24h_mm": 12.3,
-        "rainfall_72h_mm": 26.9,
-        "risk_probability": 0.798,
+        "rainfall_24h_mm": 12.4,
+        "rainfall_72h_mm": 27.3,
+        "risk_probability": 0.799,
         "risk_level": "CRITICAL",
         "model_version": "HistGradientBoosting v1.0.0"
       }
@@ -573,9 +573,9 @@
         "elevation_m": 411.6,
         "slope_degrees": 20.0,
         "aspect_degrees": 291.6,
-        "rainfall_24h_mm": 12.3,
-        "rainfall_72h_mm": 24.5,
-        "risk_probability": 0.613,
+        "rainfall_24h_mm": 12.4,
+        "rainfall_72h_mm": 24.8,
+        "risk_probability": 0.615,
         "risk_level": "HIGH",
         "model_version": "HistGradientBoosting v1.0.0"
       }
@@ -617,9 +617,9 @@
         "elevation_m": 413.2,
         "slope_degrees": 5.4,
         "aspect_degrees": 292.4,
-        "rainfall_24h_mm": 12.3,
-        "rainfall_72h_mm": 26.2,
-        "risk_probability": 0.22,
+        "rainfall_24h_mm": 12.4,
+        "rainfall_72h_mm": 26.6,
+        "risk_probability": 0.221,
         "risk_level": "LOW",
         "model_version": "HistGradientBoosting v1.0.0"
       }
@@ -661,9 +661,9 @@
         "elevation_m": 421.2,
         "slope_degrees": 6.6,
         "aspect_degrees": 296.4,
-        "rainfall_24h_mm": 12.3,
-        "rainfall_72h_mm": 31.0,
-        "risk_probability": 0.259,
+        "rainfall_24h_mm": 12.4,
+        "rainfall_72h_mm": 31.4,
+        "risk_probability": 0.261,
         "risk_level": "WATCH",
         "model_version": "HistGradientBoosting v1.0.0"
       }
@@ -705,9 +705,9 @@
         "elevation_m": 427.9,
         "slope_degrees": 22.1,
         "aspect_degrees": 299.7,
-        "rainfall_24h_mm": 12.3,
-        "rainfall_72h_mm": 35.4,
-        "risk_probability": 0.706,
+        "rainfall_24h_mm": 12.4,
+        "rainfall_72h_mm": 36.0,
+        "risk_probability": 0.708,
         "risk_level": "HIGH",
         "model_version": "HistGradientBoosting v1.0.0"
       }
@@ -749,9 +749,9 @@
         "elevation_m": 354.4,
         "slope_degrees": 13.3,
         "aspect_degrees": 312.2,
-        "rainfall_24h_mm": 12.9,
-        "rainfall_72h_mm": 36.3,
-        "risk_probability": 0.464,
+        "rainfall_24h_mm": 13.1,
+        "rainfall_72h_mm": 36.8,
+        "risk_probability": 0.468,
         "risk_level": "WATCH",
         "model_version": "HistGradientBoosting v1.0.0"
       }
@@ -793,9 +793,9 @@
         "elevation_m": 349.9,
         "slope_degrees": 5.4,
         "aspect_degrees": 310.0,
-        "rainfall_24h_mm": 12.9,
-        "rainfall_72h_mm": 35.9,
-        "risk_probability": 0.25,
+        "rainfall_24h_mm": 13.1,
+        "rainfall_72h_mm": 36.5,
+        "risk_probability": 0.253,
         "risk_level": "WATCH",
         "model_version": "HistGradientBoosting v1.0.0"
       }
@@ -837,9 +837,9 @@
         "elevation_m": 340.5,
         "slope_degrees": 16.2,
         "aspect_degrees": 305.3,
-        "rainfall_24h_mm": 12.9,
-        "rainfall_72h_mm": 31.9,
-        "risk_probability": 0.535,
+        "rainfall_24h_mm": 13.1,
+        "rainfall_72h_mm": 32.3,
+        "risk_probability": 0.538,
         "risk_level": "HIGH",
         "model_version": "HistGradientBoosting v1.0.0"
       }
@@ -881,9 +881,9 @@
         "elevation_m": 323.5,
         "slope_degrees": 27.3,
         "aspect_degrees": 296.8,
-        "rainfall_24h_mm": 12.9,
-        "rainfall_72h_mm": 26.9,
-        "risk_probability": 0.801,
+        "rainfall_24h_mm": 13.1,
+        "rainfall_72h_mm": 27.3,
+        "risk_probability": 0.804,
         "risk_level": "CRITICAL",
         "model_version": "HistGradientBoosting v1.0.0"
       }
@@ -925,9 +925,9 @@
         "elevation_m": 296.7,
         "slope_degrees": 19.0,
         "aspect_degrees": 283.5,
-        "rainfall_24h_mm": 12.9,
-        "rainfall_72h_mm": 24.5,
-        "risk_probability": 0.59,
+        "rainfall_24h_mm": 13.1,
+        "rainfall_72h_mm": 24.8,
+        "risk_probability": 0.593,
         "risk_level": "HIGH",
         "model_version": "HistGradientBoosting v1.0.0"
       }
@@ -969,9 +969,9 @@
         "elevation_m": 307.6,
         "slope_degrees": 5.0,
         "aspect_degrees": 288.9,
-        "rainfall_24h_mm": 12.9,
-        "rainfall_72h_mm": 26.2,
-        "risk_probability": 0.216,
+        "rainfall_24h_mm": 13.1,
+        "rainfall_72h_mm": 26.6,
+        "risk_probability": 0.218,
         "risk_level": "LOW",
         "model_version": "HistGradientBoosting v1.0.0"
       }
@@ -1013,9 +1013,9 @@
         "elevation_m": 322.2,
         "slope_degrees": 6.6,
         "aspect_degrees": 296.2,
-        "rainfall_24h_mm": 12.9,
-        "rainfall_72h_mm": 31.0,
-        "risk_probability": 0.264,
+        "rainfall_24h_mm": 13.1,
+        "rainfall_72h_mm": 31.4,
+        "risk_probability": 0.266,
         "risk_level": "WATCH",
         "model_version": "HistGradientBoosting v1.0.0"
       }
@@ -1057,9 +1057,9 @@
         "elevation_m": 330.4,
         "slope_degrees": 22.2,
         "aspect_degrees": 300.3,
-        "rainfall_24h_mm": 12.9,
-        "rainfall_72h_mm": 35.4,
-        "risk_probability": 0.713,
+        "rainfall_24h_mm": 13.1,
+        "rainfall_72h_mm": 36.0,
+        "risk_probability": 0.717,
         "risk_level": "HIGH",
         "model_version": "HistGradientBoosting v1.0.0"
       }
@@ -1101,9 +1101,9 @@
         "elevation_m": 312.0,
         "slope_degrees": 13.8,
         "aspect_degrees": 316.3,
-        "rainfall_24h_mm": 11.9,
-        "rainfall_72h_mm": 36.3,
-        "risk_probability": 0.469,
+        "rainfall_24h_mm": 12.0,
+        "rainfall_72h_mm": 36.8,
+        "risk_probability": 0.472,
         "risk_level": "WATCH",
         "model_version": "HistGradientBoosting v1.0.0"
       }
@@ -1145,9 +1145,9 @@
         "elevation_m": 311.1,
         "slope_degrees": 6.1,
         "aspect_degrees": 315.9,
-        "rainfall_24h_mm": 11.9,
-        "rainfall_72h_mm": 35.9,
-        "risk_probability": 0.259,
+        "rainfall_24h_mm": 12.0,
+        "rainfall_72h_mm": 36.5,
+        "risk_probability": 0.261,
         "risk_level": "WATCH",
         "model_version": "HistGradientBoosting v1.0.0"
       }
@@ -1189,9 +1189,9 @@
         "elevation_m": 305.8,
         "slope_degrees": 17.2,
         "aspect_degrees": 313.2,
-        "rainfall_24h_mm": 11.9,
-        "rainfall_72h_mm": 31.9,
-        "risk_probability": 0.554,
+        "rainfall_24h_mm": 12.0,
+        "rainfall_72h_mm": 32.3,
+        "risk_probability": 0.557,
         "risk_level": "HIGH",
         "model_version": "HistGradientBoosting v1.0.0"
       }
@@ -1233,9 +1233,9 @@
         "elevation_m": 291.9,
         "slope_degrees": 28.5,
         "aspect_degrees": 306.3,
-        "rainfall_24h_mm": 11.9,
-        "rainfall_72h_mm": 26.9,
-        "risk_probability": 0.817,
+        "rainfall_24h_mm": 12.0,
+        "rainfall_72h_mm": 27.3,
+        "risk_probability": 0.819,
         "risk_level": "CRITICAL",
         "model_version": "HistGradientBoosting v1.0.0"
       }
@@ -1277,9 +1277,9 @@
         "elevation_m": 275.2,
         "slope_degrees": 20.8,
         "aspect_degrees": 298.0,
-        "rainfall_24h_mm": 11.9,
-        "rainfall_72h_mm": 24.5,
-        "risk_probability": 0.632,
+        "rainfall_24h_mm": 12.0,
+        "rainfall_72h_mm": 24.8,
+        "risk_probability": 0.634,
         "risk_level": "HIGH",
         "model_version": "HistGradientBoosting v1.0.0"
       }
@@ -1321,9 +1321,9 @@
         "elevation_m": 273.7,
         "slope_degrees": 6.0,
         "aspect_degrees": 297.2,
-        "rainfall_24h_mm": 11.9,
-        "rainfall_72h_mm": 26.2,
-        "risk_probability": 0.23,
+        "rainfall_24h_mm": 12.0,
+        "rainfall_72h_mm": 26.6,
+        "risk_probability": 0.231,
         "risk_level": "LOW",
         "model_version": "HistGradientBoosting v1.0.0"
       }
@@ -1365,9 +1365,9 @@
         "elevation_m": 280.0,
         "slope_degrees": 7.2,
         "aspect_degrees": 300.4,
-        "rainfall_24h_mm": 11.9,
-        "rainfall_72h_mm": 31.0,
-        "risk_probability": 0.27,
+        "rainfall_24h_mm": 12.0,
+        "rainfall_72h_mm": 31.4,
+        "risk_probability": 0.272,
         "risk_level": "WATCH",
         "model_version": "HistGradientBoosting v1.0.0"
       }
@@ -1409,9 +1409,9 @@
         "elevation_m": 285.1,
         "slope_degrees": 22.5,
         "aspect_degrees": 302.9,
-        "rainfall_24h_mm": 11.9,
-        "rainfall_72h_mm": 35.4,
-        "risk_probability": 0.712,
+        "rainfall_24h_mm": 12.0,
+        "rainfall_72h_mm": 36.0,
+        "risk_probability": 0.715,
         "risk_level": "HIGH",
         "model_version": "HistGradientBoosting v1.0.0"
       }
@@ -1453,9 +1453,9 @@
         "elevation_m": 448.3,
         "slope_degrees": 14.4,
         "aspect_degrees": 320.8,
-        "rainfall_24h_mm": 9.9,
-        "rainfall_72h_mm": 36.3,
-        "risk_probability": 0.467,
+        "rainfall_24h_mm": 10.0,
+        "rainfall_72h_mm": 36.8,
+        "risk_probability": 0.47,
         "risk_level": "WATCH",
         "model_version": "HistGradientBoosting v1.0.0"
       }
@@ -1497,9 +1497,9 @@
         "elevation_m": 453.7,
         "slope_degrees": 7.1,
         "aspect_degrees": 323.5,
-        "rainfall_24h_mm": 9.9,
-        "rainfall_72h_mm": 35.9,
-        "risk_probability": 0.266,
+        "rainfall_24h_mm": 10.0,
+        "rainfall_72h_mm": 36.5,
+        "risk_probability": 0.269,
         "risk_level": "WATCH",
         "model_version": "HistGradientBoosting v1.0.0"
       }
@@ -1541,9 +1541,9 @@
         "elevation_m": 458.4,
         "slope_degrees": 18.8,
         "aspect_degrees": 325.8,
-        "rainfall_24h_mm": 9.9,
-        "rainfall_72h_mm": 31.9,
-        "risk_probability": 0.582,
+        "rainfall_24h_mm": 10.0,
+        "rainfall_72h_mm": 32.3,
+        "risk_probability": 0.584,
         "risk_level": "HIGH",
         "model_version": "HistGradientBoosting v1.0.0"
       }
@@ -1585,9 +1585,9 @@
         "elevation_m": 450.3,
         "slope_degrees": 30.4,
         "aspect_degrees": 321.8,
-        "rainfall_24h_mm": 9.9,
-        "rainfall_72h_mm": 26.9,
-        "risk_probability": 0.839,
+        "rainfall_24h_mm": 10.0,
+        "rainfall_72h_mm": 27.3,
+        "risk_probability": 0.84,
         "risk_level": "CRITICAL",
         "model_version": "HistGradientBoosting v1.0.0"
       }
@@ -1629,9 +1629,9 @@
         "elevation_m": 433.0,
         "slope_degrees": 22.7,
         "aspect_degrees": 313.2,
-        "rainfall_24h_mm": 9.9,
-        "rainfall_72h_mm": 24.5,
-        "risk_probability": 0.665,
+        "rainfall_24h_mm": 10.0,
+        "rainfall_72h_mm": 24.8,
+        "risk_probability": 0.667,
         "risk_level": "HIGH",
         "model_version": "HistGradientBoosting v1.0.0"
       }
@@ -1673,9 +1673,9 @@
         "elevation_m": 422.8,
         "slope_degrees": 7.3,
         "aspect_degrees": 308.1,
-        "rainfall_24h_mm": 9.9,
-        "rainfall_72h_mm": 26.2,
-        "risk_probability": 0.243,
+        "rainfall_24h_mm": 10.0,
+        "rainfall_72h_mm": 26.6,
+        "risk_probability": 0.245,
         "risk_level": "LOW",
         "model_version": "HistGradientBoosting v1.0.0"
       }
@@ -1717,9 +1717,9 @@
         "elevation_m": 419.8,
         "slope_degrees": 7.9,
         "aspect_degrees": 306.7,
-        "rainfall_24h_mm": 9.9,
-        "rainfall_72h_mm": 31.0,
-        "risk_probability": 0.271,
+        "rainfall_24h_mm": 10.0,
+        "rainfall_72h_mm": 31.4,
+        "risk_probability": 0.273,
         "risk_level": "WATCH",
         "model_version": "HistGradientBoosting v1.0.0"
       }
@@ -1761,9 +1761,9 @@
         "elevation_m": 419.9,
         "slope_degrees": 23.0,
         "aspect_degrees": 306.7,
-        "rainfall_24h_mm": 9.9,
-        "rainfall_72h_mm": 35.4,
-        "risk_probability": 0.708,
+        "rainfall_24h_mm": 10.0,
+        "rainfall_72h_mm": 36.0,
+        "risk_probability": 0.711,
         "risk_level": "HIGH",
         "model_version": "HistGradientBoosting v1.0.0"
       }
@@ -1805,9 +1805,9 @@
         "elevation_m": 433.2,
         "slope_degrees": 14.8,
         "aspect_degrees": 323.9,
-        "rainfall_24h_mm": 8.7,
-        "rainfall_72h_mm": 36.3,
-        "risk_probability": 0.467,
+        "rainfall_24h_mm": 8.8,
+        "rainfall_72h_mm": 36.8,
+        "risk_probability": 0.47,
         "risk_level": "WATCH",
         "model_version": "HistGradientBoosting v1.0.0"
       }
@@ -1849,9 +1849,9 @@
         "elevation_m": 443.2,
         "slope_degrees": 7.8,
         "aspect_degrees": 328.9,
-        "rainfall_24h_mm": 8.7,
-        "rainfall_72h_mm": 35.9,
-        "risk_probability": 0.273,
+        "rainfall_24h_mm": 8.8,
+        "rainfall_72h_mm": 36.5,
+        "risk_probability": 0.276,
         "risk_level": "WATCH",
         "model_version": "HistGradientBoosting v1.0.0"
       }
@@ -1893,9 +1893,9 @@
         "elevation_m": 461.5,
         "slope_degrees": 20.3,
         "aspect_degrees": 338.0,
-        "rainfall_24h_mm": 8.7,
-        "rainfall_72h_mm": 31.9,
-        "risk_probability": 0.614,
+        "rainfall_24h_mm": 8.8,
+        "rainfall_72h_mm": 32.3,
+        "risk_probability": 0.616,
         "risk_level": "HIGH",
         "model_version": "HistGradientBoosting v1.0.0"
       }
@@ -1937,9 +1937,9 @@
         "elevation_m": 453.9,
         "slope_degrees": 32.0,
         "aspect_degrees": 334.2,
-        "rainfall_24h_mm": 8.7,
-        "rainfall_72h_mm": 26.9,
-        "risk_probability": 0.857,
+        "rainfall_24h_mm": 8.8,
+        "rainfall_72h_mm": 27.3,
+        "risk_probability": 0.858,
         "risk_level": "CRITICAL",
         "model_version": "HistGradientBoosting v1.0.0"
       }
@@ -1981,9 +1981,9 @@
         "elevation_m": 430.5,
         "slope_degrees": 23.9,
         "aspect_degrees": 322.6,
-        "rainfall_24h_mm": 8.7,
-        "rainfall_72h_mm": 24.5,
-        "risk_probability": 0.686,
+        "rainfall_24h_mm": 8.8,
+        "rainfall_72h_mm": 24.8,
+        "risk_probability": 0.688,
         "risk_level": "HIGH",
         "model_version": "HistGradientBoosting v1.0.0"
       }
@@ -2025,9 +2025,9 @@
         "elevation_m": 416.4,
         "slope_degrees": 8.3,
         "aspect_degrees": 315.5,
-        "rainfall_24h_mm": 8.7,
-        "rainfall_72h_mm": 26.2,
-        "risk_probability": 0.257,
+        "rainfall_24h_mm": 8.8,
+        "rainfall_72h_mm": 26.6,
+        "risk_probability": 0.259,
         "risk_level": "WATCH",
         "model_version": "HistGradientBoosting v1.0.0"
       }
@@ -2069,9 +2069,9 @@
         "elevation_m": 409.2,
         "slope_degrees": 8.6,
         "aspect_degrees": 312.0,
-        "rainfall_24h_mm": 8.7,
-        "rainfall_72h_mm": 31.0,
-        "risk_probability": 0.278,
+        "rainfall_24h_mm": 8.8,
+        "rainfall_72h_mm": 31.4,
+        "risk_probability": 0.28,
         "risk_level": "WATCH",
         "model_version": "HistGradientBoosting v1.0.0"
       }
@@ -2113,9 +2113,9 @@
         "elevation_m": 405.8,
         "slope_degrees": 23.4,
         "aspect_degrees": 310.3,
-        "rainfall_24h_mm": 8.7,
-        "rainfall_72h_mm": 35.4,
-        "risk_probability": 0.708,
+        "rainfall_24h_mm": 8.8,
+        "rainfall_72h_mm": 36.0,
+        "risk_probability": 0.711,
         "risk_level": "HIGH",
         "model_version": "HistGradientBoosting v1.0.0"
       }
@@ -2157,9 +2157,9 @@
         "elevation_m": 319.3,
         "slope_degrees": 14.8,
         "aspect_degrees": 324.5,
-        "rainfall_24h_mm": 9.1,
-        "rainfall_72h_mm": 36.3,
-        "risk_probability": 0.471,
+        "rainfall_24h_mm": 9.2,
+        "rainfall_72h_mm": 36.8,
+        "risk_probability": 0.474,
         "risk_level": "WATCH",
         "model_version": "HistGradientBoosting v1.0.0"
       }
@@ -2201,9 +2201,9 @@
         "elevation_m": 326.8,
         "slope_degrees": 7.7,
         "aspect_degrees": 328.3,
-        "rainfall_24h_mm": 9.1,
-        "rainfall_72h_mm": 35.9,
-        "risk_probability": 0.274,
+        "rainfall_24h_mm": 9.2,
+        "rainfall_72h_mm": 36.5,
+        "risk_probability": 0.277,
         "risk_level": "WATCH",
         "model_version": "HistGradientBoosting v1.0.0"
       }
@@ -2245,9 +2245,9 @@
         "elevation_m": 334.5,
         "slope_degrees": 19.6,
         "aspect_degrees": 332.1,
-        "rainfall_24h_mm": 9.1,
-        "rainfall_72h_mm": 31.9,
-        "risk_probability": 0.597,
+        "rainfall_24h_mm": 9.2,
+        "rainfall_72h_mm": 32.3,
+        "risk_probability": 0.6,
         "risk_level": "HIGH",
         "model_version": "HistGradientBoosting v1.0.0"
       }
@@ -2289,9 +2289,9 @@
         "elevation_m": 331.2,
         "slope_degrees": 31.5,
         "aspect_degrees": 330.5,
-        "rainfall_24h_mm": 9.1,
-        "rainfall_72h_mm": 26.9,
-        "risk_probability": 0.852,
+        "rainfall_24h_mm": 9.2,
+        "rainfall_72h_mm": 27.3,
+        "risk_probability": 0.853,
         "risk_level": "CRITICAL",
         "model_version": "HistGradientBoosting v1.0.0"
       }
@@ -2333,9 +2333,9 @@
         "elevation_m": 318.6,
         "slope_degrees": 24.1,
         "aspect_degrees": 324.2,
-        "rainfall_24h_mm": 9.1,
-        "rainfall_72h_mm": 24.5,
-        "risk_probability": 0.695,
+        "rainfall_24h_mm": 9.2,
+        "rainfall_72h_mm": 24.8,
+        "risk_probability": 0.697,
         "risk_level": "HIGH",
         "model_version": "HistGradientBoosting v1.0.0"
       }
@@ -2377,9 +2377,9 @@
         "elevation_m": 307.7,
         "slope_degrees": 8.7,
         "aspect_degrees": 318.8,
-        "rainfall_24h_mm": 9.1,
-        "rainfall_72h_mm": 26.2,
-        "risk_probability": 0.269,
+        "rainfall_24h_mm": 9.2,
+        "rainfall_72h_mm": 26.6,
+        "risk_probability": 0.271,
         "risk_level": "WATCH",
         "model_version": "HistGradientBoosting v1.0.0"
       }
@@ -2421,9 +2421,9 @@
         "elevation_m": 300.4,
         "slope_degrees": 9.0,
         "aspect_degrees": 315.1,
-        "rainfall_24h_mm": 9.1,
-        "rainfall_72h_mm": 31.0,
-        "risk_probability": 0.291,
+        "rainfall_24h_mm": 9.2,
+        "rainfall_72h_mm": 31.4,
+        "risk_probability": 0.293,
         "risk_level": "WATCH",
         "model_version": "HistGradientBoosting v1.0.0"
       }
@@ -2465,9 +2465,9 @@
         "elevation_m": 296.0,
         "slope_degrees": 23.8,
         "aspect_degrees": 312.9,
-        "rainfall_24h_mm": 9.1,
-        "rainfall_72h_mm": 35.4,
-        "risk_probability": 0.721,
+        "rainfall_24h_mm": 9.2,
+        "rainfall_72h_mm": 36.0,
+        "risk_probability": 0.724,
         "risk_level": "HIGH",
         "model_version": "HistGradientBoosting v1.0.0"
       }
@@ -2509,9 +2509,9 @@
         "elevation_m": 403.5,
         "slope_degrees": 14.7,
         "aspect_degrees": 323.5,
-        "rainfall_24h_mm": 10.9,
-        "rainfall_72h_mm": 36.3,
-        "risk_probability": 0.486,
+        "rainfall_24h_mm": 11.0,
+        "rainfall_72h_mm": 36.8,
+        "risk_probability": 0.489,
         "risk_level": "WATCH",
         "model_version": "HistGradientBoosting v1.0.0"
       }
@@ -2553,9 +2553,9 @@
         "elevation_m": 407.5,
         "slope_degrees": 7.4,
         "aspect_degrees": 325.5,
-        "rainfall_24h_mm": 10.9,
-        "rainfall_72h_mm": 35.9,
-        "risk_probability": 0.281,
+        "rainfall_24h_mm": 11.0,
+        "rainfall_72h_mm": 36.5,
+        "risk_probability": 0.284,
         "risk_level": "WATCH",
         "model_version": "HistGradientBoosting v1.0.0"
       }
@@ -2597,9 +2597,9 @@
         "elevation_m": 409.9,
         "slope_degrees": 18.9,
         "aspect_degrees": 326.6,
-        "rainfall_24h_mm": 10.9,
-        "rainfall_72h_mm": 31.9,
-        "risk_probability": 0.594,
+        "rainfall_24h_mm": 11.0,
+        "rainfall_72h_mm": 32.3,
+        "risk_probability": 0.597,
         "risk_level": "HIGH",
         "model_version": "HistGradientBoosting v1.0.0"
       }
@@ -2641,9 +2641,9 @@
         "elevation_m": 407.9,
         "slope_degrees": 30.9,
         "aspect_degrees": 325.7,
-        "rainfall_24h_mm": 10.9,
-        "rainfall_72h_mm": 26.9,
-        "risk_probability": 0.852,
+        "rainfall_24h_mm": 11.0,
+        "rainfall_72h_mm": 27.3,
+        "risk_probability": 0.853,
         "risk_level": "CRITICAL",
         "model_version": "HistGradientBoosting v1.0.0"
       }
@@ -2685,9 +2685,9 @@
         "elevation_m": 402.0,
         "slope_degrees": 23.9,
         "aspect_degrees": 322.7,
-        "rainfall_24h_mm": 10.9,
-        "rainfall_72h_mm": 24.5,
-        "risk_probability": 0.705,
+        "rainfall_24h_mm": 11.0,
+        "rainfall_72h_mm": 24.8,
+        "risk_probability": 0.707,
         "risk_level": "HIGH",
         "model_version": "HistGradientBoosting v1.0.0"
       }
@@ -2729,9 +2729,9 @@
         "elevation_m": 395.2,
         "slope_degrees": 8.8,
         "aspect_degrees": 319.4,
-        "rainfall_24h_mm": 10.9,
-        "rainfall_72h_mm": 26.2,
-        "risk_probability": 0.286,
+        "rainfall_24h_mm": 11.0,
+        "rainfall_72h_mm": 26.6,
+        "risk_probability": 0.288,
         "risk_level": "WATCH",
         "model_version": "HistGradientBoosting v1.0.0"
       }
@@ -2773,9 +2773,9 @@
         "elevation_m": 389.6,
         "slope_degrees": 9.2,
         "aspect_degrees": 316.6,
-        "rainfall_24h_mm": 10.9,
-        "rainfall_72h_mm": 31.0,
-        "risk_probability": 0.311,
+        "rainfall_24h_mm": 11.0,
+        "rainfall_72h_mm": 31.4,
+        "risk_probability": 0.313,
         "risk_level": "WATCH",
         "model_version": "HistGradientBoosting v1.0.0"
       }
@@ -2817,9 +2817,9 @@
         "elevation_m": 385.5,
         "slope_degrees": 24.0,
         "aspect_degrees": 314.5,
-        "rainfall_24h_mm": 10.9,
-        "rainfall_72h_mm": 35.4,
-        "risk_probability": 0.74,
+        "rainfall_24h_mm": 11.0,
+        "rainfall_72h_mm": 36.0,
+        "risk_probability": 0.743,
         "risk_level": "HIGH",
         "model_version": "HistGradientBoosting v1.0.0"
       }
