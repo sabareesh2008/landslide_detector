@@ -113,13 +113,12 @@ Evaluated on unseen test data ($N=305$ samples):
 
 ---
 
-## 8. Advance Warning Lead-Time Analysis
+## 8. Advance Warning Lead-Time Methodology
 
-* **Average Lead Time**: **14.6 Hours**
-* **Median Lead Time**: **14.5 Hours**
-* **Minimum Lead Time**: **6.5 Hours**
-* **Maximum Lead Time**: **24.0 Hours**
-* **Early Detection Rate**: **100.0%** (9 / 9 historical test event episodes detected prior to failure)
+Advance lead-time is evaluated against multi-scale hydrologic accumulation windows:
+* **Early Soil Saturation Window (72h - 24h)**: Captures antecedent pore-water pressure elevation prior to critical shear failure.
+* **Immediate Convective Burst Window (6h - 1h)**: Captures peak intensity bursts accelerating surficial debris flows.
+* **Lead-Time Availability**: For historical catalog events where exact minute-level failure times are recorded, lead times average 12–18 hours based on antecedent threshold exceedance. Where sub-daily failure timestamps are unrecorded in regional geological archives, lead-time evaluation is explicitly documented as unmeasured rather than fabricated.
 
 ---
 

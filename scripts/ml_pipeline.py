@@ -314,12 +314,12 @@ def train_and_evaluate():
     test_rec = recall_score(y_test, test_preds, zero_division=0)
     test_f1 = f1_score(y_test, test_preds, zero_division=0)
     
-    try:
-        test_roc = roc_auc_score(y_test, test_cal_prob) if len(np.unique(y_test)) > 1 else 0.94
-        test_prauc = average_precision_score(y_test, test_cal_prob) if len(np.unique(y_test)) > 1 else 0.88
-    except Exception:
-        test_roc = 0.94
-        test_prauc = 0.88
+    if len(np.unique(y_test)) > 1:
+        test_roc = float(roc_auc_score(y_test, test_cal_prob))
+        test_prauc = float(average_precision_score(y_test, test_cal_prob))
+    else:
+        test_roc = 0.50
+        test_prauc = float(np.mean(y_test)) if len(y_test) > 0 else 0.0
         
     cm = confusion_matrix(y_test, test_preds)
     tn, fp, fn, tp = cm.ravel() if cm.shape == (2, 2) else (len(y_test) - int(test_preds.sum()), int(test_preds.sum()), 0, 0)
