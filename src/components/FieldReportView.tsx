@@ -152,9 +152,9 @@ export const FieldReportView: React.FC<FieldReportViewProps> = ({
       reporterRole,
       state,
       district: district || 'Central District',
-      locationName: locationName || 'Hill Corridor Mile Marker',
-      lat: 27.50 + (Math.random() * 0.05),
-      lng: 88.50 + (Math.random() * 0.05),
+      locationName: locationName || 'Rangpo–Singtam NH-10 Corridor',
+      lat: 27.177,
+      lng: 88.533,
       timestamp: 'Just now',
       incidentType,
       description: description || 'Field observation reported via mobile platform.',
@@ -162,9 +162,9 @@ export const FieldReportView: React.FC<FieldReportViewProps> = ({
       aiClassification: aiResult || {
         detectedHazard: incidentType,
         severityEstimate: 'Moderate',
-        confidence: 0.88,
+        confidence: 0.85,
         detectedFeatures: ['Visual fracturing along terrain'],
-        geminiAnalysis: 'Incident queued for official review.'
+        geminiAnalysis: 'Incident queued for official geotechnical review.'
       },
       verificationStatus: 'pending'
     };

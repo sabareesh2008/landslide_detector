@@ -1,0 +1,165 @@
+{
+  "analysis_timestamp_utc": "2026-09-08T04:47:47.873578+00:00",
+  "corridor": "Rangpo-Singtam / NH-10 Highway Lifeline (Sikkim)",
+  "overall_corridor_threat_level": "LOW",
+  "total_corridor_length_km": 12.8,
+  "potentially_impaired_length_km": 0.0,
+  "segments": [
+    {
+      "segment_id": "NH10-SEG-01",
+      "name": "NH-10 Rangpo Checkpost to Mining",
+      "length_km": 3.2,
+      "criticality": "EXTREME",
+      "chronic_slide_zone": false,
+      "calculated_blockage_probability": 0.331,
+      "blockage_risk_tier": "LOW",
+      "operational_status": "OPEN",
+      "recommended_action": "Routine automated surveillance; normal speed limits."
+    },
+    {
+      "segment_id": "NH10-SEG-02",
+      "name": "NH-10 Mining to Majhitar Sector",
+      "length_km": 3.4,
+      "criticality": "EXTREME",
+      "chronic_slide_zone": true,
+      "calculated_blockage_probability": 0.535,
+      "blockage_risk_tier": "MODERATE",
+      "operational_status": "CAUTION / PASSABLE",
+      "recommended_action": "Intensify highway patrol; restrict night freight haulage."
+    },
+    {
+      "segment_id": "NH10-SEG-03",
+      "name": "NH-10 Majhitar to Bardang Sector (High Vulnerability)",
+      "length_km": 3.1,
+      "criticality": "EXTREME",
+      "chronic_slide_zone": true,
+      "calculated_blockage_probability": 0.606,
+      "blockage_risk_tier": "MODERATE",
+      "operational_status": "CAUTION / PASSABLE",
+      "recommended_action": "Intensify highway patrol; restrict night freight haulage."
+    },
+    {
+      "segment_id": "NH10-SEG-04",
+      "name": "NH-10 Bardang to Singtam Bazar Bridge",
+      "length_km": 3.1,
+      "criticality": "EXTREME",
+      "chronic_slide_zone": false,
+      "calculated_blockage_probability": 0.386,
+      "blockage_risk_tier": "LOW",
+      "operational_status": "OPEN",
+      "recommended_action": "Routine automated surveillance; normal speed limits."
+    }
+  ],
+  "exposed_critical_infrastructure": [
+    {
+      "asset_id": "INFRA-05",
+      "name": "Majhitar Culvert Weep-Drain Drainage #4",
+      "type": "CULVERT",
+      "criticality": "HIGH",
+      "hazard_status": "NOMINAL"
+    },
+    {
+      "asset_id": "INFRA-06",
+      "name": "Bardang Highway Reinforced Retaining Wall",
+      "type": "RETAINING_WALL",
+      "criticality": "HIGH",
+      "hazard_status": "NOMINAL"
+    }
+  ],
+  "disaster_cascade_chain": {
+    "primary_trigger": "Monsoonal precipitation accumulation (30.8mm / 72h)",
+    "subsurface_mechanism": "Saturation of colluvial saprolite mantle -> Pore-water pressure head elevation",
+    "geotechnical_consequence": "Reduction in effective normal stress on 20\u00b0-35\u00b0 hill slopes",
+    "infrastructure_consequence": "Debris slide spillage onto NH-10 Majhitar-Bardang highway carriage",
+    "socio_economic_impact": "Disruption of essential freight (fuel, medicine, food) to Gangtok and East Sikkim",
+    "emergency_interventions": [
+      "Early warning dispatch to SEOC and District Police",
+      "Heavy machinery deployment at chronic Bardang toe cut",
+      "Activation of designated shelters at Rangpo and Majhitar",
+      "Alternative bypass activation via Dikchu / Melli feeder routes"
+    ]
+  },
+  "recommended_shelters": [
+    {
+      "shelter_id": "SHELTER-01",
+      "name": "Rangpo Senior Secondary School Indoor Complex",
+      "location": "Upper Rangpo Hill (Safe Ridge Zone)",
+      "latitude": 27.1795,
+      "longitude": 88.53,
+      "elevation_m": 335,
+      "capacity_persons": 600,
+      "current_occupancy": 0,
+      "status": "READY_STANDBY",
+      "amenities": [
+        "Drinking Water",
+        "Emergency Backup Generator",
+        "First Aid Station",
+        "Sanitation"
+      ],
+      "nodal_officer": "B. K. Pradhan (BDO Rangpo)",
+      "contact_phone": "+91-3592-240122"
+    },
+    {
+      "shelter_id": "SHELTER-02",
+      "name": "SMIT Majhitar Multi-Purpose Community Hall",
+      "location": "Majhitar Institutional Terrace",
+      "latitude": 27.2065,
+      "longitude": 88.5145,
+      "elevation_m": 372,
+      "capacity_persons": 1200,
+      "current_occupancy": 0,
+      "status": "READY_STANDBY",
+      "amenities": [
+        "Large Kitchen",
+        "Solar Power Grid",
+        "Medical Clinic",
+        "Helipad Access"
+      ],
+      "nodal_officer": "Col. D. Rai (Campus Security)",
+      "contact_phone": "+91-3592-246220"
+    }
+  ],
+  "prepositioned_resources": [
+    {
+      "resource_id": "RES-01",
+      "type": "RESCUE_TEAM",
+      "name": "Sikkim State Disaster Response Force (SDRF) Unit 2",
+      "station_location": "Rangpo Border Outpost",
+      "latitude": 27.178,
+      "longitude": 88.5315,
+      "personnel_count": 24,
+      "equipment": [
+        "Hydraulic Cutters",
+        "Rope Rescue Systems",
+        "Inflatable Boats",
+        "Chainsaws"
+      ],
+      "status": "READY_STANDBY",
+      "contact": "+91-3592-240100"
+    },
+    {
+      "resource_id": "RES-02",
+      "type": "HEAVY_EXCAVATOR",
+      "name": "PWD / NHIDCL Heavy Tracked Excavator #1 (JCB 3DX)",
+      "station_location": "Bardang Road Maintenance Depot",
+      "latitude": 27.221,
+      "longitude": 88.504,
+      "operator": "NHIDCL Fast Response Crew",
+      "readiness_time_min": 15,
+      "status": "PRE_POSITIONED",
+      "contact": "+91-3592-234199"
+    },
+    {
+      "resource_id": "RES-03",
+      "type": "HEAVY_EXCAVATOR",
+      "name": "BRO Heavy Wheel Loader (L&T 9020)",
+      "station_location": "Majhitar Bridge Yard",
+      "latitude": 27.208,
+      "longitude": 88.513,
+      "operator": "Border Roads Task Force Crew",
+      "readiness_time_min": 20,
+      "status": "PRE_POSITIONED",
+      "contact": "+91-3592-246111"
+    }
+  ]
+}

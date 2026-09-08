@@ -1,0 +1,31 @@
+{
+  "total_candidates": 2,
+  "exported_at_utc": "2026-09-08T04:30:00Z",
+  "pipeline_note": "Verified field reports with confirmed geotechnical evidence staged for future quarterly model retraining and ground-truth catalog enhancement.",
+  "candidates": [
+    {
+      "candidate_id": "ALC-2026-001",
+      "source_report_id": "FLD-2026-001",
+      "latitude": 27.2215,
+      "longitude": 88.5038,
+      "location_name": "NH-10 Km 9.5 Bardang Curve",
+      "failure_mechanism": "Debris Slide / Tension Creep",
+      "verified_label": 1,
+      "verification_authority": "Assistant Engineer (NHIDCL Singtam)",
+      "associated_72h_rainfall_mm": 30.8,
+      "associated_slope_deg": 28.5
+    },
+    {
+      "candidate_id": "ALC-2026-002",
+      "source_report_id": "FLD-2026-002",
+      "latitude": 27.2085,
+      "longitude": 88.5125,
+      "location_name": "Majhitar Upper Colony Slope",
+      "failure_mechanism": "Colluvial Toe Seepage / Subsidence",
+      "verified_label": 1,
+      "verification_authority": "District Disaster Management Cell",
+      "associated_72h_rainfall_mm": 29.8,
+      "associated_slope_deg": 21.2
+    }
+  ]
+}

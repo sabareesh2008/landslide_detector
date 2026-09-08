@@ -1,3 +1,20 @@
+/**
+ * ============================================================================
+ * LANDSLIDE SENTINEL AI — SIMULATION & DEMO DATASET
+ * ============================================================================
+ * CLASSIFICATION: SIMULATION / DEMO MODE ONLY
+ * 
+ * WARNING:
+ * The data structures in this file are strictly intended for offline stress-testing,
+ * failure scenario simulation, and hackathon presentation walk-throughs.
+ * 
+ * Production real-time monitoring consumes genuine, validated datasets from:
+ * - NASA GPM IMERG 30-min Early Run (data/rainfall/processed/rainfall_latest.json)
+ * - Copernicus GLO-30 DSM (data/dem/processed/terrain_points.csv)
+ * - Geological Survey of India NLSM Landslide Records (data/landslides/)
+ * ============================================================================
+ */
+
 import { GridCellRisk, SensorNode, RoadCorridor, FieldReport, EarlyWarningAlert, EmergencyTask, NEState } from '../types';
 
 export const NE_STATES: NEState[] = [

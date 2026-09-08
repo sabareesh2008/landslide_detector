@@ -1,0 +1,16 @@
+{
+  "production_model": "HistGradientBoosting + Platt Calibration",
+  "test_set_size": 352,
+  "confusion_matrix": {
+    "tp": 14,
+    "fp": 5,
+    "fn": 0,
+    "tn": 333
+  },
+  "breakdown": {
+    "true_positive": 14,
+    "false_positive": 5,
+    "false_negative": 0,
+    "true_negative": 333
+  }
+}

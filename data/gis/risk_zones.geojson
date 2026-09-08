@@ -1,0 +1,5501 @@
+{
+  "type": "FeatureCollection",
+  "metadata": {
+    "name": "Rangpo-Singtam Spatial Landslide Risk Zones",
+    "generated_at_utc": "2026-09-08T04:46:22.497572+00:00",
+    "grid_resolution_km": 1.2,
+    "total_zones": 100,
+    "model_version": "HistGradientBoosting v1.0.0 (Platt Sigmoid cv=3)"
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "id": "ZONE-001",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              88.454,
+              27.134
+            ],
+            [
+              88.466,
+              27.134
+            ],
+            [
+              88.466,
+              27.146
+            ],
+            [
+              88.454,
+              27.146
+            ],
+            [
+              88.454,
+              27.134
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "zone_id": "ZONE-001",
+        "latitude": 27.14,
+        "longitude": 88.46,
+        "elevation_m": 380.0,
+        "slope_degrees": 18.0,
+        "aspect_degrees": 310.0,
+        "terrain_ruggedness": 30.8,
+        "distance_to_nh10_km": 8.31,
+        "distance_to_nearest_landslide_km": 2.158,
+        "historical_landslide_density": 0.0,
+        "rainfall_24h_mm": 10.4,
+        "rainfall_72h_mm": 29.8,
+        "risk_probability": 0.0075,
+        "static_susceptibility": 0.3086,
+        "dynamic_trigger": 0.3163,
+        "risk_level": "LOW",
+        "spatial_explanation": "Stable terrain (0.8%): Slope 18.0\u00b0, low cumulative antecedent trigger.",
+        "top_risk_factors": [
+          "Moderate Slope Angle"
+        ],
+        "model_version": "HistGradientBoosting v1.0.0 (Platt Calibrated)"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ZONE-002",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              88.4673,
+              27.134
+            ],
+            [
+              88.4793,
+              27.134
+            ],
+            [
+              88.4793,
+              27.146
+            ],
+            [
+              88.4673,
+              27.146
+            ],
+            [
+              88.4673,
+              27.134
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "zone_id": "ZONE-002",
+        "latitude": 27.14,
+        "longitude": 88.4733,
+        "elevation_m": 380.0,
+        "slope_degrees": 18.0,
+        "aspect_degrees": 310.0,
+        "terrain_ruggedness": 30.8,
+        "distance_to_nh10_km": 7.2,
+        "distance_to_nearest_landslide_km": 2.18,
+        "historical_landslide_density": 0.0,
+        "rainfall_24h_mm": 10.4,
+        "rainfall_72h_mm": 29.8,
+        "risk_probability": 0.0075,
+        "static_susceptibility": 0.3086,
+        "dynamic_trigger": 0.3163,
+        "risk_level": "LOW",
+        "spatial_explanation": "Stable terrain (0.8%): Slope 18.0\u00b0, low cumulative antecedent trigger.",
+        "top_risk_factors": [
+          "Moderate Slope Angle"
+        ],
+        "model_version": "HistGradientBoosting v1.0.0 (Platt Calibrated)"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ZONE-003",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              88.4807,
+              27.134
+            ],
+            [
+              88.4927,
+              27.134
+            ],
+            [
+              88.4927,
+              27.146
+            ],
+            [
+              88.4807,
+              27.146
+            ],
+            [
+              88.4807,
+              27.134
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "zone_id": "ZONE-003",
+        "latitude": 27.14,
+        "longitude": 88.4867,
+        "elevation_m": 380.0,
+        "slope_degrees": 18.0,
+        "aspect_degrees": 310.0,
+        "terrain_ruggedness": 30.8,
+        "distance_to_nh10_km": 6.16,
+        "distance_to_nearest_landslide_km": 1.687,
+        "historical_landslide_density": 0.16,
+        "rainfall_24h_mm": 10.4,
+        "rainfall_72h_mm": 29.8,
+        "risk_probability": 0.0075,
+        "static_susceptibility": 0.3107,
+        "dynamic_trigger": 0.3163,
+        "risk_level": "LOW",
+        "spatial_explanation": "Stable terrain (0.8%): Slope 18.0\u00b0, low cumulative antecedent trigger.",
+        "top_risk_factors": [
+          "Moderate Slope Angle"
+        ],
+        "model_version": "HistGradientBoosting v1.0.0 (Platt Calibrated)"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ZONE-004",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              88.494,
+              27.134
+            ],
+            [
+              88.506,
+              27.134
+            ],
+            [
+              88.506,
+              27.146
+            ],
+            [
+              88.494,
+              27.146
+            ],
+            [
+              88.494,
+              27.134
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "zone_id": "ZONE-004",
+        "latitude": 27.14,
+        "longitude": 88.5,
+        "elevation_m": 380.0,
+        "slope_degrees": 18.0,
+        "aspect_degrees": 310.0,
+        "terrain_ruggedness": 30.8,
+        "distance_to_nh10_km": 5.25,
+        "distance_to_nearest_landslide_km": 1.585,
+        "historical_landslide_density": 0.24,
+        "rainfall_24h_mm": 10.4,
+        "rainfall_72h_mm": 29.8,
+        "risk_probability": 0.0075,
+        "static_susceptibility": 0.3118,
+        "dynamic_trigger": 0.3163,
+        "risk_level": "LOW",
+        "spatial_explanation": "Stable terrain (0.8%): Slope 18.0\u00b0, low cumulative antecedent trigger.",
+        "top_risk_factors": [
+          "Moderate Slope Angle"
+        ],
+        "model_version": "HistGradientBoosting v1.0.0 (Platt Calibrated)"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ZONE-005",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              88.5073,
+              27.134
+            ],
+            [
+              88.5193,
+              27.134
+            ],
+            [
+              88.5193,
+              27.146
+            ],
+            [
+              88.5073,
+              27.146
+            ],
+            [
+              88.5073,
+              27.134
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "zone_id": "ZONE-005",
+        "latitude": 27.14,
+        "longitude": 88.5133,
+        "elevation_m": 380.0,
+        "slope_degrees": 18.0,
+        "aspect_degrees": 310.0,
+        "terrain_ruggedness": 30.8,
+        "distance_to_nh10_km": 4.55,
+        "distance_to_nearest_landslide_km": 1.897,
+        "historical_landslide_density": 0.08,
+        "rainfall_24h_mm": 10.4,
+        "rainfall_72h_mm": 29.8,
+        "risk_probability": 0.0075,
+        "static_susceptibility": 0.3096,
+        "dynamic_trigger": 0.3163,
+        "risk_level": "LOW",
+        "spatial_explanation": "Stable terrain (0.8%): Slope 18.0\u00b0, low cumulative antecedent trigger.",
+        "top_risk_factors": [
+          "Moderate Slope Angle"
+        ],
+        "model_version": "HistGradientBoosting v1.0.0 (Platt Calibrated)"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ZONE-006",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              88.5207,
+              27.134
+            ],
+            [
+              88.5327,
+              27.134
+            ],
+            [
+              88.5327,
+              27.146
+            ],
+            [
+              88.5207,
+              27.146
+            ],
+            [
+              88.5207,
+              27.134
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "zone_id": "ZONE-006",
+        "latitude": 27.14,
+        "longitude": 88.5267,
+        "elevation_m": 380.0,
+        "slope_degrees": 18.0,
+        "aspect_degrees": 310.0,
+        "terrain_ruggedness": 30.8,
+        "distance_to_nh10_km": 4.16,
+        "distance_to_nearest_landslide_km": 1.914,
+        "historical_landslide_density": 0.08,
+        "rainfall_24h_mm": 10.4,
+        "rainfall_72h_mm": 29.8,
+        "risk_probability": 0.0075,
+        "static_susceptibility": 0.3096,
+        "dynamic_trigger": 0.3163,
+        "risk_level": "LOW",
+        "spatial_explanation": "Stable terrain (0.8%): Slope 18.0\u00b0, low cumulative antecedent trigger.",
+        "top_risk_factors": [
+          "Moderate Slope Angle"
+        ],
+        "model_version": "HistGradientBoosting v1.0.0 (Platt Calibrated)"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ZONE-007",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              88.534,
+              27.134
+            ],
+            [
+              88.546,
+              27.134
+            ],
+            [
+              88.546,
+              27.146
+            ],
+            [
+              88.534,
+              27.146
+            ],
+            [
+              88.534,
+              27.134
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "zone_id": "ZONE-007",
+        "latitude": 27.14,
+        "longitude": 88.54,
+        "elevation_m": 380.0,
+        "slope_degrees": 18.0,
+        "aspect_degrees": 310.0,
+        "terrain_ruggedness": 30.8,
+        "distance_to_nh10_km": 4.17,
+        "distance_to_nearest_landslide_km": 2.548,
+        "historical_landslide_density": 0.0,
+        "rainfall_24h_mm": 10.4,
+        "rainfall_72h_mm": 29.8,
+        "risk_probability": 0.0075,
+        "static_susceptibility": 0.3086,
+        "dynamic_trigger": 0.3163,
+        "risk_level": "LOW",
+        "spatial_explanation": "Stable terrain (0.8%): Slope 18.0\u00b0, low cumulative antecedent trigger.",
+        "top_risk_factors": [
+          "Moderate Slope Angle"
+        ],
+        "model_version": "HistGradientBoosting v1.0.0 (Platt Calibrated)"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ZONE-008",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              88.5473,
+              27.134
+            ],
+            [
+              88.5593,
+              27.134
+            ],
+            [
+              88.5593,
+              27.146
+            ],
+            [
+              88.5473,
+              27.146
+            ],
+            [
+              88.5473,
+              27.134
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "zone_id": "ZONE-008",
+        "latitude": 27.14,
+        "longitude": 88.5533,
+        "elevation_m": 380.0,
+        "slope_degrees": 18.0,
+        "aspect_degrees": 310.0,
+        "terrain_ruggedness": 30.8,
+        "distance_to_nh10_km": 4.58,
+        "distance_to_nearest_landslide_km": 3.578,
+        "historical_landslide_density": 0.0,
+        "rainfall_24h_mm": 10.4,
+        "rainfall_72h_mm": 29.8,
+        "risk_probability": 0.0075,
+        "static_susceptibility": 0.3086,
+        "dynamic_trigger": 0.3163,
+        "risk_level": "LOW",
+        "spatial_explanation": "Stable terrain (0.8%): Slope 18.0\u00b0, low cumulative antecedent trigger.",
+        "top_risk_factors": [
+          "Moderate Slope Angle"
+        ],
+        "model_version": "HistGradientBoosting v1.0.0 (Platt Calibrated)"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ZONE-009",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              88.5607,
+              27.134
+            ],
+            [
+              88.5727,
+              27.134
+            ],
+            [
+              88.5727,
+              27.146
+            ],
+            [
+              88.5607,
+              27.146
+            ],
+            [
+              88.5607,
+              27.134
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "zone_id": "ZONE-009",
+        "latitude": 27.14,
+        "longitude": 88.5667,
+        "elevation_m": 380.0,
+        "slope_degrees": 18.0,
+        "aspect_degrees": 310.0,
+        "terrain_ruggedness": 30.8,
+        "distance_to_nh10_km": 5.29,
+        "distance_to_nearest_landslide_km": 4.753,
+        "historical_landslide_density": 0.0,
+        "rainfall_24h_mm": 10.4,
+        "rainfall_72h_mm": 29.8,
+        "risk_probability": 0.0075,
+        "static_susceptibility": 0.3086,
+        "dynamic_trigger": 0.3163,
+        "risk_level": "LOW",
+        "spatial_explanation": "Stable terrain (0.8%): Slope 18.0\u00b0, low cumulative antecedent trigger.",
+        "top_risk_factors": [
+          "Moderate Slope Angle"
+        ],
+        "model_version": "HistGradientBoosting v1.0.0 (Platt Calibrated)"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ZONE-010",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              88.574,
+              27.134
+            ],
+            [
+              88.586,
+              27.134
+            ],
+            [
+              88.586,
+              27.146
+            ],
+            [
+              88.574,
+              27.146
+            ],
+            [
+              88.574,
+              27.134
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "zone_id": "ZONE-010",
+        "latitude": 27.14,
+        "longitude": 88.58,
+        "elevation_m": 380.0,
+        "slope_degrees": 18.0,
+        "aspect_degrees": 310.0,
+        "terrain_ruggedness": 30.8,
+        "distance_to_nh10_km": 6.21,
+        "distance_to_nearest_landslide_km": 5.638,
+        "historical_landslide_density": 0.0,
+        "rainfall_24h_mm": 10.4,
+        "rainfall_72h_mm": 29.8,
+        "risk_probability": 0.0075,
+        "static_susceptibility": 0.3086,
+        "dynamic_trigger": 0.3163,
+        "risk_level": "LOW",
+        "spatial_explanation": "Stable terrain (0.8%): Slope 18.0\u00b0, low cumulative antecedent trigger.",
+        "top_risk_factors": [
+          "Moderate Slope Angle"
+        ],
+        "model_version": "HistGradientBoosting v1.0.0 (Platt Calibrated)"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ZONE-011",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              88.454,
+              27.1484
+            ],
+            [
+              88.466,
+              27.1484
+            ],
+            [
+              88.466,
+              27.1604
+            ],
+            [
+              88.454,
+              27.1604
+            ],
+            [
+              88.454,
+              27.1484
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "zone_id": "ZONE-011",
+        "latitude": 27.1544,
+        "longitude": 88.46,
+        "elevation_m": 380.0,
+        "slope_degrees": 18.0,
+        "aspect_degrees": 310.0,
+        "terrain_ruggedness": 30.8,
+        "distance_to_nh10_km": 7.64,
+        "distance_to_nearest_landslide_km": 0.775,
+        "historical_landslide_density": 0.56,
+        "rainfall_24h_mm": 10.4,
+        "rainfall_72h_mm": 29.8,
+        "risk_probability": 0.0075,
+        "static_susceptibility": 0.316,
+        "dynamic_trigger": 0.3163,
+        "risk_level": "LOW",
+        "spatial_explanation": "Stable terrain (0.8%): Slope 18.0\u00b0, low cumulative antecedent trigger.",
+        "top_risk_factors": [
+          "Moderate Slope Angle",
+          "Historical Shear Zone Proximity"
+        ],
+        "model_version": "HistGradientBoosting v1.0.0 (Platt Calibrated)"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ZONE-012",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              88.4673,
+              27.1484
+            ],
+            [
+              88.4793,
+              27.1484
+            ],
+            [
+              88.4793,
+              27.1604
+            ],
+            [
+              88.4673,
+              27.1604
+            ],
+            [
+              88.4673,
+              27.1484
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "zone_id": "ZONE-012",
+        "latitude": 27.1544,
+        "longitude": 88.4733,
+        "elevation_m": 380.0,
+        "slope_degrees": 18.0,
+        "aspect_degrees": 310.0,
+        "terrain_ruggedness": 30.8,
+        "distance_to_nh10_km": 6.41,
+        "distance_to_nearest_landslide_km": 0.834,
+        "historical_landslide_density": 0.64,
+        "rainfall_24h_mm": 10.4,
+        "rainfall_72h_mm": 29.8,
+        "risk_probability": 0.0075,
+        "static_susceptibility": 0.3171,
+        "dynamic_trigger": 0.3163,
+        "risk_level": "LOW",
+        "spatial_explanation": "Stable terrain (0.8%): Slope 18.0\u00b0, low cumulative antecedent trigger.",
+        "top_risk_factors": [
+          "Moderate Slope Angle",
+          "Historical Shear Zone Proximity"
+        ],
+        "model_version": "HistGradientBoosting v1.0.0 (Platt Calibrated)"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ZONE-013",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              88.4807,
+              27.1484
+            ],
+            [
+              88.4927,
+              27.1484
+            ],
+            [
+              88.4927,
+              27.1604
+            ],
+            [
+              88.4807,
+              27.1604
+            ],
+            [
+              88.4807,
+              27.1484
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "zone_id": "ZONE-013",
+        "latitude": 27.1544,
+        "longitude": 88.4867,
+        "elevation_m": 380.0,
+        "slope_degrees": 18.0,
+        "aspect_degrees": 310.0,
+        "terrain_ruggedness": 30.8,
+        "distance_to_nh10_km": 5.23,
+        "distance_to_nearest_landslide_km": 0.645,
+        "historical_landslide_density": 0.72,
+        "rainfall_24h_mm": 10.4,
+        "rainfall_72h_mm": 29.8,
+        "risk_probability": 0.0075,
+        "static_susceptibility": 0.3182,
+        "dynamic_trigger": 0.3163,
+        "risk_level": "LOW",
+        "spatial_explanation": "Stable terrain (0.8%): Slope 18.0\u00b0, low cumulative antecedent trigger.",
+        "top_risk_factors": [
+          "Moderate Slope Angle",
+          "Historical Shear Zone Proximity"
+        ],
+        "model_version": "HistGradientBoosting v1.0.0 (Platt Calibrated)"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ZONE-014",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              88.494,
+              27.1484
+            ],
+            [
+              88.506,
+              27.1484
+            ],
+            [
+              88.506,
+              27.1604
+            ],
+            [
+              88.494,
+              27.1604
+            ],
+            [
+              88.494,
+              27.1484
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "zone_id": "ZONE-014",
+        "latitude": 27.1544,
+        "longitude": 88.5,
+        "elevation_m": 380.0,
+        "slope_degrees": 18.0,
+        "aspect_degrees": 310.0,
+        "terrain_ruggedness": 30.8,
+        "distance_to_nh10_km": 4.12,
+        "distance_to_nearest_landslide_km": 0.039,
+        "historical_landslide_density": 1.27,
+        "rainfall_24h_mm": 10.4,
+        "rainfall_72h_mm": 29.8,
+        "risk_probability": 0.0075,
+        "static_susceptibility": 0.3255,
+        "dynamic_trigger": 0.3163,
+        "risk_level": "LOW",
+        "spatial_explanation": "Stable terrain (0.8%): Slope 18.0\u00b0, low cumulative antecedent trigger.",
+        "top_risk_factors": [
+          "Moderate Slope Angle",
+          "Historical Shear Zone Proximity"
+        ],
+        "model_version": "HistGradientBoosting v1.0.0 (Platt Calibrated)"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ZONE-015",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              88.5073,
+              27.1484
+            ],
+            [
+              88.5193,
+              27.1484
+            ],
+            [
+              88.5193,
+              27.1604
+            ],
+            [
+              88.5073,
+              27.1604
+            ],
+            [
+              88.5073,
+              27.1484
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "zone_id": "ZONE-015",
+        "latitude": 27.1544,
+        "longitude": 88.5133,
+        "elevation_m": 380.0,
+        "slope_degrees": 18.0,
+        "aspect_degrees": 310.0,
+        "terrain_ruggedness": 30.8,
+        "distance_to_nh10_km": 3.17,
+        "distance_to_nearest_landslide_km": 0.296,
+        "historical_landslide_density": 1.27,
+        "rainfall_24h_mm": 10.4,
+        "rainfall_72h_mm": 29.8,
+        "risk_probability": 0.0075,
+        "static_susceptibility": 0.3255,
+        "dynamic_trigger": 0.3163,
+        "risk_level": "LOW",
+        "spatial_explanation": "Stable terrain (0.8%): Slope 18.0\u00b0, low cumulative antecedent trigger.",
+        "top_risk_factors": [
+          "Moderate Slope Angle",
+          "Historical Shear Zone Proximity"
+        ],
+        "model_version": "HistGradientBoosting v1.0.0 (Platt Calibrated)"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ZONE-016",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              88.5207,
+              27.1484
+            ],
+            [
+              88.5327,
+              27.1484
+            ],
+            [
+              88.5327,
+              27.1604
+            ],
+            [
+              88.5207,
+              27.1604
+            ],
+            [
+              88.5207,
+              27.1484
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "zone_id": "ZONE-016",
+        "latitude": 27.1544,
+        "longitude": 88.5267,
+        "elevation_m": 380.0,
+        "slope_degrees": 18.0,
+        "aspect_degrees": 310.0,
+        "terrain_ruggedness": 30.8,
+        "distance_to_nh10_km": 2.59,
+        "distance_to_nearest_landslide_km": 0.489,
+        "historical_landslide_density": 0.88,
+        "rainfall_24h_mm": 10.4,
+        "rainfall_72h_mm": 29.8,
+        "risk_probability": 0.0075,
+        "static_susceptibility": 0.3203,
+        "dynamic_trigger": 0.3163,
+        "risk_level": "LOW",
+        "spatial_explanation": "Stable terrain (0.8%): Slope 18.0\u00b0, low cumulative antecedent trigger.",
+        "top_risk_factors": [
+          "Moderate Slope Angle",
+          "Historical Shear Zone Proximity"
+        ],
+        "model_version": "HistGradientBoosting v1.0.0 (Platt Calibrated)"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ZONE-017",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              88.534,
+              27.1484
+            ],
+            [
+              88.546,
+              27.1484
+            ],
+            [
+              88.546,
+              27.1604
+            ],
+            [
+              88.534,
+              27.1604
+            ],
+            [
+              88.534,
+              27.1484
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "zone_id": "ZONE-017",
+        "latitude": 27.1544,
+        "longitude": 88.54,
+        "elevation_m": 380.0,
+        "slope_degrees": 18.0,
+        "aspect_degrees": 310.0,
+        "terrain_ruggedness": 30.8,
+        "distance_to_nh10_km": 2.6,
+        "distance_to_nearest_landslide_km": 1.751,
+        "historical_landslide_density": 0.24,
+        "rainfall_24h_mm": 10.4,
+        "rainfall_72h_mm": 29.8,
+        "risk_probability": 0.0075,
+        "static_susceptibility": 0.3118,
+        "dynamic_trigger": 0.3163,
+        "risk_level": "LOW",
+        "spatial_explanation": "Stable terrain (0.8%): Slope 18.0\u00b0, low cumulative antecedent trigger.",
+        "top_risk_factors": [
+          "Moderate Slope Angle"
+        ],
+        "model_version": "HistGradientBoosting v1.0.0 (Platt Calibrated)"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ZONE-018",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              88.5473,
+              27.1484
+            ],
+            [
+              88.5593,
+              27.1484
+            ],
+            [
+              88.5593,
+              27.1604
+            ],
+            [
+              88.5473,
+              27.1604
+            ],
+            [
+              88.5473,
+              27.1484
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "zone_id": "ZONE-018",
+        "latitude": 27.1544,
+        "longitude": 88.5533,
+        "elevation_m": 380.0,
+        "slope_degrees": 18.0,
+        "aspect_degrees": 310.0,
+        "terrain_ruggedness": 30.8,
+        "distance_to_nh10_km": 3.22,
+        "distance_to_nearest_landslide_km": 3.062,
+        "historical_landslide_density": 0.0,
+        "rainfall_24h_mm": 10.4,
+        "rainfall_72h_mm": 29.8,
+        "risk_probability": 0.0075,
+        "static_susceptibility": 0.3086,
+        "dynamic_trigger": 0.3163,
+        "risk_level": "LOW",
+        "spatial_explanation": "Stable terrain (0.8%): Slope 18.0\u00b0, low cumulative antecedent trigger.",
+        "top_risk_factors": [
+          "Moderate Slope Angle"
+        ],
+        "model_version": "HistGradientBoosting v1.0.0 (Platt Calibrated)"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ZONE-019",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              88.5607,
+              27.1484
+            ],
+            [
+              88.5727,
+              27.1484
+            ],
+            [
+              88.5727,
+              27.1604
+            ],
+            [
+              88.5607,
+              27.1604
+            ],
+            [
+              88.5607,
+              27.1484
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "zone_id": "ZONE-019",
+        "latitude": 27.1544,
+        "longitude": 88.5667,
+        "elevation_m": 380.0,
+        "slope_degrees": 18.0,
+        "aspect_degrees": 310.0,
+        "terrain_ruggedness": 30.8,
+        "distance_to_nh10_km": 4.17,
+        "distance_to_nearest_landslide_km": 3.775,
+        "historical_landslide_density": 0.0,
+        "rainfall_24h_mm": 10.4,
+        "rainfall_72h_mm": 29.8,
+        "risk_probability": 0.0075,
+        "static_susceptibility": 0.3086,
+        "dynamic_trigger": 0.3163,
+        "risk_level": "LOW",
+        "spatial_explanation": "Stable terrain (0.8%): Slope 18.0\u00b0, low cumulative antecedent trigger.",
+        "top_risk_factors": [
+          "Moderate Slope Angle"
+        ],
+        "model_version": "HistGradientBoosting v1.0.0 (Platt Calibrated)"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ZONE-020",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              88.574,
+              27.1484
+            ],
+            [
+              88.586,
+              27.1484
+            ],
+            [
+              88.586,
+              27.1604
+            ],
+            [
+              88.574,
+              27.1604
+            ],
+            [
+              88.574,
+              27.1484
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "zone_id": "ZONE-020",
+        "latitude": 27.1544,
+        "longitude": 88.58,
+        "elevation_m": 380.0,
+        "slope_degrees": 18.0,
+        "aspect_degrees": 310.0,
+        "terrain_ruggedness": 30.8,
+        "distance_to_nh10_km": 5.28,
+        "distance_to_nearest_landslide_km": 4.14,
+        "historical_landslide_density": 0.0,
+        "rainfall_24h_mm": 10.4,
+        "rainfall_72h_mm": 29.8,
+        "risk_probability": 0.0075,
+        "static_susceptibility": 0.3086,
+        "dynamic_trigger": 0.3163,
+        "risk_level": "LOW",
+        "spatial_explanation": "Stable terrain (0.8%): Slope 18.0\u00b0, low cumulative antecedent trigger.",
+        "top_risk_factors": [
+          "Moderate Slope Angle"
+        ],
+        "model_version": "HistGradientBoosting v1.0.0 (Platt Calibrated)"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ZONE-021",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              88.454,
+              27.1629
+            ],
+            [
+              88.466,
+              27.1629
+            ],
+            [
+              88.466,
+              27.1749
+            ],
+            [
+              88.454,
+              27.1749
+            ],
+            [
+              88.454,
+              27.1629
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "zone_id": "ZONE-021",
+        "latitude": 27.1689,
+        "longitude": 88.46,
+        "elevation_m": 380.0,
+        "slope_degrees": 18.0,
+        "aspect_degrees": 310.0,
+        "terrain_ruggedness": 30.8,
+        "distance_to_nh10_km": 6.76,
+        "distance_to_nearest_landslide_km": 0.246,
+        "historical_landslide_density": 0.56,
+        "rainfall_24h_mm": 10.4,
+        "rainfall_72h_mm": 29.8,
+        "risk_probability": 0.0075,
+        "static_susceptibility": 0.316,
+        "dynamic_trigger": 0.3163,
+        "risk_level": "LOW",
+        "spatial_explanation": "Stable terrain (0.8%): Slope 18.0\u00b0, low cumulative antecedent trigger.",
+        "top_risk_factors": [
+          "Moderate Slope Angle",
+          "Historical Shear Zone Proximity"
+        ],
+        "model_version": "HistGradientBoosting v1.0.0 (Platt Calibrated)"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ZONE-022",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              88.4673,
+              27.1629
+            ],
+            [
+              88.4793,
+              27.1629
+            ],
+            [
+              88.4793,
+              27.1749
+            ],
+            [
+              88.4673,
+              27.1749
+            ],
+            [
+              88.4673,
+              27.1629
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "zone_id": "ZONE-022",
+        "latitude": 27.1689,
+        "longitude": 88.4733,
+        "elevation_m": 380.0,
+        "slope_degrees": 18.0,
+        "aspect_degrees": 310.0,
+        "terrain_ruggedness": 30.8,
+        "distance_to_nh10_km": 5.64,
+        "distance_to_nearest_landslide_km": 1.088,
+        "historical_landslide_density": 0.64,
+        "rainfall_24h_mm": 10.4,
+        "rainfall_72h_mm": 29.8,
+        "risk_probability": 0.0075,
+        "static_susceptibility": 0.3171,
+        "dynamic_trigger": 0.3163,
+        "risk_level": "LOW",
+        "spatial_explanation": "Stable terrain (0.8%): Slope 18.0\u00b0, low cumulative antecedent trigger.",
+        "top_risk_factors": [
+          "Moderate Slope Angle"
+        ],
+        "model_version": "HistGradientBoosting v1.0.0 (Platt Calibrated)"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ZONE-023",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              88.4807,
+              27.1629
+            ],
+            [
+              88.4927,
+              27.1629
+            ],
+            [
+              88.4927,
+              27.1749
+            ],
+            [
+              88.4807,
+              27.1749
+            ],
+            [
+              88.4807,
+              27.1629
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "zone_id": "ZONE-023",
+        "latitude": 27.1689,
+        "longitude": 88.4867,
+        "elevation_m": 380.0,
+        "slope_degrees": 18.0,
+        "aspect_degrees": 310.0,
+        "terrain_ruggedness": 30.8,
+        "distance_to_nh10_km": 4.56,
+        "distance_to_nearest_landslide_km": 0.036,
+        "historical_landslide_density": 0.64,
+        "rainfall_24h_mm": 10.4,
+        "rainfall_72h_mm": 29.8,
+        "risk_probability": 0.0075,
+        "static_susceptibility": 0.3171,
+        "dynamic_trigger": 0.3163,
+        "risk_level": "LOW",
+        "spatial_explanation": "Stable terrain (0.8%): Slope 18.0\u00b0, low cumulative antecedent trigger.",
+        "top_risk_factors": [
+          "Moderate Slope Angle",
+          "Historical Shear Zone Proximity"
+        ],
+        "model_version": "HistGradientBoosting v1.0.0 (Platt Calibrated)"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ZONE-024",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              88.494,
+              27.1629
+            ],
+            [
+              88.506,
+              27.1629
+            ],
+            [
+              88.506,
+              27.1749
+            ],
+            [
+              88.494,
+              27.1749
+            ],
+            [
+              88.494,
+              27.1629
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "zone_id": "ZONE-024",
+        "latitude": 27.1689,
+        "longitude": 88.5,
+        "elevation_m": 380.0,
+        "slope_degrees": 18.0,
+        "aspect_degrees": 310.0,
+        "terrain_ruggedness": 30.8,
+        "distance_to_nh10_km": 3.39,
+        "distance_to_nearest_landslide_km": 0.506,
+        "historical_landslide_density": 1.59,
+        "rainfall_24h_mm": 10.4,
+        "rainfall_72h_mm": 29.8,
+        "risk_probability": 0.0075,
+        "static_susceptibility": 0.3298,
+        "dynamic_trigger": 0.3163,
+        "risk_level": "LOW",
+        "spatial_explanation": "Stable terrain (0.8%): Slope 18.0\u00b0, low cumulative antecedent trigger.",
+        "top_risk_factors": [
+          "Moderate Slope Angle",
+          "Historical Shear Zone Proximity"
+        ],
+        "model_version": "HistGradientBoosting v1.0.0 (Platt Calibrated)"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ZONE-025",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              88.5073,
+              27.1629
+            ],
+            [
+              88.5193,
+              27.1629
+            ],
+            [
+              88.5193,
+              27.1749
+            ],
+            [
+              88.5073,
+              27.1749
+            ],
+            [
+              88.5073,
+              27.1629
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "zone_id": "ZONE-025",
+        "latitude": 27.1689,
+        "longitude": 88.5133,
+        "elevation_m": 380.0,
+        "slope_degrees": 18.0,
+        "aspect_degrees": 310.0,
+        "terrain_ruggedness": 30.8,
+        "distance_to_nh10_km": 2.14,
+        "distance_to_nearest_landslide_km": 0.188,
+        "historical_landslide_density": 1.51,
+        "rainfall_24h_mm": 10.4,
+        "rainfall_72h_mm": 29.8,
+        "risk_probability": 0.0075,
+        "static_susceptibility": 0.3287,
+        "dynamic_trigger": 0.3163,
+        "risk_level": "LOW",
+        "spatial_explanation": "Stable terrain (0.8%): Slope 18.0\u00b0, low cumulative antecedent trigger.",
+        "top_risk_factors": [
+          "Moderate Slope Angle",
+          "Historical Shear Zone Proximity"
+        ],
+        "model_version": "HistGradientBoosting v1.0.0 (Platt Calibrated)"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ZONE-026",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              88.5207,
+              27.1629
+            ],
+            [
+              88.5327,
+              27.1629
+            ],
+            [
+              88.5327,
+              27.1749
+            ],
+            [
+              88.5207,
+              27.1749
+            ],
+            [
+              88.5207,
+              27.1629
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "zone_id": "ZONE-026",
+        "latitude": 27.1689,
+        "longitude": 88.5267,
+        "elevation_m": 380.0,
+        "slope_degrees": 18.0,
+        "aspect_degrees": 310.0,
+        "terrain_ruggedness": 30.8,
+        "distance_to_nh10_km": 1.1,
+        "distance_to_nearest_landslide_km": 0.865,
+        "historical_landslide_density": 1.35,
+        "rainfall_24h_mm": 10.4,
+        "rainfall_72h_mm": 29.8,
+        "risk_probability": 0.0075,
+        "static_susceptibility": 0.3266,
+        "dynamic_trigger": 0.3163,
+        "risk_level": "LOW",
+        "spatial_explanation": "Stable terrain (0.8%): Slope 18.0\u00b0, low cumulative antecedent trigger.",
+        "top_risk_factors": [
+          "Moderate Slope Angle",
+          "Historical Shear Zone Proximity"
+        ],
+        "model_version": "HistGradientBoosting v1.0.0 (Platt Calibrated)"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ZONE-027",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              88.534,
+              27.1629
+            ],
+            [
+              88.546,
+              27.1629
+            ],
+            [
+              88.546,
+              27.1749
+            ],
+            [
+              88.534,
+              27.1749
+            ],
+            [
+              88.534,
+              27.1629
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "zone_id": "ZONE-027",
+        "latitude": 27.1689,
+        "longitude": 88.54,
+        "elevation_m": 380.0,
+        "slope_degrees": 18.0,
+        "aspect_degrees": 310.0,
+        "terrain_ruggedness": 30.8,
+        "distance_to_nh10_km": 1.14,
+        "distance_to_nearest_landslide_km": 1.305,
+        "historical_landslide_density": 0.16,
+        "rainfall_24h_mm": 10.4,
+        "rainfall_72h_mm": 29.8,
+        "risk_probability": 0.0075,
+        "static_susceptibility": 0.3107,
+        "dynamic_trigger": 0.3163,
+        "risk_level": "LOW",
+        "spatial_explanation": "Stable terrain (0.8%): Slope 18.0\u00b0, low cumulative antecedent trigger.",
+        "top_risk_factors": [
+          "Moderate Slope Angle"
+        ],
+        "model_version": "HistGradientBoosting v1.0.0 (Platt Calibrated)"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ZONE-028",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              88.5473,
+              27.1629
+            ],
+            [
+              88.5593,
+              27.1629
+            ],
+            [
+              88.5593,
+              27.1749
+            ],
+            [
+              88.5473,
+              27.1749
+            ],
+            [
+              88.5473,
+              27.1629
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "zone_id": "ZONE-028",
+        "latitude": 27.1689,
+        "longitude": 88.5533,
+        "elevation_m": 380.0,
+        "slope_degrees": 18.0,
+        "aspect_degrees": 310.0,
+        "terrain_ruggedness": 30.8,
+        "distance_to_nh10_km": 2.2,
+        "distance_to_nearest_landslide_km": 2.29,
+        "historical_landslide_density": 0.0,
+        "rainfall_24h_mm": 10.4,
+        "rainfall_72h_mm": 29.8,
+        "risk_probability": 0.0075,
+        "static_susceptibility": 0.3086,
+        "dynamic_trigger": 0.3163,
+        "risk_level": "LOW",
+        "spatial_explanation": "Stable terrain (0.8%): Slope 18.0\u00b0, low cumulative antecedent trigger.",
+        "top_risk_factors": [
+          "Moderate Slope Angle"
+        ],
+        "model_version": "HistGradientBoosting v1.0.0 (Platt Calibrated)"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ZONE-029",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              88.5607,
+              27.1629
+            ],
+            [
+              88.5727,
+              27.1629
+            ],
+            [
+              88.5727,
+              27.1749
+            ],
+            [
+              88.5607,
+              27.1749
+            ],
+            [
+              88.5607,
+              27.1629
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "zone_id": "ZONE-029",
+        "latitude": 27.1689,
+        "longitude": 88.5667,
+        "elevation_m": 380.0,
+        "slope_degrees": 18.0,
+        "aspect_degrees": 310.0,
+        "terrain_ruggedness": 30.8,
+        "distance_to_nh10_km": 3.45,
+        "distance_to_nearest_landslide_km": 2.189,
+        "historical_landslide_density": 0.0,
+        "rainfall_24h_mm": 10.4,
+        "rainfall_72h_mm": 29.8,
+        "risk_probability": 0.0075,
+        "static_susceptibility": 0.3086,
+        "dynamic_trigger": 0.3163,
+        "risk_level": "LOW",
+        "spatial_explanation": "Stable terrain (0.8%): Slope 18.0\u00b0, low cumulative antecedent trigger.",
+        "top_risk_factors": [
+          "Moderate Slope Angle"
+        ],
+        "model_version": "HistGradientBoosting v1.0.0 (Platt Calibrated)"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ZONE-030",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              88.574,
+              27.1629
+            ],
+            [
+              88.586,
+              27.1629
+            ],
+            [
+              88.586,
+              27.1749
+            ],
+            [
+              88.574,
+              27.1749
+            ],
+            [
+              88.574,
+              27.1629
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "zone_id": "ZONE-030",
+        "latitude": 27.1689,
+        "longitude": 88.58,
+        "elevation_m": 380.0,
+        "slope_degrees": 18.0,
+        "aspect_degrees": 310.0,
+        "terrain_ruggedness": 30.8,
+        "distance_to_nh10_km": 4.74,
+        "distance_to_nearest_landslide_km": 2.746,
+        "historical_landslide_density": 0.0,
+        "rainfall_24h_mm": 10.4,
+        "rainfall_72h_mm": 29.8,
+        "risk_probability": 0.0075,
+        "static_susceptibility": 0.3086,
+        "dynamic_trigger": 0.3163,
+        "risk_level": "LOW",
+        "spatial_explanation": "Stable terrain (0.8%): Slope 18.0\u00b0, low cumulative antecedent trigger.",
+        "top_risk_factors": [
+          "Moderate Slope Angle"
+        ],
+        "model_version": "HistGradientBoosting v1.0.0 (Platt Calibrated)"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ZONE-031",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              88.454,
+              27.1773
+            ],
+            [
+              88.466,
+              27.1773
+            ],
+            [
+              88.466,
+              27.1893
+            ],
+            [
+              88.454,
+              27.1893
+            ],
+            [
+              88.454,
+              27.1773
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "zone_id": "ZONE-031",
+        "latitude": 27.1833,
+        "longitude": 88.46,
+        "elevation_m": 380.0,
+        "slope_degrees": 18.0,
+        "aspect_degrees": 310.0,
+        "terrain_ruggedness": 30.8,
+        "distance_to_nh10_km": 5.91,
+        "distance_to_nearest_landslide_km": 1.269,
+        "historical_landslide_density": 0.16,
+        "rainfall_24h_mm": 11.2,
+        "rainfall_72h_mm": 30.8,
+        "risk_probability": 0.0317,
+        "static_susceptibility": 0.3107,
+        "dynamic_trigger": 0.3325,
+        "risk_level": "LOW",
+        "spatial_explanation": "Stable terrain (3.2%): Slope 18.0\u00b0, low cumulative antecedent trigger.",
+        "top_risk_factors": [
+          "Antecedent Soil Saturation (72h)",
+          "Moderate Slope Angle"
+        ],
+        "model_version": "HistGradientBoosting v1.0.0 (Platt Calibrated)"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ZONE-032",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              88.4673,
+              27.1773
+            ],
+            [
+              88.4793,
+              27.1773
+            ],
+            [
+              88.4793,
+              27.1893
+            ],
+            [
+              88.4673,
+              27.1893
+            ],
+            [
+              88.4673,
+              27.1773
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "zone_id": "ZONE-032",
+        "latitude": 27.1833,
+        "longitude": 88.4733,
+        "elevation_m": 380.0,
+        "slope_degrees": 18.0,
+        "aspect_degrees": 310.0,
+        "terrain_ruggedness": 30.8,
+        "distance_to_nh10_km": 4.81,
+        "distance_to_nearest_landslide_km": 1.875,
+        "historical_landslide_density": 0.08,
+        "rainfall_24h_mm": 11.2,
+        "rainfall_72h_mm": 30.8,
+        "risk_probability": 0.0317,
+        "static_susceptibility": 0.3096,
+        "dynamic_trigger": 0.3325,
+        "risk_level": "LOW",
+        "spatial_explanation": "Stable terrain (3.2%): Slope 18.0\u00b0, low cumulative antecedent trigger.",
+        "top_risk_factors": [
+          "Antecedent Soil Saturation (72h)",
+          "Moderate Slope Angle"
+        ],
+        "model_version": "HistGradientBoosting v1.0.0 (Platt Calibrated)"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ZONE-033",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              88.4807,
+              27.1773
+            ],
+            [
+              88.4927,
+              27.1773
+            ],
+            [
+              88.4927,
+              27.1893
+            ],
+            [
+              88.4807,
+              27.1893
+            ],
+            [
+              88.4807,
+              27.1773
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "zone_id": "ZONE-033",
+        "latitude": 27.1833,
+        "longitude": 88.4867,
+        "elevation_m": 380.0,
+        "slope_degrees": 18.0,
+        "aspect_degrees": 310.0,
+        "terrain_ruggedness": 30.8,
+        "distance_to_nh10_km": 3.68,
+        "distance_to_nearest_landslide_km": 1.549,
+        "historical_landslide_density": 0.32,
+        "rainfall_24h_mm": 10.4,
+        "rainfall_72h_mm": 29.8,
+        "risk_probability": 0.0075,
+        "static_susceptibility": 0.3128,
+        "dynamic_trigger": 0.3163,
+        "risk_level": "LOW",
+        "spatial_explanation": "Stable terrain (0.8%): Slope 18.0\u00b0, low cumulative antecedent trigger.",
+        "top_risk_factors": [
+          "Moderate Slope Angle"
+        ],
+        "model_version": "HistGradientBoosting v1.0.0 (Platt Calibrated)"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ZONE-034",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              88.494,
+              27.1773
+            ],
+            [
+              88.506,
+              27.1773
+            ],
+            [
+              88.506,
+              27.1893
+            ],
+            [
+              88.494,
+              27.1893
+            ],
+            [
+              88.494,
+              27.1773
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "zone_id": "ZONE-034",
+        "latitude": 27.1833,
+        "longitude": 88.5,
+        "elevation_m": 380.0,
+        "slope_degrees": 18.0,
+        "aspect_degrees": 310.0,
+        "terrain_ruggedness": 30.8,
+        "distance_to_nh10_km": 2.56,
+        "distance_to_nearest_landslide_km": 0.59,
+        "historical_landslide_density": 0.48,
+        "rainfall_24h_mm": 10.4,
+        "rainfall_72h_mm": 29.8,
+        "risk_probability": 0.0075,
+        "static_susceptibility": 0.315,
+        "dynamic_trigger": 0.3163,
+        "risk_level": "LOW",
+        "spatial_explanation": "Stable terrain (0.8%): Slope 18.0\u00b0, low cumulative antecedent trigger.",
+        "top_risk_factors": [
+          "Moderate Slope Angle",
+          "Historical Shear Zone Proximity"
+        ],
+        "model_version": "HistGradientBoosting v1.0.0 (Platt Calibrated)"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ZONE-035",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              88.5073,
+              27.1773
+            ],
+            [
+              88.5193,
+              27.1773
+            ],
+            [
+              88.5193,
+              27.1893
+            ],
+            [
+              88.5073,
+              27.1893
+            ],
+            [
+              88.5073,
+              27.1773
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "zone_id": "ZONE-035",
+        "latitude": 27.1833,
+        "longitude": 88.5133,
+        "elevation_m": 380.0,
+        "slope_degrees": 18.0,
+        "aspect_degrees": 310.0,
+        "terrain_ruggedness": 30.8,
+        "distance_to_nh10_km": 1.51,
+        "distance_to_nearest_landslide_km": 0.445,
+        "historical_landslide_density": 0.56,
+        "rainfall_24h_mm": 10.4,
+        "rainfall_72h_mm": 29.8,
+        "risk_probability": 0.0075,
+        "static_susceptibility": 0.316,
+        "dynamic_trigger": 0.3163,
+        "risk_level": "LOW",
+        "spatial_explanation": "Stable terrain (0.8%): Slope 18.0\u00b0, low cumulative antecedent trigger.",
+        "top_risk_factors": [
+          "Moderate Slope Angle",
+          "Historical Shear Zone Proximity"
+        ],
+        "model_version": "HistGradientBoosting v1.0.0 (Platt Calibrated)"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ZONE-036",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              88.5207,
+              27.1773
+            ],
+            [
+              88.5327,
+              27.1773
+            ],
+            [
+              88.5327,
+              27.1893
+            ],
+            [
+              88.5207,
+              27.1893
+            ],
+            [
+              88.5207,
+              27.1773
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "zone_id": "ZONE-036",
+        "latitude": 27.1833,
+        "longitude": 88.5267,
+        "elevation_m": 380.0,
+        "slope_degrees": 18.0,
+        "aspect_degrees": 310.0,
+        "terrain_ruggedness": 30.8,
+        "distance_to_nh10_km": 0.45,
+        "distance_to_nearest_landslide_km": 0.796,
+        "historical_landslide_density": 0.64,
+        "rainfall_24h_mm": 10.4,
+        "rainfall_72h_mm": 29.8,
+        "risk_probability": 0.0075,
+        "static_susceptibility": 0.3171,
+        "dynamic_trigger": 0.3163,
+        "risk_level": "LOW",
+        "spatial_explanation": "Stable terrain (0.8%): Slope 18.0\u00b0, low cumulative antecedent trigger.",
+        "top_risk_factors": [
+          "Moderate Slope Angle",
+          "Historical Shear Zone Proximity"
+        ],
+        "model_version": "HistGradientBoosting v1.0.0 (Platt Calibrated)"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ZONE-037",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              88.534,
+              27.1773
+            ],
+            [
+              88.546,
+              27.1773
+            ],
+            [
+              88.546,
+              27.1893
+            ],
+            [
+              88.534,
+              27.1893
+            ],
+            [
+              88.534,
+              27.1773
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "zone_id": "ZONE-037",
+        "latitude": 27.1833,
+        "longitude": 88.54,
+        "elevation_m": 380.0,
+        "slope_degrees": 18.0,
+        "aspect_degrees": 310.0,
+        "terrain_ruggedness": 30.8,
+        "distance_to_nh10_km": 0.9,
+        "distance_to_nearest_landslide_km": 0.832,
+        "historical_landslide_density": 0.24,
+        "rainfall_24h_mm": 10.4,
+        "rainfall_72h_mm": 29.8,
+        "risk_probability": 0.0075,
+        "static_susceptibility": 0.3118,
+        "dynamic_trigger": 0.3163,
+        "risk_level": "LOW",
+        "spatial_explanation": "Stable terrain (0.8%): Slope 18.0\u00b0, low cumulative antecedent trigger.",
+        "top_risk_factors": [
+          "Moderate Slope Angle",
+          "Historical Shear Zone Proximity"
+        ],
+        "model_version": "HistGradientBoosting v1.0.0 (Platt Calibrated)"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ZONE-038",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              88.5473,
+              27.1773
+            ],
+            [
+              88.5593,
+              27.1773
+            ],
+            [
+              88.5593,
+              27.1893
+            ],
+            [
+              88.5473,
+              27.1893
+            ],
+            [
+              88.5473,
+              27.1773
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "zone_id": "ZONE-038",
+        "latitude": 27.1833,
+        "longitude": 88.5533,
+        "elevation_m": 380.0,
+        "slope_degrees": 18.0,
+        "aspect_degrees": 310.0,
+        "terrain_ruggedness": 30.8,
+        "distance_to_nh10_km": 2.13,
+        "distance_to_nearest_landslide_km": 1.018,
+        "historical_landslide_density": 0.24,
+        "rainfall_24h_mm": 10.4,
+        "rainfall_72h_mm": 29.8,
+        "risk_probability": 0.0075,
+        "static_susceptibility": 0.3118,
+        "dynamic_trigger": 0.3163,
+        "risk_level": "LOW",
+        "spatial_explanation": "Stable terrain (0.8%): Slope 18.0\u00b0, low cumulative antecedent trigger.",
+        "top_risk_factors": [
+          "Moderate Slope Angle"
+        ],
+        "model_version": "HistGradientBoosting v1.0.0 (Platt Calibrated)"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ZONE-039",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              88.5607,
+              27.1773
+            ],
+            [
+              88.5727,
+              27.1773
+            ],
+            [
+              88.5727,
+              27.1893
+            ],
+            [
+              88.5607,
+              27.1893
+            ],
+            [
+              88.5607,
+              27.1773
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "zone_id": "ZONE-039",
+        "latitude": 27.1833,
+        "longitude": 88.5667,
+        "elevation_m": 380.0,
+        "slope_degrees": 18.0,
+        "aspect_degrees": 310.0,
+        "terrain_ruggedness": 30.8,
+        "distance_to_nh10_km": 3.4,
+        "distance_to_nearest_landslide_km": 0.689,
+        "historical_landslide_density": 0.24,
+        "rainfall_24h_mm": 10.4,
+        "rainfall_72h_mm": 29.8,
+        "risk_probability": 0.0075,
+        "static_susceptibility": 0.3118,
+        "dynamic_trigger": 0.3163,
+        "risk_level": "LOW",
+        "spatial_explanation": "Stable terrain (0.8%): Slope 18.0\u00b0, low cumulative antecedent trigger.",
+        "top_risk_factors": [
+          "Moderate Slope Angle",
+          "Historical Shear Zone Proximity"
+        ],
+        "model_version": "HistGradientBoosting v1.0.0 (Platt Calibrated)"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ZONE-040",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              88.574,
+              27.1773
+            ],
+            [
+              88.586,
+              27.1773
+            ],
+            [
+              88.586,
+              27.1893
+            ],
+            [
+              88.574,
+              27.1893
+            ],
+            [
+              88.574,
+              27.1773
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "zone_id": "ZONE-040",
+        "latitude": 27.1833,
+        "longitude": 88.58,
+        "elevation_m": 380.0,
+        "slope_degrees": 18.0,
+        "aspect_degrees": 310.0,
+        "terrain_ruggedness": 30.8,
+        "distance_to_nh10_km": 4.7,
+        "distance_to_nearest_landslide_km": 1.686,
+        "historical_landslide_density": 0.48,
+        "rainfall_24h_mm": 10.4,
+        "rainfall_72h_mm": 29.8,
+        "risk_probability": 0.0075,
+        "static_susceptibility": 0.315,
+        "dynamic_trigger": 0.3163,
+        "risk_level": "LOW",
+        "spatial_explanation": "Stable terrain (0.8%): Slope 18.0\u00b0, low cumulative antecedent trigger.",
+        "top_risk_factors": [
+          "Moderate Slope Angle"
+        ],
+        "model_version": "HistGradientBoosting v1.0.0 (Platt Calibrated)"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ZONE-041",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              88.454,
+              27.1918
+            ],
+            [
+              88.466,
+              27.1918
+            ],
+            [
+              88.466,
+              27.2038
+            ],
+            [
+              88.454,
+              27.2038
+            ],
+            [
+              88.454,
+              27.1918
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "zone_id": "ZONE-041",
+        "latitude": 27.1978,
+        "longitude": 88.46,
+        "elevation_m": 380.0,
+        "slope_degrees": 18.0,
+        "aspect_degrees": 310.0,
+        "terrain_ruggedness": 30.8,
+        "distance_to_nh10_km": 5.04,
+        "distance_to_nearest_landslide_km": 1.673,
+        "historical_landslide_density": 0.24,
+        "rainfall_24h_mm": 11.2,
+        "rainfall_72h_mm": 30.8,
+        "risk_probability": 0.0317,
+        "static_susceptibility": 0.3118,
+        "dynamic_trigger": 0.3325,
+        "risk_level": "LOW",
+        "spatial_explanation": "Stable terrain (3.2%): Slope 18.0\u00b0, low cumulative antecedent trigger.",
+        "top_risk_factors": [
+          "Antecedent Soil Saturation (72h)",
+          "Moderate Slope Angle"
+        ],
+        "model_version": "HistGradientBoosting v1.0.0 (Platt Calibrated)"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ZONE-042",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              88.4673,
+              27.1918
+            ],
+            [
+              88.4793,
+              27.1918
+            ],
+            [
+              88.4793,
+              27.2038
+            ],
+            [
+              88.4673,
+              27.2038
+            ],
+            [
+              88.4673,
+              27.1918
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "zone_id": "ZONE-042",
+        "latitude": 27.1978,
+        "longitude": 88.4733,
+        "elevation_m": 380.0,
+        "slope_degrees": 18.0,
+        "aspect_degrees": 310.0,
+        "terrain_ruggedness": 30.8,
+        "distance_to_nh10_km": 3.92,
+        "distance_to_nearest_landslide_km": 1.698,
+        "historical_landslide_density": 0.16,
+        "rainfall_24h_mm": 11.2,
+        "rainfall_72h_mm": 30.8,
+        "risk_probability": 0.0317,
+        "static_susceptibility": 0.3107,
+        "dynamic_trigger": 0.3325,
+        "risk_level": "LOW",
+        "spatial_explanation": "Stable terrain (3.2%): Slope 18.0\u00b0, low cumulative antecedent trigger.",
+        "top_risk_factors": [
+          "Antecedent Soil Saturation (72h)",
+          "Moderate Slope Angle"
+        ],
+        "model_version": "HistGradientBoosting v1.0.0 (Platt Calibrated)"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ZONE-043",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              88.4807,
+              27.1918
+            ],
+            [
+              88.4927,
+              27.1918
+            ],
+            [
+              88.4927,
+              27.2038
+            ],
+            [
+              88.4807,
+              27.2038
+            ],
+            [
+              88.4807,
+              27.1918
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "zone_id": "ZONE-043",
+        "latitude": 27.1978,
+        "longitude": 88.4867,
+        "elevation_m": 380.0,
+        "slope_degrees": 18.0,
+        "aspect_degrees": 310.0,
+        "terrain_ruggedness": 30.8,
+        "distance_to_nh10_km": 2.85,
+        "distance_to_nearest_landslide_km": 0.381,
+        "historical_landslide_density": 0.24,
+        "rainfall_24h_mm": 11.2,
+        "rainfall_72h_mm": 30.8,
+        "risk_probability": 0.0317,
+        "static_susceptibility": 0.3118,
+        "dynamic_trigger": 0.3325,
+        "risk_level": "LOW",
+        "spatial_explanation": "Stable terrain (3.2%): Slope 18.0\u00b0, low cumulative antecedent trigger.",
+        "top_risk_factors": [
+          "Antecedent Soil Saturation (72h)",
+          "Moderate Slope Angle",
+          "Historical Shear Zone Proximity"
+        ],
+        "model_version": "HistGradientBoosting v1.0.0 (Platt Calibrated)"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ZONE-044",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              88.494,
+              27.1918
+            ],
+            [
+              88.506,
+              27.1918
+            ],
+            [
+              88.506,
+              27.2038
+            ],
+            [
+              88.494,
+              27.2038
+            ],
+            [
+              88.494,
+              27.1918
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "zone_id": "ZONE-044",
+        "latitude": 27.1978,
+        "longitude": 88.5,
+        "elevation_m": 380.0,
+        "slope_degrees": 18.0,
+        "aspect_degrees": 310.0,
+        "terrain_ruggedness": 30.8,
+        "distance_to_nh10_km": 1.73,
+        "distance_to_nearest_landslide_km": 0.94,
+        "historical_landslide_density": 0.32,
+        "rainfall_24h_mm": 11.2,
+        "rainfall_72h_mm": 30.8,
+        "risk_probability": 0.0317,
+        "static_susceptibility": 0.3128,
+        "dynamic_trigger": 0.3325,
+        "risk_level": "LOW",
+        "spatial_explanation": "Stable terrain (3.2%): Slope 18.0\u00b0, low cumulative antecedent trigger.",
+        "top_risk_factors": [
+          "Antecedent Soil Saturation (72h)",
+          "Moderate Slope Angle",
+          "Historical Shear Zone Proximity"
+        ],
+        "model_version": "HistGradientBoosting v1.0.0 (Platt Calibrated)"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ZONE-045",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              88.5073,
+              27.1918
+            ],
+            [
+              88.5193,
+              27.1918
+            ],
+            [
+              88.5193,
+              27.2038
+            ],
+            [
+              88.5073,
+              27.2038
+            ],
+            [
+              88.5073,
+              27.1918
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "zone_id": "ZONE-045",
+        "latitude": 27.1978,
+        "longitude": 88.5133,
+        "elevation_m": 380.0,
+        "slope_degrees": 18.0,
+        "aspect_degrees": 310.0,
+        "terrain_ruggedness": 30.8,
+        "distance_to_nh10_km": 0.66,
+        "distance_to_nearest_landslide_km": 1.581,
+        "historical_landslide_density": 0.32,
+        "rainfall_24h_mm": 10.4,
+        "rainfall_72h_mm": 29.8,
+        "risk_probability": 0.0075,
+        "static_susceptibility": 0.3128,
+        "dynamic_trigger": 0.3163,
+        "risk_level": "LOW",
+        "spatial_explanation": "Stable terrain (0.8%): Slope 18.0\u00b0, low cumulative antecedent trigger.",
+        "top_risk_factors": [
+          "Moderate Slope Angle"
+        ],
+        "model_version": "HistGradientBoosting v1.0.0 (Platt Calibrated)"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ZONE-046",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              88.5207,
+              27.1918
+            ],
+            [
+              88.5327,
+              27.1918
+            ],
+            [
+              88.5327,
+              27.2038
+            ],
+            [
+              88.5207,
+              27.2038
+            ],
+            [
+              88.5207,
+              27.1918
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "zone_id": "ZONE-046",
+        "latitude": 27.1978,
+        "longitude": 88.5267,
+        "elevation_m": 380.0,
+        "slope_degrees": 18.0,
+        "aspect_degrees": 310.0,
+        "terrain_ruggedness": 30.8,
+        "distance_to_nh10_km": 0.59,
+        "distance_to_nearest_landslide_km": 2.077,
+        "historical_landslide_density": 0.0,
+        "rainfall_24h_mm": 10.4,
+        "rainfall_72h_mm": 29.8,
+        "risk_probability": 0.0075,
+        "static_susceptibility": 0.3086,
+        "dynamic_trigger": 0.3163,
+        "risk_level": "LOW",
+        "spatial_explanation": "Stable terrain (0.8%): Slope 18.0\u00b0, low cumulative antecedent trigger.",
+        "top_risk_factors": [
+          "Moderate Slope Angle"
+        ],
+        "model_version": "HistGradientBoosting v1.0.0 (Platt Calibrated)"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ZONE-047",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              88.534,
+              27.1918
+            ],
+            [
+              88.546,
+              27.1918
+            ],
+            [
+              88.546,
+              27.2038
+            ],
+            [
+              88.534,
+              27.2038
+            ],
+            [
+              88.534,
+              27.1918
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "zone_id": "ZONE-047",
+        "latitude": 27.1978,
+        "longitude": 88.54,
+        "elevation_m": 380.0,
+        "slope_degrees": 18.0,
+        "aspect_degrees": 310.0,
+        "terrain_ruggedness": 30.8,
+        "distance_to_nh10_km": 1.61,
+        "distance_to_nearest_landslide_km": 2.196,
+        "historical_landslide_density": 0.0,
+        "rainfall_24h_mm": 10.4,
+        "rainfall_72h_mm": 29.8,
+        "risk_probability": 0.0075,
+        "static_susceptibility": 0.3086,
+        "dynamic_trigger": 0.3163,
+        "risk_level": "LOW",
+        "spatial_explanation": "Stable terrain (0.8%): Slope 18.0\u00b0, low cumulative antecedent trigger.",
+        "top_risk_factors": [
+          "Moderate Slope Angle"
+        ],
+        "model_version": "HistGradientBoosting v1.0.0 (Platt Calibrated)"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ZONE-048",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              88.5473,
+              27.1918
+            ],
+            [
+              88.5593,
+              27.1918
+            ],
+            [
+              88.5593,
+              27.2038
+            ],
+            [
+              88.5473,
+              27.2038
+            ],
+            [
+              88.5473,
+              27.1918
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "zone_id": "ZONE-048",
+        "latitude": 27.1978,
+        "longitude": 88.5533,
+        "elevation_m": 380.0,
+        "slope_degrees": 18.0,
+        "aspect_degrees": 310.0,
+        "terrain_ruggedness": 30.8,
+        "distance_to_nh10_km": 2.73,
+        "distance_to_nearest_landslide_km": 1.377,
+        "historical_landslide_density": 0.24,
+        "rainfall_24h_mm": 10.4,
+        "rainfall_72h_mm": 29.8,
+        "risk_probability": 0.0075,
+        "static_susceptibility": 0.3118,
+        "dynamic_trigger": 0.3163,
+        "risk_level": "LOW",
+        "spatial_explanation": "Stable terrain (0.8%): Slope 18.0\u00b0, low cumulative antecedent trigger.",
+        "top_risk_factors": [
+          "Moderate Slope Angle"
+        ],
+        "model_version": "HistGradientBoosting v1.0.0 (Platt Calibrated)"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ZONE-049",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              88.5607,
+              27.1918
+            ],
+            [
+              88.5727,
+              27.1918
+            ],
+            [
+              88.5727,
+              27.2038
+            ],
+            [
+              88.5607,
+              27.2038
+            ],
+            [
+              88.5607,
+              27.1918
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "zone_id": "ZONE-049",
+        "latitude": 27.1978,
+        "longitude": 88.5667,
+        "elevation_m": 380.0,
+        "slope_degrees": 18.0,
+        "aspect_degrees": 310.0,
+        "terrain_ruggedness": 30.8,
+        "distance_to_nh10_km": 3.94,
+        "distance_to_nearest_landslide_km": 0.892,
+        "historical_landslide_density": 0.24,
+        "rainfall_24h_mm": 10.4,
+        "rainfall_72h_mm": 29.8,
+        "risk_probability": 0.0075,
+        "static_susceptibility": 0.3118,
+        "dynamic_trigger": 0.3163,
+        "risk_level": "LOW",
+        "spatial_explanation": "Stable terrain (0.8%): Slope 18.0\u00b0, low cumulative antecedent trigger.",
+        "top_risk_factors": [
+          "Moderate Slope Angle",
+          "Historical Shear Zone Proximity"
+        ],
+        "model_version": "HistGradientBoosting v1.0.0 (Platt Calibrated)"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ZONE-050",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              88.574,
+              27.1918
+            ],
+            [
+              88.586,
+              27.1918
+            ],
+            [
+              88.586,
+              27.2038
+            ],
+            [
+              88.574,
+              27.2038
+            ],
+            [
+              88.574,
+              27.1918
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "zone_id": "ZONE-050",
+        "latitude": 27.1978,
+        "longitude": 88.58,
+        "elevation_m": 380.0,
+        "slope_degrees": 18.0,
+        "aspect_degrees": 310.0,
+        "terrain_ruggedness": 30.8,
+        "distance_to_nh10_km": 5.15,
+        "distance_to_nearest_landslide_km": 1.046,
+        "historical_landslide_density": 0.64,
+        "rainfall_24h_mm": 10.4,
+        "rainfall_72h_mm": 29.8,
+        "risk_probability": 0.0075,
+        "static_susceptibility": 0.3171,
+        "dynamic_trigger": 0.3163,
+        "risk_level": "LOW",
+        "spatial_explanation": "Stable terrain (0.8%): Slope 18.0\u00b0, low cumulative antecedent trigger.",
+        "top_risk_factors": [
+          "Moderate Slope Angle"
+        ],
+        "model_version": "HistGradientBoosting v1.0.0 (Platt Calibrated)"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ZONE-051",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              88.454,
+              27.2062
+            ],
+            [
+              88.466,
+              27.2062
+            ],
+            [
+              88.466,
+              27.2182
+            ],
+            [
+              88.454,
+              27.2182
+            ],
+            [
+              88.454,
+              27.2062
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "zone_id": "ZONE-051",
+        "latitude": 27.2122,
+        "longitude": 88.46,
+        "elevation_m": 380.0,
+        "slope_degrees": 18.0,
+        "aspect_degrees": 310.0,
+        "terrain_ruggedness": 30.8,
+        "distance_to_nh10_km": 4.45,
+        "distance_to_nearest_landslide_km": 1.439,
+        "historical_landslide_density": 0.24,
+        "rainfall_24h_mm": 11.2,
+        "rainfall_72h_mm": 30.8,
+        "risk_probability": 0.0317,
+        "static_susceptibility": 0.3118,
+        "dynamic_trigger": 0.3325,
+        "risk_level": "LOW",
+        "spatial_explanation": "Stable terrain (3.2%): Slope 18.0\u00b0, low cumulative antecedent trigger.",
+        "top_risk_factors": [
+          "Antecedent Soil Saturation (72h)",
+          "Moderate Slope Angle"
+        ],
+        "model_version": "HistGradientBoosting v1.0.0 (Platt Calibrated)"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ZONE-052",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              88.4673,
+              27.2062
+            ],
+            [
+              88.4793,
+              27.2062
+            ],
+            [
+              88.4793,
+              27.2182
+            ],
+            [
+              88.4673,
+              27.2182
+            ],
+            [
+              88.4673,
+              27.2062
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "zone_id": "ZONE-052",
+        "latitude": 27.2122,
+        "longitude": 88.4733,
+        "elevation_m": 380.0,
+        "slope_degrees": 18.0,
+        "aspect_degrees": 310.0,
+        "terrain_ruggedness": 30.8,
+        "distance_to_nh10_km": 3.21,
+        "distance_to_nearest_landslide_km": 1.689,
+        "historical_landslide_density": 0.08,
+        "rainfall_24h_mm": 11.2,
+        "rainfall_72h_mm": 30.8,
+        "risk_probability": 0.0317,
+        "static_susceptibility": 0.3096,
+        "dynamic_trigger": 0.3325,
+        "risk_level": "LOW",
+        "spatial_explanation": "Stable terrain (3.2%): Slope 18.0\u00b0, low cumulative antecedent trigger.",
+        "top_risk_factors": [
+          "Antecedent Soil Saturation (72h)",
+          "Moderate Slope Angle"
+        ],
+        "model_version": "HistGradientBoosting v1.0.0 (Platt Calibrated)"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ZONE-053",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              88.4807,
+              27.2062
+            ],
+            [
+              88.4927,
+              27.2062
+            ],
+            [
+              88.4927,
+              27.2182
+            ],
+            [
+              88.4807,
+              27.2182
+            ],
+            [
+              88.4807,
+              27.2062
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "zone_id": "ZONE-053",
+        "latitude": 27.2122,
+        "longitude": 88.4867,
+        "elevation_m": 380.0,
+        "slope_degrees": 18.0,
+        "aspect_degrees": 310.0,
+        "terrain_ruggedness": 30.8,
+        "distance_to_nh10_km": 1.96,
+        "distance_to_nearest_landslide_km": 0.654,
+        "historical_landslide_density": 0.4,
+        "rainfall_24h_mm": 11.2,
+        "rainfall_72h_mm": 30.8,
+        "risk_probability": 0.0317,
+        "static_susceptibility": 0.3139,
+        "dynamic_trigger": 0.3325,
+        "risk_level": "LOW",
+        "spatial_explanation": "Stable terrain (3.2%): Slope 18.0\u00b0, low cumulative antecedent trigger.",
+        "top_risk_factors": [
+          "Antecedent Soil Saturation (72h)",
+          "Moderate Slope Angle",
+          "Historical Shear Zone Proximity"
+        ],
+        "model_version": "HistGradientBoosting v1.0.0 (Platt Calibrated)"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ZONE-054",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              88.494,
+              27.2062
+            ],
+            [
+              88.506,
+              27.2062
+            ],
+            [
+              88.506,
+              27.2182
+            ],
+            [
+              88.494,
+              27.2182
+            ],
+            [
+              88.494,
+              27.2062
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "zone_id": "ZONE-054",
+        "latitude": 27.2122,
+        "longitude": 88.5,
+        "elevation_m": 380.0,
+        "slope_degrees": 18.0,
+        "aspect_degrees": 310.0,
+        "terrain_ruggedness": 30.8,
+        "distance_to_nh10_km": 0.85,
+        "distance_to_nearest_landslide_km": 1.216,
+        "historical_landslide_density": 0.4,
+        "rainfall_24h_mm": 11.2,
+        "rainfall_72h_mm": 30.8,
+        "risk_probability": 0.0317,
+        "static_susceptibility": 0.3139,
+        "dynamic_trigger": 0.3325,
+        "risk_level": "LOW",
+        "spatial_explanation": "Stable terrain (3.2%): Slope 18.0\u00b0, low cumulative antecedent trigger.",
+        "top_risk_factors": [
+          "Antecedent Soil Saturation (72h)",
+          "Moderate Slope Angle"
+        ],
+        "model_version": "HistGradientBoosting v1.0.0 (Platt Calibrated)"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ZONE-055",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              88.5073,
+              27.2062
+            ],
+            [
+              88.5193,
+              27.2062
+            ],
+            [
+              88.5193,
+              27.2182
+            ],
+            [
+              88.5073,
+              27.2182
+            ],
+            [
+              88.5073,
+              27.2062
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "zone_id": "ZONE-055",
+        "latitude": 27.2122,
+        "longitude": 88.5133,
+        "elevation_m": 380.0,
+        "slope_degrees": 18.0,
+        "aspect_degrees": 310.0,
+        "terrain_ruggedness": 30.8,
+        "distance_to_nh10_km": 0.28,
+        "distance_to_nearest_landslide_km": 2.413,
+        "historical_landslide_density": 0.0,
+        "rainfall_24h_mm": 11.2,
+        "rainfall_72h_mm": 30.8,
+        "risk_probability": 0.0317,
+        "static_susceptibility": 0.3086,
+        "dynamic_trigger": 0.3325,
+        "risk_level": "LOW",
+        "spatial_explanation": "Stable terrain (3.2%): Slope 18.0\u00b0, low cumulative antecedent trigger.",
+        "top_risk_factors": [
+          "Antecedent Soil Saturation (72h)",
+          "Moderate Slope Angle"
+        ],
+        "model_version": "HistGradientBoosting v1.0.0 (Platt Calibrated)"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ZONE-056",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              88.5207,
+              27.2062
+            ],
+            [
+              88.5327,
+              27.2062
+            ],
+            [
+              88.5327,
+              27.2182
+            ],
+            [
+              88.5207,
+              27.2182
+            ],
+            [
+              88.5207,
+              27.2062
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "zone_id": "ZONE-056",
+        "latitude": 27.2122,
+        "longitude": 88.5267,
+        "elevation_m": 380.0,
+        "slope_degrees": 18.0,
+        "aspect_degrees": 310.0,
+        "terrain_ruggedness": 30.8,
+        "distance_to_nh10_km": 1.4,
+        "distance_to_nearest_landslide_km": 3.106,
+        "historical_landslide_density": 0.0,
+        "rainfall_24h_mm": 11.2,
+        "rainfall_72h_mm": 30.8,
+        "risk_probability": 0.0317,
+        "static_susceptibility": 0.3086,
+        "dynamic_trigger": 0.3325,
+        "risk_level": "LOW",
+        "spatial_explanation": "Stable terrain (3.2%): Slope 18.0\u00b0, low cumulative antecedent trigger.",
+        "top_risk_factors": [
+          "Antecedent Soil Saturation (72h)",
+          "Moderate Slope Angle"
+        ],
+        "model_version": "HistGradientBoosting v1.0.0 (Platt Calibrated)"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ZONE-057",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              88.534,
+              27.2062
+            ],
+            [
+              88.546,
+              27.2062
+            ],
+            [
+              88.546,
+              27.2182
+            ],
+            [
+              88.534,
+              27.2182
+            ],
+            [
+              88.534,
+              27.2062
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "zone_id": "ZONE-057",
+        "latitude": 27.2122,
+        "longitude": 88.54,
+        "elevation_m": 380.0,
+        "slope_degrees": 18.0,
+        "aspect_degrees": 310.0,
+        "terrain_ruggedness": 30.8,
+        "distance_to_nh10_km": 2.53,
+        "distance_to_nearest_landslide_km": 3.455,
+        "historical_landslide_density": 0.0,
+        "rainfall_24h_mm": 10.4,
+        "rainfall_72h_mm": 29.8,
+        "risk_probability": 0.0075,
+        "static_susceptibility": 0.3086,
+        "dynamic_trigger": 0.3163,
+        "risk_level": "LOW",
+        "spatial_explanation": "Stable terrain (0.8%): Slope 18.0\u00b0, low cumulative antecedent trigger.",
+        "top_risk_factors": [
+          "Moderate Slope Angle"
+        ],
+        "model_version": "HistGradientBoosting v1.0.0 (Platt Calibrated)"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ZONE-058",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              88.5473,
+              27.2062
+            ],
+            [
+              88.5593,
+              27.2062
+            ],
+            [
+              88.5593,
+              27.2182
+            ],
+            [
+              88.5473,
+              27.2182
+            ],
+            [
+              88.5473,
+              27.2062
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "zone_id": "ZONE-058",
+        "latitude": 27.2122,
+        "longitude": 88.5533,
+        "elevation_m": 380.0,
+        "slope_degrees": 18.0,
+        "aspect_degrees": 310.0,
+        "terrain_ruggedness": 30.8,
+        "distance_to_nh10_km": 3.6,
+        "distance_to_nearest_landslide_km": 2.705,
+        "historical_landslide_density": 0.0,
+        "rainfall_24h_mm": 10.4,
+        "rainfall_72h_mm": 29.8,
+        "risk_probability": 0.0075,
+        "static_susceptibility": 0.3086,
+        "dynamic_trigger": 0.3163,
+        "risk_level": "LOW",
+        "spatial_explanation": "Stable terrain (0.8%): Slope 18.0\u00b0, low cumulative antecedent trigger.",
+        "top_risk_factors": [
+          "Moderate Slope Angle"
+        ],
+        "model_version": "HistGradientBoosting v1.0.0 (Platt Calibrated)"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ZONE-059",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              88.5607,
+              27.2062
+            ],
+            [
+              88.5727,
+              27.2062
+            ],
+            [
+              88.5727,
+              27.2182
+            ],
+            [
+              88.5607,
+              27.2182
+            ],
+            [
+              88.5607,
+              27.2062
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "zone_id": "ZONE-059",
+        "latitude": 27.2122,
+        "longitude": 88.5667,
+        "elevation_m": 380.0,
+        "slope_degrees": 18.0,
+        "aspect_degrees": 310.0,
+        "terrain_ruggedness": 30.8,
+        "distance_to_nh10_km": 4.68,
+        "distance_to_nearest_landslide_km": 2.086,
+        "historical_landslide_density": 0.0,
+        "rainfall_24h_mm": 10.4,
+        "rainfall_72h_mm": 29.8,
+        "risk_probability": 0.0075,
+        "static_susceptibility": 0.3086,
+        "dynamic_trigger": 0.3163,
+        "risk_level": "LOW",
+        "spatial_explanation": "Stable terrain (0.8%): Slope 18.0\u00b0, low cumulative antecedent trigger.",
+        "top_risk_factors": [
+          "Moderate Slope Angle"
+        ],
+        "model_version": "HistGradientBoosting v1.0.0 (Platt Calibrated)"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ZONE-060",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              88.574,
+              27.2062
+            ],
+            [
+              88.586,
+              27.2062
+            ],
+            [
+              88.586,
+              27.2182
+            ],
+            [
+              88.574,
+              27.2182
+            ],
+            [
+              88.574,
+              27.2062
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "zone_id": "ZONE-060",
+        "latitude": 27.2122,
+        "longitude": 88.58,
+        "elevation_m": 380.0,
+        "slope_degrees": 18.0,
+        "aspect_degrees": 310.0,
+        "terrain_ruggedness": 30.8,
+        "distance_to_nh10_km": 5.81,
+        "distance_to_nearest_landslide_km": 0.771,
+        "historical_landslide_density": 0.4,
+        "rainfall_24h_mm": 10.4,
+        "rainfall_72h_mm": 29.8,
+        "risk_probability": 0.0075,
+        "static_susceptibility": 0.3139,
+        "dynamic_trigger": 0.3163,
+        "risk_level": "LOW",
+        "spatial_explanation": "Stable terrain (0.8%): Slope 18.0\u00b0, low cumulative antecedent trigger.",
+        "top_risk_factors": [
+          "Moderate Slope Angle",
+          "Historical Shear Zone Proximity"
+        ],
+        "model_version": "HistGradientBoosting v1.0.0 (Platt Calibrated)"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ZONE-061",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              88.454,
+              27.2207
+            ],
+            [
+              88.466,
+              27.2207
+            ],
+            [
+              88.466,
+              27.2327
+            ],
+            [
+              88.454,
+              27.2327
+            ],
+            [
+              88.454,
+              27.2207
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "zone_id": "ZONE-061",
+        "latitude": 27.2267,
+        "longitude": 88.46,
+        "elevation_m": 380.0,
+        "slope_degrees": 18.0,
+        "aspect_degrees": 310.0,
+        "terrain_ruggedness": 30.8,
+        "distance_to_nh10_km": 3.96,
+        "distance_to_nearest_landslide_km": 2.092,
+        "historical_landslide_density": 0.0,
+        "rainfall_24h_mm": 11.2,
+        "rainfall_72h_mm": 30.8,
+        "risk_probability": 0.0317,
+        "static_susceptibility": 0.3086,
+        "dynamic_trigger": 0.3325,
+        "risk_level": "LOW",
+        "spatial_explanation": "Stable terrain (3.2%): Slope 18.0\u00b0, low cumulative antecedent trigger.",
+        "top_risk_factors": [
+          "Antecedent Soil Saturation (72h)",
+          "Moderate Slope Angle"
+        ],
+        "model_version": "HistGradientBoosting v1.0.0 (Platt Calibrated)"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ZONE-062",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              88.4673,
+              27.2207
+            ],
+            [
+              88.4793,
+              27.2207
+            ],
+            [
+              88.4793,
+              27.2327
+            ],
+            [
+              88.4673,
+              27.2327
+            ],
+            [
+              88.4673,
+              27.2207
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "zone_id": "ZONE-062",
+        "latitude": 27.2267,
+        "longitude": 88.4733,
+        "elevation_m": 380.0,
+        "slope_degrees": 18.0,
+        "aspect_degrees": 310.0,
+        "terrain_ruggedness": 30.8,
+        "distance_to_nh10_km": 2.75,
+        "distance_to_nearest_landslide_km": 1.689,
+        "historical_landslide_density": 0.72,
+        "rainfall_24h_mm": 11.2,
+        "rainfall_72h_mm": 30.8,
+        "risk_probability": 0.0317,
+        "static_susceptibility": 0.3182,
+        "dynamic_trigger": 0.3325,
+        "risk_level": "LOW",
+        "spatial_explanation": "Stable terrain (3.2%): Slope 18.0\u00b0, low cumulative antecedent trigger.",
+        "top_risk_factors": [
+          "Antecedent Soil Saturation (72h)",
+          "Moderate Slope Angle"
+        ],
+        "model_version": "HistGradientBoosting v1.0.0 (Platt Calibrated)"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ZONE-063",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              88.4807,
+              27.2207
+            ],
+            [
+              88.4927,
+              27.2207
+            ],
+            [
+              88.4927,
+              27.2327
+            ],
+            [
+              88.4807,
+              27.2327
+            ],
+            [
+              88.4807,
+              27.2207
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "zone_id": "ZONE-063",
+        "latitude": 27.2267,
+        "longitude": 88.4867,
+        "elevation_m": 380.0,
+        "slope_degrees": 18.0,
+        "aspect_degrees": 310.0,
+        "terrain_ruggedness": 30.8,
+        "distance_to_nh10_km": 1.47,
+        "distance_to_nearest_landslide_km": 0.6,
+        "historical_landslide_density": 0.95,
+        "rainfall_24h_mm": 11.2,
+        "rainfall_72h_mm": 30.8,
+        "risk_probability": 0.0317,
+        "static_susceptibility": 0.3212,
+        "dynamic_trigger": 0.3325,
+        "risk_level": "LOW",
+        "spatial_explanation": "Stable terrain (3.2%): Slope 18.0\u00b0, low cumulative antecedent trigger.",
+        "top_risk_factors": [
+          "Antecedent Soil Saturation (72h)",
+          "Moderate Slope Angle",
+          "Historical Shear Zone Proximity"
+        ],
+        "model_version": "HistGradientBoosting v1.0.0 (Platt Calibrated)"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ZONE-064",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              88.494,
+              27.2207
+            ],
+            [
+              88.506,
+              27.2207
+            ],
+            [
+              88.506,
+              27.2327
+            ],
+            [
+              88.494,
+              27.2327
+            ],
+            [
+              88.494,
+              27.2207
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "zone_id": "ZONE-064",
+        "latitude": 27.2267,
+        "longitude": 88.5,
+        "elevation_m": 380.0,
+        "slope_degrees": 18.0,
+        "aspect_degrees": 310.0,
+        "terrain_ruggedness": 30.8,
+        "distance_to_nh10_km": 0.21,
+        "distance_to_nearest_landslide_km": 0.608,
+        "historical_landslide_density": 1.11,
+        "rainfall_24h_mm": 11.2,
+        "rainfall_72h_mm": 30.8,
+        "risk_probability": 0.0317,
+        "static_susceptibility": 0.3234,
+        "dynamic_trigger": 0.3325,
+        "risk_level": "LOW",
+        "spatial_explanation": "Stable terrain (3.2%): Slope 18.0\u00b0, low cumulative antecedent trigger.",
+        "top_risk_factors": [
+          "Antecedent Soil Saturation (72h)",
+          "Moderate Slope Angle",
+          "Historical Shear Zone Proximity"
+        ],
+        "model_version": "HistGradientBoosting v1.0.0 (Platt Calibrated)"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ZONE-065",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              88.5073,
+              27.2207
+            ],
+            [
+              88.5193,
+              27.2207
+            ],
+            [
+              88.5193,
+              27.2327
+            ],
+            [
+              88.5073,
+              27.2327
+            ],
+            [
+              88.5073,
+              27.2207
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "zone_id": "ZONE-065",
+        "latitude": 27.2267,
+        "longitude": 88.5133,
+        "elevation_m": 380.0,
+        "slope_degrees": 18.0,
+        "aspect_degrees": 310.0,
+        "terrain_ruggedness": 30.8,
+        "distance_to_nh10_km": 1.06,
+        "distance_to_nearest_landslide_km": 1.141,
+        "historical_landslide_density": 0.8,
+        "rainfall_24h_mm": 11.2,
+        "rainfall_72h_mm": 30.8,
+        "risk_probability": 0.0317,
+        "static_susceptibility": 0.3192,
+        "dynamic_trigger": 0.3325,
+        "risk_level": "LOW",
+        "spatial_explanation": "Stable terrain (3.2%): Slope 18.0\u00b0, low cumulative antecedent trigger.",
+        "top_risk_factors": [
+          "Antecedent Soil Saturation (72h)",
+          "Moderate Slope Angle"
+        ],
+        "model_version": "HistGradientBoosting v1.0.0 (Platt Calibrated)"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ZONE-066",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              88.5207,
+              27.2207
+            ],
+            [
+              88.5327,
+              27.2207
+            ],
+            [
+              88.5327,
+              27.2327
+            ],
+            [
+              88.5207,
+              27.2327
+            ],
+            [
+              88.5207,
+              27.2207
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "zone_id": "ZONE-066",
+        "latitude": 27.2267,
+        "longitude": 88.5267,
+        "elevation_m": 380.0,
+        "slope_degrees": 18.0,
+        "aspect_degrees": 310.0,
+        "terrain_ruggedness": 30.8,
+        "distance_to_nh10_km": 2.26,
+        "distance_to_nearest_landslide_km": 1.766,
+        "historical_landslide_density": 0.08,
+        "rainfall_24h_mm": 11.2,
+        "rainfall_72h_mm": 30.8,
+        "risk_probability": 0.0317,
+        "static_susceptibility": 0.3096,
+        "dynamic_trigger": 0.3325,
+        "risk_level": "LOW",
+        "spatial_explanation": "Stable terrain (3.2%): Slope 18.0\u00b0, low cumulative antecedent trigger.",
+        "top_risk_factors": [
+          "Antecedent Soil Saturation (72h)",
+          "Moderate Slope Angle"
+        ],
+        "model_version": "HistGradientBoosting v1.0.0 (Platt Calibrated)"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ZONE-067",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              88.534,
+              27.2207
+            ],
+            [
+              88.546,
+              27.2207
+            ],
+            [
+              88.546,
+              27.2327
+            ],
+            [
+              88.534,
+              27.2327
+            ],
+            [
+              88.534,
+              27.2207
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "zone_id": "ZONE-067",
+        "latitude": 27.2267,
+        "longitude": 88.54,
+        "elevation_m": 380.0,
+        "slope_degrees": 18.0,
+        "aspect_degrees": 310.0,
+        "terrain_ruggedness": 30.8,
+        "distance_to_nh10_km": 3.33,
+        "distance_to_nearest_landslide_km": 2.559,
+        "historical_landslide_density": 0.0,
+        "rainfall_24h_mm": 11.2,
+        "rainfall_72h_mm": 30.8,
+        "risk_probability": 0.0317,
+        "static_susceptibility": 0.3086,
+        "dynamic_trigger": 0.3325,
+        "risk_level": "LOW",
+        "spatial_explanation": "Stable terrain (3.2%): Slope 18.0\u00b0, low cumulative antecedent trigger.",
+        "top_risk_factors": [
+          "Antecedent Soil Saturation (72h)",
+          "Moderate Slope Angle"
+        ],
+        "model_version": "HistGradientBoosting v1.0.0 (Platt Calibrated)"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ZONE-068",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              88.5473,
+              27.2207
+            ],
+            [
+              88.5593,
+              27.2207
+            ],
+            [
+              88.5593,
+              27.2327
+            ],
+            [
+              88.5473,
+              27.2327
+            ],
+            [
+              88.5473,
+              27.2207
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "zone_id": "ZONE-068",
+        "latitude": 27.2267,
+        "longitude": 88.5533,
+        "elevation_m": 380.0,
+        "slope_degrees": 18.0,
+        "aspect_degrees": 310.0,
+        "terrain_ruggedness": 30.8,
+        "distance_to_nh10_km": 4.47,
+        "distance_to_nearest_landslide_km": 3.002,
+        "historical_landslide_density": 0.0,
+        "rainfall_24h_mm": 11.2,
+        "rainfall_72h_mm": 30.8,
+        "risk_probability": 0.0317,
+        "static_susceptibility": 0.3086,
+        "dynamic_trigger": 0.3325,
+        "risk_level": "LOW",
+        "spatial_explanation": "Stable terrain (3.2%): Slope 18.0\u00b0, low cumulative antecedent trigger.",
+        "top_risk_factors": [
+          "Antecedent Soil Saturation (72h)",
+          "Moderate Slope Angle"
+        ],
+        "model_version": "HistGradientBoosting v1.0.0 (Platt Calibrated)"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ZONE-069",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              88.5607,
+              27.2207
+            ],
+            [
+              88.5727,
+              27.2207
+            ],
+            [
+              88.5727,
+              27.2327
+            ],
+            [
+              88.5607,
+              27.2327
+            ],
+            [
+              88.5607,
+              27.2207
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "zone_id": "ZONE-069",
+        "latitude": 27.2267,
+        "longitude": 88.5667,
+        "elevation_m": 380.0,
+        "slope_degrees": 18.0,
+        "aspect_degrees": 310.0,
+        "terrain_ruggedness": 30.8,
+        "distance_to_nh10_km": 5.61,
+        "distance_to_nearest_landslide_km": 2.495,
+        "historical_landslide_density": 0.0,
+        "rainfall_24h_mm": 10.4,
+        "rainfall_72h_mm": 29.8,
+        "risk_probability": 0.0075,
+        "static_susceptibility": 0.3086,
+        "dynamic_trigger": 0.3163,
+        "risk_level": "LOW",
+        "spatial_explanation": "Stable terrain (0.8%): Slope 18.0\u00b0, low cumulative antecedent trigger.",
+        "top_risk_factors": [
+          "Moderate Slope Angle"
+        ],
+        "model_version": "HistGradientBoosting v1.0.0 (Platt Calibrated)"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ZONE-070",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              88.574,
+              27.2207
+            ],
+            [
+              88.586,
+              27.2207
+            ],
+            [
+              88.586,
+              27.2327
+            ],
+            [
+              88.574,
+              27.2327
+            ],
+            [
+              88.574,
+              27.2207
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "zone_id": "ZONE-070",
+        "latitude": 27.2267,
+        "longitude": 88.58,
+        "elevation_m": 380.0,
+        "slope_degrees": 18.0,
+        "aspect_degrees": 310.0,
+        "terrain_ruggedness": 30.8,
+        "distance_to_nh10_km": 6.68,
+        "distance_to_nearest_landslide_km": 1.542,
+        "historical_landslide_density": 0.24,
+        "rainfall_24h_mm": 10.4,
+        "rainfall_72h_mm": 29.8,
+        "risk_probability": 0.0075,
+        "static_susceptibility": 0.3118,
+        "dynamic_trigger": 0.3163,
+        "risk_level": "LOW",
+        "spatial_explanation": "Stable terrain (0.8%): Slope 18.0\u00b0, low cumulative antecedent trigger.",
+        "top_risk_factors": [
+          "Moderate Slope Angle"
+        ],
+        "model_version": "HistGradientBoosting v1.0.0 (Platt Calibrated)"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ZONE-071",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              88.454,
+              27.2351
+            ],
+            [
+              88.466,
+              27.2351
+            ],
+            [
+              88.466,
+              27.2471
+            ],
+            [
+              88.454,
+              27.2471
+            ],
+            [
+              88.454,
+              27.2351
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "zone_id": "ZONE-071",
+        "latitude": 27.2411,
+        "longitude": 88.46,
+        "elevation_m": 380.0,
+        "slope_degrees": 18.0,
+        "aspect_degrees": 310.0,
+        "terrain_ruggedness": 30.8,
+        "distance_to_nh10_km": 3.77,
+        "distance_to_nearest_landslide_km": 1.064,
+        "historical_landslide_density": 0.48,
+        "rainfall_24h_mm": 11.2,
+        "rainfall_72h_mm": 30.8,
+        "risk_probability": 0.0317,
+        "static_susceptibility": 0.315,
+        "dynamic_trigger": 0.3325,
+        "risk_level": "LOW",
+        "spatial_explanation": "Stable terrain (3.2%): Slope 18.0\u00b0, low cumulative antecedent trigger.",
+        "top_risk_factors": [
+          "Antecedent Soil Saturation (72h)",
+          "Moderate Slope Angle"
+        ],
+        "model_version": "HistGradientBoosting v1.0.0 (Platt Calibrated)"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ZONE-072",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              88.4673,
+              27.2351
+            ],
+            [
+              88.4793,
+              27.2351
+            ],
+            [
+              88.4793,
+              27.2471
+            ],
+            [
+              88.4673,
+              27.2471
+            ],
+            [
+              88.4673,
+              27.2351
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "zone_id": "ZONE-072",
+        "latitude": 27.2411,
+        "longitude": 88.4733,
+        "elevation_m": 380.0,
+        "slope_degrees": 18.0,
+        "aspect_degrees": 310.0,
+        "terrain_ruggedness": 30.8,
+        "distance_to_nh10_km": 2.46,
+        "distance_to_nearest_landslide_km": 0.344,
+        "historical_landslide_density": 0.95,
+        "rainfall_24h_mm": 11.2,
+        "rainfall_72h_mm": 30.8,
+        "risk_probability": 0.0317,
+        "static_susceptibility": 0.3212,
+        "dynamic_trigger": 0.3325,
+        "risk_level": "LOW",
+        "spatial_explanation": "Stable terrain (3.2%): Slope 18.0\u00b0, low cumulative antecedent trigger.",
+        "top_risk_factors": [
+          "Antecedent Soil Saturation (72h)",
+          "Moderate Slope Angle",
+          "Historical Shear Zone Proximity"
+        ],
+        "model_version": "HistGradientBoosting v1.0.0 (Platt Calibrated)"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ZONE-073",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              88.4807,
+              27.2351
+            ],
+            [
+              88.4927,
+              27.2351
+            ],
+            [
+              88.4927,
+              27.2471
+            ],
+            [
+              88.4807,
+              27.2471
+            ],
+            [
+              88.4807,
+              27.2351
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "zone_id": "ZONE-073",
+        "latitude": 27.2411,
+        "longitude": 88.4867,
+        "elevation_m": 380.0,
+        "slope_degrees": 18.0,
+        "aspect_degrees": 310.0,
+        "terrain_ruggedness": 30.8,
+        "distance_to_nh10_km": 1.17,
+        "distance_to_nearest_landslide_km": 0.047,
+        "historical_landslide_density": 1.11,
+        "rainfall_24h_mm": 11.2,
+        "rainfall_72h_mm": 30.8,
+        "risk_probability": 0.0317,
+        "static_susceptibility": 0.3234,
+        "dynamic_trigger": 0.3325,
+        "risk_level": "LOW",
+        "spatial_explanation": "Stable terrain (3.2%): Slope 18.0\u00b0, low cumulative antecedent trigger.",
+        "top_risk_factors": [
+          "Antecedent Soil Saturation (72h)",
+          "Moderate Slope Angle",
+          "Historical Shear Zone Proximity"
+        ],
+        "model_version": "HistGradientBoosting v1.0.0 (Platt Calibrated)"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ZONE-074",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              88.494,
+              27.2351
+            ],
+            [
+              88.506,
+              27.2351
+            ],
+            [
+              88.506,
+              27.2471
+            ],
+            [
+              88.494,
+              27.2471
+            ],
+            [
+              88.494,
+              27.2351
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "zone_id": "ZONE-074",
+        "latitude": 27.2411,
+        "longitude": 88.5,
+        "elevation_m": 380.0,
+        "slope_degrees": 18.0,
+        "aspect_degrees": 310.0,
+        "terrain_ruggedness": 30.8,
+        "distance_to_nh10_km": 0.4,
+        "distance_to_nearest_landslide_km": 0.86,
+        "historical_landslide_density": 1.35,
+        "rainfall_24h_mm": 11.2,
+        "rainfall_72h_mm": 30.8,
+        "risk_probability": 0.0317,
+        "static_susceptibility": 0.3266,
+        "dynamic_trigger": 0.3325,
+        "risk_level": "LOW",
+        "spatial_explanation": "Stable terrain (3.2%): Slope 18.0\u00b0, low cumulative antecedent trigger.",
+        "top_risk_factors": [
+          "Antecedent Soil Saturation (72h)",
+          "Moderate Slope Angle",
+          "Historical Shear Zone Proximity"
+        ],
+        "model_version": "HistGradientBoosting v1.0.0 (Platt Calibrated)"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ZONE-075",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              88.5073,
+              27.2351
+            ],
+            [
+              88.5193,
+              27.2351
+            ],
+            [
+              88.5193,
+              27.2471
+            ],
+            [
+              88.5073,
+              27.2471
+            ],
+            [
+              88.5073,
+              27.2351
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "zone_id": "ZONE-075",
+        "latitude": 27.2411,
+        "longitude": 88.5133,
+        "elevation_m": 380.0,
+        "slope_degrees": 18.0,
+        "aspect_degrees": 310.0,
+        "terrain_ruggedness": 30.8,
+        "distance_to_nh10_km": 1.47,
+        "distance_to_nearest_landslide_km": 0.38,
+        "historical_landslide_density": 0.88,
+        "rainfall_24h_mm": 11.2,
+        "rainfall_72h_mm": 30.8,
+        "risk_probability": 0.0317,
+        "static_susceptibility": 0.3203,
+        "dynamic_trigger": 0.3325,
+        "risk_level": "LOW",
+        "spatial_explanation": "Stable terrain (3.2%): Slope 18.0\u00b0, low cumulative antecedent trigger.",
+        "top_risk_factors": [
+          "Antecedent Soil Saturation (72h)",
+          "Moderate Slope Angle",
+          "Historical Shear Zone Proximity"
+        ],
+        "model_version": "HistGradientBoosting v1.0.0 (Platt Calibrated)"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ZONE-076",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              88.5207,
+              27.2351
+            ],
+            [
+              88.5327,
+              27.2351
+            ],
+            [
+              88.5327,
+              27.2471
+            ],
+            [
+              88.5207,
+              27.2471
+            ],
+            [
+              88.5207,
+              27.2351
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "zone_id": "ZONE-076",
+        "latitude": 27.2411,
+        "longitude": 88.5267,
+        "elevation_m": 380.0,
+        "slope_degrees": 18.0,
+        "aspect_degrees": 310.0,
+        "terrain_ruggedness": 30.8,
+        "distance_to_nh10_km": 2.68,
+        "distance_to_nearest_landslide_km": 0.49,
+        "historical_landslide_density": 0.88,
+        "rainfall_24h_mm": 11.2,
+        "rainfall_72h_mm": 30.8,
+        "risk_probability": 0.0317,
+        "static_susceptibility": 0.3203,
+        "dynamic_trigger": 0.3325,
+        "risk_level": "LOW",
+        "spatial_explanation": "Stable terrain (3.2%): Slope 18.0\u00b0, low cumulative antecedent trigger.",
+        "top_risk_factors": [
+          "Antecedent Soil Saturation (72h)",
+          "Moderate Slope Angle",
+          "Historical Shear Zone Proximity"
+        ],
+        "model_version": "HistGradientBoosting v1.0.0 (Platt Calibrated)"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ZONE-077",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              88.534,
+              27.2351
+            ],
+            [
+              88.546,
+              27.2351
+            ],
+            [
+              88.546,
+              27.2471
+            ],
+            [
+              88.534,
+              27.2471
+            ],
+            [
+              88.534,
+              27.2351
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "zone_id": "ZONE-077",
+        "latitude": 27.2411,
+        "longitude": 88.54,
+        "elevation_m": 380.0,
+        "slope_degrees": 18.0,
+        "aspect_degrees": 310.0,
+        "terrain_ruggedness": 30.8,
+        "distance_to_nh10_km": 3.96,
+        "distance_to_nearest_landslide_km": 1.244,
+        "historical_landslide_density": 0.88,
+        "rainfall_24h_mm": 11.2,
+        "rainfall_72h_mm": 30.8,
+        "risk_probability": 0.0317,
+        "static_susceptibility": 0.3203,
+        "dynamic_trigger": 0.3325,
+        "risk_level": "LOW",
+        "spatial_explanation": "Stable terrain (3.2%): Slope 18.0\u00b0, low cumulative antecedent trigger.",
+        "top_risk_factors": [
+          "Antecedent Soil Saturation (72h)",
+          "Moderate Slope Angle"
+        ],
+        "model_version": "HistGradientBoosting v1.0.0 (Platt Calibrated)"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ZONE-078",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              88.5473,
+              27.2351
+            ],
+            [
+              88.5593,
+              27.2351
+            ],
+            [
+              88.5593,
+              27.2471
+            ],
+            [
+              88.5473,
+              27.2471
+            ],
+            [
+              88.5473,
+              27.2351
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "zone_id": "ZONE-078",
+        "latitude": 27.2411,
+        "longitude": 88.5533,
+        "elevation_m": 380.0,
+        "slope_degrees": 18.0,
+        "aspect_degrees": 310.0,
+        "terrain_ruggedness": 30.8,
+        "distance_to_nh10_km": 5.25,
+        "distance_to_nearest_landslide_km": 1.432,
+        "historical_landslide_density": 0.48,
+        "rainfall_24h_mm": 11.2,
+        "rainfall_72h_mm": 30.8,
+        "risk_probability": 0.0317,
+        "static_susceptibility": 0.315,
+        "dynamic_trigger": 0.3325,
+        "risk_level": "LOW",
+        "spatial_explanation": "Stable terrain (3.2%): Slope 18.0\u00b0, low cumulative antecedent trigger.",
+        "top_risk_factors": [
+          "Antecedent Soil Saturation (72h)",
+          "Moderate Slope Angle"
+        ],
+        "model_version": "HistGradientBoosting v1.0.0 (Platt Calibrated)"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ZONE-079",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              88.5607,
+              27.2351
+            ],
+            [
+              88.5727,
+              27.2351
+            ],
+            [
+              88.5727,
+              27.2471
+            ],
+            [
+              88.5607,
+              27.2471
+            ],
+            [
+              88.5607,
+              27.2351
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "zone_id": "ZONE-079",
+        "latitude": 27.2411,
+        "longitude": 88.5667,
+        "elevation_m": 380.0,
+        "slope_degrees": 18.0,
+        "aspect_degrees": 310.0,
+        "terrain_ruggedness": 30.8,
+        "distance_to_nh10_km": 6.42,
+        "distance_to_nearest_landslide_km": 2.169,
+        "historical_landslide_density": 0.0,
+        "rainfall_24h_mm": 11.2,
+        "rainfall_72h_mm": 30.8,
+        "risk_probability": 0.0317,
+        "static_susceptibility": 0.3086,
+        "dynamic_trigger": 0.3325,
+        "risk_level": "LOW",
+        "spatial_explanation": "Stable terrain (3.2%): Slope 18.0\u00b0, low cumulative antecedent trigger.",
+        "top_risk_factors": [
+          "Antecedent Soil Saturation (72h)",
+          "Moderate Slope Angle"
+        ],
+        "model_version": "HistGradientBoosting v1.0.0 (Platt Calibrated)"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ZONE-080",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              88.574,
+              27.2351
+            ],
+            [
+              88.586,
+              27.2351
+            ],
+            [
+              88.586,
+              27.2471
+            ],
+            [
+              88.574,
+              27.2471
+            ],
+            [
+              88.574,
+              27.2351
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "zone_id": "ZONE-080",
+        "latitude": 27.2411,
+        "longitude": 88.58,
+        "elevation_m": 380.0,
+        "slope_degrees": 18.0,
+        "aspect_degrees": 310.0,
+        "terrain_ruggedness": 30.8,
+        "distance_to_nh10_km": 7.55,
+        "distance_to_nearest_landslide_km": 1.882,
+        "historical_landslide_density": 0.16,
+        "rainfall_24h_mm": 11.2,
+        "rainfall_72h_mm": 30.8,
+        "risk_probability": 0.0317,
+        "static_susceptibility": 0.3107,
+        "dynamic_trigger": 0.3325,
+        "risk_level": "LOW",
+        "spatial_explanation": "Stable terrain (3.2%): Slope 18.0\u00b0, low cumulative antecedent trigger.",
+        "top_risk_factors": [
+          "Antecedent Soil Saturation (72h)",
+          "Moderate Slope Angle"
+        ],
+        "model_version": "HistGradientBoosting v1.0.0 (Platt Calibrated)"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ZONE-081",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              88.454,
+              27.2496
+            ],
+            [
+              88.466,
+              27.2496
+            ],
+            [
+              88.466,
+              27.2616
+            ],
+            [
+              88.454,
+              27.2616
+            ],
+            [
+              88.454,
+              27.2496
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "zone_id": "ZONE-081",
+        "latitude": 27.2556,
+        "longitude": 88.46,
+        "elevation_m": 380.0,
+        "slope_degrees": 18.0,
+        "aspect_degrees": 310.0,
+        "terrain_ruggedness": 30.8,
+        "distance_to_nh10_km": 4.23,
+        "distance_to_nearest_landslide_km": 0.345,
+        "historical_landslide_density": 0.48,
+        "rainfall_24h_mm": 11.2,
+        "rainfall_72h_mm": 30.8,
+        "risk_probability": 0.0317,
+        "static_susceptibility": 0.315,
+        "dynamic_trigger": 0.3325,
+        "risk_level": "LOW",
+        "spatial_explanation": "Stable terrain (3.2%): Slope 18.0\u00b0, low cumulative antecedent trigger.",
+        "top_risk_factors": [
+          "Antecedent Soil Saturation (72h)",
+          "Moderate Slope Angle",
+          "Historical Shear Zone Proximity"
+        ],
+        "model_version": "HistGradientBoosting v1.0.0 (Platt Calibrated)"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ZONE-082",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              88.4673,
+              27.2496
+            ],
+            [
+              88.4793,
+              27.2496
+            ],
+            [
+              88.4793,
+              27.2616
+            ],
+            [
+              88.4673,
+              27.2616
+            ],
+            [
+              88.4673,
+              27.2496
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "zone_id": "ZONE-082",
+        "latitude": 27.2556,
+        "longitude": 88.4733,
+        "elevation_m": 380.0,
+        "slope_degrees": 18.0,
+        "aspect_degrees": 310.0,
+        "terrain_ruggedness": 30.8,
+        "distance_to_nh10_km": 3.12,
+        "distance_to_nearest_landslide_km": 0.815,
+        "historical_landslide_density": 0.56,
+        "rainfall_24h_mm": 11.2,
+        "rainfall_72h_mm": 30.8,
+        "risk_probability": 0.0317,
+        "static_susceptibility": 0.316,
+        "dynamic_trigger": 0.3325,
+        "risk_level": "LOW",
+        "spatial_explanation": "Stable terrain (3.2%): Slope 18.0\u00b0, low cumulative antecedent trigger.",
+        "top_risk_factors": [
+          "Antecedent Soil Saturation (72h)",
+          "Moderate Slope Angle",
+          "Historical Shear Zone Proximity"
+        ],
+        "model_version": "HistGradientBoosting v1.0.0 (Platt Calibrated)"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ZONE-083",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              88.4807,
+              27.2496
+            ],
+            [
+              88.4927,
+              27.2496
+            ],
+            [
+              88.4927,
+              27.2616
+            ],
+            [
+              88.4807,
+              27.2616
+            ],
+            [
+              88.4807,
+              27.2496
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "zone_id": "ZONE-083",
+        "latitude": 27.2556,
+        "longitude": 88.4867,
+        "elevation_m": 380.0,
+        "slope_degrees": 18.0,
+        "aspect_degrees": 310.0,
+        "terrain_ruggedness": 30.8,
+        "distance_to_nh10_km": 2.25,
+        "distance_to_nearest_landslide_km": 1.23,
+        "historical_landslide_density": 0.56,
+        "rainfall_24h_mm": 11.2,
+        "rainfall_72h_mm": 30.8,
+        "risk_probability": 0.0317,
+        "static_susceptibility": 0.316,
+        "dynamic_trigger": 0.3325,
+        "risk_level": "LOW",
+        "spatial_explanation": "Stable terrain (3.2%): Slope 18.0\u00b0, low cumulative antecedent trigger.",
+        "top_risk_factors": [
+          "Antecedent Soil Saturation (72h)",
+          "Moderate Slope Angle"
+        ],
+        "model_version": "HistGradientBoosting v1.0.0 (Platt Calibrated)"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ZONE-084",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              88.494,
+              27.2496
+            ],
+            [
+              88.506,
+              27.2496
+            ],
+            [
+              88.506,
+              27.2616
+            ],
+            [
+              88.494,
+              27.2616
+            ],
+            [
+              88.494,
+              27.2496
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "zone_id": "ZONE-084",
+        "latitude": 27.2556,
+        "longitude": 88.5,
+        "elevation_m": 380.0,
+        "slope_degrees": 18.0,
+        "aspect_degrees": 310.0,
+        "terrain_ruggedness": 30.8,
+        "distance_to_nh10_km": 1.96,
+        "distance_to_nearest_landslide_km": 2.124,
+        "historical_landslide_density": 0.0,
+        "rainfall_24h_mm": 11.2,
+        "rainfall_72h_mm": 30.8,
+        "risk_probability": 0.0317,
+        "static_susceptibility": 0.3086,
+        "dynamic_trigger": 0.3325,
+        "risk_level": "LOW",
+        "spatial_explanation": "Stable terrain (3.2%): Slope 18.0\u00b0, low cumulative antecedent trigger.",
+        "top_risk_factors": [
+          "Antecedent Soil Saturation (72h)",
+          "Moderate Slope Angle"
+        ],
+        "model_version": "HistGradientBoosting v1.0.0 (Platt Calibrated)"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ZONE-085",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              88.5073,
+              27.2496
+            ],
+            [
+              88.5193,
+              27.2496
+            ],
+            [
+              88.5193,
+              27.2616
+            ],
+            [
+              88.5073,
+              27.2616
+            ],
+            [
+              88.5073,
+              27.2496
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "zone_id": "ZONE-085",
+        "latitude": 27.2556,
+        "longitude": 88.5133,
+        "elevation_m": 380.0,
+        "slope_degrees": 18.0,
+        "aspect_degrees": 310.0,
+        "terrain_ruggedness": 30.8,
+        "distance_to_nh10_km": 2.47,
+        "distance_to_nearest_landslide_km": 1.467,
+        "historical_landslide_density": 0.56,
+        "rainfall_24h_mm": 11.2,
+        "rainfall_72h_mm": 30.8,
+        "risk_probability": 0.0317,
+        "static_susceptibility": 0.316,
+        "dynamic_trigger": 0.3325,
+        "risk_level": "LOW",
+        "spatial_explanation": "Stable terrain (3.2%): Slope 18.0\u00b0, low cumulative antecedent trigger.",
+        "top_risk_factors": [
+          "Antecedent Soil Saturation (72h)",
+          "Moderate Slope Angle"
+        ],
+        "model_version": "HistGradientBoosting v1.0.0 (Platt Calibrated)"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ZONE-086",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              88.5207,
+              27.2496
+            ],
+            [
+              88.5327,
+              27.2496
+            ],
+            [
+              88.5327,
+              27.2616
+            ],
+            [
+              88.5207,
+              27.2616
+            ],
+            [
+              88.5207,
+              27.2496
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "zone_id": "ZONE-086",
+        "latitude": 27.2556,
+        "longitude": 88.5267,
+        "elevation_m": 380.0,
+        "slope_degrees": 18.0,
+        "aspect_degrees": 310.0,
+        "terrain_ruggedness": 30.8,
+        "distance_to_nh10_km": 3.44,
+        "distance_to_nearest_landslide_km": 0.354,
+        "historical_landslide_density": 0.95,
+        "rainfall_24h_mm": 11.2,
+        "rainfall_72h_mm": 30.8,
+        "risk_probability": 0.0317,
+        "static_susceptibility": 0.3212,
+        "dynamic_trigger": 0.3325,
+        "risk_level": "LOW",
+        "spatial_explanation": "Stable terrain (3.2%): Slope 18.0\u00b0, low cumulative antecedent trigger.",
+        "top_risk_factors": [
+          "Antecedent Soil Saturation (72h)",
+          "Moderate Slope Angle",
+          "Historical Shear Zone Proximity"
+        ],
+        "model_version": "HistGradientBoosting v1.0.0 (Platt Calibrated)"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ZONE-087",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              88.534,
+              27.2496
+            ],
+            [
+              88.546,
+              27.2496
+            ],
+            [
+              88.546,
+              27.2616
+            ],
+            [
+              88.534,
+              27.2616
+            ],
+            [
+              88.534,
+              27.2496
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "zone_id": "ZONE-087",
+        "latitude": 27.2556,
+        "longitude": 88.54,
+        "elevation_m": 380.0,
+        "slope_degrees": 18.0,
+        "aspect_degrees": 310.0,
+        "terrain_ruggedness": 30.8,
+        "distance_to_nh10_km": 4.56,
+        "distance_to_nearest_landslide_km": 0.257,
+        "historical_landslide_density": 1.35,
+        "rainfall_24h_mm": 11.2,
+        "rainfall_72h_mm": 30.8,
+        "risk_probability": 0.0317,
+        "static_susceptibility": 0.3266,
+        "dynamic_trigger": 0.3325,
+        "risk_level": "LOW",
+        "spatial_explanation": "Stable terrain (3.2%): Slope 18.0\u00b0, low cumulative antecedent trigger.",
+        "top_risk_factors": [
+          "Antecedent Soil Saturation (72h)",
+          "Moderate Slope Angle",
+          "Historical Shear Zone Proximity"
+        ],
+        "model_version": "HistGradientBoosting v1.0.0 (Platt Calibrated)"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ZONE-088",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              88.5473,
+              27.2496
+            ],
+            [
+              88.5593,
+              27.2496
+            ],
+            [
+              88.5593,
+              27.2616
+            ],
+            [
+              88.5473,
+              27.2616
+            ],
+            [
+              88.5473,
+              27.2496
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "zone_id": "ZONE-088",
+        "latitude": 27.2556,
+        "longitude": 88.5533,
+        "elevation_m": 380.0,
+        "slope_degrees": 18.0,
+        "aspect_degrees": 310.0,
+        "terrain_ruggedness": 30.8,
+        "distance_to_nh10_km": 5.72,
+        "distance_to_nearest_landslide_km": 0.137,
+        "historical_landslide_density": 0.8,
+        "rainfall_24h_mm": 11.2,
+        "rainfall_72h_mm": 30.8,
+        "risk_probability": 0.0317,
+        "static_susceptibility": 0.3192,
+        "dynamic_trigger": 0.3325,
+        "risk_level": "LOW",
+        "spatial_explanation": "Stable terrain (3.2%): Slope 18.0\u00b0, low cumulative antecedent trigger.",
+        "top_risk_factors": [
+          "Antecedent Soil Saturation (72h)",
+          "Moderate Slope Angle",
+          "Historical Shear Zone Proximity"
+        ],
+        "model_version": "HistGradientBoosting v1.0.0 (Platt Calibrated)"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ZONE-089",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              88.5607,
+              27.2496
+            ],
+            [
+              88.5727,
+              27.2496
+            ],
+            [
+              88.5727,
+              27.2616
+            ],
+            [
+              88.5607,
+              27.2616
+            ],
+            [
+              88.5607,
+              27.2496
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "zone_id": "ZONE-089",
+        "latitude": 27.2556,
+        "longitude": 88.5667,
+        "elevation_m": 380.0,
+        "slope_degrees": 18.0,
+        "aspect_degrees": 310.0,
+        "terrain_ruggedness": 30.8,
+        "distance_to_nh10_km": 6.94,
+        "distance_to_nearest_landslide_km": 0.888,
+        "historical_landslide_density": 0.56,
+        "rainfall_24h_mm": 11.2,
+        "rainfall_72h_mm": 30.8,
+        "risk_probability": 0.0317,
+        "static_susceptibility": 0.316,
+        "dynamic_trigger": 0.3325,
+        "risk_level": "LOW",
+        "spatial_explanation": "Stable terrain (3.2%): Slope 18.0\u00b0, low cumulative antecedent trigger.",
+        "top_risk_factors": [
+          "Antecedent Soil Saturation (72h)",
+          "Moderate Slope Angle",
+          "Historical Shear Zone Proximity"
+        ],
+        "model_version": "HistGradientBoosting v1.0.0 (Platt Calibrated)"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ZONE-090",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              88.574,
+              27.2496
+            ],
+            [
+              88.586,
+              27.2496
+            ],
+            [
+              88.586,
+              27.2616
+            ],
+            [
+              88.574,
+              27.2616
+            ],
+            [
+              88.574,
+              27.2496
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "zone_id": "ZONE-090",
+        "latitude": 27.2556,
+        "longitude": 88.58,
+        "elevation_m": 380.0,
+        "slope_degrees": 18.0,
+        "aspect_degrees": 310.0,
+        "terrain_ruggedness": 30.8,
+        "distance_to_nh10_km": 8.19,
+        "distance_to_nearest_landslide_km": 1.908,
+        "historical_landslide_density": 0.16,
+        "rainfall_24h_mm": 11.2,
+        "rainfall_72h_mm": 30.8,
+        "risk_probability": 0.0317,
+        "static_susceptibility": 0.3107,
+        "dynamic_trigger": 0.3325,
+        "risk_level": "LOW",
+        "spatial_explanation": "Stable terrain (3.2%): Slope 18.0\u00b0, low cumulative antecedent trigger.",
+        "top_risk_factors": [
+          "Antecedent Soil Saturation (72h)",
+          "Moderate Slope Angle"
+        ],
+        "model_version": "HistGradientBoosting v1.0.0 (Platt Calibrated)"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ZONE-091",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              88.454,
+              27.264
+            ],
+            [
+              88.466,
+              27.264
+            ],
+            [
+              88.466,
+              27.276
+            ],
+            [
+              88.454,
+              27.276
+            ],
+            [
+              88.454,
+              27.264
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "zone_id": "ZONE-091",
+        "latitude": 27.27,
+        "longitude": 88.46,
+        "elevation_m": 380.0,
+        "slope_degrees": 18.0,
+        "aspect_degrees": 310.0,
+        "terrain_ruggedness": 30.8,
+        "distance_to_nh10_km": 5.17,
+        "distance_to_nearest_landslide_km": 1.28,
+        "historical_landslide_density": 0.16,
+        "rainfall_24h_mm": 11.2,
+        "rainfall_72h_mm": 30.8,
+        "risk_probability": 0.0317,
+        "static_susceptibility": 0.3107,
+        "dynamic_trigger": 0.3325,
+        "risk_level": "LOW",
+        "spatial_explanation": "Stable terrain (3.2%): Slope 18.0\u00b0, low cumulative antecedent trigger.",
+        "top_risk_factors": [
+          "Antecedent Soil Saturation (72h)",
+          "Moderate Slope Angle"
+        ],
+        "model_version": "HistGradientBoosting v1.0.0 (Platt Calibrated)"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ZONE-092",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              88.4673,
+              27.264
+            ],
+            [
+              88.4793,
+              27.264
+            ],
+            [
+              88.4793,
+              27.276
+            ],
+            [
+              88.4673,
+              27.276
+            ],
+            [
+              88.4673,
+              27.264
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "zone_id": "ZONE-092",
+        "latitude": 27.27,
+        "longitude": 88.4733,
+        "elevation_m": 380.0,
+        "slope_degrees": 18.0,
+        "aspect_degrees": 310.0,
+        "terrain_ruggedness": 30.8,
+        "distance_to_nh10_km": 4.31,
+        "distance_to_nearest_landslide_km": 1.715,
+        "historical_landslide_density": 0.08,
+        "rainfall_24h_mm": 11.2,
+        "rainfall_72h_mm": 30.8,
+        "risk_probability": 0.0317,
+        "static_susceptibility": 0.3096,
+        "dynamic_trigger": 0.3325,
+        "risk_level": "LOW",
+        "spatial_explanation": "Stable terrain (3.2%): Slope 18.0\u00b0, low cumulative antecedent trigger.",
+        "top_risk_factors": [
+          "Antecedent Soil Saturation (72h)",
+          "Moderate Slope Angle"
+        ],
+        "model_version": "HistGradientBoosting v1.0.0 (Platt Calibrated)"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ZONE-093",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              88.4807,
+              27.264
+            ],
+            [
+              88.4927,
+              27.264
+            ],
+            [
+              88.4927,
+              27.276
+            ],
+            [
+              88.4807,
+              27.276
+            ],
+            [
+              88.4807,
+              27.264
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "zone_id": "ZONE-093",
+        "latitude": 27.27,
+        "longitude": 88.4867,
+        "elevation_m": 380.0,
+        "slope_degrees": 18.0,
+        "aspect_degrees": 310.0,
+        "terrain_ruggedness": 30.8,
+        "distance_to_nh10_km": 3.73,
+        "distance_to_nearest_landslide_km": 2.545,
+        "historical_landslide_density": 0.0,
+        "rainfall_24h_mm": 11.2,
+        "rainfall_72h_mm": 30.8,
+        "risk_probability": 0.0317,
+        "static_susceptibility": 0.3086,
+        "dynamic_trigger": 0.3325,
+        "risk_level": "LOW",
+        "spatial_explanation": "Stable terrain (3.2%): Slope 18.0\u00b0, low cumulative antecedent trigger.",
+        "top_risk_factors": [
+          "Antecedent Soil Saturation (72h)",
+          "Moderate Slope Angle"
+        ],
+        "model_version": "HistGradientBoosting v1.0.0 (Platt Calibrated)"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ZONE-094",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              88.494,
+              27.264
+            ],
+            [
+              88.506,
+              27.264
+            ],
+            [
+              88.506,
+              27.276
+            ],
+            [
+              88.494,
+              27.276
+            ],
+            [
+              88.494,
+              27.264
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "zone_id": "ZONE-094",
+        "latitude": 27.27,
+        "longitude": 88.5,
+        "elevation_m": 380.0,
+        "slope_degrees": 18.0,
+        "aspect_degrees": 310.0,
+        "terrain_ruggedness": 30.8,
+        "distance_to_nh10_km": 3.56,
+        "distance_to_nearest_landslide_km": 3.286,
+        "historical_landslide_density": 0.0,
+        "rainfall_24h_mm": 11.2,
+        "rainfall_72h_mm": 30.8,
+        "risk_probability": 0.0317,
+        "static_susceptibility": 0.3086,
+        "dynamic_trigger": 0.3325,
+        "risk_level": "LOW",
+        "spatial_explanation": "Stable terrain (3.2%): Slope 18.0\u00b0, low cumulative antecedent trigger.",
+        "top_risk_factors": [
+          "Antecedent Soil Saturation (72h)",
+          "Moderate Slope Angle"
+        ],
+        "model_version": "HistGradientBoosting v1.0.0 (Platt Calibrated)"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ZONE-095",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              88.5073,
+              27.264
+            ],
+            [
+              88.5193,
+              27.264
+            ],
+            [
+              88.5193,
+              27.276
+            ],
+            [
+              88.5073,
+              27.276
+            ],
+            [
+              88.5073,
+              27.264
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "zone_id": "ZONE-095",
+        "latitude": 27.27,
+        "longitude": 88.5133,
+        "elevation_m": 380.0,
+        "slope_degrees": 18.0,
+        "aspect_degrees": 310.0,
+        "terrain_ruggedness": 30.8,
+        "distance_to_nh10_km": 3.87,
+        "distance_to_nearest_landslide_km": 2.146,
+        "historical_landslide_density": 0.0,
+        "rainfall_24h_mm": 11.2,
+        "rainfall_72h_mm": 30.8,
+        "risk_probability": 0.0317,
+        "static_susceptibility": 0.3086,
+        "dynamic_trigger": 0.3325,
+        "risk_level": "LOW",
+        "spatial_explanation": "Stable terrain (3.2%): Slope 18.0\u00b0, low cumulative antecedent trigger.",
+        "top_risk_factors": [
+          "Antecedent Soil Saturation (72h)",
+          "Moderate Slope Angle"
+        ],
+        "model_version": "HistGradientBoosting v1.0.0 (Platt Calibrated)"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ZONE-096",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              88.5207,
+              27.264
+            ],
+            [
+              88.5327,
+              27.264
+            ],
+            [
+              88.5327,
+              27.276
+            ],
+            [
+              88.5207,
+              27.276
+            ],
+            [
+              88.5207,
+              27.264
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "zone_id": "ZONE-096",
+        "latitude": 27.27,
+        "longitude": 88.5267,
+        "elevation_m": 380.0,
+        "slope_degrees": 18.0,
+        "aspect_degrees": 310.0,
+        "terrain_ruggedness": 30.8,
+        "distance_to_nh10_km": 4.55,
+        "distance_to_nearest_landslide_km": 0.901,
+        "historical_landslide_density": 0.32,
+        "rainfall_24h_mm": 11.2,
+        "rainfall_72h_mm": 30.8,
+        "risk_probability": 0.0317,
+        "static_susceptibility": 0.3128,
+        "dynamic_trigger": 0.3325,
+        "risk_level": "LOW",
+        "spatial_explanation": "Stable terrain (3.2%): Slope 18.0\u00b0, low cumulative antecedent trigger.",
+        "top_risk_factors": [
+          "Antecedent Soil Saturation (72h)",
+          "Moderate Slope Angle",
+          "Historical Shear Zone Proximity"
+        ],
+        "model_version": "HistGradientBoosting v1.0.0 (Platt Calibrated)"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ZONE-097",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              88.534,
+              27.264
+            ],
+            [
+              88.546,
+              27.264
+            ],
+            [
+              88.546,
+              27.276
+            ],
+            [
+              88.534,
+              27.276
+            ],
+            [
+              88.534,
+              27.264
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "zone_id": "ZONE-097",
+        "latitude": 27.27,
+        "longitude": 88.54,
+        "elevation_m": 380.0,
+        "slope_degrees": 18.0,
+        "aspect_degrees": 310.0,
+        "terrain_ruggedness": 30.8,
+        "distance_to_nh10_km": 5.47,
+        "distance_to_nearest_landslide_km": 0.702,
+        "historical_landslide_density": 0.88,
+        "rainfall_24h_mm": 11.2,
+        "rainfall_72h_mm": 30.8,
+        "risk_probability": 0.0317,
+        "static_susceptibility": 0.3203,
+        "dynamic_trigger": 0.3325,
+        "risk_level": "LOW",
+        "spatial_explanation": "Stable terrain (3.2%): Slope 18.0\u00b0, low cumulative antecedent trigger.",
+        "top_risk_factors": [
+          "Antecedent Soil Saturation (72h)",
+          "Moderate Slope Angle",
+          "Historical Shear Zone Proximity"
+        ],
+        "model_version": "HistGradientBoosting v1.0.0 (Platt Calibrated)"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ZONE-098",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              88.5473,
+              27.264
+            ],
+            [
+              88.5593,
+              27.264
+            ],
+            [
+              88.5593,
+              27.276
+            ],
+            [
+              88.5473,
+              27.276
+            ],
+            [
+              88.5473,
+              27.264
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "zone_id": "ZONE-098",
+        "latitude": 27.27,
+        "longitude": 88.5533,
+        "elevation_m": 380.0,
+        "slope_degrees": 18.0,
+        "aspect_degrees": 310.0,
+        "terrain_ruggedness": 30.8,
+        "distance_to_nh10_km": 6.53,
+        "distance_to_nearest_landslide_km": 0.605,
+        "historical_landslide_density": 0.8,
+        "rainfall_24h_mm": 11.2,
+        "rainfall_72h_mm": 30.8,
+        "risk_probability": 0.0317,
+        "static_susceptibility": 0.3192,
+        "dynamic_trigger": 0.3325,
+        "risk_level": "LOW",
+        "spatial_explanation": "Stable terrain (3.2%): Slope 18.0\u00b0, low cumulative antecedent trigger.",
+        "top_risk_factors": [
+          "Antecedent Soil Saturation (72h)",
+          "Moderate Slope Angle",
+          "Historical Shear Zone Proximity"
+        ],
+        "model_version": "HistGradientBoosting v1.0.0 (Platt Calibrated)"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ZONE-099",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              88.5607,
+              27.264
+            ],
+            [
+              88.5727,
+              27.264
+            ],
+            [
+              88.5727,
+              27.276
+            ],
+            [
+              88.5607,
+              27.276
+            ],
+            [
+              88.5607,
+              27.264
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "zone_id": "ZONE-099",
+        "latitude": 27.27,
+        "longitude": 88.5667,
+        "elevation_m": 380.0,
+        "slope_degrees": 18.0,
+        "aspect_degrees": 310.0,
+        "terrain_ruggedness": 30.8,
+        "distance_to_nh10_km": 7.64,
+        "distance_to_nearest_landslide_km": 0.927,
+        "historical_landslide_density": 0.56,
+        "rainfall_24h_mm": 11.2,
+        "rainfall_72h_mm": 30.8,
+        "risk_probability": 0.0317,
+        "static_susceptibility": 0.316,
+        "dynamic_trigger": 0.3325,
+        "risk_level": "LOW",
+        "spatial_explanation": "Stable terrain (3.2%): Slope 18.0\u00b0, low cumulative antecedent trigger.",
+        "top_risk_factors": [
+          "Antecedent Soil Saturation (72h)",
+          "Moderate Slope Angle",
+          "Historical Shear Zone Proximity"
+        ],
+        "model_version": "HistGradientBoosting v1.0.0 (Platt Calibrated)"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ZONE-100",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              88.574,
+              27.264
+            ],
+            [
+              88.586,
+              27.264
+            ],
+            [
+              88.586,
+              27.276
+            ],
+            [
+              88.574,
+              27.276
+            ],
+            [
+              88.574,
+              27.264
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "zone_id": "ZONE-100",
+        "latitude": 27.27,
+        "longitude": 88.58,
+        "elevation_m": 380.0,
+        "slope_degrees": 18.0,
+        "aspect_degrees": 310.0,
+        "terrain_ruggedness": 30.8,
+        "distance_to_nh10_km": 8.79,
+        "distance_to_nearest_landslide_km": 0.447,
+        "historical_landslide_density": 0.16,
+        "rainfall_24h_mm": 11.2,
+        "rainfall_72h_mm": 30.8,
+        "risk_probability": 0.0317,
+        "static_susceptibility": 0.3107,
+        "dynamic_trigger": 0.3325,
+        "risk_level": "LOW",
+        "spatial_explanation": "Stable terrain (3.2%): Slope 18.0\u00b0, low cumulative antecedent trigger.",
+        "top_risk_factors": [
+          "Antecedent Soil Saturation (72h)",
+          "Moderate Slope Angle",
+          "Historical Shear Zone Proximity"
+        ],
+        "model_version": "HistGradientBoosting v1.0.0 (Platt Calibrated)"
+      }
+    }
+  ]
+}

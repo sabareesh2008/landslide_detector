@@ -1,0 +1,76 @@
+{
+  "total_resources": 6,
+  "corridor": "Rangpo-Singtam / NH-10 Lifeline Sector",
+  "resources": [
+    {
+      "resource_id": "RES-01",
+      "type": "RESCUE_TEAM",
+      "name": "Sikkim State Disaster Response Force (SDRF) Unit 2",
+      "station_location": "Rangpo Border Outpost",
+      "latitude": 27.1780,
+      "longitude": 88.5315,
+      "personnel_count": 24,
+      "equipment": ["Hydraulic Cutters", "Rope Rescue Systems", "Inflatable Boats", "Chainsaws"],
+      "status": "READY_STANDBY",
+      "contact": "+91-3592-240100"
+    },
+    {
+      "resource_id": "RES-02",
+      "type": "HEAVY_EXCAVATOR",
+      "name": "PWD / NHIDCL Heavy Tracked Excavator #1 (JCB 3DX)",
+      "station_location": "Bardang Road Maintenance Depot",
+      "latitude": 27.2210,
+      "longitude": 88.5040,
+      "operator": "NHIDCL Fast Response Crew",
+      "readiness_time_min": 15,
+      "status": "PRE_POSITIONED",
+      "contact": "+91-3592-234199"
+    },
+    {
+      "resource_id": "RES-03",
+      "type": "HEAVY_EXCAVATOR",
+      "name": "BRO Heavy Wheel Loader (L&T 9020)",
+      "station_location": "Majhitar Bridge Yard",
+      "latitude": 27.2080,
+      "longitude": 88.5130,
+      "operator": "Border Roads Task Force Crew",
+      "readiness_time_min": 20,
+      "status": "PRE_POSITIONED",
+      "contact": "+91-3592-246111"
+    },
+    {
+      "resource_id": "RES-04",
+      "type": "AMBULANCE",
+      "name": "Advanced Life Support (ALS) Ambulance 108 - Unit 4",
+      "station_location": "Singtam District Hospital",
+      "latitude": 27.2360,
+      "longitude": 88.4985,
+      "crew": ["Emergency Medical Technician", "Driver"],
+      "status": "READY_STANDBY",
+      "contact": "108 / +91-3592-234222"
+    },
+    {
+      "resource_id": "RES-05",
+      "type": "AMBULANCE",
+      "name": "Basic Life Support (BLS) Ambulance 108 - Unit 7",
+      "station_location": "Rangpo PHC",
+      "latitude": 27.1795,
+      "longitude": 88.5305,
+      "crew": ["Paramedic", "Driver"],
+      "status": "READY_STANDBY",
+      "contact": "108 / +91-3592-240108"
+    },
+    {
+      "resource_id": "RES-06",
+      "type": "ROAD_CLEARANCE_CREW",
+      "name": "Sikkim Highway Rapid Clearance Gang #3",
+      "station_location": "Singtam PWD Yard",
+      "latitude": 27.2350,
+      "longitude": 88.5000,
+      "personnel_count": 16,
+      "equipment": ["Dump Trucks (x2)", "Pneumatic Breakers", "Floodlights"],
+      "status": "READY_STANDBY",
+      "contact": "+91-3592-234105"
+    }
+  ]
+}

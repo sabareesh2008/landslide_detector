@@ -1,0 +1,56 @@
+{
+  "metadata": {
+    "validation_timestamp_utc": "2026-09-08T04:37:55.691686+00:00",
+    "source_dataset": "Geological Survey of India (GSI) National Landslide Susceptibility Mapping (NLSM)",
+    "study_corridor": "Rangpo-Singtam / NH-10 Corridor, Sikkim",
+    "bounding_box": {
+      "min_lat": 27.13,
+      "max_lat": 27.28,
+      "min_lon": 88.44,
+      "max_lon": 88.6
+    }
+  },
+  "quality_control_summary": {
+    "total_records": 101,
+    "valid_records": 101,
+    "invalid_records": 0,
+    "duplicates": 0,
+    "missing_coordinates": 0,
+    "missing_dates": 101,
+    "records_used_for_training": 101,
+    "records_excluded": 0
+  },
+  "spatial_distribution": {
+    "min_latitude": 27.153528,
+    "max_latitude": 27.274583,
+    "min_longitude": 88.442122,
+    "max_longitude": 88.598806,
+    "mean_latitude": 27.209120534653465,
+    "mean_longitude": 88.51446900990099
+  },
+  "material_distribution": {
+    "Debris": 76,
+    "Rock": 23,
+    "Boulders And Debris": 1,
+    "Rock Cum Debris": 1
+  },
+  "movement_distribution": {
+    "Slide": 89,
+    "Fall": 8,
+    "Topple": 1,
+    "Subsidence": 1,
+    "Debris Slide": 1,
+    "Flows": 1
+  },
+  "district_distribution": {
+    "East Sikkim": 64,
+    "South Sikkim": 33,
+    "Gangtok District": 3,
+    "Pakyong": 1
+  },
+  "temporal_fidelity_assessment": {
+    "timestamp_fidelity": "ANNUAL_SURVEY_RECORD",
+    "exact_subdaily_timestamps_present": false,
+    "scientific_note": "GSI NLSM inventory provides authoritative spatial coordinates, geological materials, and movement mechanisms with survey year tagging. Sub-daily failure timestamps are not present in catalog, requiring static susceptibility modeling combined with hydrometeorological trigger modeling rather than direct sub-daily binary regression on historical timestamps."
+  }
+}

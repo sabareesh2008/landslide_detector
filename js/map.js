@@ -1,27 +1,30 @@
 /**
- * LANDSLIDE SENTINEL AI - Real Geospatial Leaflet Map Engine
+ * LANDSLIDE SENTINEL AI - Advanced GIS Leaflet Map Engine
+ * Multi-layer rendering for fine-grained spatial risk grid, NH-10 road segments,
+ * critical infrastructure, rivers, settlements, ground sensors, field reports, and GSI failures.
  */
 
 let mapInstance = null;
 let layerControl = null;
 
-// Layer Groups
 let baseLayers = {};
 let overlayLayers = {
-  riskHeatmap: null,
+  riskZones: null,
   landslides: null,
   stations: null,
-  nh10Corridor: null,
-  slopeOverlay: null,
-  elevationOverlay: null,
-  aspectOverlay: null
+  nh10Roads: null,
+  infrastructure: null,
+  settlements: null,
+  rivers: null,
+  sensors: null,
+  fieldReports: null,
+  slopeOverlay: null
 };
 
 export function initMap(containerId = 'map') {
   const container = document.getElementById(containerId);
   if (!container || mapInstance) return mapInstance;
   
-  // Center on Rangpo - Singtam Corridor (Sikkim)
   const centerLat = 27.205;
   const centerLon = 88.517;
   
@@ -32,7 +35,6 @@ export function initMap(containerId = 'map') {
     attributionControl: false
   });
   
-  // Custom Controls
   L.control.zoom({ position: 'bottomright' }).addTo(mapInstance);
   L.control.scale({ imperial: false, position: 'bottomleft' }).addTo(mapInstance);
   
@@ -59,145 +61,248 @@ export function initMap(containerId = 'map') {
   baseLayers = {
     "Dark Command Center": darkTiles,
     "OpenStreetMap Basemap": osmTiles,
-    "Satellite Imagery": satelliteTiles,
+    "Satellite Topography": satelliteTiles,
     "Topographic Terrain": topoTiles
   };
   
-  // Initialize Overlay Groups
-  overlayLayers.riskHeatmap = L.layerGroup().addTo(mapInstance);
+  // Initialize Overlay Layer Groups
+  overlayLayers.riskZones = L.layerGroup().addTo(mapInstance);
+  overlayLayers.nh10Roads = L.layerGroup().addTo(mapInstance);
+  overlayLayers.infrastructure = L.layerGroup().addTo(mapInstance);
+  overlayLayers.settlements = L.layerGroup().addTo(mapInstance);
+  overlayLayers.rivers = L.layerGroup().addTo(mapInstance);
+  overlayLayers.sensors = L.layerGroup().addTo(mapInstance);
+  overlayLayers.fieldReports = L.layerGroup().addTo(mapInstance);
   overlayLayers.landslides = L.layerGroup().addTo(mapInstance);
   overlayLayers.stations = L.layerGroup().addTo(mapInstance);
-  overlayLayers.nh10Corridor = L.layerGroup().addTo(mapInstance);
-  overlayLayers.slopeOverlay = L.layerGroup().addTo(mapInstance);
-  overlayLayers.elevationOverlay = L.layerGroup();
-  overlayLayers.aspectOverlay = L.layerGroup();
+  overlayLayers.slopeOverlay = L.layerGroup();
   
   const overlays = {
-    "🚨 Current AI Landslide Risk Heatmap": overlayLayers.riskHeatmap,
-    "📍 Historical Landslide Records": overlayLayers.landslides,
-    "🛰️ NASA Rainfall Stations (Rangpo/Singtam)": overlayLayers.stations,
-    "🛣️ NH-10 Highway Corridor": overlayLayers.nh10Corridor,
-    "⛰️ Copernicus DEM Slope Susceptibility": overlayLayers.slopeOverlay,
-    "📈 Elevation Derivatives": overlayLayers.elevationOverlay,
-    "🧭 Aspect Orientation": overlayLayers.aspectOverlay
+    "🚨 AI Spatial Risk Zones": overlayLayers.riskZones,
+    "🛣️ NH-10 Highway Lifeline Segments": overlayLayers.nh10Roads,
+    "🏥 Critical Infrastructure & Bridges": overlayLayers.infrastructure,
+    "🏘️ Municipalities & Settlements": overlayLayers.settlements,
+    "🌊 Teesta & Rangpo Drainage Lines": overlayLayers.rivers,
+    "📡 Ground IoT Telemetry Nodes": overlayLayers.sensors,
+    "📸 Field AI Evidence Reports": overlayLayers.fieldReports,
+    "📍 GSI Historical Landslides": overlayLayers.landslides,
+    "🛰️ NASA Monitoring Stations": overlayLayers.stations
   };
   
   layerControl = L.control.layers(baseLayers, overlays, { position: 'topright', collapsed: false }).addTo(mapInstance);
   
-  // Draw NH-10 Corridor Line
-  renderNH10Corridor();
-  
   return mapInstance;
 }
 
-function renderNH10Corridor() {
-  const nh10Coords = [
-    [27.135, 88.540], // Teesta Bazar approach
-    [27.155, 88.535], // Melli junction
-    [27.177, 88.533], // Rangpo Checkpost
-    [27.195, 88.520], // Majhitar
-    [27.210, 88.510], // Mining Area
-    [27.234, 88.501], // Singtam Bazar
-    [27.255, 88.515], // Bardang
-    [27.275, 88.525]  // 5th Mile
-  ];
+export function renderSpatialRiskZones(geojsonData) {
+  if (!mapInstance || !overlayLayers.riskZones) return;
+  overlayLayers.riskZones.clearLayers();
   
-  const polyline = L.polyline(nh10Coords, {
-    color: '#06b6d4',
-    weight: 4,
-    opacity: 0.85,
-    dashArray: '8, 6'
-  }).bindPopup(`
-    <div style="font-family: Inter, sans-serif; font-size: 12px; color: #0f172a;">
-      <strong style="color: #0284c7; font-size: 13px;">NH-10 Lifeline Corridor</strong><br/>
-      <strong>Section:</strong> Rangpo – Singtam Highway, Sikkim<br/>
-      <strong>Vulnerability:</strong> Chronic slope instability corridor (Teesta Basin)
-    </div>
-  `);
-  
-  overlayLayers.nh10Corridor.addLayer(polyline);
-}
-
-export function updateMapRiskGrid(geojsonData) {
-  if (!mapInstance || !overlayLayers.riskHeatmap || !geojsonData) return;
-  overlayLayers.riskHeatmap.clearLayers();
-  overlayLayers.slopeOverlay.clearLayers();
-  
-  const getColor = (level) => {
-    switch (level) {
-      case 'CRITICAL': return '#ef4444';
-      case 'HIGH': return '#f97316';
-      case 'WATCH': return '#f59e0b';
-      case 'LOW':
-      default: return '#10b981';
-    }
-  };
-  
-  const getSlopeColor = (slope) => {
-    if (slope > 40) return '#7f1d1d';
-    if (slope > 30) return '#b91c1c';
-    if (slope > 20) return '#ea580c';
-    if (slope > 10) return '#d97706';
-    return '#059669';
-  };
+  if (!geojsonData || !geojsonData.features) return;
   
   L.geoJSON(geojsonData, {
-    style: (feature) => {
+    style: function(feature) {
       const p = feature.properties || {};
-      const color = getColor(p.risk_level);
+      const prob = p.risk_probability || 0;
+      let fillColor = '#10b981';
+      let borderColor = '#059669';
+      
+      if (prob >= 0.75) {
+        fillColor = '#ef4444';
+        borderColor = '#b91c1c';
+      } else if (prob >= 0.45) {
+        fillColor = '#f97316';
+        borderColor = '#c2410c';
+      } else if (prob >= 0.20) {
+        fillColor = '#f59e0b';
+        borderColor = '#d97706';
+      }
+      
       return {
-        fillColor: color,
+        fillColor: fillColor,
         weight: 1.5,
-        opacity: 0.7,
-        color: '#1e293b',
-        fillOpacity: p.risk_level === 'CRITICAL' ? 0.65 : 0.45
+        opacity: 0.8,
+        color: borderColor,
+        fillOpacity: 0.35
       };
     },
-    onEachFeature: (feature, layer) => {
+    onEachFeature: function(feature, layer) {
       const p = feature.properties || {};
+      const prob = p.risk_probability || 0;
+      const level = p.risk_level || 'LOW';
+      
+      const symbol = level === 'CRITICAL' ? '[!]' : (level === 'HIGH' ? '[▲]' : (level === 'WATCH' ? '[◆]' : '[✓]'));
+      
       layer.bindPopup(`
-        <div style="font-family: Inter, sans-serif; font-size: 12px; color: #0f172a; min-width: 180px;">
-          <div style="font-weight: 700; font-size: 13px; color: ${getColor(p.risk_level)}; margin-bottom: 4px;">
-            ${p.cell_id} (${p.risk_level})
+        <div style="font-family: sans-serif; font-size: 0.85rem; color: #0f172a; min-width: 230px;">
+          <div style="border-bottom: 2px solid #06b6d4; padding-bottom: 4px; margin-bottom: 6px;">
+            <strong style="color: #0e7490;">${p.zone_id || 'Grid Cell'}</strong>
+            <span style="float: right; font-weight: bold; color: ${level === 'CRITICAL' ? '#dc2626' : (level === 'HIGH' ? '#ea580c' : '#059669')}">
+              ${symbol} ${level} (${(prob * 100).toFixed(1)}%)
+            </span>
           </div>
-          <strong>Risk Probability:</strong> ${(p.risk_probability * 100).toFixed(1)}%<br/>
-          <strong>24h Rainfall:</strong> ${p.rainfall_24h_mm} mm<br/>
-          <strong>72h Accumulated:</strong> ${p.rainfall_72h_mm} mm<br/>
-          <strong>Elevation:</strong> ${p.elevation_m} m<br/>
-          <strong>Slope:</strong> ${p.slope_degrees}°<br/>
-          <strong>Aspect:</strong> ${p.aspect_degrees}°<br/>
-          <span style="font-size: 10px; color: #64748b;">${p.model_version}</span>
+          <div><strong>Elevation:</strong> ${p.elevation_m || 350} m | <strong>Slope:</strong> ${p.slope_degrees || 18}°</div>
+          <div><strong>24h Rain:</strong> ${p.rainfall_24h_mm || 0} mm | <strong>72h Rain:</strong> ${p.rainfall_72h_mm || 0} mm</div>
+          <div><strong>Nearest NH-10:</strong> ${p.distance_to_nh10_km !== undefined ? p.distance_to_nh10_km + ' km' : 'Adjacent'}</div>
+          <div style="margin-top: 6px; padding: 4px 6px; background: #f1f5f9; border-radius: 4px; font-size: 0.75rem;">
+            <em>${p.spatial_explanation || 'Hydrometeorological trigger state within safe thresholds.'}</em>
+          </div>
         </div>
       `);
     }
-  }).addTo(overlayLayers.riskHeatmap);
-  
-  // Populate Slope overlay with color-coded polygons
-  L.geoJSON(geojsonData, {
-    style: (feature) => {
-      const p = feature.properties || {};
-      return {
-        fillColor: getSlopeColor(p.slope_degrees),
-        weight: 1,
-        opacity: 0.5,
-        color: '#334155',
-        fillOpacity: 0.5
-      };
-    },
-    onEachFeature: (feature, layer) => {
-      const p = feature.properties || {};
-      layer.bindPopup(`
-        <div style="font-family: Inter, sans-serif; font-size: 12px; color: #0f172a;">
-          <strong>Slope Angle:</strong> ${p.slope_degrees}°<br/>
-          <strong>Elevation:</strong> ${p.elevation_m} m<br/>
-          <strong>Susceptibility Class:</strong> ${p.slope_degrees > 30 ? 'High' : (p.slope_degrees > 20 ? 'Moderate' : 'Low')}
-        </div>
-      `);
-    }
-  }).addTo(overlayLayers.slopeOverlay);
+  }).addTo(overlayLayers.riskZones);
 }
 
-export function updateMapLandslides(landslides) {
+export function renderRoadNetwork(roadsGeoJSON) {
+  if (!mapInstance || !overlayLayers.nh10Roads || !roadsGeoJSON) return;
+  overlayLayers.nh10Roads.clearLayers();
+  
+  L.geoJSON(roadsGeoJSON, {
+    style: function(feature) {
+      const p = feature.properties || {};
+      const isChronic = p.chronic_slide_zone;
+      return {
+        color: isChronic ? '#f43f5e' : '#38bdf8',
+        weight: 5,
+        opacity: 0.9,
+        dashArray: isChronic ? '6, 6' : null
+      };
+    },
+    onEachFeature: function(feature, layer) {
+      const p = feature.properties || {};
+      layer.bindPopup(`
+        <div style="font-size: 0.85rem; color: #0f172a; min-width: 220px;">
+          <strong style="color: #0284c7;">${p.name}</strong><br/>
+          <span style="font-size: 0.75rem; color: #64748b;">Segment ID: ${p.segment_id} • Length: ${p.length_km} km</span>
+          <hr style="margin: 4px 0;" />
+          <div><strong>Criticality:</strong> <span style="color: #dc2626; font-weight: bold;">${p.criticality}</span></div>
+          <div><strong>Chronic Slide Zone:</strong> ${p.chronic_slide_zone ? '⚠️ YES (High Scarp)' : 'No'}</div>
+          <div><strong>Traffic Status:</strong> <span style="color: #16a34a; font-weight: bold;">${p.status}</span></div>
+        </div>
+      `);
+    }
+  }).addTo(overlayLayers.nh10Roads);
+}
+
+export function renderInfrastructure(infraGeoJSON) {
+  if (!mapInstance || !overlayLayers.infrastructure || !infraGeoJSON) return;
+  overlayLayers.infrastructure.clearLayers();
+  
+  L.geoJSON(infraGeoJSON, {
+    pointToLayer: function(feature, latlng) {
+      const p = feature.properties || {};
+      let iconEmoji = '🏥';
+      if (p.type === 'BRIDGE') iconEmoji = '🌉';
+      else if (p.type === 'CULVERT') iconEmoji = '🚰';
+      else if (p.type === 'RETAINING_WALL') iconEmoji = '🧱';
+      else if (p.type === 'SCHOOL') iconEmoji = '🏫';
+      else if (p.type === 'EMERGENCY_SERVICES') iconEmoji = '🚒';
+      else if (p.type === 'TELECOM') iconEmoji = '🗼';
+      
+      const icon = L.divIcon({
+        className: 'custom-infra-icon',
+        html: `<div style="background: rgba(15,23,42,0.85); border: 1.5px solid #06b6d4; border-radius: 50%; width: 26px; height: 26px; display: flex; align-items: center; justify-content: center; font-size: 14px; box-shadow: 0 0 8px rgba(6,182,212,0.5);">${iconEmoji}</div>`,
+        iconSize: [26, 26],
+        iconAnchor: [13, 13]
+      });
+      return L.marker(latlng, { icon });
+    },
+    onEachFeature: function(feature, layer) {
+      const p = feature.properties || {};
+      layer.bindPopup(`
+        <div style="font-size: 0.85rem; color: #0f172a; min-width: 220px;">
+          <strong style="color: #0e7490;">${p.name}</strong><br/>
+          <span style="font-size: 0.75rem; color: #64748b;">Type: ${p.type} • Elev: ${p.elevation_m}m</span>
+          <hr style="margin: 4px 0;" />
+          <div><strong>Criticality:</strong> ${p.criticality}</div>
+          <div style="font-size: 0.75rem; color: #334155; margin-top: 4px;">${p.description || ''}</div>
+        </div>
+      `);
+    }
+  }).addTo(overlayLayers.infrastructure);
+}
+
+export function renderSettlements(settlementsGeoJSON) {
+  if (!mapInstance || !overlayLayers.settlements || !settlementsGeoJSON) return;
+  overlayLayers.settlements.clearLayers();
+  
+  L.geoJSON(settlementsGeoJSON, {
+    pointToLayer: function(feature, latlng) {
+      const icon = L.divIcon({
+        className: 'custom-settle-icon',
+        html: `<div style="background: rgba(15,23,42,0.9); border: 1.5px solid #a855f7; border-radius: 6px; padding: 1px 5px; font-size: 11px; font-weight: bold; color: #d8b4fe; white-space: nowrap;">🏘️ ${feature.properties.name}</div>`,
+        iconAnchor: [30, 10]
+      });
+      return L.marker(latlng, { icon });
+    }
+  }).addTo(overlayLayers.settlements);
+}
+
+export function renderRivers(riversGeoJSON) {
+  if (!mapInstance || !overlayLayers.rivers || !riversGeoJSON) return;
+  overlayLayers.rivers.clearLayers();
+  
+  L.geoJSON(riversGeoJSON, {
+    style: {
+      color: '#38bdf8',
+      weight: 3.5,
+      opacity: 0.75
+    }
+  }).addTo(overlayLayers.rivers);
+}
+
+export function renderSensorsOnMap(sensorsData) {
+  if (!mapInstance || !overlayLayers.sensors || !sensorsData) return;
+  overlayLayers.sensors.clearLayers();
+  
+  (sensorsData.nodes || []).forEach(node => {
+    const lat = node.latitude;
+    const lon = node.longitude;
+    const icon = L.divIcon({
+      className: 'custom-sensor-icon',
+      html: `<div style="background: #0f172a; border: 2px solid #10b981; border-radius: 50%; width: 24px; height: 24px; display: flex; align-items: center; justify-content: center; font-size: 12px; box-shadow: 0 0 10px rgba(16,185,129,0.7);">📡</div>`,
+      iconSize: [24, 24],
+      iconAnchor: [12, 12]
+    });
+    
+    L.marker([lat, lon], { icon }).bindPopup(`
+      <div style="font-size: 0.85rem; color: #0f172a;">
+        <strong style="color: #059669;">${node.name}</strong><br/>
+        <span class="badge bg-dark text-cyan">${node.sensor_type}</span>
+        <hr style="margin: 4px 0;" />
+        <div><strong>Status:</strong> <span style="color: #10b981;">${node.hardware_health.status}</span></div>
+        <div><strong>Battery:</strong> ${node.hardware_health.battery_percent}% (${node.hardware_health.battery_voltage}V)</div>
+      </div>
+    `).addTo(overlayLayers.sensors);
+  });
+}
+
+export function renderFieldReportsOnMap(reportsData) {
+  if (!mapInstance || !overlayLayers.fieldReports || !reportsData) return;
+  overlayLayers.fieldReports.clearLayers();
+  
+  (reportsData.reports || []).forEach(rep => {
+    const isVerified = rep.verification_lifecycle?.status === 'FIELD_VERIFIED';
+    const icon = L.divIcon({
+      className: 'custom-field-icon',
+      html: `<div style="background: #0f172a; border: 2px solid ${isVerified ? '#10b981' : '#f59e0b'}; border-radius: 50%; width: 24px; height: 24px; display: flex; align-items: center; justify-content: center; font-size: 12px; box-shadow: 0 0 8px rgba(245,158,11,0.6);">📸</div>`,
+      iconSize: [24, 24],
+      iconAnchor: [12, 12]
+    });
+    
+    L.marker([rep.latitude, rep.longitude], { icon }).bindPopup(`
+      <div style="font-size: 0.85rem; color: #0f172a;">
+        <strong style="color: #d97706;">${rep.report_id}</strong> — ${rep.location_name}<br/>
+        <span class="badge bg-secondary">${rep.verification_lifecycle?.status || 'SUBMITTED'}</span>
+        <hr style="margin: 4px 0;" />
+        <div><strong>Observed:</strong> ${(rep.observed_symptoms || []).join(', ')}</div>
+        <div style="font-size: 0.75rem; color: #64748b; margin-top: 4px;">AI Severity: ${rep.ai_vision_analysis?.estimated_severity || 'MODERATE'}</div>
+      </div>
+    `).addTo(overlayLayers.fieldReports);
+  });
+}
+
+export function renderLandslideMarkers(landslides) {
   if (!mapInstance || !overlayLayers.landslides || !landslides) return;
   overlayLayers.landslides.clearLayers();
   
@@ -207,77 +312,69 @@ export function updateMapLandslides(landslides) {
     if (isNaN(lat) || isNaN(lon)) return;
     
     const marker = L.circleMarker([lat, lon], {
-      radius: 5,
-      fillColor: '#ef4444',
+      radius: 4.5,
+      fillColor: '#ec4899',
       color: '#ffffff',
-      weight: 1.5,
+      weight: 1,
       opacity: 0.9,
-      fillOpacity: 0.85
+      fillOpacity: 0.75
     });
     
     marker.bindPopup(`
-      <div style="font-family: Inter, sans-serif; font-size: 12px; color: #0f172a;">
-        <strong style="color: #dc2626;">GSI Historical Landslide</strong><br/>
-        <strong>Slide ID:</strong> ${item.slide_no || item.sl_no}<br/>
-        <strong>Location:</strong> ${item.nh_sh_location || 'Rangpo-Singtam Corridor'}<br/>
-        <strong>Material:</strong> ${item.material_involved || 'Debris'}<br/>
-        <strong>Movement Type:</strong> ${item.movement_type || 'Slide'}<br/>
-        <strong>District:</strong> ${item.district || 'East/South Sikkim'}
+      <div style="font-size: 0.82rem; color: #0f172a;">
+        <strong style="color: #db2777;">GSI Historical Failure Scar</strong><br/>
+        <span>Slide No: ${item.event_id || item.slide_no || 'GSI-REC'}</span>
+        <hr style="margin: 4px 0;" />
+        <div><strong>Location:</strong> ${item.location_name || item.nh_sh_location || 'NH-10 Sector'}</div>
+        <div><strong>Material:</strong> ${item.material_type || item.material_involved || 'Debris'}</div>
+        <div><strong>Survey Year:</strong> ${item.survey_year || 2015}</div>
       </div>
     `);
     
-    overlayLayers.landslides.addLayer(marker);
+    marker.addTo(overlayLayers.landslides);
   });
 }
 
-export function updateMapStations(currentRiskData) {
-  if (!mapInstance || !overlayLayers.stations || !currentRiskData) return;
+export function renderStationMarkers(currentRisk) {
+  if (!mapInstance || !overlayLayers.stations) return;
   overlayLayers.stations.clearLayers();
   
-  const stations = currentRiskData.stations || {};
-  Object.keys(stations).forEach(name => {
-    const s = stations[name];
-    const iconHtml = `
-      <div style="
-        background: #0284c7;
-        color: white;
-        border: 2px solid #ffffff;
-        border-radius: 50%;
-        width: 24px;
-        height: 24px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-weight: bold;
-        font-size: 11px;
-        box-shadow: 0 0 10px rgba(6, 182, 212, 0.6);
-      ">
-        📡
-      </div>
-    `;
+  const stations = currentRisk?.stations || {};
+  
+  Object.values(stations).forEach(st => {
+    const lat = parseFloat(st.latitude);
+    const lon = parseFloat(st.longitude);
+    if (isNaN(lat) || isNaN(lon)) return;
     
-    const customIcon = L.divIcon({
-      html: iconHtml,
+    const level = st.risk_level || 'LOW';
+    const prob = st.risk_probability !== undefined ? st.risk_probability : 0;
+    
+    let markerColor = '#10b981';
+    if (level === 'CRITICAL') markerColor = '#ef4444';
+    else if (level === 'HIGH') markerColor = '#f97316';
+    else if (level === 'WATCH') markerColor = '#f59e0b';
+    
+    const icon = L.divIcon({
       className: 'station-div-icon',
-      iconSize: [24, 24],
-      iconAnchor: [12, 12]
+      html: `<div style="background: #0f172a; border: 2.5px solid ${markerColor}; border-radius: 50%; width: 32px; height: 32px; display: flex; align-items: center; justify-content: center; color: ${markerColor}; font-weight: bold; font-size: 11px; box-shadow: 0 0 14px ${markerColor}99;">${(prob * 100).toFixed(0)}%</div>`,
+      iconSize: [32, 32],
+      iconAnchor: [16, 16]
     });
     
-    const marker = L.marker([s.latitude, s.longitude], { icon: customIcon });
-    
+    const marker = L.marker([lat, lon], { icon });
     marker.bindPopup(`
-      <div style="font-family: Inter, sans-serif; font-size: 12px; color: #0f172a; min-width: 200px;">
-        <strong style="color: #0284c7; font-size: 14px;">📡 ${s.location} Monitoring Station</strong><br/>
-        <hr style="margin: 4px 0; border: none; border-top: 1px solid #e2e8f0;"/>
-        <strong>Current Risk:</strong> <span style="font-weight: bold; color: ${s.risk_level === 'CRITICAL' ? '#dc2626' : (s.risk_level === 'HIGH' ? '#ea580c' : '#059669')}">${s.risk_level} (${(s.risk_probability*100).toFixed(1)}%)</span><br/>
-        <strong>24h Precipitation:</strong> ${s.rainfall_24h_mm} mm<br/>
-        <strong>72h Cumulative:</strong> ${s.rainfall_72h_mm} mm<br/>
-        <strong>Elevation:</strong> ${s.elevation_m} m | <strong>Slope:</strong> ${s.slope_degrees}°<br/>
-        <strong>Aspect:</strong> ${s.aspect_degrees}° (${s.aspect_direction})<br/>
-        <strong>Last Observation:</strong> ${s.latest_observation_utc.substring(0, 16)} UTC
+      <div style="font-size: 0.85rem; color: #0f172a; min-width: 220px;">
+        <strong style="font-size: 0.95rem; color: #0891b2;">${st.location} Monitoring Station</strong><br/>
+        <span style="font-weight: bold; color: ${markerColor};">${level} RISK TIER (${(prob * 100).toFixed(1)}%)</span>
+        <hr style="margin: 6px 0;" />
+        <div><strong>Elevation:</strong> ${st.elevation_m} m | <strong>Slope:</strong> ${st.slope_degrees}°</div>
+        <div><strong>24h Rain:</strong> ${st.rainfall_24h_mm} mm | <strong>72h Rain:</strong> ${st.rainfall_72h_mm} mm</div>
+        <div style="margin-top: 6px; padding: 4px; background: #f8fafc; border-radius: 4px; font-size: 0.75rem;">
+          <strong>Action Directive:</strong><br/>
+          <span>${st.recommended_action || 'Routine surveillance.'}</span>
+        </div>
       </div>
     `);
-    
-    overlayLayers.stations.addLayer(marker);
+    marker.addTo(overlayLayers.stations);
   });
 }

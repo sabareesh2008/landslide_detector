@@ -1,0 +1,106 @@
+{
+  "total_reports": 4,
+  "last_updated_utc": "2026-09-08T04:30:00Z",
+  "reports": [
+    {
+      "report_id": "FLD-2026-001",
+      "submission_time_utc": "2026-09-07T14:15:00Z",
+      "reporter_role": "FIELD_OFFICER",
+      "reporter_name": "Tashi Bhutia (PWD Sikkim)",
+      "latitude": 27.2215,
+      "longitude": 88.5038,
+      "location_name": "NH-10 Km 9.5 Bardang Curve",
+      "observed_symptoms": [
+        "Tension cracks on asphalt surface (width 15-20mm)",
+        "Colluvial mud accumulation along hillside drainage",
+        "Minor rockfall fragments on road shoulder"
+      ],
+      "photo_url": "data/field_reports/images/bardang_crack_sample.jpg",
+      "user_description": "Observed active longitudinal tension crack opening on outer lane of NH-10 after afternoon rain.",
+      "ai_vision_analysis": {
+        "status": "COMPLETED",
+        "identified_features": [
+          "ROAD_SURFACE_TENSION_CRACKS",
+          "COLLUVIAL_DEBRIS_ACCUMULATION",
+          "DRAINAGE_BLOCKAGE_RISK"
+        ],
+        "estimated_severity": "HIGH",
+        "visual_confidence_score": 0.88,
+        "requires_human_verification": true,
+        "ai_summary": "Computer Vision detected 2 distinct parallel tensile fractures and shoulder gravel detachment consistent with progressive toe creep."
+      },
+      "verification_lifecycle": {
+        "status": "FIELD_VERIFIED",
+        "verified_by": "Assistant Engineer (NHIDCL Singtam)",
+        "verification_time_utc": "2026-09-07T15:30:00Z",
+        "engineer_notes": "Confirmed tension crack. Pre-positioned JCB excavator at Bardang outpost. Speed limit restricted to 20 km/h.",
+        "active_learning_candidate": true
+      }
+    },
+    {
+      "report_id": "FLD-2026-002",
+      "submission_time_utc": "2026-09-07T16:00:00Z",
+      "reporter_role": "CITIZEN",
+      "reporter_name": "Pemba Lepcha (Local Resident)",
+      "latitude": 27.2085,
+      "longitude": 88.5125,
+      "location_name": "Majhitar Upper Colony Slope",
+      "observed_symptoms": [
+        "Turbid water seepage from slope toe",
+        "Bulging in lower dry-stone retaining masonry"
+      ],
+      "photo_url": "data/field_reports/images/majhitar_seepage_sample.jpg",
+      "user_description": "Muddy water started flowing from behind the retaining wall near our house.",
+      "ai_vision_analysis": {
+        "status": "COMPLETED",
+        "identified_features": [
+          "TURBID_GROUNDWATER_SEEPAGE",
+          "RETAINING_WALL_BULGING"
+        ],
+        "estimated_severity": "MODERATE",
+        "visual_confidence_score": 0.82,
+        "requires_human_verification": true,
+        "ai_summary": "Pore-pressure saturation confirmed by turbid discharge exiting stone joint interfaces."
+      },
+      "verification_lifecycle": {
+        "status": "FIELD_VERIFIED",
+        "verified_by": "District Disaster Management Cell",
+        "verification_time_utc": "2026-09-07T16:45:00Z",
+        "engineer_notes": "Weep holes cleared. Local residents advised to avoid lower terrace during sustained rain.",
+        "active_learning_candidate": true
+      }
+    },
+    {
+      "report_id": "FLD-2026-003",
+      "submission_time_utc": "2026-09-08T02:10:00Z",
+      "reporter_role": "FIELD_OFFICER",
+      "reporter_name": "S. K. Sharma (SDRF)",
+      "latitude": 27.1820,
+      "longitude": 88.5280,
+      "location_name": "Rangpo Upper Bypass",
+      "observed_symptoms": [
+        "Small fresh scarp collapse (~5m wide)",
+        "Overhanging tree root exposure"
+      ],
+      "photo_url": "data/field_reports/images/rangpo_scarp_sample.jpg",
+      "ai_vision_analysis": {
+        "status": "COMPLETED",
+        "identified_features": [
+          "FRESH_SOIL_SCARP_FAILURE",
+          "VEGETATION_DISTURBANCE"
+        ],
+        "estimated_severity": "MODERATE",
+        "visual_confidence_score": 0.79,
+        "requires_human_verification": true,
+        "ai_summary": "Shallow translational colluvium detachment; no direct highway lane blockage."
+      },
+      "verification_lifecycle": {
+        "status": "SUBMITTED",
+        "verified_by": null,
+        "verification_time_utc": null,
+        "engineer_notes": "Awaiting daylight on-site inspection by PWD Geologist.",
+        "active_learning_candidate": false
+      }
+    }
+  ]
+}

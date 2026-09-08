@@ -1,0 +1,70 @@
+{
+  "calibration_timestamp_utc": "2026-09-08T04:34:59.560733+00:00",
+  "method": "Platt Scaling (Sigmoid CalibratedClassifierCV, cv=3)",
+  "brier_score": {
+    "uncalibrated": 0.0083,
+    "calibrated": 0.0095,
+    "improvement_pct": -13.83
+  },
+  "expected_calibration_error": {
+    "uncalibrated": 0.0148,
+    "calibrated": 0.0252
+  },
+  "reliability_curve_calibrated": {
+    "mean_predicted_probabilities": [
+      0.0134,
+      0.1514,
+      0.2517,
+      0.3524,
+      0.6396,
+      0.7313,
+      0.8374,
+      0.9738
+    ],
+    "fraction_of_positives": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.25,
+      0.0,
+      1.0,
+      0.9231
+    ]
+  },
+  "physics_contributions_pct": {
+    "Antecedent Saturation (24h-7d)": 82.7,
+    "Immediate Trigger & Burst (30m-6h)": 0.0,
+    "Topography & Susceptibility": 0.0,
+    "Rate of Change & Acceleration": 17.3
+  },
+  "feature_importances": {
+    "rain_48h": 0.072159,
+    "rainfall_acceleration": 0.015057,
+    "rain_30min": 0.0,
+    "rain_1h": 0.0,
+    "rain_6h": 0.0,
+    "rain_12h": 0.0,
+    "rain_24h": 0.0,
+    "rain_72h": 0.0,
+    "rain_7d": 0.0,
+    "max_rain_1h": 0.0,
+    "max_rain_3h": 0.0,
+    "max_rain_6h": 0.0,
+    "max_rain_24h": 0.0,
+    "rainfall_change_1h": 0.0,
+    "rainfall_change_3h": 0.0,
+    "elevation": 0.0,
+    "slope": 0.0,
+    "aspect": 0.0,
+    "aspect_sin": 0.0,
+    "aspect_cos": 0.0,
+    "terrain_ruggedness": 0.0,
+    "distance_to_historical_landslide_km": 0.0,
+    "historical_landslide_density": 0.0,
+    "slope_x_rain24h": 0.0,
+    "ruggedness_x_rain72h": 0.0,
+    "susceptibility_x_rain_peak": 0.0,
+    "rain_3h": -0.002841
+  }
+}

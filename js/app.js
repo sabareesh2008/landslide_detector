@@ -1,20 +1,23 @@
 /**
  * LANDSLIDE SENTINEL AI - Main Application Controller
+ * Master orchestrator for Phases 1-8 (AI, GIS, IoT, Field AI, Emergency, i18n, Security, SIH Demo)
  * Zero Build / Pure Vanilla JavaScript ES6+
  */
 
+import { api } from './api.js';
 import {
-  fetchCurrentRisk,
-  fetchRainfallLatest,
-  fetchRainfallHistory,
-  fetchHistoricalLandslides,
-  fetchTerrainPoints,
-  fetchRiskGridGeoJSON,
-  fetchModelMetrics,
-  fetchHistoricalReplay
-} from './api.js';
+  initMap,
+  renderSpatialRiskZones,
+  renderRoadNetwork,
+  renderInfrastructure,
+  renderSettlements,
+  renderRivers,
+  renderSensorsOnMap,
+  renderFieldReportsOnMap,
+  renderLandslideMarkers,
+  renderStationMarkers
+} from './map.js';
 
-import { initMap, updateMapRiskGrid, updateMapLandslides, updateMapStations } from './map.js';
 import { renderTopKPIs } from './dashboard.js';
 import { renderRainfallView } from './rainfall.js';
 import { renderRiskView } from './risk.js';
@@ -24,26 +27,44 @@ import { renderReplayView } from './replay.js';
 import { renderModelView } from './model.js';
 import { renderExplainabilityView } from './explainability.js';
 import { renderCitizenView } from './citizen.js';
+
+import { renderIoTView } from './iot.js';
+import { renderFieldAIView } from './field_ai.js';
+import { renderEmergencyView } from './emergency.js';
+import { initI18n, setLanguage, speakEmergencyWarning, t } from './i18n.js';
+import { initAuth, switchRole, getCurrentUser } from './auth.js';
+import { renderDemoTourModal, simulateScenario } from './demo.js';
 import { playNotificationChime, playDisasterSiren } from './utils.js';
 
-// Application State
+// Global Application State
 const state = {
   currentTab: 'command',
-  currentRole: 'Disaster Management Authority',
+  currentRole: 'FIELD_OFFICER',
   currentLang: 'en',
+  dataMode: 'LIVE',
   audioAlertsEnabled: true,
   refreshCountdown: 60,
   refreshInterval: null,
+  isOffline: !navigator.onLine,
   
-  // Data Cache
+  // Datasets Cache
   currentRisk: null,
   rainfallLatest: null,
-  rainfallHistory: [],
-  landslides: [],
-  terrainPoints: [],
-  riskGridGeoJSON: null,
   modelMetrics: null,
-  historicalReplay: []
+  historicalReplay: null,
+  landslides: [],
+  riskZonesGeoJSON: null,
+  hotspots: null,
+  roadsGeoJSON: null,
+  infraGeoJSON: null,
+  settlementsGeoJSON: null,
+  riversGeoJSON: null,
+  sensors: null,
+  fieldReports: null,
+  roadImpact: null,
+  shelters: null,
+  resources: null,
+  alerts: null
 };
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -51,12 +72,22 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 async function initApp() {
+  console.log('[App] Initializing Landslide Sentinel AI (Phases 1-8 Master Engine)...');
+  
+  // 1. Initialize i18n & RBAC
+  await initI18n(state.currentLang);
+  initAuth();
+  
+  // 2. Setup Controls & Map
   setupNavigation();
   setupControls();
+  setupOfflineDetection();
+  registerServiceWorker();
+  
   initMap('map');
   
+  // 3. Load Datasets & Render
   await loadAllData();
-  
   startAutoRefreshTimer();
 }
 
@@ -69,59 +100,82 @@ async function loadAllData() {
   
   try {
     const [
-      riskRes,
-      latestRainRes,
-      historyRainRes,
-      landslidesRes,
-      terrainRes,
-      gridRes,
-      modelRes,
-      replayRes
+      riskData,
+      rainData,
+      metricsData,
+      replayData,
+      landslidesData,
+      zonesData,
+      hotspotsData,
+      roadsData,
+      infraData,
+      settlementsData,
+      riversData,
+      sensorsData,
+      reportsData,
+      impactData,
+      sheltersData,
+      resourcesData,
+      alertsData
     ] = await Promise.all([
-      fetchCurrentRisk(),
-      fetchRainfallLatest(),
-      fetchRainfallHistory(),
-      fetchHistoricalLandslides(),
-      fetchTerrainPoints(),
-      fetchRiskGridGeoJSON(),
-      fetchModelMetrics(),
-      fetchHistoricalReplay()
+      api.getCurrentRisk(),
+      api.getRainfallLatest(),
+      api.getModelMetrics(),
+      api.getHistoricalReplay(),
+      api.getLandslides(),
+      api.getRiskZonesGeoJSON(),
+      api.getHotspots(),
+      api.getRoadNetworkGeoJSON(),
+      api.getInfrastructureGeoJSON(),
+      api.getSettlementsGeoJSON(),
+      api.getRiversGeoJSON(),
+      api.getSensors(),
+      api.getFieldReports(),
+      api.getRoadImpact(),
+      api.getShelters(),
+      api.getEmergencyResources(),
+      api.getAlerts()
     ]);
     
-    state.currentRisk = riskRes.data;
-    state.rainfallLatest = latestRainRes.data;
-    state.rainfallHistory = historyRainRes.data;
-    state.landslides = landslidesRes.data;
-    state.terrainPoints = terrainRes.data;
-    state.riskGridGeoJSON = gridRes.data;
-    state.modelMetrics = modelRes.data;
-    state.historicalReplay = replayRes.data;
+    state.currentRisk = riskData;
+    state.rainfallLatest = rainData;
+    state.modelMetrics = metricsData;
+    state.historicalReplay = replayData;
+    state.landslides = landslidesData;
+    state.riskZonesGeoJSON = zonesData;
+    state.hotspots = hotspotsData;
+    state.roadsGeoJSON = roadsData;
+    state.infraGeoJSON = infraData;
+    state.settlementsGeoJSON = settlementsData;
+    state.riversGeoJSON = riversData;
+    state.sensors = sensorsData;
+    state.fieldReports = reportsData;
+    state.roadImpact = impactData;
+    state.shelters = sheltersData;
+    state.resources = resourcesData;
+    state.alerts = alertsData;
     
-    // Update Top KPIs and Alerts Ribbon
-    renderTopKPIs(state.currentRisk, state.rainfallLatest, state.modelMetrics);
+    // Update Map Layers
+    renderSpatialRiskZones(zonesData);
+    renderRoadNetwork(roadsData);
+    renderInfrastructure(infraData);
+    renderSettlements(settlementsData);
+    renderRivers(riversData);
+    renderSensorsOnMap(sensorsData);
+    renderFieldReportsOnMap(reportsData);
+    renderLandslideMarkers(landslidesData);
+    renderStationMarkers(riskData);
     
-    // Update Geospatial Map
-    if (state.riskGridGeoJSON) updateMapRiskGrid(state.riskGridGeoJSON);
-    if (state.landslides) updateMapLandslides(state.landslides);
-    if (state.currentRisk) updateMapStations(state.currentRisk);
+    // Update KPI Header & Ribbon
+    renderTopKPIs(riskData, rainData, metricsData);
+    updateEmergencyBanner(riskData);
     
-    // Render Individual Tab Components
-    renderRainfallView(state.rainfallLatest, state.rainfallHistory);
-    renderRiskView(state.currentRisk);
-    renderTerrainView(state.terrainPoints);
-    renderHistoricalView(state.landslides);
-    renderReplayView(state.historicalReplay);
-    renderModelView(state.modelMetrics);
-    renderExplainabilityView();
-    renderCitizenView(state.currentLang);
+    // Render Active Tab
+    renderCurrentTab();
     
-    // Audio Chime if Critical Risk
-    const level = state.currentRisk?.overall_corridor_risk?.risk_level;
-    if ((level === 'CRITICAL' || level === 'HIGH') && state.audioAlertsEnabled) {
-      playNotificationChime();
-    }
+    console.log('[App] All datasets successfully loaded and rendered.');
   } catch (err) {
-    console.error('Data loading error:', err);
+    console.error('[App] Error loading datasets:', err);
   } finally {
     if (syncBtn) {
       syncBtn.innerHTML = '🔄 Refresh Data';
@@ -130,130 +184,192 @@ async function loadAllData() {
   }
 }
 
-function setupNavigation() {
-  const navItems = document.querySelectorAll('.nav-item');
-  navItems.forEach(item => {
-    item.addEventListener('click', (e) => {
-      e.preventDefault();
-      const tab = item.getAttribute('data-tab');
-      if (!tab) return;
-      
-      switchTab(tab);
-    });
-  });
-  
-  // Mobile sidebar toggle
-  const mobileToggle = document.getElementById('mobile-sidebar-toggle');
-  const sidebar = document.querySelector('.sidebar');
-  if (mobileToggle && sidebar) {
-    mobileToggle.addEventListener('click', () => {
-      sidebar.classList.toggle('collapsed');
-    });
+function renderCurrentTab() {
+  const tab = state.currentTab;
+  if (tab === 'command' || tab === 'overview') {
+    renderRiskView(state.currentRisk);
+  } else if (tab === 'rainfall') {
+    renderRainfallView(state.rainfallLatest);
+  } else if (tab === 'terrain') {
+    renderTerrainView(state.currentRisk);
+  } else if (tab === 'historical') {
+    renderHistoricalView(state.landslides);
+  } else if (tab === 'replay') {
+    renderReplayView(state.historicalReplay);
+  } else if (tab === 'model') {
+    renderModelView(state.modelMetrics);
+  } else if (tab === 'explainability') {
+    renderExplainabilityView(state.currentRisk);
+  } else if (tab === 'iot') {
+    renderIoTView(state.sensors, null);
+  } else if (tab === 'field-ai') {
+    renderFieldAIView(state.fieldReports);
+  } else if (tab === 'emergency') {
+    renderEmergencyView(state.roadImpact, state.shelters, state.resources, state.alerts);
+  } else if (tab === 'citizen') {
+    renderCitizenView();
   }
 }
 
-export function switchTab(tabId) {
+function setupNavigation() {
+  document.querySelectorAll('.nav-item').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const tabId = btn.getAttribute('data-tab');
+      switchDashboardTab(tabId);
+    });
+  });
+}
+
+export function switchDashboardTab(tabId) {
   state.currentTab = tabId;
   
-  // Update sidebar active classes
-  document.querySelectorAll('.nav-item').forEach(item => {
-    if (item.getAttribute('data-tab') === tabId) {
-      item.classList.add('active');
-    } else {
-      item.classList.remove('active');
-    }
+  document.querySelectorAll('.nav-item').forEach(b => {
+    b.classList.toggle('active', b.getAttribute('data-tab') === tabId);
   });
   
-  // Update view visibility
   document.querySelectorAll('.tab-view').forEach(view => {
-    if (view.id === `view-${tabId}`) {
-      view.classList.add('active');
-    } else {
-      view.classList.remove('active');
-    }
+    const isTarget = view.id === `view-${tabId}` || (tabId === 'command' && view.id === 'view-command');
+    view.classList.toggle('active', isTarget);
   });
   
-  // Invalidate Leaflet Map Size if switching to GIS or Command tab
-  if (tabId === 'gis' || tabId === 'command') {
-    setTimeout(() => {
-      const map = initMap('map');
-      if (map) map.invalidateSize();
-    }, 100);
-  }
+  renderCurrentTab();
 }
 
-window.switchTab = switchTab;
+window.switchDashboardTab = switchDashboardTab;
 
 function setupControls() {
-  // Sync Data Button
-  const syncBtn = document.getElementById('sync-data-btn');
-  if (syncBtn) {
-    syncBtn.addEventListener('click', () => {
-      state.refreshCountdown = 60;
-      loadAllData();
+  // 1. Language Selector (9 Languages)
+  const langSel = document.getElementById('lang-selector');
+  if (langSel) {
+    langSel.addEventListener('change', e => {
+      state.currentLang = e.target.value;
+      setLanguage(e.target.value);
     });
   }
   
-  // Audio Alert Toggle
+  // 2. Role Selector (RBAC)
+  const roleSel = document.getElementById('role-selector');
+  if (roleSel) {
+    roleSel.addEventListener('change', e => {
+      state.currentRole = e.target.value;
+      switchRole(e.target.value);
+    });
+  }
+  
+  // 3. Operational Data Mode Selector
+  const modeSel = document.getElementById('data-mode-selector');
+  if (modeSel) {
+    modeSel.addEventListener('change', e => {
+      state.dataMode = e.target.value;
+      const badge = document.getElementById('active-data-mode-badge');
+      if (badge) {
+        badge.innerHTML = `<span>●</span> MODE: ${state.dataMode}`;
+        badge.className = `status-badge ${state.dataMode === 'LIVE' ? 'status-connected' : 'status-warning'}`;
+      }
+      if (state.dataMode === 'DEMO') {
+        renderDemoTourModal();
+      }
+    });
+  }
+  
+  // 4. SIH Judge Tour Button
+  const tourBtn = document.getElementById('sih-tour-btn');
+  if (tourBtn) {
+    tourBtn.addEventListener('click', () => {
+      renderDemoTourModal();
+    });
+  }
+  
+  // 5. Audio Alert Toggle & Siren Test
   const audioBtn = document.getElementById('audio-toggle-btn');
   if (audioBtn) {
     audioBtn.addEventListener('click', () => {
       state.audioAlertsEnabled = !state.audioAlertsEnabled;
-      audioBtn.innerHTML = state.audioAlertsEnabled ? '🔊 Audio Alerts: ON' : '🔇 Audio Alerts: OFF';
-      audioBtn.classList.toggle('btn-primary', state.audioAlertsEnabled);
-      if (state.audioAlertsEnabled) playNotificationChime();
+      audioBtn.textContent = state.audioAlertsEnabled ? '🔊 Audio Alerts: ON' : '🔇 Audio Alerts: OFF';
+      audioBtn.className = state.audioAlertsEnabled ? 'btn btn-primary' : 'btn btn-secondary';
     });
   }
   
-  // Role Selector
-  const roleSelect = document.getElementById('role-selector');
-  if (roleSelect) {
-    roleSelect.addEventListener('change', (e) => {
-      state.currentRole = e.target.value;
-    });
-  }
-  
-  // Language Selector
-  const langSelect = document.getElementById('lang-selector');
-  if (langSelect) {
-    langSelect.addEventListener('change', (e) => {
-      state.currentLang = e.target.value;
-      renderCitizenView(state.currentLang);
-    });
-  }
-  
-  // Siren Test Button
   const sirenBtn = document.getElementById('siren-test-btn');
   if (sirenBtn) {
     sirenBtn.addEventListener('click', () => {
       playDisasterSiren();
+      speakEmergencyWarning('Emergency Alert: Siren test initiated along NH-10 corridor.', state.currentLang);
     });
   }
   
-  // Safety Modal
-  const openModalBtn = document.getElementById('open-safety-modal-btn');
-  const closeModalBtn = document.getElementById('modal-close-btn');
-  const modal = document.getElementById('safety-modal');
-  
-  if (openModalBtn && modal) {
-    openModalBtn.addEventListener('click', () => modal.classList.add('active'));
+  // 6. Manual Sync Button
+  const syncBtn = document.getElementById('sync-data-btn');
+  if (syncBtn) {
+    syncBtn.addEventListener('click', () => {
+      loadAllData();
+      state.refreshCountdown = 60;
+    });
   }
-  if (closeModalBtn && modal) {
-    closeModalBtn.addEventListener('click', () => modal.classList.remove('active'));
+}
+
+function updateEmergencyBanner(currentRisk) {
+  const banner = document.getElementById('emergency-banner');
+  const headline = document.getElementById('banner-headline');
+  if (!banner || !headline) return;
+  
+  const corridor = currentRisk?.overall_corridor_risk || {};
+  const level = corridor.risk_level || 'LOW';
+  
+  if (level === 'CRITICAL') {
+    banner.className = 'emergency-banner emergency-critical';
+    headline.textContent = t('alert_ribbon_critical', 'EMERGENCY ALERT: Imminent landslide danger on NH-10!');
+    banner.classList.remove('hidden');
+    if (state.audioAlertsEnabled) playDisasterSiren();
+  } else if (level === 'HIGH') {
+    banner.className = 'emergency-banner emergency-high';
+    headline.textContent = t('alert_ribbon_high', 'WARNING: High landslide risk along NH-10 corridor.');
+    banner.classList.remove('hidden');
+    if (state.audioAlertsEnabled) playNotificationChime();
+  } else if (level === 'WATCH') {
+    banner.className = 'emergency-banner emergency-watch';
+    headline.textContent = t('alert_ribbon_watch', 'ADVISORY: Elevated soil saturation detected.');
+    banner.classList.remove('hidden');
+  } else {
+    banner.classList.add('hidden');
+  }
+}
+
+function setupOfflineDetection() {
+  window.addEventListener('offline', () => {
+    state.isOffline = true;
+    const offlineNotice = document.getElementById('offline-indicator');
+    if (offlineNotice) offlineNotice.classList.remove('hidden');
+    console.warn('[Network] Internet connection lost. Running in Offline-First Mode.');
+  });
+  
+  window.addEventListener('online', () => {
+    state.isOffline = false;
+    const offlineNotice = document.getElementById('offline-indicator');
+    if (offlineNotice) offlineNotice.classList.add('hidden');
+    console.log('[Network] Internet connection restored. Resuming live telemetry.');
+    loadAllData();
+  });
+}
+
+function registerServiceWorker() {
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', () => {
+      navigator.serviceWorker.register('./sw.js')
+        .then(reg => console.log('[ServiceWorker] Registered successfully with scope:', reg.scope))
+        .catch(err => console.warn('[ServiceWorker] Registration failed:', err));
+    });
   }
 }
 
 function startAutoRefreshTimer() {
   if (state.refreshInterval) clearInterval(state.refreshInterval);
-  
-  const timerElem = document.getElementById('countdown-timer');
-  
   state.refreshInterval = setInterval(() => {
     state.refreshCountdown--;
-    if (timerElem) {
-      timerElem.textContent = `${state.refreshCountdown}s`;
+    const timerEl = document.getElementById('countdown-timer');
+    if (timerEl) {
+      timerEl.textContent = `${state.refreshCountdown}s`;
     }
-    
     if (state.refreshCountdown <= 0) {
       state.refreshCountdown = 60;
       loadAllData();

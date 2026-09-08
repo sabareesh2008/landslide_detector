@@ -1,0 +1,62 @@
+{
+  "total_shelters": 4,
+  "corridor": "Rangpo-Singtam / NH-10 Lifeline Sector",
+  "shelters": [
+    {
+      "shelter_id": "SHELTER-01",
+      "name": "Rangpo Senior Secondary School Indoor Complex",
+      "location": "Upper Rangpo Hill (Safe Ridge Zone)",
+      "latitude": 27.1795,
+      "longitude": 88.5300,
+      "elevation_m": 335,
+      "capacity_persons": 600,
+      "current_occupancy": 0,
+      "status": "READY_STANDBY",
+      "amenities": ["Drinking Water", "Emergency Backup Generator", "First Aid Station", "Sanitation"],
+      "nodal_officer": "B. K. Pradhan (BDO Rangpo)",
+      "contact_phone": "+91-3592-240122"
+    },
+    {
+      "shelter_id": "SHELTER-02",
+      "name": "SMIT Majhitar Multi-Purpose Community Hall",
+      "location": "Majhitar Institutional Terrace",
+      "latitude": 27.2065,
+      "longitude": 88.5145,
+      "elevation_m": 372,
+      "capacity_persons": 1200,
+      "current_occupancy": 0,
+      "status": "READY_STANDBY",
+      "amenities": ["Large Kitchen", "Solar Power Grid", "Medical Clinic", "Helipad Access"],
+      "nodal_officer": "Col. D. Rai (Campus Security)",
+      "contact_phone": "+91-3592-246220"
+    },
+    {
+      "shelter_id": "SHELTER-03",
+      "name": "Singtam Community Centre & Indoor Stadium",
+      "location": "Singtam Elevated Bypass Terrace",
+      "latitude": 27.2375,
+      "longitude": 88.4975,
+      "elevation_m": 455,
+      "capacity_persons": 850,
+      "current_occupancy": 0,
+      "status": "READY_STANDBY",
+      "amenities": ["Drinking Water", "Generator", "SDRF Mobilization Unit", "Satellite Phone"],
+      "nodal_officer": "N. T. Lepcha (SDM Singtam)",
+      "contact_phone": "+91-3592-234201"
+    },
+    {
+      "shelter_id": "SHELTER-04",
+      "name": "Mining Panchayat Bhawan",
+      "location": "Mining Upper Terrace",
+      "latitude": 27.1975,
+      "longitude": 88.5195,
+      "elevation_m": 365,
+      "capacity_persons": 350,
+      "current_occupancy": 0,
+      "status": "READY_STANDBY",
+      "amenities": ["First Aid", "Water Tanks", "Wireless VHF Set"],
+      "nodal_officer": "Panchayat President Mining",
+      "contact_phone": "+91-3592-240311"
+    }
+  ]
+}

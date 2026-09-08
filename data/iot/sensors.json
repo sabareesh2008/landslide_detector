@@ -1,0 +1,143 @@
+{
+  "system_status": "READY_FOR_DEPLOYMENT",
+  "deployment_mode": "CORRIDOR_PILOT_GRID",
+  "last_health_check_utc": "2026-09-08T04:30:00Z",
+  "total_nodes": 6,
+  "nodes": [
+    {
+      "sensor_id": "IOT-NODE-01",
+      "name": "Rangpo Border Tipping Bucket Rain Gauge",
+      "location_name": "Rangpo Teesta Checkpost (NH-10 Km 0.0)",
+      "latitude": 27.1770,
+      "longitude": 88.5330,
+      "sensor_type": "RAIN_GAUGE",
+      "hardware_specs": "Dual-reed magnetic tipping bucket (0.2mm resolution) + ESP32 LoRaWAN",
+      "telemetry": {
+        "current_rainfall_mm_h": 0.0,
+        "rainfall_24h_mm": 10.4,
+        "rainfall_72h_mm": 29.8,
+        "unit": "mm",
+        "last_reading_utc": "2026-09-08T04:30:00Z"
+      },
+      "hardware_health": {
+        "status": "ONLINE",
+        "battery_voltage": 3.92,
+        "battery_percent": 94,
+        "rssi_dbm": -78,
+        "quality_status": "CALIBRATED_NOMINAL"
+      }
+    },
+    {
+      "sensor_id": "IOT-NODE-02",
+      "name": "Majhitar Colluvium Volumetric Water Content (VWC)",
+      "location_name": "Majhitar Upper Slopes (NH-10 Km 6.2)",
+      "latitude": 27.2080,
+      "longitude": 88.5130,
+      "sensor_type": "SOIL_MOISTURE",
+      "hardware_specs": "FDR Frequency Domain Capacitance Probe (Depth 0.5m & 1.0m)",
+      "telemetry": {
+        "soil_moisture_vwc_percent": 34.2,
+        "saturation_threshold_percent": 45.0,
+        "unit": "% VWC",
+        "last_reading_utc": "2026-09-08T04:30:00Z"
+      },
+      "hardware_health": {
+        "status": "ONLINE",
+        "battery_voltage": 3.88,
+        "battery_percent": 88,
+        "rssi_dbm": -82,
+        "quality_status": "CALIBRATED_NOMINAL"
+      }
+    },
+    {
+      "sensor_id": "IOT-NODE-03",
+      "name": "Bardang Chronic Scarp MPU6050 MEMS Inclinometer",
+      "location_name": "Bardang Chronic Landslide Scarp (NH-10 Km 9.5)",
+      "latitude": 27.2210,
+      "longitude": 88.5040,
+      "sensor_type": "TILT_INCLINOMETER",
+      "hardware_specs": "Triple-axis MEMS Accelerometer/Gyroscope (MPU6050) in IP68 Sealed Enclosure",
+      "telemetry": {
+        "pitch_angle_deg": 14.28,
+        "roll_angle_deg": 3.12,
+        "tilt_displacement_rate_deg_h": 0.02,
+        "unit": "degrees",
+        "last_reading_utc": "2026-09-08T04:30:00Z"
+      },
+      "hardware_health": {
+        "status": "ONLINE",
+        "battery_voltage": 3.95,
+        "battery_percent": 96,
+        "rssi_dbm": -74,
+        "quality_status": "CALIBRATED_NOMINAL"
+      }
+    },
+    {
+      "sensor_id": "IOT-NODE-04",
+      "name": "Singtam Bazar Automatic Rain Gauge (ARG)",
+      "location_name": "Singtam Town Junction (NH-10 Km 12.8)",
+      "latitude": 27.2340,
+      "longitude": 88.5010,
+      "sensor_type": "RAIN_GAUGE",
+      "hardware_specs": "Optical disdrometer + tipping bucket (0.1mm) with GSM/GPRS fallback",
+      "telemetry": {
+        "current_rainfall_mm_h": 0.0,
+        "rainfall_24h_mm": 11.2,
+        "rainfall_72h_mm": 30.8,
+        "unit": "mm",
+        "last_reading_utc": "2026-09-08T04:30:00Z"
+      },
+      "hardware_health": {
+        "status": "ONLINE",
+        "battery_voltage": 4.10,
+        "battery_percent": 98,
+        "rssi_dbm": -68,
+        "quality_status": "CALIBRATED_NOMINAL"
+      }
+    },
+    {
+      "sensor_id": "IOT-NODE-05",
+      "name": "Mining Sector Borehole Vibrating Wire Piezometer",
+      "location_name": "Mining Road Cut (NH-10 Km 3.8)",
+      "latitude": 27.1960,
+      "longitude": 88.5210,
+      "sensor_type": "PORE_PRESSURE",
+      "hardware_specs": "Vibrating Wire Pressure Transducer (Depth 6.0m sub-surface)",
+      "telemetry": {
+        "pore_water_pressure_kpa": 18.5,
+        "hydrostatic_limit_kpa": 40.0,
+        "unit": "kPa",
+        "last_reading_utc": "2026-09-08T04:30:00Z"
+      },
+      "hardware_health": {
+        "status": "ONLINE",
+        "battery_voltage": 3.85,
+        "battery_percent": 82,
+        "rssi_dbm": -85,
+        "quality_status": "CALIBRATED_NOMINAL"
+      }
+    },
+    {
+      "sensor_id": "IOT-NODE-06",
+      "name": "Bardang Surface Multi-GNSS Displacement Beacon",
+      "location_name": "Bardang Highway Retaining Crest",
+      "latitude": 27.2230,
+      "longitude": 88.5035,
+      "sensor_type": "GNSS_DISPLACEMENT",
+      "hardware_specs": "Dual-frequency RTK GNSS Receiver with 2mm static precision",
+      "telemetry": {
+        "cumulative_creep_mm": 4.8,
+        "velocity_mm_day": 0.3,
+        "unit": "mm",
+        "last_reading_utc": "2026-09-08T04:30:00Z"
+      },
+      "hardware_health": {
+        "status": "ONLINE",
+        "battery_voltage": 3.90,
+        "battery_percent": 90,
+        "rssi_dbm": -79,
+        "quality_status": "CALIBRATED_NOMINAL"
+      }
+    }
+  ]
+}

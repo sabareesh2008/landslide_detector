@@ -14,10 +14,29 @@
 
 **Landslide Sentinel AI** is a production-grade, real-data landslide early-warning and spatial risk monitoring system designed specifically for the **Rangpo–Singtam / NH-10 highway lifeline corridor** in East and South Sikkim, Eastern Himalaya.
 
-The system replaces simulated/mock demonstration architectures with real data:
-- **Zero Simulation / Zero Mock Data**: All synthetic data generators (`INITIAL_GRID_CELLS`, `INITIAL_SENSORS`, `simulateHourlyStep`, `Math.random()`) have been eliminated.
+- **Explicit Data Modes**: The platform strictly isolates **LIVE DATA** (NASA IMERG 30-min + Copernicus DEM + GSI records), **HISTORICAL DATA** (past storm replays), **SIMULATION MODE** (offline scenario testing), and **DEMO MODE** (curated walkthroughs).
 - **Pure Static Frontend (Zero Build Step)**: HTML5, CSS3, and Vanilla ES6+ JavaScript deployable directly on **GitHub Pages** without requiring React, Vite, Express, or Node.js runtime dependencies.
 - **Automated Data Pipeline**: Python scripts and GitHub Actions workflows fetch near-real-time NASA IMERG 30-minute precipitation, process Copernicus DEM topographic derivatives, run machine-learning inference, and calibrate risk probabilities.
+
+### 📚 Engineering & Scientific Documentation
+* **Phase 2 Machine Learning Suite**:
+  * [Model Card (`docs/ml/MODEL_CARD.md`)](docs/ml/MODEL_CARD.md)
+  * [Dataset Card (`docs/ml/DATASET_CARD.md`)](docs/ml/DATASET_CARD.md)
+  * [Temporal Validation & Leakage Prevention (`docs/ml/TEMPORAL_VALIDATION.md`)](docs/ml/TEMPORAL_VALIDATION.md)
+  * [Feature Engineering Specification (`docs/ml/FEATURE_ENGINEERING.md`)](docs/ml/FEATURE_ENGINEERING.md)
+  * [Model Evaluation & Benchmark Comparison (`docs/ml/MODEL_EVALUATION.md`)](docs/ml/MODEL_EVALUATION.md)
+  * [Inference Architecture (`docs/ml/INFERENCE_ARCHITECTURE.md`)](docs/ml/INFERENCE_ARCHITECTURE.md)
+  * [Phase 2 Completion Report (`docs/PHASE_2_REPORT.md`)](docs/PHASE_2_REPORT.md)
+* **Phase 1 Foundations**:
+  * [Architecture Blueprint (Phases 1–8)](docs/PHASE_1_ARCHITECTURE.md)
+  * [Phase 1 Audit Report](docs/PHASE_1_AUDIT.md)
+  * [Data Dictionary](docs/DATA_DICTIONARY.md)
+  * [Data Sources & Provenance](docs/DATA_SOURCES.md)
+  * [Current Limitations & Disclosures](docs/CURRENT_LIMITATIONS.md)
+  * [REST API Contract](docs/API_CONTRACT.md)
+  * [Security Audit & Threat Model](docs/SECURITY_AUDIT.md)
+  * [PostGIS Spatial Database Architecture](docs/DATABASE_ARCHITECTURE.md)
+  * [Model Registry & Lifecycle](models/README.md)
 
 ---
 

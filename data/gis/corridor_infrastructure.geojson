@@ -1,0 +1,158 @@
+{
+  "type": "FeatureCollection",
+  "metadata": {
+    "name": "Rangpo-Singtam Critical Infrastructure",
+    "region": "Sikkim, India",
+    "total_assets": 12,
+    "source": "Sikkim PWD / SSDMA / Survey of India"
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "id": "INFRA-01",
+      "properties": {
+        "asset_id": "INFRA-01",
+        "name": "Rangpo Teesta Highway Bridge",
+        "type": "BRIDGE",
+        "criticality": "VITAL_LIFELINE",
+        "elevation_m": 308,
+        "structural_health": "MONITORED",
+        "nearest_road": "NH-10 Km 0.0",
+        "description": "Primary interstate gateway bridge connecting West Bengal to Sikkim across Teesta River."
+      },
+      "geometry": { "type": "Point", "coordinates": [88.5328, 27.1772] }
+    },
+    {
+      "type": "Feature",
+      "id": "INFRA-02",
+      "properties": {
+        "asset_id": "INFRA-02",
+        "name": "Singtam Suspension Bridge & Junction",
+        "type": "BRIDGE",
+        "criticality": "VITAL_LIFELINE",
+        "elevation_m": 435,
+        "structural_health": "MONITORED",
+        "nearest_road": "NH-10 / Dikchu Link",
+        "description": "Critical river crossing connecting Singtam Bazar with South and East Sikkim corridors."
+      },
+      "geometry": { "type": "Point", "coordinates": [88.5005, 27.2345] }
+    },
+    {
+      "type": "Feature",
+      "id": "INFRA-03",
+      "properties": {
+        "asset_id": "INFRA-03",
+        "name": "Singtam District Hospital",
+        "type": "HOSPITAL",
+        "criticality": "EMERGENCY_MEDICAL",
+        "elevation_m": 442,
+        "capacity_beds": 120,
+        "nearest_road": "Singtam Main Road",
+        "description": "Sub-divisional apex trauma and healthcare facility for NH-10 corridor."
+      },
+      "geometry": { "type": "Point", "coordinates": [88.4985, 27.2360] }
+    },
+    {
+      "type": "Feature",
+      "id": "INFRA-04",
+      "properties": {
+        "asset_id": "INFRA-04",
+        "name": "Rangpo Primary Health Centre (PHC)",
+        "type": "HOSPITAL",
+        "criticality": "EMERGENCY_MEDICAL",
+        "elevation_m": 312,
+        "capacity_beds": 30,
+        "nearest_road": "NH-10 Rangpo",
+        "description": "First response medical station at Sikkim border."
+      },
+      "geometry": { "type": "Point", "coordinates": [88.5305, 27.1795] }
+    },
+    {
+      "type": "Feature",
+      "id": "INFRA-05",
+      "properties": {
+        "asset_id": "INFRA-05",
+        "name": "Majhitar Culvert Weep-Drain Drainage #4",
+        "type": "CULVERT",
+        "criticality": "HIGH",
+        "elevation_m": 375,
+        "structural_health": "PRONE_TO_SILTING",
+        "nearest_road": "NH-10 Km 6.5",
+        "description": "High-capacity storm culvert discharging colluvial runoff from Majhitar ridge."
+      },
+      "geometry": { "type": "Point", "coordinates": [88.5110, 27.2110] }
+    },
+    {
+      "type": "Feature",
+      "id": "INFRA-06",
+      "properties": {
+        "asset_id": "INFRA-06",
+        "name": "Bardang Highway Reinforced Retaining Wall",
+        "type": "RETAINING_WALL",
+        "criticality": "HIGH",
+        "elevation_m": 405,
+        "structural_health": "ACTIVE_MONITORING",
+        "nearest_road": "NH-10 Km 9.2",
+        "description": "Gabion and RCC anchored retaining wall protecting toe from Teesta river scouring."
+      },
+      "geometry": { "type": "Point", "coordinates": [88.5035, 27.2230] }
+    },
+    {
+      "type": "Feature",
+      "id": "INFRA-07",
+      "properties": {
+        "asset_id": "INFRA-07",
+        "name": "Sikkim Manipal Institute of Technology (SMIT) Campus",
+        "type": "SCHOOL",
+        "criticality": "HIGH_OCCUPANCY",
+        "elevation_m": 360,
+        "capacity_people": 3500,
+        "nearest_road": "Majhitar Road",
+        "description": "Major institutional campus in Majhitar with residential hostels."
+      },
+      "geometry": { "type": "Point", "coordinates": [88.5150, 27.2060] }
+    },
+    {
+      "type": "Feature",
+      "id": "INFRA-08",
+      "properties": {
+        "asset_id": "INFRA-08",
+        "name": "Rangpo Police Outpost & SDRF Sub-Station",
+        "type": "EMERGENCY_SERVICES",
+        "criticality": "VITAL_RESPONSE",
+        "elevation_m": 310,
+        "nearest_road": "NH-10 Rangpo Checkpost",
+        "description": "Disaster emergency unit and first responder mobilization center."
+      },
+      "geometry": { "type": "Point", "coordinates": [88.5315, 27.1780] }
+    },
+    {
+      "type": "Feature",
+      "id": "INFRA-09",
+      "properties": {
+        "asset_id": "INFRA-09",
+        "name": "Singtam Power Substation (66kV)",
+        "type": "POWER_GRID",
+        "criticality": "HIGH",
+        "elevation_m": 448,
+        "nearest_road": "Singtam Bypass",
+        "description": "Major electrical power distribution node for Singtam and upper highway grid."
+      },
+      "geometry": { "type": "Point", "coordinates": [88.4960, 27.2370] }
+    },
+    {
+      "type": "Feature",
+      "id": "INFRA-10",
+      "properties": {
+        "asset_id": "INFRA-10",
+        "name": "Rangpo BSNL Telecom Tower & Fiber Hub",
+        "type": "TELECOM",
+        "criticality": "HIGH",
+        "elevation_m": 325,
+        "nearest_road": "Rangpo Hill",
+        "description": "Primary optical fiber and emergency wireless communication repeater."
+      },
+      "geometry": { "type": "Point", "coordinates": [88.5290, 27.1810] }
+    }
+  ]
+}

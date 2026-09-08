@@ -1,0 +1,20 @@
+{
+  "model_name": "LogisticRegression (Baseline)",
+  "evaluation_timestamp": "2026-09-08T04:34:47.721652+00:00",
+  "train_samples": 1056,
+  "test_samples": 352,
+  "metrics": {
+    "precision": 0.2373,
+    "recall": 1.0,
+    "f1_score": 0.3836,
+    "roc_auc": 0.9816,
+    "pr_auc": 0.599,
+    "brier_score": 0.1009
+  },
+  "confusion_matrix": {
+    "true_positive": 14,
+    "false_positive": 45,
+    "false_negative": 0,
+    "true_negative": 293
+  }
+}

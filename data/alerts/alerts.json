@@ -1,0 +1,39 @@
+{
+  "active_alert_count": 1,
+  "system_mode": "OPERATIONAL_AUTONOMOUS",
+  "alerts": [
+    {
+      "alert_id": "ALT-2026-0908-01",
+      "state": "WATCH",
+      "severity": "MODERATE",
+      "title": "Corridor Hydrological Vigilance Advisory (Rangpo-Singtam)",
+      "target_corridor": "NH-10 Km 0.0 to Km 12.8",
+      "issued_at_utc": "2026-09-08T04:30:00Z",
+      "last_updated_utc": "2026-09-08T04:30:00Z",
+      "escalation_level": 1,
+      "trigger_reasons": [
+        "72-hour antecedent rainfall accumulation reached 30.8mm at Singtam station",
+        "Moderate saturation along colluvial road cuts in Majhitar-Bardang reach"
+      ],
+      "recommended_actions": [
+        "Maintain continuous telemetry monitoring on MEMS inclinometers at Bardang",
+        "Inspect culvert weep-drain outlets for silt blockage",
+        "Pre-position heavy earthmoving machinery at Bardang maintenance depot"
+      ],
+      "recipient_authorities": [
+        "Sikkim State Disaster Management Authority (SSDMA)",
+        "District Collector (East & South Sikkim)",
+        "NHIDCL Executive Engineer",
+        "Superintendent of Police (Traffic & Highway Patrol)"
+      ],
+      "lifecycle": {
+        "created_at_utc": "2026-09-08T04:30:00Z",
+        "acknowledged_at_utc": "2026-09-08T04:35:00Z",
+        "acknowledged_by": "Duty Officer (State Emergency Operation Centre - SEOC)",
+        "resolved_at_utc": null,
+        "cooldown_period_min": 60,
+        "deduplication_hash": "WATCH_RANGPO_SINGTAM_20260908"
+      }
+    }
+  ]
+}

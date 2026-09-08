@@ -99,7 +99,12 @@ export function calculateLandslideRisk(cell: Partial<GridCellRisk>): {
 }
 
 /**
- * Step the simulation one hour forward with stochastic weather / terrain dynamics
+ * ============================================================================
+ * SIMULATION_MODE: Stochastic Storm Perturbation Step (OFFLINE SCENARIO ONLY)
+ * ============================================================================
+ * WARNING: This function is exclusively used when the application is running
+ * under explicit SIMULATION_MODE for emergency scenario drills and what-if stress tests.
+ * Production risk monitoring uses genuine NASA IMERG observations.
  */
 export function simulateHourlyStep(cells: GridCellRisk[], isAcceleratingRisk = false): GridCellRisk[] {
   return cells.map((cell) => {

@@ -1,0 +1,80 @@
+{
+  "type": "FeatureCollection",
+  "metadata": {
+    "name": "Rangpo-Singtam Settlements & Municipalities",
+    "region": "Sikkim, India",
+    "source": "Census of India / Urban Development Dept, Govt of Sikkim"
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "id": "SETTLE-01",
+      "properties": {
+        "settlement_id": "SETTLE-01",
+        "name": "Rangpo Municipal Council",
+        "district": "Pakyong / East Sikkim",
+        "approx_population": 12500,
+        "elevation_m": 310,
+        "hazard_exposure": "MODERATE_TO_HIGH",
+        "evacuation_zone": "Zone A (Border Gateway)"
+      },
+      "geometry": { "type": "Point", "coordinates": [88.5310, 27.1785] }
+    },
+    {
+      "type": "Feature",
+      "id": "SETTLE-02",
+      "properties": {
+        "settlement_id": "SETTLE-02",
+        "name": "Mining Village & Colony",
+        "district": "Pakyong / East Sikkim",
+        "approx_population": 2800,
+        "elevation_m": 345,
+        "hazard_exposure": "HIGH",
+        "evacuation_zone": "Zone B (Toe Colluvium)"
+      },
+      "geometry": { "type": "Point", "coordinates": [88.5210, 27.1960] }
+    },
+    {
+      "type": "Feature",
+      "id": "SETTLE-03",
+      "properties": {
+        "settlement_id": "SETTLE-03",
+        "name": "Majhitar Settlement",
+        "district": "East Sikkim",
+        "approx_population": 6500,
+        "elevation_m": 370,
+        "hazard_exposure": "HIGH",
+        "evacuation_zone": "Zone C (River Terrace & SMIT)"
+      },
+      "geometry": { "type": "Point", "coordinates": [88.5130, 27.2080] }
+    },
+    {
+      "type": "Feature",
+      "id": "SETTLE-04",
+      "properties": {
+        "settlement_id": "SETTLE-04",
+        "name": "Bardang Village",
+        "district": "East Sikkim",
+        "approx_population": 3200,
+        "elevation_m": 410,
+        "hazard_exposure": "VERY_HIGH",
+        "evacuation_zone": "Zone D (Chronic Debris Cone)"
+      },
+      "geometry": { "type": "Point", "coordinates": [88.5040, 27.2210] }
+    },
+    {
+      "type": "Feature",
+      "id": "SETTLE-05",
+      "properties": {
+        "settlement_id": "SETTLE-05",
+        "name": "Singtam Nagar Panchayat",
+        "district": "East / South Sikkim",
+        "approx_population": 16000,
+        "elevation_m": 436,
+        "hazard_exposure": "HIGH",
+        "evacuation_zone": "Zone E (Commercial Hub & Confluence)"
+      },
+      "geometry": { "type": "Point", "coordinates": [88.5000, 27.2350] }
+    }
+  ]
+}

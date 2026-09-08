@@ -1,0 +1,120 @@
+{
+  "type": "FeatureCollection",
+  "metadata": {
+    "name": "NH-10 Rangpo-Singtam Highway Corridor",
+    "region": "Sikkim, India",
+    "total_length_km": 12.8,
+    "source": "OpenStreetMap / NHIDCL Highway Alignment"
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "id": "NH10-SEG-01",
+      "properties": {
+        "segment_id": "NH10-SEG-01",
+        "name": "NH-10 Rangpo Checkpost to Mining",
+        "length_km": 3.2,
+        "road_class": "National Highway",
+        "criticality": "EXTREME",
+        "lanes": 2,
+        "surface": "Asphalt / Bituminous",
+        "chronic_slide_zone": false,
+        "elevation_start_m": 305,
+        "elevation_end_m": 340,
+        "status": "OPEN",
+        "vulnerability_score": 0.35
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [88.5330, 27.1770],
+          [88.5310, 27.1820],
+          [88.5280, 27.1880],
+          [88.5240, 27.1930],
+          [88.5200, 27.1980]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "NH10-SEG-02",
+      "properties": {
+        "segment_id": "NH10-SEG-02",
+        "name": "NH-10 Mining to Majhitar Sector",
+        "length_km": 3.4,
+        "road_class": "National Highway",
+        "criticality": "EXTREME",
+        "lanes": 2,
+        "surface": "Asphalt / Colluvial Toe",
+        "chronic_slide_zone": true,
+        "elevation_start_m": 340,
+        "elevation_end_m": 380,
+        "status": "OPEN",
+        "vulnerability_score": 0.72
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [88.5200, 27.1980],
+          [88.5160, 27.2040],
+          [88.5120, 27.2100],
+          [88.5080, 27.2150]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "NH10-SEG-03",
+      "properties": {
+        "segment_id": "NH10-SEG-03",
+        "name": "NH-10 Majhitar to Bardang Sector (High Vulnerability)",
+        "length_km": 3.1,
+        "road_class": "National Highway",
+        "criticality": "EXTREME",
+        "lanes": 2,
+        "surface": "Asphalt / High Slope Cut",
+        "chronic_slide_zone": true,
+        "elevation_start_m": 380,
+        "elevation_end_m": 410,
+        "status": "OPEN",
+        "vulnerability_score": 0.85
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [88.5080, 27.2150],
+          [88.5050, 27.2190],
+          [88.5030, 27.2240],
+          [88.5015, 27.2280]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "NH10-SEG-04",
+      "properties": {
+        "segment_id": "NH10-SEG-04",
+        "name": "NH-10 Bardang to Singtam Bazar Bridge",
+        "length_km": 3.1,
+        "road_class": "National Highway",
+        "criticality": "EXTREME",
+        "lanes": 2,
+        "surface": "Asphalt",
+        "chronic_slide_zone": false,
+        "elevation_start_m": 410,
+        "elevation_end_m": 436,
+        "status": "OPEN",
+        "vulnerability_score": 0.45
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [88.5015, 27.2280],
+          [88.5010, 27.2310],
+          [88.5008, 27.2340],
+          [88.4980, 27.2380]
+        ]
+      }
+    }
+  ]
+}

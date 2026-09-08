@@ -1,0 +1,117 @@
+{
+  "timestamp_utc": "2026-09-08T04:34:50.847074+00:00",
+  "best_model": "RandomForest",
+  "models": {
+    "HistGradientBoosting": {
+      "validation": {
+        "accuracy": 0.9886,
+        "precision": 0.9844,
+        "recall": 1.0,
+        "f1_score": 0.9922,
+        "roc_auc": 0.9993,
+        "pr_auc": 0.9997,
+        "brier_score": 0.0126,
+        "confusion_matrix": {
+          "true_positive": 253,
+          "false_positive": 4,
+          "false_negative": 0,
+          "true_negative": 95
+        }
+      },
+      "test": {
+        "accuracy": 0.9915,
+        "precision": 0.8235,
+        "recall": 1.0,
+        "f1_score": 0.9032,
+        "roc_auc": 0.9977,
+        "pr_auc": 0.9141,
+        "brier_score": 0.0083,
+        "confusion_matrix": {
+          "true_positive": 14,
+          "false_positive": 3,
+          "false_negative": 0,
+          "true_negative": 335
+        }
+      }
+    },
+    "XGBoost": {
+      "validation": {
+        "accuracy": 0.9915,
+        "precision": 0.9921,
+        "recall": 0.996,
+        "f1_score": 0.9941,
+        "roc_auc": 0.9966,
+        "pr_auc": 0.9987,
+        "brier_score": 0.0145,
+        "confusion_matrix": {
+          "true_positive": 252,
+          "false_positive": 2,
+          "false_negative": 1,
+          "true_negative": 97
+        }
+      },
+      "test": {
+        "accuracy": 0.9886,
+        "precision": 0.9167,
+        "recall": 0.7857,
+        "f1_score": 0.8462,
+        "roc_auc": 0.9851,
+        "pr_auc": 0.873,
+        "brier_score": 0.0108,
+        "confusion_matrix": {
+          "true_positive": 11,
+          "false_positive": 1,
+          "false_negative": 3,
+          "true_negative": 337
+        }
+      }
+    },
+    "RandomForest": {
+      "validation": {
+        "accuracy": 0.9915,
+        "precision": 0.9883,
+        "recall": 1.0,
+        "f1_score": 0.9941,
+        "roc_auc": 0.9991,
+        "pr_auc": 0.9996,
+        "brier_score": 0.0521,
+        "confusion_matrix": {
+          "true_positive": 253,
+          "false_positive": 3,
+          "false_negative": 0,
+          "true_negative": 96
+        }
+      },
+      "test": {
+        "accuracy": 0.9801,
+        "precision": 0.7333,
+        "recall": 0.7857,
+        "f1_score": 0.7586,
+        "roc_auc": 0.9937,
+        "pr_auc": 0.8578,
+        "brier_score": 0.0393,
+        "confusion_matrix": {
+          "true_positive": 11,
+          "false_positive": 4,
+          "false_negative": 3,
+          "true_negative": 334
+        }
+      }
+    }
+  },
+  "model_a_susceptibility": {
+    "accuracy": 1.0,
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1_score": 1.0,
+    "roc_auc": 1.0,
+    "pr_auc": 1.0,
+    "brier_score": 0.0,
+    "confusion_matrix": {
+      "true_positive": 25,
+      "false_positive": 0,
+      "false_negative": 0,
+      "true_negative": 26
+    }
+  }
+}

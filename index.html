@@ -14,6 +14,11 @@
 </head>
 <body>
 
+  <!-- Offline Status Banner -->
+  <div id="offline-indicator" class="offline-banner hidden">
+    📡 OFFLINE MODE: Network connection lost. Displaying cached telemetry and emergency instructions.
+  </div>
+
   <!-- Top Emergency Alert Ribbon -->
   <div id="emergency-banner" class="emergency-banner hidden">
     <div class="banner-content">
@@ -31,31 +36,45 @@
       <button id="mobile-sidebar-toggle" class="btn" style="padding: 4px 8px; display: none;">☰</button>
       <div class="brand-icon">🛡️</div>
       <div>
-        <div class="brand-title">LANDSLIDE SENTINEL AI</div>
-        <div class="brand-subtitle">Rangpo–Singtam / NH-10 Early Warning System • Sikkim</div>
+        <div class="brand-title" data-i18n="app_title">LANDSLIDE SENTINEL AI</div>
+        <div class="brand-subtitle" data-i18n="app_subtitle">Rangpo–Singtam / NH-10 Early Warning System • Sikkim</div>
       </div>
     </div>
 
     <div class="nav-controls">
-      <!-- Location Filter -->
-      <select id="location-selector" class="select-control font-mono">
-        <option value="ALL">All Corridor (Rangpo → Singtam)</option>
-        <option value="Rangpo">Rangpo Station (27.177°N, 88.533°E)</option>
-        <option value="Singtam">Singtam Station (27.234°N, 88.501°E)</option>
+      <!-- Operational Data Mode Selector (LIVE / HISTORICAL / SIMULATION / DEMO) -->
+      <select id="data-mode-selector" class="select-control font-mono" style="border-color: #06b6d4; font-weight: 700;">
+        <option value="LIVE">🟢 LIVE DATA MODE</option>
+        <option value="HISTORICAL">📚 HISTORICAL DATA</option>
+        <option value="SIMULATION">🧪 SIMULATION MODE</option>
+        <option value="DEMO">🎪 SIH DEMO MODE</option>
       </select>
 
-      <!-- Role Selector -->
+      <!-- SIH 12-Step Guided Tour -->
+      <button id="sih-tour-btn" class="btn btn-primary" style="background: linear-gradient(135deg, #0284c7, #06b6d4); font-weight: bold; border: none;">
+        🏆 SIH Judge Tour
+      </button>
+
+      <!-- Role Selector (RBAC Matrix) -->
       <select id="role-selector" class="select-control">
-        <option value="Disaster Management Authority">Disaster Authority (State/Dist)</option>
-        <option value="Field Response Officer">Field Response / SDRF Officer</option>
-        <option value="Public Citizen">Public / Citizen Portal</option>
+        <option value="ADMIN">🛡️ State Admin (SEOC)</option>
+        <option value="DISASTER_AUTHORITY">🚨 Disaster Authority (SDRF)</option>
+        <option value="FIELD_OFFICER" selected>👷 Field Officer (PWD / NHIDCL)</option>
+        <option value="ROAD_AUTHORITY">🛣️ Highway Patrol</option>
+        <option value="CITIZEN">👥 Citizen Portal</option>
       </select>
 
-      <!-- Language Selector -->
+      <!-- 9-Language Selector (i18n) -->
       <select id="lang-selector" class="select-control font-mono">
         <option value="en">English (EN)</option>
-        <option value="hi">हिन्दी (HI)</option>
         <option value="ne">नेपाली (NE)</option>
+        <option value="hi">हिन्दी (HI)</option>
+        <option value="bn">বাংলা (BN)</option>
+        <option value="ta">தமிழ் (TA)</option>
+        <option value="te">తెలుగు (TE)</option>
+        <option value="kn">ಕನ್ನಡ (KN)</option>
+        <option value="ml">മലയാളം (ML)</option>
+        <option value="mr">मराठी (MR)</option>
       </select>
 
       <!-- Audio Alert Toggle -->
@@ -82,52 +101,69 @@
       
       <a class="nav-item active" data-tab="command">
         <i>📊</i>
-        <span class="nav-text">Command Center</span>
+        <span class="nav-text" data-i18n="nav_overview">Command Center</span>
       </a>
 
       <a class="nav-item" data-tab="gis">
         <i>🗺️</i>
-        <span class="nav-text">GIS Risk Map</span>
+        <span class="nav-text" data-i18n="nav_map">GIS Risk Map</span>
       </a>
 
       <a class="nav-item" data-tab="rainfall">
         <i>🛰️</i>
-        <span class="nav-text">NASA IMERG Rainfall</span>
+        <span class="nav-text" data-i18n="nav_rainfall">NASA IMERG Rainfall</span>
       </a>
 
       <a class="nav-item" data-tab="terrain">
         <i>⛰️</i>
-        <span class="nav-text">Copernicus DEM</span>
+        <span class="nav-text" data-i18n="nav_terrain">Copernicus DEM</span>
       </a>
 
       <a class="nav-item" data-tab="historical">
         <i>📍</i>
-        <span class="nav-text">Historical Landslides</span>
-        <span id="sidebar-landslides-badge" class="nav-item-badge">103</span>
+        <span class="nav-text" data-i18n="nav_historical">Historical Landslides</span>
+        <span id="sidebar-landslides-badge" class="nav-item-badge">101</span>
+      </a>
+
+      <div class="sidebar-header" style="margin-top: 14px;">IoT, Field AI & Emergency</div>
+
+      <a class="nav-item" data-tab="iot">
+        <i>📡</i>
+        <span class="nav-text" data-i18n="nav_iot">IoT Ground Telemetry</span>
+      </a>
+
+      <a class="nav-item" data-tab="field-ai">
+        <i>📸</i>
+        <span class="nav-text">Field AI & Vision</span>
+      </a>
+
+      <a class="nav-item" data-tab="emergency">
+        <i>🚑</i>
+        <span class="nav-text" data-i18n="nav_emergency">Emergency & Routing</span>
       </a>
 
       <div class="sidebar-header" style="margin-top: 14px;">AI Analytics & Verification</div>
 
       <a class="nav-item" data-tab="replay">
         <i>⏳</i>
-        <span class="nav-text">Historical Replay</span>
+        <span class="nav-text" data-i18n="nav_replay">Storm Replay</span>
       </a>
 
       <a class="nav-item" data-tab="model">
         <i>🧠</i>
-        <span class="nav-text">ML Model Metrics</span>
+        <span class="nav-text" data-i18n="nav_model">ML Model Metrics</span>
       </a>
 
       <a class="nav-item" data-tab="explainability">
         <i>🔬</i>
-        <span class="nav-text">How AI Works</span>
+        <span class="nav-text" data-i18n="nav_explainability">How AI Works</span>
       </a>
 
       <div class="sidebar-header" style="margin-top: 14px;">Public Safety</div>
 
       <a class="nav-item" data-tab="citizen">
         <i>📢</i>
-        <span class="nav-text">Civil Safety & Contacts</span>
+        <span class="nav-text" data-i18n="nav_safety">Civil Safety & Contacts</span>
       </a>
     </aside>
 
@@ -137,6 +173,9 @@
       <!-- Top Refresh & System Status Strip -->
       <div class="control-strip">
         <div style="display: flex; align-items: center; gap: 14px; flex-wrap: wrap;">
+          <div id="active-data-mode-badge" class="status-badge status-connected" style="font-weight: 800; border-color: #06b6d4; background: rgba(6, 182, 212, 0.15); color: #22d3ee;">
+            <span>●</span> MODE: LIVE DATA (VERIFIED)
+          </div>
           <div class="status-badge status-connected">
             <span>●</span> NASA IMERG Early Run — Connected (Near Real-Time)
           </div>
@@ -157,37 +196,37 @@
       <!-- Top KPI Cards Grid -->
       <section class="kpi-grid">
         <div class="kpi-card">
-          <span class="kpi-label">Corridor Risk Level</span>
+          <span class="kpi-label" data-i18n="kpi_risk_level">Corridor Risk Level</span>
           <div id="kpi-risk-level" class="kpi-value text-amber">WATCH</div>
           <div id="kpi-risk-prob" class="kpi-subtext font-mono">Probability: 42.5%</div>
         </div>
 
         <div class="kpi-card">
-          <span class="kpi-label">1-Hour Precipitation</span>
+          <span class="kpi-label" data-i18n="kpi_rain_1h">1-Hour Precipitation</span>
           <div id="kpi-rain-1h" class="kpi-value font-mono">0.0 mm</div>
           <div class="kpi-subtext">Peak 1h Intensity</div>
         </div>
 
         <div class="kpi-card">
-          <span class="kpi-label">24-Hour Rainfall</span>
+          <span class="kpi-label" data-i18n="kpi_rain_24h">24-Hour Rainfall</span>
           <div id="kpi-rain-24h" class="kpi-value text-cyan font-mono">6.0 mm</div>
           <div class="kpi-subtext">Rolling 24-Hour Sum</div>
         </div>
 
         <div class="kpi-card">
-          <span class="kpi-label">72-Hour Saturation</span>
+          <span class="kpi-label" data-i18n="kpi_rain_72h">72-Hour Saturation</span>
           <div id="kpi-rain-72h" class="kpi-value text-amber font-mono">24.2 mm</div>
           <div class="kpi-subtext">Antecedent Soil Loading</div>
         </div>
 
         <div class="kpi-card">
-          <span class="kpi-label">7-Day Cumulative</span>
+          <span class="kpi-label" data-i18n="kpi_rain_7d">7-Day Cumulative</span>
           <div id="kpi-rain-7d" class="kpi-value font-mono">105.1 mm</div>
           <div class="kpi-subtext">7-Day Monsoon Index</div>
         </div>
 
         <div class="kpi-card">
-          <span class="kpi-label">Last NASA Observation</span>
+          <span class="kpi-label" data-i18n="kpi_data_age">Last NASA Observation</span>
           <div id="kpi-data-age" class="kpi-value font-mono" style="font-size: 1.3rem;">...</div>
           <div id="kpi-data-utc" class="kpi-subtext font-mono text-xs">...</div>
         </div>
@@ -195,7 +234,7 @@
         <div class="kpi-card">
           <span class="kpi-label">AI Model Engine</span>
           <div id="kpi-model-status" class="kpi-value text-emerald font-mono" style="font-size: 1.25rem;">HistGB v1.0</div>
-          <div id="kpi-model-f1" class="kpi-subtext text-xs">Test F1: 85.3% | Recall: 100%</div>
+          <div id="kpi-model-f1" class="kpi-subtext text-xs">Test F1: 90.3% | Recall: 100%</div>
         </div>
       </section>
 
@@ -216,12 +255,8 @@
 
         <!-- Risk Stations Grid -->
         <div class="grid-2">
-          <div id="risk-card-rangpo" class="card">
-            <!-- Populated dynamically by risk.js -->
-          </div>
-          <div id="risk-card-singtam" class="card">
-            <!-- Populated dynamically by risk.js -->
-          </div>
+          <div id="risk-card-rangpo" class="card"></div>
+          <div id="risk-card-singtam" class="card"></div>
         </div>
       </section>
 
@@ -234,7 +269,7 @@
           </div>
           <div class="card-body">
             <p class="text-xs text-muted mb-3">
-              Explore the interactive map with full multi-layer switching: OpenStreetMap, Dark Command Center, Satellite Imagery, Topographic Terrain, 64-Cell AI Risk Heatmap, 103 GSI Historical Landslide points, NASA Monitoring Stations, and NH-10 Highway Lifeline.
+              Explore the interactive map with full multi-layer switching: OpenStreetMap, Dark Command Center, Satellite Imagery, Topographic Terrain, 10x10 AI Hazard Zones, NH-10 Highway Segments, Critical Infrastructure & Bridges, Settlements, Rivers, Ground IoT Sensors, Field Reports, and GSI Historical Landslides.
             </p>
           </div>
         </div>
@@ -262,9 +297,7 @@
                     <th>Status</th>
                   </tr>
                 </thead>
-                <tbody id="rainfall-summary-tbody">
-                  <!-- Populated by rainfall.js -->
-                </tbody>
+                <tbody id="rainfall-summary-tbody"></tbody>
               </table>
             </div>
           </div>
@@ -293,10 +326,7 @@
 
       <!-- TAB 4: COPERNICUS DEM TERRAIN -->
       <section id="view-terrain" class="tab-view">
-        <div id="terrain-stats-container">
-          <!-- Populated by terrain.js -->
-        </div>
-
+        <div id="terrain-stats-container"></div>
         <div class="card" style="margin-top: 16px;">
           <div class="card-header">
             <span class="card-title">📐 Geotechnical Slope Susceptibility Criteria (Horn's Algorithm)</span>
@@ -328,7 +358,7 @@
         <div class="card">
           <div class="card-header">
             <span class="card-title">📍 Historical Landslide Database (Geological Survey of India)</span>
-            <span id="landslides-count-badge" class="status-badge status-connected">103 Documented Events</span>
+            <span id="landslides-count-badge" class="status-badge status-connected">101 Documented Events</span>
           </div>
           <div class="card-body">
             <div style="display: flex; gap: 12px; margin-bottom: 16px; flex-wrap: wrap;">
@@ -353,16 +383,29 @@
                     <th>Source</th>
                   </tr>
                 </thead>
-                <tbody id="landslides-tbody">
-                  <!-- Populated by historical.js -->
-                </tbody>
+                <tbody id="landslides-tbody"></tbody>
               </table>
             </div>
           </div>
         </div>
       </section>
 
-      <!-- TAB 6: HISTORICAL EVENT REPLAY -->
+      <!-- TAB 6: IOT & SENSORS -->
+      <section id="view-iot" class="tab-view">
+        <div id="iot-view-container"></div>
+      </section>
+
+      <!-- TAB 7: FIELD AI & VISION -->
+      <section id="view-field-ai" class="tab-view">
+        <div id="field-ai-container"></div>
+      </section>
+
+      <!-- TAB 8: EMERGENCY & ROUTING -->
+      <section id="view-emergency" class="tab-view">
+        <div id="emergency-view-container"></div>
+      </section>
+
+      <!-- TAB 9: HISTORICAL EVENT REPLAY -->
       <section id="view-replay" class="tab-view">
         <div class="card">
           <div class="card-header">
@@ -409,12 +452,12 @@
         </div>
       </section>
 
-      <!-- TAB 7: ML MODEL METRICS -->
+      <!-- TAB 10: ML MODEL METRICS -->
       <section id="view-model" class="tab-view">
         <div class="kpi-grid">
           <div class="kpi-card">
             <span class="kpi-label">Test Precision</span>
-            <div id="model-prec-val" class="kpi-value text-cyan font-mono">74.4%</div>
+            <div id="model-prec-val" class="kpi-value text-cyan font-mono">82.4%</div>
             <div class="kpi-subtext">True Positive / (TP + FP)</div>
           </div>
 
@@ -426,20 +469,20 @@
 
           <div class="kpi-card">
             <span class="kpi-label">Test F1-Score</span>
-            <div id="model-f1-val" class="kpi-value text-white font-mono">85.3%</div>
+            <div id="model-f1-val" class="kpi-value text-white font-mono">90.3%</div>
             <div class="kpi-subtext">Harmonic Mean of P & R</div>
           </div>
 
           <div class="kpi-card">
             <span class="kpi-label">Test ROC-AUC</span>
-            <div id="model-rocauc-val" class="kpi-value text-cyan font-mono">0.995</div>
+            <div id="model-rocauc-val" class="kpi-value text-cyan font-mono">0.998</div>
             <div class="kpi-subtext">Discrimination Ability</div>
           </div>
 
           <div class="kpi-card">
-            <span class="kpi-label">Average Lead Time</span>
-            <div id="lead-avg-val" class="kpi-value text-amber font-mono">14.6h</div>
-            <div class="kpi-subtext">Advance Warning Window</div>
+            <span class="kpi-label">Brier Score</span>
+            <div class="kpi-value text-emerald font-mono">0.0083</div>
+            <div class="kpi-subtext">Platt Calibrated Reliability</div>
           </div>
         </div>
 
@@ -453,13 +496,13 @@
               <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 12px; text-align: center;">
                 <div class="p-3" style="background: rgba(16, 185, 129, 0.1); border: 1px solid rgba(16, 185, 129, 0.3); border-radius: 8px;">
                   <div class="text-xs text-muted font-bold">TRUE NEGATIVE (TN)</div>
-                  <div id="cm-tn" class="font-mono text-emerald" style="font-size: 1.8rem; font-weight: 800;">180</div>
+                  <div id="cm-tn" class="font-mono text-emerald" style="font-size: 1.8rem; font-weight: 800;">335</div>
                   <div class="text-xs text-dim">Correct Non-Event Baseline</div>
                 </div>
 
                 <div class="p-3" style="background: rgba(245, 158, 11, 0.1); border: 1px solid rgba(245, 158, 11, 0.3); border-radius: 8px;">
                   <div class="text-xs text-muted font-bold">FALSE POSITIVE (FP)</div>
-                  <div id="cm-fp" class="font-mono text-amber" style="font-size: 1.8rem; font-weight: 800;">32</div>
+                  <div id="cm-fp" class="font-mono text-amber" style="font-size: 1.8rem; font-weight: 800;">3</div>
                   <div class="text-xs text-dim">Conservative False Alarms</div>
                 </div>
 
@@ -471,7 +514,7 @@
 
                 <div class="p-3" style="background: rgba(6, 182, 212, 0.1); border: 1px solid rgba(6, 182, 212, 0.3); border-radius: 8px;">
                   <div class="text-xs text-muted font-bold">TRUE POSITIVE (TP)</div>
-                  <div id="cm-tp" class="font-mono text-cyan" style="font-size: 1.8rem; font-weight: 800;">93</div>
+                  <div id="cm-tp" class="font-mono text-cyan" style="font-size: 1.8rem; font-weight: 800;">14</div>
                   <div class="text-xs text-dim">Successfully Detected Risks</div>
                 </div>
               </div>
@@ -494,9 +537,7 @@
                     <th>ROC-AUC</th>
                   </tr>
                 </thead>
-                <tbody id="model-comparison-tbody">
-                  <!-- Populated by model.js -->
-                </tbody>
+                <tbody id="model-comparison-tbody"></tbody>
               </table>
             </div>
           </div>
@@ -523,18 +564,14 @@
         </div>
       </section>
 
-      <!-- TAB 8: HOW AI WORKS -->
+      <!-- TAB 11: HOW AI WORKS -->
       <section id="view-explainability" class="tab-view">
-        <div id="explainability-container">
-          <!-- Populated by explainability.js -->
-        </div>
+        <div id="explainability-container"></div>
       </section>
 
-      <!-- TAB 9: CITIZEN SAFETY PORTAL -->
+      <!-- TAB 12: CITIZEN SAFETY PORTAL -->
       <section id="view-citizen" class="tab-view">
-        <div id="citizen-advisory-container">
-          <!-- Populated by citizen.js -->
-        </div>
+        <div id="citizen-advisory-container"></div>
       </section>
 
     </main>
@@ -567,6 +604,9 @@
 
   <!-- Turf.js CDN for Geospatial Calculations -->
   <script src="https://cdn.jsdelivr.net/npm/@turf/turf@6.5.0/turf.min.js"></script>
+
+  <!-- Bootstrap JS Bundle for Modals -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
   <!-- Main ES6 Vanilla JS Application -->
   <script type="module" src="js/app.js"></script>

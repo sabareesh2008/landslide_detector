@@ -1,0 +1,58 @@
+{
+  "type": "FeatureCollection",
+  "metadata": {
+    "name": "Rangpo-Singtam Drainage & River Network",
+    "region": "Sikkim, India",
+    "source": "Survey of India / Copernicus HydroSHEDS"
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "id": "RIVER-01",
+      "properties": {
+        "river_id": "RIVER-01",
+        "name": "Teesta River (Main Himalayan Channel)",
+        "type": "MAJOR_RIVER",
+        "flow_direction": "South-West",
+        "flood_warning_level_m": 315,
+        "scouring_impact": "Severe toe erosion along NH-10 Majhitar-Bardang reach"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [88.4970, 27.2420],
+          [88.4995, 27.2340],
+          [88.5020, 27.2270],
+          [88.5045, 27.2200],
+          [88.5090, 27.2130],
+          [88.5140, 27.2060],
+          [88.5180, 27.1990],
+          [88.5220, 27.1910],
+          [88.5260, 27.1840],
+          [88.5320, 27.1760]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "RIVER-02",
+      "properties": {
+        "river_id": "RIVER-02",
+        "name": "Rangpo Chu (Tributary)",
+        "type": "TRIBUTARY",
+        "flow_direction": "West",
+        "flood_warning_level_m": 312,
+        "scouring_impact": "Flash flood debris transport at Rangpo confluence"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [88.5550, 27.1820],
+          [88.5480, 27.1800],
+          [88.5400, 27.1785],
+          [88.5325, 27.1770]
+        ]
+      }
+    }
+  ]
+}

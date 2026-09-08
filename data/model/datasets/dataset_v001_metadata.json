@@ -1,0 +1,49 @@
+{
+  "dataset_version": "v001",
+  "created_at_utc": "2026-09-08T04:34:45.787069+00:00",
+  "total_dynamic_samples": 1760,
+  "positive_triggers": 541,
+  "negative_samples": 1219,
+  "imbalance_ratio": 2.25,
+  "total_static_samples": 202,
+  "static_positives": 101,
+  "static_negatives": 101,
+  "feature_columns": [
+    "rain_30min",
+    "rain_1h",
+    "rain_3h",
+    "rain_6h",
+    "rain_12h",
+    "rain_24h",
+    "rain_48h",
+    "rain_72h",
+    "rain_7d",
+    "max_rain_1h",
+    "max_rain_3h",
+    "max_rain_6h",
+    "max_rain_24h",
+    "rainfall_change_1h",
+    "rainfall_change_3h",
+    "rainfall_acceleration",
+    "elevation",
+    "slope",
+    "aspect",
+    "aspect_sin",
+    "aspect_cos",
+    "terrain_ruggedness",
+    "distance_to_historical_landslide_km",
+    "historical_landslide_density",
+    "slope_x_rain24h",
+    "ruggedness_x_rain72h",
+    "susceptibility_x_rain_peak"
+  ],
+  "temporal_range": {
+    "start": "2026-08-20 08:59:59+00:00",
+    "end": "2026-09-07 16:30:00+00:00"
+  },
+  "leakage_prevention": {
+    "rolling_windows": "Strictly backward-looking (closed='left' equivalent)",
+    "sorting": "Chronological by location and timestamp",
+    "cross_validation_strategy": "Chronological train/val/test holdout (60/20/20)"
+  }
+}

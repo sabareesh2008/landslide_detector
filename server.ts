@@ -183,25 +183,15 @@ app.post('/api/ai/analyze-field-media', async (req, res) => {
     
     const client = getGeminiClient();
     if (!client || !imageBase64) {
-      // Fallback heuristics if API key is not yet configured
-      return res.json({
-        success: true,
-        source: 'Heuristic CV Classifier',
-        analysis: {
-          detectedHazard: incidentType || 'Tension Crack & Slope Debris',
-          severityEstimate: 'Critical Failure',
-          confidence: 0.93,
-          detectedFeatures: [
-            'Asphalt tension shearing along road shoulder',
-            'Subsurface mud slurry discharge',
-            'Slope toe displacement threatening vehicular right-of-way',
-            'Incipient rotational failure scarp'
-          ],
-          annotatedRegions: [
-            { x: 20, y: 30, w: 60, h: 45, label: 'Primary Shear Zone' },
-            { x: 65, y: 55, w: 25, h: 30, label: 'Seepage Conduits' }
-          ],
-          geminiAnalysis: `Automated assessment for ${locationName || 'North East Mountain Corridor'}, ${state || 'NE India'}: Surface cracks indicate active differential settlement. Immediate barricading and traffic diversion recommended.`
+      // Explicit error when API key or image is missing (Zero fake heuristic AI)
+      return res.status(503).json({
+        success: false,
+        error: {
+          code: 'AI_SERVICE_UNAVAILABLE',
+          message: !client 
+            ? 'GEMINI_API_KEY environment variable is not configured on the server. Image queued for manual geotechnical engineer verification.'
+            : 'No image data provided in request body.',
+          source: 'System AI Gateway'
         }
       });
     }
