@@ -1,7 +1,7 @@
 {
   "type": "FeatureCollection",
   "metadata": {
-    "generated_at_utc": "2026-09-08T08:24:37.083790+00:00",
+    "generated_at_utc": "2026-09-08T09:54:48.607779+00:00",
     "total_cells": 64,
     "corridor": "Rangpo-Singtam / NH-10 Corridor, Sikkim",
     "grid_resolution": "8x8 Interpolated Hydro-DEM Matrix",
@@ -782,10 +782,10 @@
         "slope_degrees": 18.0,
         "aspect_degrees": 310.0,
         "rainfall_24h_mm": 10.8,
-        "rainfall_72h_mm": 31.7,
-        "risk_probability": 0.0453,
+        "rainfall_72h_mm": 31.8,
+        "risk_probability": 0.0533,
         "static_susceptibility": 0.3128,
-        "dynamic_trigger": 0.3331,
+        "dynamic_trigger": 0.3337,
         "risk_level": "LOW",
         "model_version": "HistGradientBoosting v1.0.0 (Calibrated)"
       }
@@ -1150,10 +1150,10 @@
         "slope_degrees": 18.0,
         "aspect_degrees": 310.0,
         "rainfall_24h_mm": 10.8,
-        "rainfall_72h_mm": 31.7,
-        "risk_probability": 0.0453,
+        "rainfall_72h_mm": 31.8,
+        "risk_probability": 0.0533,
         "static_susceptibility": 0.3096,
-        "dynamic_trigger": 0.3331,
+        "dynamic_trigger": 0.3337,
         "risk_level": "LOW",
         "model_version": "HistGradientBoosting v1.0.0 (Calibrated)"
       }
@@ -1196,10 +1196,10 @@
         "slope_degrees": 18.0,
         "aspect_degrees": 310.0,
         "rainfall_24h_mm": 10.8,
-        "rainfall_72h_mm": 31.7,
-        "risk_probability": 0.0453,
+        "rainfall_72h_mm": 31.8,
+        "risk_probability": 0.0533,
         "static_susceptibility": 0.3107,
-        "dynamic_trigger": 0.3331,
+        "dynamic_trigger": 0.3337,
         "risk_level": "LOW",
         "model_version": "HistGradientBoosting v1.0.0 (Calibrated)"
       }
@@ -1242,10 +1242,10 @@
         "slope_degrees": 18.0,
         "aspect_degrees": 310.0,
         "rainfall_24h_mm": 10.8,
-        "rainfall_72h_mm": 31.7,
-        "risk_probability": 0.0453,
+        "rainfall_72h_mm": 31.8,
+        "risk_probability": 0.0533,
         "static_susceptibility": 0.3118,
-        "dynamic_trigger": 0.3331,
+        "dynamic_trigger": 0.3337,
         "risk_level": "LOW",
         "model_version": "HistGradientBoosting v1.0.0 (Calibrated)"
       }
@@ -1518,10 +1518,10 @@
         "slope_degrees": 18.0,
         "aspect_degrees": 310.0,
         "rainfall_24h_mm": 10.8,
-        "rainfall_72h_mm": 31.7,
-        "risk_probability": 0.0453,
+        "rainfall_72h_mm": 31.8,
+        "risk_probability": 0.0533,
         "static_susceptibility": 0.3107,
-        "dynamic_trigger": 0.3331,
+        "dynamic_trigger": 0.3337,
         "risk_level": "LOW",
         "model_version": "HistGradientBoosting v1.0.0 (Calibrated)"
       }
@@ -1564,10 +1564,10 @@
         "slope_degrees": 18.0,
         "aspect_degrees": 310.0,
         "rainfall_24h_mm": 10.8,
-        "rainfall_72h_mm": 31.7,
-        "risk_probability": 0.0453,
+        "rainfall_72h_mm": 31.8,
+        "risk_probability": 0.0533,
         "static_susceptibility": 0.3107,
-        "dynamic_trigger": 0.3331,
+        "dynamic_trigger": 0.3337,
         "risk_level": "LOW",
         "model_version": "HistGradientBoosting v1.0.0 (Calibrated)"
       }
@@ -1610,10 +1610,10 @@
         "slope_degrees": 18.0,
         "aspect_degrees": 310.0,
         "rainfall_24h_mm": 10.8,
-        "rainfall_72h_mm": 31.7,
-        "risk_probability": 0.0453,
+        "rainfall_72h_mm": 31.8,
+        "risk_probability": 0.0533,
         "static_susceptibility": 0.3139,
-        "dynamic_trigger": 0.3331,
+        "dynamic_trigger": 0.3337,
         "risk_level": "LOW",
         "model_version": "HistGradientBoosting v1.0.0 (Calibrated)"
       }
@@ -1656,10 +1656,10 @@
         "slope_degrees": 18.0,
         "aspect_degrees": 310.0,
         "rainfall_24h_mm": 10.8,
-        "rainfall_72h_mm": 31.7,
-        "risk_probability": 0.0453,
+        "rainfall_72h_mm": 31.8,
+        "risk_probability": 0.0533,
         "static_susceptibility": 0.3086,
-        "dynamic_trigger": 0.3331,
+        "dynamic_trigger": 0.3337,
         "risk_level": "LOW",
         "model_version": "HistGradientBoosting v1.0.0 (Calibrated)"
       }
@@ -1702,10 +1702,10 @@
         "slope_degrees": 18.0,
         "aspect_degrees": 310.0,
         "rainfall_24h_mm": 10.8,
-        "rainfall_72h_mm": 31.7,
-        "risk_probability": 0.0453,
+        "rainfall_72h_mm": 31.8,
+        "risk_probability": 0.0533,
         "static_susceptibility": 0.3086,
-        "dynamic_trigger": 0.3331,
+        "dynamic_trigger": 0.3337,
         "risk_level": "LOW",
         "model_version": "HistGradientBoosting v1.0.0 (Calibrated)"
       }
@@ -1886,10 +1886,10 @@
         "slope_degrees": 18.0,
         "aspect_degrees": 310.0,
         "rainfall_24h_mm": 10.8,
-        "rainfall_72h_mm": 31.7,
-        "risk_probability": 0.0453,
+        "rainfall_72h_mm": 31.8,
+        "risk_probability": 0.0533,
         "static_susceptibility": 0.3107,
-        "dynamic_trigger": 0.3331,
+        "dynamic_trigger": 0.3337,
         "risk_level": "LOW",
         "model_version": "HistGradientBoosting v1.0.0 (Calibrated)"
       }
@@ -1932,10 +1932,10 @@
         "slope_degrees": 18.0,
         "aspect_degrees": 310.0,
         "rainfall_24h_mm": 10.8,
-        "rainfall_72h_mm": 31.7,
-        "risk_probability": 0.0453,
+        "rainfall_72h_mm": 31.8,
+        "risk_probability": 0.0533,
         "static_susceptibility": 0.3212,
-        "dynamic_trigger": 0.3331,
+        "dynamic_trigger": 0.3337,
         "risk_level": "LOW",
         "model_version": "HistGradientBoosting v1.0.0 (Calibrated)"
       }
@@ -1978,10 +1978,10 @@
         "slope_degrees": 18.0,
         "aspect_degrees": 310.0,
         "rainfall_24h_mm": 10.8,
-        "rainfall_72h_mm": 31.7,
-        "risk_probability": 0.0453,
+        "rainfall_72h_mm": 31.8,
+        "risk_probability": 0.0533,
         "static_susceptibility": 0.3266,
-        "dynamic_trigger": 0.3331,
+        "dynamic_trigger": 0.3337,
         "risk_level": "LOW",
         "model_version": "HistGradientBoosting v1.0.0 (Calibrated)"
       }
@@ -2024,10 +2024,10 @@
         "slope_degrees": 18.0,
         "aspect_degrees": 310.0,
         "rainfall_24h_mm": 10.8,
-        "rainfall_72h_mm": 31.7,
-        "risk_probability": 0.0453,
+        "rainfall_72h_mm": 31.8,
+        "risk_probability": 0.0533,
         "static_susceptibility": 0.3212,
-        "dynamic_trigger": 0.3331,
+        "dynamic_trigger": 0.3337,
         "risk_level": "LOW",
         "model_version": "HistGradientBoosting v1.0.0 (Calibrated)"
       }
@@ -2070,10 +2070,10 @@
         "slope_degrees": 18.0,
         "aspect_degrees": 310.0,
         "rainfall_24h_mm": 10.8,
-        "rainfall_72h_mm": 31.7,
-        "risk_probability": 0.0453,
+        "rainfall_72h_mm": 31.8,
+        "risk_probability": 0.0533,
         "static_susceptibility": 0.3139,
-        "dynamic_trigger": 0.3331,
+        "dynamic_trigger": 0.3337,
         "risk_level": "LOW",
         "model_version": "HistGradientBoosting v1.0.0 (Calibrated)"
       }
@@ -2116,10 +2116,10 @@
         "slope_degrees": 18.0,
         "aspect_degrees": 310.0,
         "rainfall_24h_mm": 10.8,
-        "rainfall_72h_mm": 31.7,
-        "risk_probability": 0.0453,
+        "rainfall_72h_mm": 31.8,
+        "risk_probability": 0.0533,
         "static_susceptibility": 0.3086,
-        "dynamic_trigger": 0.3331,
+        "dynamic_trigger": 0.3337,
         "risk_level": "LOW",
         "model_version": "HistGradientBoosting v1.0.0 (Calibrated)"
       }
@@ -2162,10 +2162,10 @@
         "slope_degrees": 18.0,
         "aspect_degrees": 310.0,
         "rainfall_24h_mm": 10.8,
-        "rainfall_72h_mm": 31.7,
-        "risk_probability": 0.0453,
+        "rainfall_72h_mm": 31.8,
+        "risk_probability": 0.0533,
         "static_susceptibility": 0.3086,
-        "dynamic_trigger": 0.3331,
+        "dynamic_trigger": 0.3337,
         "risk_level": "LOW",
         "model_version": "HistGradientBoosting v1.0.0 (Calibrated)"
       }
@@ -2254,10 +2254,10 @@
         "slope_degrees": 18.0,
         "aspect_degrees": 310.0,
         "rainfall_24h_mm": 10.8,
-        "rainfall_72h_mm": 31.7,
-        "risk_probability": 0.0453,
+        "rainfall_72h_mm": 31.8,
+        "risk_probability": 0.0533,
         "static_susceptibility": 0.315,
-        "dynamic_trigger": 0.3331,
+        "dynamic_trigger": 0.3337,
         "risk_level": "LOW",
         "model_version": "HistGradientBoosting v1.0.0 (Calibrated)"
       }
@@ -2300,10 +2300,10 @@
         "slope_degrees": 18.0,
         "aspect_degrees": 310.0,
         "rainfall_24h_mm": 10.8,
-        "rainfall_72h_mm": 31.7,
-        "risk_probability": 0.0453,
+        "rainfall_72h_mm": 31.8,
+        "risk_probability": 0.0533,
         "static_susceptibility": 0.3212,
-        "dynamic_trigger": 0.3331,
+        "dynamic_trigger": 0.3337,
         "risk_level": "LOW",
         "model_version": "HistGradientBoosting v1.0.0 (Calibrated)"
       }
@@ -2346,10 +2346,10 @@
         "slope_degrees": 18.0,
         "aspect_degrees": 310.0,
         "rainfall_24h_mm": 10.8,
-        "rainfall_72h_mm": 31.7,
-        "risk_probability": 0.0453,
+        "rainfall_72h_mm": 31.8,
+        "risk_probability": 0.0533,
         "static_susceptibility": 0.3171,
-        "dynamic_trigger": 0.3331,
+        "dynamic_trigger": 0.3337,
         "risk_level": "LOW",
         "model_version": "HistGradientBoosting v1.0.0 (Calibrated)"
       }
@@ -2392,10 +2392,10 @@
         "slope_degrees": 18.0,
         "aspect_degrees": 310.0,
         "rainfall_24h_mm": 10.8,
-        "rainfall_72h_mm": 31.7,
-        "risk_probability": 0.0453,
+        "rainfall_72h_mm": 31.8,
+        "risk_probability": 0.0533,
         "static_susceptibility": 0.3203,
-        "dynamic_trigger": 0.3331,
+        "dynamic_trigger": 0.3337,
         "risk_level": "LOW",
         "model_version": "HistGradientBoosting v1.0.0 (Calibrated)"
       }
@@ -2438,10 +2438,10 @@
         "slope_degrees": 18.0,
         "aspect_degrees": 310.0,
         "rainfall_24h_mm": 10.8,
-        "rainfall_72h_mm": 31.7,
-        "risk_probability": 0.0453,
+        "rainfall_72h_mm": 31.8,
+        "risk_probability": 0.0533,
         "static_susceptibility": 0.3212,
-        "dynamic_trigger": 0.3331,
+        "dynamic_trigger": 0.3337,
         "risk_level": "LOW",
         "model_version": "HistGradientBoosting v1.0.0 (Calibrated)"
       }
@@ -2484,10 +2484,10 @@
         "slope_degrees": 18.0,
         "aspect_degrees": 310.0,
         "rainfall_24h_mm": 10.8,
-        "rainfall_72h_mm": 31.7,
-        "risk_probability": 0.0453,
+        "rainfall_72h_mm": 31.8,
+        "risk_probability": 0.0533,
         "static_susceptibility": 0.3255,
-        "dynamic_trigger": 0.3331,
+        "dynamic_trigger": 0.3337,
         "risk_level": "LOW",
         "model_version": "HistGradientBoosting v1.0.0 (Calibrated)"
       }
@@ -2530,10 +2530,10 @@
         "slope_degrees": 18.0,
         "aspect_degrees": 310.0,
         "rainfall_24h_mm": 10.8,
-        "rainfall_72h_mm": 31.7,
-        "risk_probability": 0.0453,
+        "rainfall_72h_mm": 31.8,
+        "risk_probability": 0.0533,
         "static_susceptibility": 0.3171,
-        "dynamic_trigger": 0.3331,
+        "dynamic_trigger": 0.3337,
         "risk_level": "LOW",
         "model_version": "HistGradientBoosting v1.0.0 (Calibrated)"
       }
@@ -2576,10 +2576,10 @@
         "slope_degrees": 18.0,
         "aspect_degrees": 310.0,
         "rainfall_24h_mm": 10.8,
-        "rainfall_72h_mm": 31.7,
-        "risk_probability": 0.0453,
+        "rainfall_72h_mm": 31.8,
+        "risk_probability": 0.0533,
         "static_susceptibility": 0.3096,
-        "dynamic_trigger": 0.3331,
+        "dynamic_trigger": 0.3337,
         "risk_level": "LOW",
         "model_version": "HistGradientBoosting v1.0.0 (Calibrated)"
       }
@@ -2622,10 +2622,10 @@
         "slope_degrees": 18.0,
         "aspect_degrees": 310.0,
         "rainfall_24h_mm": 10.8,
-        "rainfall_72h_mm": 31.7,
-        "risk_probability": 0.0453,
+        "rainfall_72h_mm": 31.8,
+        "risk_probability": 0.0533,
         "static_susceptibility": 0.3107,
-        "dynamic_trigger": 0.3331,
+        "dynamic_trigger": 0.3337,
         "risk_level": "LOW",
         "model_version": "HistGradientBoosting v1.0.0 (Calibrated)"
       }
@@ -2668,10 +2668,10 @@
         "slope_degrees": 18.0,
         "aspect_degrees": 310.0,
         "rainfall_24h_mm": 10.8,
-        "rainfall_72h_mm": 31.7,
-        "risk_probability": 0.0453,
+        "rainfall_72h_mm": 31.8,
+        "risk_probability": 0.0533,
         "static_susceptibility": 0.3096,
-        "dynamic_trigger": 0.3331,
+        "dynamic_trigger": 0.3337,
         "risk_level": "LOW",
         "model_version": "HistGradientBoosting v1.0.0 (Calibrated)"
       }
@@ -2714,10 +2714,10 @@
         "slope_degrees": 18.0,
         "aspect_degrees": 310.0,
         "rainfall_24h_mm": 10.8,
-        "rainfall_72h_mm": 31.7,
-        "risk_probability": 0.0453,
+        "rainfall_72h_mm": 31.8,
+        "risk_probability": 0.0533,
         "static_susceptibility": 0.3086,
-        "dynamic_trigger": 0.3331,
+        "dynamic_trigger": 0.3337,
         "risk_level": "LOW",
         "model_version": "HistGradientBoosting v1.0.0 (Calibrated)"
       }
@@ -2760,10 +2760,10 @@
         "slope_degrees": 18.0,
         "aspect_degrees": 310.0,
         "rainfall_24h_mm": 10.8,
-        "rainfall_72h_mm": 31.7,
-        "risk_probability": 0.0453,
+        "rainfall_72h_mm": 31.8,
+        "risk_probability": 0.0533,
         "static_susceptibility": 0.3086,
-        "dynamic_trigger": 0.3331,
+        "dynamic_trigger": 0.3337,
         "risk_level": "LOW",
         "model_version": "HistGradientBoosting v1.0.0 (Calibrated)"
       }
@@ -2806,10 +2806,10 @@
         "slope_degrees": 18.0,
         "aspect_degrees": 310.0,
         "rainfall_24h_mm": 10.8,
-        "rainfall_72h_mm": 31.7,
-        "risk_probability": 0.0453,
+        "rainfall_72h_mm": 31.8,
+        "risk_probability": 0.0533,
         "static_susceptibility": 0.3128,
-        "dynamic_trigger": 0.3331,
+        "dynamic_trigger": 0.3337,
         "risk_level": "LOW",
         "model_version": "HistGradientBoosting v1.0.0 (Calibrated)"
       }
@@ -2852,10 +2852,10 @@
         "slope_degrees": 18.0,
         "aspect_degrees": 310.0,
         "rainfall_24h_mm": 10.8,
-        "rainfall_72h_mm": 31.7,
-        "risk_probability": 0.0453,
+        "rainfall_72h_mm": 31.8,
+        "risk_probability": 0.0533,
         "static_susceptibility": 0.3223,
-        "dynamic_trigger": 0.3331,
+        "dynamic_trigger": 0.3337,
         "risk_level": "LOW",
         "model_version": "HistGradientBoosting v1.0.0 (Calibrated)"
       }
@@ -2898,10 +2898,10 @@
         "slope_degrees": 18.0,
         "aspect_degrees": 310.0,
         "rainfall_24h_mm": 10.8,
-        "rainfall_72h_mm": 31.7,
-        "risk_probability": 0.0453,
+        "rainfall_72h_mm": 31.8,
+        "risk_probability": 0.0533,
         "static_susceptibility": 0.3171,
-        "dynamic_trigger": 0.3331,
+        "dynamic_trigger": 0.3337,
         "risk_level": "LOW",
         "model_version": "HistGradientBoosting v1.0.0 (Calibrated)"
       }
@@ -2944,10 +2944,10 @@
         "slope_degrees": 18.0,
         "aspect_degrees": 310.0,
         "rainfall_24h_mm": 10.8,
-        "rainfall_72h_mm": 31.7,
-        "risk_probability": 0.0453,
+        "rainfall_72h_mm": 31.8,
+        "risk_probability": 0.0533,
         "static_susceptibility": 0.3107,
-        "dynamic_trigger": 0.3331,
+        "dynamic_trigger": 0.3337,
         "risk_level": "LOW",
         "model_version": "HistGradientBoosting v1.0.0 (Calibrated)"
       }

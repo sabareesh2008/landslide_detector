@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-09-08T08:24:34.872540+00:00",
+  "generated_at_utc": "2026-09-08T09:54:46.451655+00:00",
   "source": "NASA GPM IMERG Early Run",
   "update_mode": "incremental",
   "cadence": "30-minute",
@@ -8,19 +8,19 @@
       "rainfall_1h_mm": 0.4,
       "rainfall_24h_mm": 9.9,
       "rainfall_72h_mm": 29.9,
-      "rainfall_7d_mm": 73.5,
+      "rainfall_7d_mm": 68.3,
       "latest_rainfall_mm": 0.2,
-      "latest_observation_utc": "2026-09-08T08:00:00+00:00",
-      "records": 911
+      "latest_observation_utc": "2026-09-08T09:30:00+00:00",
+      "records": 914
     },
     "Singtam": {
       "rainfall_1h_mm": 0.6,
       "rainfall_24h_mm": 10.8,
-      "rainfall_72h_mm": 31.7,
-      "rainfall_7d_mm": 77.6,
+      "rainfall_72h_mm": 31.8,
+      "rainfall_7d_mm": 72.3,
       "latest_rainfall_mm": 0.3,
-      "latest_observation_utc": "2026-09-08T08:00:00+00:00",
-      "records": 911
+      "latest_observation_utc": "2026-09-08T09:30:00+00:00",
+      "records": 914
     }
   }
 }
