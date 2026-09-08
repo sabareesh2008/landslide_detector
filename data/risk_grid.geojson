@@ -1,0 +1,2956 @@
+{
+  "type": "FeatureCollection",
+  "metadata": {
+    "generated_at_utc": "2026-09-08T05:56:57.394369+00:00",
+    "total_cells": 64,
+    "corridor": "Rangpo-Singtam / NH-10 Corridor, Sikkim",
+    "grid_resolution": "8x8 Interpolated Hydro-DEM Matrix",
+    "model_version": "HistGradientBoosting v1.0.0 (Platt Calibrated)"
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "id": "CELL-001",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              88.452,
+              27.132
+            ],
+            [
+              88.468,
+              27.132
+            ],
+            [
+              88.468,
+              27.148
+            ],
+            [
+              88.452,
+              27.148
+            ],
+            [
+              88.452,
+              27.132
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "cell_id": "CORRIDOR-GRID-001",
+        "latitude": 27.14,
+        "longitude": 88.46,
+        "elevation_m": 380.0,
+        "slope_degrees": 18.0,
+        "aspect_degrees": 310.0,
+        "rainfall_24h_mm": 9.9,
+        "rainfall_72h_mm": 29.9,
+        "risk_probability": 0.0072,
+        "static_susceptibility": 0.3086,
+        "dynamic_trigger": 0.3106,
+        "risk_level": "LOW",
+        "model_version": "HistGradientBoosting v1.0.0 (Calibrated)"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "CELL-002",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              88.4691,
+              27.132
+            ],
+            [
+              88.4851,
+              27.132
+            ],
+            [
+              88.4851,
+              27.148
+            ],
+            [
+              88.4691,
+              27.148
+            ],
+            [
+              88.4691,
+              27.132
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "cell_id": "CORRIDOR-GRID-002",
+        "latitude": 27.14,
+        "longitude": 88.4771,
+        "elevation_m": 380.0,
+        "slope_degrees": 18.0,
+        "aspect_degrees": 310.0,
+        "rainfall_24h_mm": 9.9,
+        "rainfall_72h_mm": 29.9,
+        "risk_probability": 0.0072,
+        "static_susceptibility": 0.3086,
+        "dynamic_trigger": 0.3106,
+        "risk_level": "LOW",
+        "model_version": "HistGradientBoosting v1.0.0 (Calibrated)"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "CELL-003",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              88.4863,
+              27.132
+            ],
+            [
+              88.5023,
+              27.132
+            ],
+            [
+              88.5023,
+              27.148
+            ],
+            [
+              88.4863,
+              27.148
+            ],
+            [
+              88.4863,
+              27.132
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "cell_id": "CORRIDOR-GRID-003",
+        "latitude": 27.14,
+        "longitude": 88.4943,
+        "elevation_m": 380.0,
+        "slope_degrees": 18.0,
+        "aspect_degrees": 310.0,
+        "rainfall_24h_mm": 9.9,
+        "rainfall_72h_mm": 29.9,
+        "risk_probability": 0.0072,
+        "static_susceptibility": 0.3118,
+        "dynamic_trigger": 0.3106,
+        "risk_level": "LOW",
+        "model_version": "HistGradientBoosting v1.0.0 (Calibrated)"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "CELL-004",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              88.5034,
+              27.132
+            ],
+            [
+              88.5194,
+              27.132
+            ],
+            [
+              88.5194,
+              27.148
+            ],
+            [
+              88.5034,
+              27.148
+            ],
+            [
+              88.5034,
+              27.132
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "cell_id": "CORRIDOR-GRID-004",
+        "latitude": 27.14,
+        "longitude": 88.5114,
+        "elevation_m": 380.0,
+        "slope_degrees": 18.0,
+        "aspect_degrees": 310.0,
+        "rainfall_24h_mm": 9.9,
+        "rainfall_72h_mm": 29.9,
+        "risk_probability": 0.0072,
+        "static_susceptibility": 0.3107,
+        "dynamic_trigger": 0.3106,
+        "risk_level": "LOW",
+        "model_version": "HistGradientBoosting v1.0.0 (Calibrated)"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "CELL-005",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              88.5206,
+              27.132
+            ],
+            [
+              88.5366,
+              27.132
+            ],
+            [
+              88.5366,
+              27.148
+            ],
+            [
+              88.5206,
+              27.148
+            ],
+            [
+              88.5206,
+              27.132
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "cell_id": "CORRIDOR-GRID-005",
+        "latitude": 27.14,
+        "longitude": 88.5286,
+        "elevation_m": 380.0,
+        "slope_degrees": 18.0,
+        "aspect_degrees": 310.0,
+        "rainfall_24h_mm": 9.9,
+        "rainfall_72h_mm": 29.9,
+        "risk_probability": 0.0072,
+        "static_susceptibility": 0.3096,
+        "dynamic_trigger": 0.3106,
+        "risk_level": "LOW",
+        "model_version": "HistGradientBoosting v1.0.0 (Calibrated)"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "CELL-006",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              88.5377,
+              27.132
+            ],
+            [
+              88.5537,
+              27.132
+            ],
+            [
+              88.5537,
+              27.148
+            ],
+            [
+              88.5377,
+              27.148
+            ],
+            [
+              88.5377,
+              27.132
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "cell_id": "CORRIDOR-GRID-006",
+        "latitude": 27.14,
+        "longitude": 88.5457,
+        "elevation_m": 380.0,
+        "slope_degrees": 18.0,
+        "aspect_degrees": 310.0,
+        "rainfall_24h_mm": 9.9,
+        "rainfall_72h_mm": 29.9,
+        "risk_probability": 0.0072,
+        "static_susceptibility": 0.3086,
+        "dynamic_trigger": 0.3106,
+        "risk_level": "LOW",
+        "model_version": "HistGradientBoosting v1.0.0 (Calibrated)"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "CELL-007",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              88.5549,
+              27.132
+            ],
+            [
+              88.5709,
+              27.132
+            ],
+            [
+              88.5709,
+              27.148
+            ],
+            [
+              88.5549,
+              27.148
+            ],
+            [
+              88.5549,
+              27.132
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "cell_id": "CORRIDOR-GRID-007",
+        "latitude": 27.14,
+        "longitude": 88.5629,
+        "elevation_m": 380.0,
+        "slope_degrees": 18.0,
+        "aspect_degrees": 310.0,
+        "rainfall_24h_mm": 9.9,
+        "rainfall_72h_mm": 29.9,
+        "risk_probability": 0.0072,
+        "static_susceptibility": 0.3086,
+        "dynamic_trigger": 0.3106,
+        "risk_level": "LOW",
+        "model_version": "HistGradientBoosting v1.0.0 (Calibrated)"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "CELL-008",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              88.572,
+              27.132
+            ],
+            [
+              88.588,
+              27.132
+            ],
+            [
+              88.588,
+              27.148
+            ],
+            [
+              88.572,
+              27.148
+            ],
+            [
+              88.572,
+              27.132
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "cell_id": "CORRIDOR-GRID-008",
+        "latitude": 27.14,
+        "longitude": 88.58,
+        "elevation_m": 380.0,
+        "slope_degrees": 18.0,
+        "aspect_degrees": 310.0,
+        "rainfall_24h_mm": 9.9,
+        "rainfall_72h_mm": 29.9,
+        "risk_probability": 0.0072,
+        "static_susceptibility": 0.3086,
+        "dynamic_trigger": 0.3106,
+        "risk_level": "LOW",
+        "model_version": "HistGradientBoosting v1.0.0 (Calibrated)"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "CELL-009",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              88.452,
+              27.1506
+            ],
+            [
+              88.468,
+              27.1506
+            ],
+            [
+              88.468,
+              27.1666
+            ],
+            [
+              88.452,
+              27.1666
+            ],
+            [
+              88.452,
+              27.1506
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "cell_id": "CORRIDOR-GRID-009",
+        "latitude": 27.1586,
+        "longitude": 88.46,
+        "elevation_m": 380.0,
+        "slope_degrees": 18.0,
+        "aspect_degrees": 310.0,
+        "rainfall_24h_mm": 9.9,
+        "rainfall_72h_mm": 29.9,
+        "risk_probability": 0.0072,
+        "static_susceptibility": 0.3171,
+        "dynamic_trigger": 0.3106,
+        "risk_level": "LOW",
+        "model_version": "HistGradientBoosting v1.0.0 (Calibrated)"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "CELL-010",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              88.4691,
+              27.1506
+            ],
+            [
+              88.4851,
+              27.1506
+            ],
+            [
+              88.4851,
+              27.1666
+            ],
+            [
+              88.4691,
+              27.1666
+            ],
+            [
+              88.4691,
+              27.1506
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "cell_id": "CORRIDOR-GRID-010",
+        "latitude": 27.1586,
+        "longitude": 88.4771,
+        "elevation_m": 380.0,
+        "slope_degrees": 18.0,
+        "aspect_degrees": 310.0,
+        "rainfall_24h_mm": 9.9,
+        "rainfall_72h_mm": 29.9,
+        "risk_probability": 0.0072,
+        "static_susceptibility": 0.3203,
+        "dynamic_trigger": 0.3106,
+        "risk_level": "LOW",
+        "model_version": "HistGradientBoosting v1.0.0 (Calibrated)"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "CELL-011",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              88.4863,
+              27.1506
+            ],
+            [
+              88.5023,
+              27.1506
+            ],
+            [
+              88.5023,
+              27.1666
+            ],
+            [
+              88.4863,
+              27.1666
+            ],
+            [
+              88.4863,
+              27.1506
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "cell_id": "CORRIDOR-GRID-011",
+        "latitude": 27.1586,
+        "longitude": 88.4943,
+        "elevation_m": 380.0,
+        "slope_degrees": 18.0,
+        "aspect_degrees": 310.0,
+        "rainfall_24h_mm": 9.9,
+        "rainfall_72h_mm": 29.9,
+        "risk_probability": 0.0072,
+        "static_susceptibility": 0.3255,
+        "dynamic_trigger": 0.3106,
+        "risk_level": "LOW",
+        "model_version": "HistGradientBoosting v1.0.0 (Calibrated)"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "CELL-012",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              88.5034,
+              27.1506
+            ],
+            [
+              88.5194,
+              27.1506
+            ],
+            [
+              88.5194,
+              27.1666
+            ],
+            [
+              88.5034,
+              27.1666
+            ],
+            [
+              88.5034,
+              27.1506
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "cell_id": "CORRIDOR-GRID-012",
+        "latitude": 27.1586,
+        "longitude": 88.5114,
+        "elevation_m": 380.0,
+        "slope_degrees": 18.0,
+        "aspect_degrees": 310.0,
+        "rainfall_24h_mm": 9.9,
+        "rainfall_72h_mm": 29.9,
+        "risk_probability": 0.0072,
+        "static_susceptibility": 0.3276,
+        "dynamic_trigger": 0.3106,
+        "risk_level": "LOW",
+        "model_version": "HistGradientBoosting v1.0.0 (Calibrated)"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "CELL-013",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              88.5206,
+              27.1506
+            ],
+            [
+              88.5366,
+              27.1506
+            ],
+            [
+              88.5366,
+              27.1666
+            ],
+            [
+              88.5206,
+              27.1666
+            ],
+            [
+              88.5206,
+              27.1506
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "cell_id": "CORRIDOR-GRID-013",
+        "latitude": 27.1586,
+        "longitude": 88.5286,
+        "elevation_m": 380.0,
+        "slope_degrees": 18.0,
+        "aspect_degrees": 310.0,
+        "rainfall_24h_mm": 9.9,
+        "rainfall_72h_mm": 29.9,
+        "risk_probability": 0.0072,
+        "static_susceptibility": 0.3212,
+        "dynamic_trigger": 0.3106,
+        "risk_level": "LOW",
+        "model_version": "HistGradientBoosting v1.0.0 (Calibrated)"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "CELL-014",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              88.5377,
+              27.1506
+            ],
+            [
+              88.5537,
+              27.1506
+            ],
+            [
+              88.5537,
+              27.1666
+            ],
+            [
+              88.5377,
+              27.1666
+            ],
+            [
+              88.5377,
+              27.1506
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "cell_id": "CORRIDOR-GRID-014",
+        "latitude": 27.1586,
+        "longitude": 88.5457,
+        "elevation_m": 380.0,
+        "slope_degrees": 18.0,
+        "aspect_degrees": 310.0,
+        "rainfall_24h_mm": 9.9,
+        "rainfall_72h_mm": 29.9,
+        "risk_probability": 0.0072,
+        "static_susceptibility": 0.3086,
+        "dynamic_trigger": 0.3106,
+        "risk_level": "LOW",
+        "model_version": "HistGradientBoosting v1.0.0 (Calibrated)"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "CELL-015",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              88.5549,
+              27.1506
+            ],
+            [
+              88.5709,
+              27.1506
+            ],
+            [
+              88.5709,
+              27.1666
+            ],
+            [
+              88.5549,
+              27.1666
+            ],
+            [
+              88.5549,
+              27.1506
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "cell_id": "CORRIDOR-GRID-015",
+        "latitude": 27.1586,
+        "longitude": 88.5629,
+        "elevation_m": 380.0,
+        "slope_degrees": 18.0,
+        "aspect_degrees": 310.0,
+        "rainfall_24h_mm": 9.9,
+        "rainfall_72h_mm": 29.9,
+        "risk_probability": 0.0072,
+        "static_susceptibility": 0.3086,
+        "dynamic_trigger": 0.3106,
+        "risk_level": "LOW",
+        "model_version": "HistGradientBoosting v1.0.0 (Calibrated)"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "CELL-016",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              88.572,
+              27.1506
+            ],
+            [
+              88.588,
+              27.1506
+            ],
+            [
+              88.588,
+              27.1666
+            ],
+            [
+              88.572,
+              27.1666
+            ],
+            [
+              88.572,
+              27.1506
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "cell_id": "CORRIDOR-GRID-016",
+        "latitude": 27.1586,
+        "longitude": 88.58,
+        "elevation_m": 380.0,
+        "slope_degrees": 18.0,
+        "aspect_degrees": 310.0,
+        "rainfall_24h_mm": 9.9,
+        "rainfall_72h_mm": 29.9,
+        "risk_probability": 0.0072,
+        "static_susceptibility": 0.3086,
+        "dynamic_trigger": 0.3106,
+        "risk_level": "LOW",
+        "model_version": "HistGradientBoosting v1.0.0 (Calibrated)"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "CELL-017",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              88.452,
+              27.1691
+            ],
+            [
+              88.468,
+              27.1691
+            ],
+            [
+              88.468,
+              27.1851
+            ],
+            [
+              88.452,
+              27.1851
+            ],
+            [
+              88.452,
+              27.1691
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "cell_id": "CORRIDOR-GRID-017",
+        "latitude": 27.1771,
+        "longitude": 88.46,
+        "elevation_m": 380.0,
+        "slope_degrees": 18.0,
+        "aspect_degrees": 310.0,
+        "rainfall_24h_mm": 11.0,
+        "rainfall_72h_mm": 31.9,
+        "risk_probability": 0.0387,
+        "static_susceptibility": 0.3128,
+        "dynamic_trigger": 0.3369,
+        "risk_level": "LOW",
+        "model_version": "HistGradientBoosting v1.0.0 (Calibrated)"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "CELL-018",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              88.4691,
+              27.1691
+            ],
+            [
+              88.4851,
+              27.1691
+            ],
+            [
+              88.4851,
+              27.1851
+            ],
+            [
+              88.4691,
+              27.1851
+            ],
+            [
+              88.4691,
+              27.1691
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "cell_id": "CORRIDOR-GRID-018",
+        "latitude": 27.1771,
+        "longitude": 88.4771,
+        "elevation_m": 380.0,
+        "slope_degrees": 18.0,
+        "aspect_degrees": 310.0,
+        "rainfall_24h_mm": 9.9,
+        "rainfall_72h_mm": 29.9,
+        "risk_probability": 0.0072,
+        "static_susceptibility": 0.3128,
+        "dynamic_trigger": 0.3106,
+        "risk_level": "LOW",
+        "model_version": "HistGradientBoosting v1.0.0 (Calibrated)"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "CELL-019",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              88.4863,
+              27.1691
+            ],
+            [
+              88.5023,
+              27.1691
+            ],
+            [
+              88.5023,
+              27.1851
+            ],
+            [
+              88.4863,
+              27.1851
+            ],
+            [
+              88.4863,
+              27.1691
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "cell_id": "CORRIDOR-GRID-019",
+        "latitude": 27.1771,
+        "longitude": 88.4943,
+        "elevation_m": 380.0,
+        "slope_degrees": 18.0,
+        "aspect_degrees": 310.0,
+        "rainfall_24h_mm": 9.9,
+        "rainfall_72h_mm": 29.9,
+        "risk_probability": 0.0072,
+        "static_susceptibility": 0.3171,
+        "dynamic_trigger": 0.3106,
+        "risk_level": "LOW",
+        "model_version": "HistGradientBoosting v1.0.0 (Calibrated)"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "CELL-020",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              88.5034,
+              27.1691
+            ],
+            [
+              88.5194,
+              27.1691
+            ],
+            [
+              88.5194,
+              27.1851
+            ],
+            [
+              88.5034,
+              27.1851
+            ],
+            [
+              88.5034,
+              27.1691
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "cell_id": "CORRIDOR-GRID-020",
+        "latitude": 27.1771,
+        "longitude": 88.5114,
+        "elevation_m": 380.0,
+        "slope_degrees": 18.0,
+        "aspect_degrees": 310.0,
+        "rainfall_24h_mm": 9.9,
+        "rainfall_72h_mm": 29.9,
+        "risk_probability": 0.0072,
+        "static_susceptibility": 0.3234,
+        "dynamic_trigger": 0.3106,
+        "risk_level": "LOW",
+        "model_version": "HistGradientBoosting v1.0.0 (Calibrated)"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "CELL-021",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              88.5206,
+              27.1691
+            ],
+            [
+              88.5366,
+              27.1691
+            ],
+            [
+              88.5366,
+              27.1851
+            ],
+            [
+              88.5206,
+              27.1851
+            ],
+            [
+              88.5206,
+              27.1691
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "cell_id": "CORRIDOR-GRID-021",
+        "latitude": 27.1771,
+        "longitude": 88.5286,
+        "elevation_m": 306.95,
+        "slope_degrees": 13.38,
+        "aspect_degrees": 279.29,
+        "rainfall_24h_mm": 9.9,
+        "rainfall_72h_mm": 29.9,
+        "risk_probability": 0.0077,
+        "static_susceptibility": 0.476,
+        "dynamic_trigger": 0.3106,
+        "risk_level": "LOW",
+        "model_version": "HistGradientBoosting v1.0.0 (Calibrated)"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "CELL-022",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              88.5377,
+              27.1691
+            ],
+            [
+              88.5537,
+              27.1691
+            ],
+            [
+              88.5537,
+              27.1851
+            ],
+            [
+              88.5377,
+              27.1851
+            ],
+            [
+              88.5377,
+              27.1691
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "cell_id": "CORRIDOR-GRID-022",
+        "latitude": 27.1771,
+        "longitude": 88.5457,
+        "elevation_m": 380.0,
+        "slope_degrees": 18.0,
+        "aspect_degrees": 310.0,
+        "rainfall_24h_mm": 9.9,
+        "rainfall_72h_mm": 29.9,
+        "risk_probability": 0.0072,
+        "static_susceptibility": 0.3107,
+        "dynamic_trigger": 0.3106,
+        "risk_level": "LOW",
+        "model_version": "HistGradientBoosting v1.0.0 (Calibrated)"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "CELL-023",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              88.5549,
+              27.1691
+            ],
+            [
+              88.5709,
+              27.1691
+            ],
+            [
+              88.5709,
+              27.1851
+            ],
+            [
+              88.5549,
+              27.1851
+            ],
+            [
+              88.5549,
+              27.1691
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "cell_id": "CORRIDOR-GRID-023",
+        "latitude": 27.1771,
+        "longitude": 88.5629,
+        "elevation_m": 380.0,
+        "slope_degrees": 18.0,
+        "aspect_degrees": 310.0,
+        "rainfall_24h_mm": 9.9,
+        "rainfall_72h_mm": 29.9,
+        "risk_probability": 0.0072,
+        "static_susceptibility": 0.3118,
+        "dynamic_trigger": 0.3106,
+        "risk_level": "LOW",
+        "model_version": "HistGradientBoosting v1.0.0 (Calibrated)"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "CELL-024",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              88.572,
+              27.1691
+            ],
+            [
+              88.588,
+              27.1691
+            ],
+            [
+              88.588,
+              27.1851
+            ],
+            [
+              88.572,
+              27.1851
+            ],
+            [
+              88.572,
+              27.1691
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "cell_id": "CORRIDOR-GRID-024",
+        "latitude": 27.1771,
+        "longitude": 88.58,
+        "elevation_m": 380.0,
+        "slope_degrees": 18.0,
+        "aspect_degrees": 310.0,
+        "rainfall_24h_mm": 9.9,
+        "rainfall_72h_mm": 29.9,
+        "risk_probability": 0.0072,
+        "static_susceptibility": 0.3086,
+        "dynamic_trigger": 0.3106,
+        "risk_level": "LOW",
+        "model_version": "HistGradientBoosting v1.0.0 (Calibrated)"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "CELL-025",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              88.452,
+              27.1877
+            ],
+            [
+              88.468,
+              27.1877
+            ],
+            [
+              88.468,
+              27.2037
+            ],
+            [
+              88.452,
+              27.2037
+            ],
+            [
+              88.452,
+              27.1877
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "cell_id": "CORRIDOR-GRID-025",
+        "latitude": 27.1957,
+        "longitude": 88.46,
+        "elevation_m": 380.0,
+        "slope_degrees": 18.0,
+        "aspect_degrees": 310.0,
+        "rainfall_24h_mm": 11.0,
+        "rainfall_72h_mm": 31.9,
+        "risk_probability": 0.0387,
+        "static_susceptibility": 0.3096,
+        "dynamic_trigger": 0.3369,
+        "risk_level": "LOW",
+        "model_version": "HistGradientBoosting v1.0.0 (Calibrated)"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "CELL-026",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              88.4691,
+              27.1877
+            ],
+            [
+              88.4851,
+              27.1877
+            ],
+            [
+              88.4851,
+              27.2037
+            ],
+            [
+              88.4691,
+              27.2037
+            ],
+            [
+              88.4691,
+              27.1877
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "cell_id": "CORRIDOR-GRID-026",
+        "latitude": 27.1957,
+        "longitude": 88.4771,
+        "elevation_m": 380.0,
+        "slope_degrees": 18.0,
+        "aspect_degrees": 310.0,
+        "rainfall_24h_mm": 11.0,
+        "rainfall_72h_mm": 31.9,
+        "risk_probability": 0.0387,
+        "static_susceptibility": 0.3107,
+        "dynamic_trigger": 0.3369,
+        "risk_level": "LOW",
+        "model_version": "HistGradientBoosting v1.0.0 (Calibrated)"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "CELL-027",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              88.4863,
+              27.1877
+            ],
+            [
+              88.5023,
+              27.1877
+            ],
+            [
+              88.5023,
+              27.2037
+            ],
+            [
+              88.4863,
+              27.2037
+            ],
+            [
+              88.4863,
+              27.1877
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "cell_id": "CORRIDOR-GRID-027",
+        "latitude": 27.1957,
+        "longitude": 88.4943,
+        "elevation_m": 380.0,
+        "slope_degrees": 18.0,
+        "aspect_degrees": 310.0,
+        "rainfall_24h_mm": 11.0,
+        "rainfall_72h_mm": 31.9,
+        "risk_probability": 0.0387,
+        "static_susceptibility": 0.3118,
+        "dynamic_trigger": 0.3369,
+        "risk_level": "LOW",
+        "model_version": "HistGradientBoosting v1.0.0 (Calibrated)"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "CELL-028",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              88.5034,
+              27.1877
+            ],
+            [
+              88.5194,
+              27.1877
+            ],
+            [
+              88.5194,
+              27.2037
+            ],
+            [
+              88.5034,
+              27.2037
+            ],
+            [
+              88.5034,
+              27.1877
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "cell_id": "CORRIDOR-GRID-028",
+        "latitude": 27.1957,
+        "longitude": 88.5114,
+        "elevation_m": 380.0,
+        "slope_degrees": 18.0,
+        "aspect_degrees": 310.0,
+        "rainfall_24h_mm": 9.9,
+        "rainfall_72h_mm": 29.9,
+        "risk_probability": 0.0072,
+        "static_susceptibility": 0.3139,
+        "dynamic_trigger": 0.3106,
+        "risk_level": "LOW",
+        "model_version": "HistGradientBoosting v1.0.0 (Calibrated)"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "CELL-029",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              88.5206,
+              27.1877
+            ],
+            [
+              88.5366,
+              27.1877
+            ],
+            [
+              88.5366,
+              27.2037
+            ],
+            [
+              88.5206,
+              27.2037
+            ],
+            [
+              88.5206,
+              27.1877
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "cell_id": "CORRIDOR-GRID-029",
+        "latitude": 27.1957,
+        "longitude": 88.5286,
+        "elevation_m": 380.0,
+        "slope_degrees": 18.0,
+        "aspect_degrees": 310.0,
+        "rainfall_24h_mm": 9.9,
+        "rainfall_72h_mm": 29.9,
+        "risk_probability": 0.0072,
+        "static_susceptibility": 0.3128,
+        "dynamic_trigger": 0.3106,
+        "risk_level": "LOW",
+        "model_version": "HistGradientBoosting v1.0.0 (Calibrated)"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "CELL-030",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              88.5377,
+              27.1877
+            ],
+            [
+              88.5537,
+              27.1877
+            ],
+            [
+              88.5537,
+              27.2037
+            ],
+            [
+              88.5377,
+              27.2037
+            ],
+            [
+              88.5377,
+              27.1877
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "cell_id": "CORRIDOR-GRID-030",
+        "latitude": 27.1957,
+        "longitude": 88.5457,
+        "elevation_m": 380.0,
+        "slope_degrees": 18.0,
+        "aspect_degrees": 310.0,
+        "rainfall_24h_mm": 9.9,
+        "rainfall_72h_mm": 29.9,
+        "risk_probability": 0.0072,
+        "static_susceptibility": 0.3118,
+        "dynamic_trigger": 0.3106,
+        "risk_level": "LOW",
+        "model_version": "HistGradientBoosting v1.0.0 (Calibrated)"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "CELL-031",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              88.5549,
+              27.1877
+            ],
+            [
+              88.5709,
+              27.1877
+            ],
+            [
+              88.5709,
+              27.2037
+            ],
+            [
+              88.5549,
+              27.2037
+            ],
+            [
+              88.5549,
+              27.1877
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "cell_id": "CORRIDOR-GRID-031",
+        "latitude": 27.1957,
+        "longitude": 88.5629,
+        "elevation_m": 380.0,
+        "slope_degrees": 18.0,
+        "aspect_degrees": 310.0,
+        "rainfall_24h_mm": 9.9,
+        "rainfall_72h_mm": 29.9,
+        "risk_probability": 0.0072,
+        "static_susceptibility": 0.3118,
+        "dynamic_trigger": 0.3106,
+        "risk_level": "LOW",
+        "model_version": "HistGradientBoosting v1.0.0 (Calibrated)"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "CELL-032",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              88.572,
+              27.1877
+            ],
+            [
+              88.588,
+              27.1877
+            ],
+            [
+              88.588,
+              27.2037
+            ],
+            [
+              88.572,
+              27.2037
+            ],
+            [
+              88.572,
+              27.1877
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "cell_id": "CORRIDOR-GRID-032",
+        "latitude": 27.1957,
+        "longitude": 88.58,
+        "elevation_m": 380.0,
+        "slope_degrees": 18.0,
+        "aspect_degrees": 310.0,
+        "rainfall_24h_mm": 9.9,
+        "rainfall_72h_mm": 29.9,
+        "risk_probability": 0.0072,
+        "static_susceptibility": 0.3192,
+        "dynamic_trigger": 0.3106,
+        "risk_level": "LOW",
+        "model_version": "HistGradientBoosting v1.0.0 (Calibrated)"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "CELL-033",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              88.452,
+              27.2063
+            ],
+            [
+              88.468,
+              27.2063
+            ],
+            [
+              88.468,
+              27.2223
+            ],
+            [
+              88.452,
+              27.2223
+            ],
+            [
+              88.452,
+              27.2063
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "cell_id": "CORRIDOR-GRID-033",
+        "latitude": 27.2143,
+        "longitude": 88.46,
+        "elevation_m": 380.0,
+        "slope_degrees": 18.0,
+        "aspect_degrees": 310.0,
+        "rainfall_24h_mm": 11.0,
+        "rainfall_72h_mm": 31.9,
+        "risk_probability": 0.0387,
+        "static_susceptibility": 0.3107,
+        "dynamic_trigger": 0.3369,
+        "risk_level": "LOW",
+        "model_version": "HistGradientBoosting v1.0.0 (Calibrated)"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "CELL-034",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              88.4691,
+              27.2063
+            ],
+            [
+              88.4851,
+              27.2063
+            ],
+            [
+              88.4851,
+              27.2223
+            ],
+            [
+              88.4691,
+              27.2223
+            ],
+            [
+              88.4691,
+              27.2063
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "cell_id": "CORRIDOR-GRID-034",
+        "latitude": 27.2143,
+        "longitude": 88.4771,
+        "elevation_m": 380.0,
+        "slope_degrees": 18.0,
+        "aspect_degrees": 310.0,
+        "rainfall_24h_mm": 11.0,
+        "rainfall_72h_mm": 31.9,
+        "risk_probability": 0.0387,
+        "static_susceptibility": 0.3107,
+        "dynamic_trigger": 0.3369,
+        "risk_level": "LOW",
+        "model_version": "HistGradientBoosting v1.0.0 (Calibrated)"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "CELL-035",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              88.4863,
+              27.2063
+            ],
+            [
+              88.5023,
+              27.2063
+            ],
+            [
+              88.5023,
+              27.2223
+            ],
+            [
+              88.4863,
+              27.2223
+            ],
+            [
+              88.4863,
+              27.2063
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "cell_id": "CORRIDOR-GRID-035",
+        "latitude": 27.2143,
+        "longitude": 88.4943,
+        "elevation_m": 380.0,
+        "slope_degrees": 18.0,
+        "aspect_degrees": 310.0,
+        "rainfall_24h_mm": 11.0,
+        "rainfall_72h_mm": 31.9,
+        "risk_probability": 0.0387,
+        "static_susceptibility": 0.3139,
+        "dynamic_trigger": 0.3369,
+        "risk_level": "LOW",
+        "model_version": "HistGradientBoosting v1.0.0 (Calibrated)"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "CELL-036",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              88.5034,
+              27.2063
+            ],
+            [
+              88.5194,
+              27.2063
+            ],
+            [
+              88.5194,
+              27.2223
+            ],
+            [
+              88.5034,
+              27.2223
+            ],
+            [
+              88.5034,
+              27.2063
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "cell_id": "CORRIDOR-GRID-036",
+        "latitude": 27.2143,
+        "longitude": 88.5114,
+        "elevation_m": 380.0,
+        "slope_degrees": 18.0,
+        "aspect_degrees": 310.0,
+        "rainfall_24h_mm": 11.0,
+        "rainfall_72h_mm": 31.9,
+        "risk_probability": 0.0387,
+        "static_susceptibility": 0.3086,
+        "dynamic_trigger": 0.3369,
+        "risk_level": "LOW",
+        "model_version": "HistGradientBoosting v1.0.0 (Calibrated)"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "CELL-037",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              88.5206,
+              27.2063
+            ],
+            [
+              88.5366,
+              27.2063
+            ],
+            [
+              88.5366,
+              27.2223
+            ],
+            [
+              88.5206,
+              27.2223
+            ],
+            [
+              88.5206,
+              27.2063
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "cell_id": "CORRIDOR-GRID-037",
+        "latitude": 27.2143,
+        "longitude": 88.5286,
+        "elevation_m": 380.0,
+        "slope_degrees": 18.0,
+        "aspect_degrees": 310.0,
+        "rainfall_24h_mm": 11.0,
+        "rainfall_72h_mm": 31.9,
+        "risk_probability": 0.0387,
+        "static_susceptibility": 0.3086,
+        "dynamic_trigger": 0.3369,
+        "risk_level": "LOW",
+        "model_version": "HistGradientBoosting v1.0.0 (Calibrated)"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "CELL-038",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              88.5377,
+              27.2063
+            ],
+            [
+              88.5537,
+              27.2063
+            ],
+            [
+              88.5537,
+              27.2223
+            ],
+            [
+              88.5377,
+              27.2223
+            ],
+            [
+              88.5377,
+              27.2063
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "cell_id": "CORRIDOR-GRID-038",
+        "latitude": 27.2143,
+        "longitude": 88.5457,
+        "elevation_m": 380.0,
+        "slope_degrees": 18.0,
+        "aspect_degrees": 310.0,
+        "rainfall_24h_mm": 9.9,
+        "rainfall_72h_mm": 29.9,
+        "risk_probability": 0.0072,
+        "static_susceptibility": 0.3086,
+        "dynamic_trigger": 0.3106,
+        "risk_level": "LOW",
+        "model_version": "HistGradientBoosting v1.0.0 (Calibrated)"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "CELL-039",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              88.5549,
+              27.2063
+            ],
+            [
+              88.5709,
+              27.2063
+            ],
+            [
+              88.5709,
+              27.2223
+            ],
+            [
+              88.5549,
+              27.2223
+            ],
+            [
+              88.5549,
+              27.2063
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "cell_id": "CORRIDOR-GRID-039",
+        "latitude": 27.2143,
+        "longitude": 88.5629,
+        "elevation_m": 380.0,
+        "slope_degrees": 18.0,
+        "aspect_degrees": 310.0,
+        "rainfall_24h_mm": 9.9,
+        "rainfall_72h_mm": 29.9,
+        "risk_probability": 0.0072,
+        "static_susceptibility": 0.3086,
+        "dynamic_trigger": 0.3106,
+        "risk_level": "LOW",
+        "model_version": "HistGradientBoosting v1.0.0 (Calibrated)"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "CELL-040",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              88.572,
+              27.2063
+            ],
+            [
+              88.588,
+              27.2063
+            ],
+            [
+              88.588,
+              27.2223
+            ],
+            [
+              88.572,
+              27.2223
+            ],
+            [
+              88.572,
+              27.2063
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "cell_id": "CORRIDOR-GRID-040",
+        "latitude": 27.2143,
+        "longitude": 88.58,
+        "elevation_m": 380.0,
+        "slope_degrees": 18.0,
+        "aspect_degrees": 310.0,
+        "rainfall_24h_mm": 9.9,
+        "rainfall_72h_mm": 29.9,
+        "risk_probability": 0.0072,
+        "static_susceptibility": 0.3139,
+        "dynamic_trigger": 0.3106,
+        "risk_level": "LOW",
+        "model_version": "HistGradientBoosting v1.0.0 (Calibrated)"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "CELL-041",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              88.452,
+              27.2249
+            ],
+            [
+              88.468,
+              27.2249
+            ],
+            [
+              88.468,
+              27.2409
+            ],
+            [
+              88.452,
+              27.2409
+            ],
+            [
+              88.452,
+              27.2249
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "cell_id": "CORRIDOR-GRID-041",
+        "latitude": 27.2329,
+        "longitude": 88.46,
+        "elevation_m": 380.0,
+        "slope_degrees": 18.0,
+        "aspect_degrees": 310.0,
+        "rainfall_24h_mm": 11.0,
+        "rainfall_72h_mm": 31.9,
+        "risk_probability": 0.0387,
+        "static_susceptibility": 0.3107,
+        "dynamic_trigger": 0.3369,
+        "risk_level": "LOW",
+        "model_version": "HistGradientBoosting v1.0.0 (Calibrated)"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "CELL-042",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              88.4691,
+              27.2249
+            ],
+            [
+              88.4851,
+              27.2249
+            ],
+            [
+              88.4851,
+              27.2409
+            ],
+            [
+              88.4691,
+              27.2409
+            ],
+            [
+              88.4691,
+              27.2249
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "cell_id": "CORRIDOR-GRID-042",
+        "latitude": 27.2329,
+        "longitude": 88.4771,
+        "elevation_m": 380.0,
+        "slope_degrees": 18.0,
+        "aspect_degrees": 310.0,
+        "rainfall_24h_mm": 11.0,
+        "rainfall_72h_mm": 31.9,
+        "risk_probability": 0.0387,
+        "static_susceptibility": 0.3212,
+        "dynamic_trigger": 0.3369,
+        "risk_level": "LOW",
+        "model_version": "HistGradientBoosting v1.0.0 (Calibrated)"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "CELL-043",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              88.4863,
+              27.2249
+            ],
+            [
+              88.5023,
+              27.2249
+            ],
+            [
+              88.5023,
+              27.2409
+            ],
+            [
+              88.4863,
+              27.2409
+            ],
+            [
+              88.4863,
+              27.2249
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "cell_id": "CORRIDOR-GRID-043",
+        "latitude": 27.2329,
+        "longitude": 88.4943,
+        "elevation_m": 380.0,
+        "slope_degrees": 18.0,
+        "aspect_degrees": 310.0,
+        "rainfall_24h_mm": 11.0,
+        "rainfall_72h_mm": 31.9,
+        "risk_probability": 0.0387,
+        "static_susceptibility": 0.3266,
+        "dynamic_trigger": 0.3369,
+        "risk_level": "LOW",
+        "model_version": "HistGradientBoosting v1.0.0 (Calibrated)"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "CELL-044",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              88.5034,
+              27.2249
+            ],
+            [
+              88.5194,
+              27.2249
+            ],
+            [
+              88.5194,
+              27.2409
+            ],
+            [
+              88.5034,
+              27.2409
+            ],
+            [
+              88.5034,
+              27.2249
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "cell_id": "CORRIDOR-GRID-044",
+        "latitude": 27.2329,
+        "longitude": 88.5114,
+        "elevation_m": 380.0,
+        "slope_degrees": 18.0,
+        "aspect_degrees": 310.0,
+        "rainfall_24h_mm": 11.0,
+        "rainfall_72h_mm": 31.9,
+        "risk_probability": 0.0387,
+        "static_susceptibility": 0.3212,
+        "dynamic_trigger": 0.3369,
+        "risk_level": "LOW",
+        "model_version": "HistGradientBoosting v1.0.0 (Calibrated)"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "CELL-045",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              88.5206,
+              27.2249
+            ],
+            [
+              88.5366,
+              27.2249
+            ],
+            [
+              88.5366,
+              27.2409
+            ],
+            [
+              88.5206,
+              27.2409
+            ],
+            [
+              88.5206,
+              27.2249
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "cell_id": "CORRIDOR-GRID-045",
+        "latitude": 27.2329,
+        "longitude": 88.5286,
+        "elevation_m": 380.0,
+        "slope_degrees": 18.0,
+        "aspect_degrees": 310.0,
+        "rainfall_24h_mm": 11.0,
+        "rainfall_72h_mm": 31.9,
+        "risk_probability": 0.0387,
+        "static_susceptibility": 0.3139,
+        "dynamic_trigger": 0.3369,
+        "risk_level": "LOW",
+        "model_version": "HistGradientBoosting v1.0.0 (Calibrated)"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "CELL-046",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              88.5377,
+              27.2249
+            ],
+            [
+              88.5537,
+              27.2249
+            ],
+            [
+              88.5537,
+              27.2409
+            ],
+            [
+              88.5377,
+              27.2409
+            ],
+            [
+              88.5377,
+              27.2249
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "cell_id": "CORRIDOR-GRID-046",
+        "latitude": 27.2329,
+        "longitude": 88.5457,
+        "elevation_m": 380.0,
+        "slope_degrees": 18.0,
+        "aspect_degrees": 310.0,
+        "rainfall_24h_mm": 11.0,
+        "rainfall_72h_mm": 31.9,
+        "risk_probability": 0.0387,
+        "static_susceptibility": 0.3086,
+        "dynamic_trigger": 0.3369,
+        "risk_level": "LOW",
+        "model_version": "HistGradientBoosting v1.0.0 (Calibrated)"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "CELL-047",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              88.5549,
+              27.2249
+            ],
+            [
+              88.5709,
+              27.2249
+            ],
+            [
+              88.5709,
+              27.2409
+            ],
+            [
+              88.5549,
+              27.2409
+            ],
+            [
+              88.5549,
+              27.2249
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "cell_id": "CORRIDOR-GRID-047",
+        "latitude": 27.2329,
+        "longitude": 88.5629,
+        "elevation_m": 380.0,
+        "slope_degrees": 18.0,
+        "aspect_degrees": 310.0,
+        "rainfall_24h_mm": 11.0,
+        "rainfall_72h_mm": 31.9,
+        "risk_probability": 0.0387,
+        "static_susceptibility": 0.3086,
+        "dynamic_trigger": 0.3369,
+        "risk_level": "LOW",
+        "model_version": "HistGradientBoosting v1.0.0 (Calibrated)"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "CELL-048",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              88.572,
+              27.2249
+            ],
+            [
+              88.588,
+              27.2249
+            ],
+            [
+              88.588,
+              27.2409
+            ],
+            [
+              88.572,
+              27.2409
+            ],
+            [
+              88.572,
+              27.2249
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "cell_id": "CORRIDOR-GRID-048",
+        "latitude": 27.2329,
+        "longitude": 88.58,
+        "elevation_m": 380.0,
+        "slope_degrees": 18.0,
+        "aspect_degrees": 310.0,
+        "rainfall_24h_mm": 9.9,
+        "rainfall_72h_mm": 29.9,
+        "risk_probability": 0.0072,
+        "static_susceptibility": 0.3096,
+        "dynamic_trigger": 0.3106,
+        "risk_level": "LOW",
+        "model_version": "HistGradientBoosting v1.0.0 (Calibrated)"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "CELL-049",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              88.452,
+              27.2434
+            ],
+            [
+              88.468,
+              27.2434
+            ],
+            [
+              88.468,
+              27.2594
+            ],
+            [
+              88.452,
+              27.2594
+            ],
+            [
+              88.452,
+              27.2434
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "cell_id": "CORRIDOR-GRID-049",
+        "latitude": 27.2514,
+        "longitude": 88.46,
+        "elevation_m": 380.0,
+        "slope_degrees": 18.0,
+        "aspect_degrees": 310.0,
+        "rainfall_24h_mm": 11.0,
+        "rainfall_72h_mm": 31.9,
+        "risk_probability": 0.0387,
+        "static_susceptibility": 0.315,
+        "dynamic_trigger": 0.3369,
+        "risk_level": "LOW",
+        "model_version": "HistGradientBoosting v1.0.0 (Calibrated)"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "CELL-050",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              88.4691,
+              27.2434
+            ],
+            [
+              88.4851,
+              27.2434
+            ],
+            [
+              88.4851,
+              27.2594
+            ],
+            [
+              88.4691,
+              27.2594
+            ],
+            [
+              88.4691,
+              27.2434
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "cell_id": "CORRIDOR-GRID-050",
+        "latitude": 27.2514,
+        "longitude": 88.4771,
+        "elevation_m": 380.0,
+        "slope_degrees": 18.0,
+        "aspect_degrees": 310.0,
+        "rainfall_24h_mm": 11.0,
+        "rainfall_72h_mm": 31.9,
+        "risk_probability": 0.0387,
+        "static_susceptibility": 0.3212,
+        "dynamic_trigger": 0.3369,
+        "risk_level": "LOW",
+        "model_version": "HistGradientBoosting v1.0.0 (Calibrated)"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "CELL-051",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              88.4863,
+              27.2434
+            ],
+            [
+              88.5023,
+              27.2434
+            ],
+            [
+              88.5023,
+              27.2594
+            ],
+            [
+              88.4863,
+              27.2594
+            ],
+            [
+              88.4863,
+              27.2434
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "cell_id": "CORRIDOR-GRID-051",
+        "latitude": 27.2514,
+        "longitude": 88.4943,
+        "elevation_m": 380.0,
+        "slope_degrees": 18.0,
+        "aspect_degrees": 310.0,
+        "rainfall_24h_mm": 11.0,
+        "rainfall_72h_mm": 31.9,
+        "risk_probability": 0.0387,
+        "static_susceptibility": 0.3171,
+        "dynamic_trigger": 0.3369,
+        "risk_level": "LOW",
+        "model_version": "HistGradientBoosting v1.0.0 (Calibrated)"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "CELL-052",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              88.5034,
+              27.2434
+            ],
+            [
+              88.5194,
+              27.2434
+            ],
+            [
+              88.5194,
+              27.2594
+            ],
+            [
+              88.5034,
+              27.2594
+            ],
+            [
+              88.5034,
+              27.2434
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "cell_id": "CORRIDOR-GRID-052",
+        "latitude": 27.2514,
+        "longitude": 88.5114,
+        "elevation_m": 380.0,
+        "slope_degrees": 18.0,
+        "aspect_degrees": 310.0,
+        "rainfall_24h_mm": 11.0,
+        "rainfall_72h_mm": 31.9,
+        "risk_probability": 0.0387,
+        "static_susceptibility": 0.3203,
+        "dynamic_trigger": 0.3369,
+        "risk_level": "LOW",
+        "model_version": "HistGradientBoosting v1.0.0 (Calibrated)"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "CELL-053",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              88.5206,
+              27.2434
+            ],
+            [
+              88.5366,
+              27.2434
+            ],
+            [
+              88.5366,
+              27.2594
+            ],
+            [
+              88.5206,
+              27.2594
+            ],
+            [
+              88.5206,
+              27.2434
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "cell_id": "CORRIDOR-GRID-053",
+        "latitude": 27.2514,
+        "longitude": 88.5286,
+        "elevation_m": 380.0,
+        "slope_degrees": 18.0,
+        "aspect_degrees": 310.0,
+        "rainfall_24h_mm": 11.0,
+        "rainfall_72h_mm": 31.9,
+        "risk_probability": 0.0387,
+        "static_susceptibility": 0.3212,
+        "dynamic_trigger": 0.3369,
+        "risk_level": "LOW",
+        "model_version": "HistGradientBoosting v1.0.0 (Calibrated)"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "CELL-054",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              88.5377,
+              27.2434
+            ],
+            [
+              88.5537,
+              27.2434
+            ],
+            [
+              88.5537,
+              27.2594
+            ],
+            [
+              88.5377,
+              27.2594
+            ],
+            [
+              88.5377,
+              27.2434
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "cell_id": "CORRIDOR-GRID-054",
+        "latitude": 27.2514,
+        "longitude": 88.5457,
+        "elevation_m": 380.0,
+        "slope_degrees": 18.0,
+        "aspect_degrees": 310.0,
+        "rainfall_24h_mm": 11.0,
+        "rainfall_72h_mm": 31.9,
+        "risk_probability": 0.0387,
+        "static_susceptibility": 0.3255,
+        "dynamic_trigger": 0.3369,
+        "risk_level": "LOW",
+        "model_version": "HistGradientBoosting v1.0.0 (Calibrated)"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "CELL-055",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              88.5549,
+              27.2434
+            ],
+            [
+              88.5709,
+              27.2434
+            ],
+            [
+              88.5709,
+              27.2594
+            ],
+            [
+              88.5549,
+              27.2594
+            ],
+            [
+              88.5549,
+              27.2434
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "cell_id": "CORRIDOR-GRID-055",
+        "latitude": 27.2514,
+        "longitude": 88.5629,
+        "elevation_m": 380.0,
+        "slope_degrees": 18.0,
+        "aspect_degrees": 310.0,
+        "rainfall_24h_mm": 11.0,
+        "rainfall_72h_mm": 31.9,
+        "risk_probability": 0.0387,
+        "static_susceptibility": 0.3171,
+        "dynamic_trigger": 0.3369,
+        "risk_level": "LOW",
+        "model_version": "HistGradientBoosting v1.0.0 (Calibrated)"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "CELL-056",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              88.572,
+              27.2434
+            ],
+            [
+              88.588,
+              27.2434
+            ],
+            [
+              88.588,
+              27.2594
+            ],
+            [
+              88.572,
+              27.2594
+            ],
+            [
+              88.572,
+              27.2434
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "cell_id": "CORRIDOR-GRID-056",
+        "latitude": 27.2514,
+        "longitude": 88.58,
+        "elevation_m": 380.0,
+        "slope_degrees": 18.0,
+        "aspect_degrees": 310.0,
+        "rainfall_24h_mm": 11.0,
+        "rainfall_72h_mm": 31.9,
+        "risk_probability": 0.0387,
+        "static_susceptibility": 0.3096,
+        "dynamic_trigger": 0.3369,
+        "risk_level": "LOW",
+        "model_version": "HistGradientBoosting v1.0.0 (Calibrated)"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "CELL-057",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              88.452,
+              27.262
+            ],
+            [
+              88.468,
+              27.262
+            ],
+            [
+              88.468,
+              27.278
+            ],
+            [
+              88.452,
+              27.278
+            ],
+            [
+              88.452,
+              27.262
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "cell_id": "CORRIDOR-GRID-057",
+        "latitude": 27.27,
+        "longitude": 88.46,
+        "elevation_m": 380.0,
+        "slope_degrees": 18.0,
+        "aspect_degrees": 310.0,
+        "rainfall_24h_mm": 11.0,
+        "rainfall_72h_mm": 31.9,
+        "risk_probability": 0.0387,
+        "static_susceptibility": 0.3107,
+        "dynamic_trigger": 0.3369,
+        "risk_level": "LOW",
+        "model_version": "HistGradientBoosting v1.0.0 (Calibrated)"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "CELL-058",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              88.4691,
+              27.262
+            ],
+            [
+              88.4851,
+              27.262
+            ],
+            [
+              88.4851,
+              27.278
+            ],
+            [
+              88.4691,
+              27.278
+            ],
+            [
+              88.4691,
+              27.262
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "cell_id": "CORRIDOR-GRID-058",
+        "latitude": 27.27,
+        "longitude": 88.4771,
+        "elevation_m": 380.0,
+        "slope_degrees": 18.0,
+        "aspect_degrees": 310.0,
+        "rainfall_24h_mm": 11.0,
+        "rainfall_72h_mm": 31.9,
+        "risk_probability": 0.0387,
+        "static_susceptibility": 0.3096,
+        "dynamic_trigger": 0.3369,
+        "risk_level": "LOW",
+        "model_version": "HistGradientBoosting v1.0.0 (Calibrated)"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "CELL-059",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              88.4863,
+              27.262
+            ],
+            [
+              88.5023,
+              27.262
+            ],
+            [
+              88.5023,
+              27.278
+            ],
+            [
+              88.4863,
+              27.278
+            ],
+            [
+              88.4863,
+              27.262
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "cell_id": "CORRIDOR-GRID-059",
+        "latitude": 27.27,
+        "longitude": 88.4943,
+        "elevation_m": 380.0,
+        "slope_degrees": 18.0,
+        "aspect_degrees": 310.0,
+        "rainfall_24h_mm": 11.0,
+        "rainfall_72h_mm": 31.9,
+        "risk_probability": 0.0387,
+        "static_susceptibility": 0.3086,
+        "dynamic_trigger": 0.3369,
+        "risk_level": "LOW",
+        "model_version": "HistGradientBoosting v1.0.0 (Calibrated)"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "CELL-060",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              88.5034,
+              27.262
+            ],
+            [
+              88.5194,
+              27.262
+            ],
+            [
+              88.5194,
+              27.278
+            ],
+            [
+              88.5034,
+              27.278
+            ],
+            [
+              88.5034,
+              27.262
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "cell_id": "CORRIDOR-GRID-060",
+        "latitude": 27.27,
+        "longitude": 88.5114,
+        "elevation_m": 380.0,
+        "slope_degrees": 18.0,
+        "aspect_degrees": 310.0,
+        "rainfall_24h_mm": 11.0,
+        "rainfall_72h_mm": 31.9,
+        "risk_probability": 0.0387,
+        "static_susceptibility": 0.3086,
+        "dynamic_trigger": 0.3369,
+        "risk_level": "LOW",
+        "model_version": "HistGradientBoosting v1.0.0 (Calibrated)"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "CELL-061",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              88.5206,
+              27.262
+            ],
+            [
+              88.5366,
+              27.262
+            ],
+            [
+              88.5366,
+              27.278
+            ],
+            [
+              88.5206,
+              27.278
+            ],
+            [
+              88.5206,
+              27.262
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "cell_id": "CORRIDOR-GRID-061",
+        "latitude": 27.27,
+        "longitude": 88.5286,
+        "elevation_m": 380.0,
+        "slope_degrees": 18.0,
+        "aspect_degrees": 310.0,
+        "rainfall_24h_mm": 11.0,
+        "rainfall_72h_mm": 31.9,
+        "risk_probability": 0.0387,
+        "static_susceptibility": 0.3128,
+        "dynamic_trigger": 0.3369,
+        "risk_level": "LOW",
+        "model_version": "HistGradientBoosting v1.0.0 (Calibrated)"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "CELL-062",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              88.5377,
+              27.262
+            ],
+            [
+              88.5537,
+              27.262
+            ],
+            [
+              88.5537,
+              27.278
+            ],
+            [
+              88.5377,
+              27.278
+            ],
+            [
+              88.5377,
+              27.262
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "cell_id": "CORRIDOR-GRID-062",
+        "latitude": 27.27,
+        "longitude": 88.5457,
+        "elevation_m": 380.0,
+        "slope_degrees": 18.0,
+        "aspect_degrees": 310.0,
+        "rainfall_24h_mm": 11.0,
+        "rainfall_72h_mm": 31.9,
+        "risk_probability": 0.0387,
+        "static_susceptibility": 0.3223,
+        "dynamic_trigger": 0.3369,
+        "risk_level": "LOW",
+        "model_version": "HistGradientBoosting v1.0.0 (Calibrated)"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "CELL-063",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              88.5549,
+              27.262
+            ],
+            [
+              88.5709,
+              27.262
+            ],
+            [
+              88.5709,
+              27.278
+            ],
+            [
+              88.5549,
+              27.278
+            ],
+            [
+              88.5549,
+              27.262
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "cell_id": "CORRIDOR-GRID-063",
+        "latitude": 27.27,
+        "longitude": 88.5629,
+        "elevation_m": 380.0,
+        "slope_degrees": 18.0,
+        "aspect_degrees": 310.0,
+        "rainfall_24h_mm": 11.0,
+        "rainfall_72h_mm": 31.9,
+        "risk_probability": 0.0387,
+        "static_susceptibility": 0.3171,
+        "dynamic_trigger": 0.3369,
+        "risk_level": "LOW",
+        "model_version": "HistGradientBoosting v1.0.0 (Calibrated)"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "CELL-064",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              88.572,
+              27.262
+            ],
+            [
+              88.588,
+              27.262
+            ],
+            [
+              88.588,
+              27.278
+            ],
+            [
+              88.572,
+              27.278
+            ],
+            [
+              88.572,
+              27.262
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "cell_id": "CORRIDOR-GRID-064",
+        "latitude": 27.27,
+        "longitude": 88.58,
+        "elevation_m": 380.0,
+        "slope_degrees": 18.0,
+        "aspect_degrees": 310.0,
+        "rainfall_24h_mm": 11.0,
+        "rainfall_72h_mm": 31.9,
+        "risk_probability": 0.0387,
+        "static_susceptibility": 0.3107,
+        "dynamic_trigger": 0.3369,
+        "risk_level": "LOW",
+        "model_version": "HistGradientBoosting v1.0.0 (Calibrated)"
+      }
+    }
+  ]
+}

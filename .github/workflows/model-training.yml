@@ -1,12 +1,17 @@
-name: Landslide Sentinel AI Model Training
+name: Model Training & Benchmark Pipeline
 
 on:
   workflow_dispatch:
   push:
+    branches:
+      - main
     paths:
-      - 'scripts/ml_pipeline.py'
-      - 'data/landslides/**'
-      - 'data/dem/**'
+      - 'scripts/ml/**'
+      - 'data/validated/**'
+
+concurrency:
+  group: model-training-group
+  cancel-in-progress: true
 
 permissions:
   contents: write
@@ -17,35 +22,53 @@ jobs:
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
-      - name: Set up Python
+      - name: Set up Python 3.11
         uses: actions/setup-python@v5
         with:
           python-version: '3.11'
           cache: 'pip'
 
-      - name: Install Dependencies
+      - name: Install System Dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y libgdal-dev gdal-bin
+
+      - name: Install Python Dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install -r scripts/requirements.txt
-          pip install rasterio numpy pandas scikit-learn xgboost lightgbm
+          pip install -r scripts/requirements.txt || pip install numpy pandas scikit-learn requests scipy
 
-      - name: Run Machine Learning Pipeline
+      - name: Run Model Training & Calibration Suite
         run: |
-          python scripts/ml_pipeline.py
+          python scripts/ml/validate_dataset.py
+          python scripts/ml/prepare_dataset.py
+          python scripts/ml/train_baseline.py
+          python scripts/ml/train_models.py
+          python scripts/ml/calibrate_model.py
+          python scripts/ml/evaluate_models.py
 
-      - name: Update Risk Artifacts
+      - name: Run E2E Test Suite
+        run: |
+          python -m unittest tests/test_e2e_phases3_8.py -v
+
+      - name: Update Risk & Spatial Artifacts
         run: |
           python scripts/risk_engine.py
+          python scripts/gis/spatial_processor.py
+          python scripts/emergency/impact_analyzer.py
 
-      - name: Commit Model Metrics & Evaluation Results
+      - name: Commit Updated Model Artifacts
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git add data/model_metrics.json data/historical_replay.json data/current_risk.json data/risk_grid.geojson
+          git add data/model/ data/gis/ data/infrastructure/
           if git diff --staged --quiet; then
             echo "No model changes to commit."
           else
-            git commit -m "Auto-update: Trained ML model evaluation metrics & calibration [skip ci]"
-            git push
+            git commit -m "Auto-update: Calibrated ML model artifacts & benchmarks [skip ci]"
+            git pull --rebase origin main
+            git push origin main
           fi

@@ -1,10 +1,20 @@
-name: NASA IMERG Rainfall & Landslide Risk Update
+name: 30-Minute NASA Rainfall & Risk Auto-Update
 
 on:
   schedule:
     # Run every 30 minutes to match NASA IMERG 30-min Early Run publication cadence
     - cron: '*/30 * * * *'
   workflow_dispatch:
+  push:
+    branches:
+      - main
+    paths:
+      - 'scripts/rainfall_incremental_updater.py'
+      - 'scripts/risk_engine.py'
+
+concurrency:
+  group: rainfall-update-group
+  cancel-in-progress: true
 
 permissions:
   contents: write
@@ -18,30 +28,40 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Set up Python
+      - name: Set up Python 3.11
         uses: actions/setup-python@v5
         with:
           python-version: '3.11'
           cache: 'pip'
 
-      - name: Install Dependencies
+      - name: Install System GDAL Dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y libgdal-dev gdal-bin
+
+      - name: Install Python Dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install -r scripts/requirements.txt
-          pip install rasterio numpy pandas scikit-learn xgboost lightgbm
+          pip install -r scripts/requirements.txt || pip install numpy pandas scikit-learn requests scipy
 
-      - name: Fetch Incremental NASA IMERG Rainfall
+      - name: Fetch 30-Min Incremental Rainfall & Run ML Risk Engine
         env:
           NASA_PPS_EMAIL: ${{ secrets.NASA_PPS_EMAIL }}
           NASA_PPS_PASSWORD: ${{ secrets.NASA_PPS_PASSWORD }}
         run: |
-          python scripts/rainfall_incremental_updater.py --non-interactive || echo "Proceeding with risk prediction engine"
+          python scripts/rainfall_incremental_updater.py --non-interactive
 
-      - name: Execute Risk Prediction Engine
+      - name: Update Spatial GIS & Emergency Models
         run: |
-          python scripts/risk_engine.py
+          python scripts/gis/spatial_processor.py
+          python scripts/emergency/impact_analyzer.py
+          python scripts/iot/sensor_processor.py
 
-      - name: Commit and Push Updated Data
+      - name: Run System Integrity Health Check
+        run: |
+          python scripts/health_check.py
+
+      - name: Commit and Push Updated Telemetry
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
@@ -50,5 +70,6 @@ jobs:
             echo "No data changes to commit."
           else
             git commit -m "Auto-update: 30-min NASA IMERG rainfall & calibrated risk [skip ci]"
-            git push
+            git pull --rebase origin main
+            git push origin main
           fi
