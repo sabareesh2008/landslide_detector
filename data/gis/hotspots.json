@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-09-09T00:51:04.215689+00:00",
+  "generated_at_utc": "2026-09-09T05:31:43.418445+00:00",
   "total_hotspots_identified": 6,
   "primary_hazard_corridor": "Majhitar-Bardang Toe Cut Zone (NH-10 Km 6 - Km 10)",
   "hotspots": [
@@ -7,79 +7,79 @@
       "zone_id": "ZONE-074",
       "latitude": 27.2411,
       "longitude": 88.5,
-      "risk_probability": 0.0866,
+      "risk_probability": 0.0455,
       "static_susceptibility": 0.3266,
       "risk_level": "LOW",
       "slope_degrees": 18.0,
       "distance_to_nh10_km": 0.4,
       "nearest_settlement": "Bardang / Majhitar",
       "affected_infrastructure": "NH-10 Lifeline Corridor",
-      "spatial_explanation": "Stable terrain (8.7%): Slope 18.0\u00b0, low cumulative antecedent trigger."
+      "spatial_explanation": "Stable terrain (4.5%): Slope 18.0\u00b0, low cumulative antecedent trigger."
     },
     {
       "zone_id": "ZONE-087",
       "latitude": 27.2556,
       "longitude": 88.54,
-      "risk_probability": 0.0866,
+      "risk_probability": 0.0455,
       "static_susceptibility": 0.3266,
       "risk_level": "LOW",
       "slope_degrees": 18.0,
       "distance_to_nh10_km": 4.56,
       "nearest_settlement": "Bardang / Majhitar",
       "affected_infrastructure": "Connecting Hill Slopes",
-      "spatial_explanation": "Stable terrain (8.7%): Slope 18.0\u00b0, low cumulative antecedent trigger."
+      "spatial_explanation": "Stable terrain (4.5%): Slope 18.0\u00b0, low cumulative antecedent trigger."
     },
     {
       "zone_id": "ZONE-064",
       "latitude": 27.2267,
       "longitude": 88.5,
-      "risk_probability": 0.0866,
+      "risk_probability": 0.0455,
       "static_susceptibility": 0.3234,
       "risk_level": "LOW",
       "slope_degrees": 18.0,
       "distance_to_nh10_km": 0.21,
       "nearest_settlement": "Bardang / Majhitar",
       "affected_infrastructure": "NH-10 Lifeline Corridor",
-      "spatial_explanation": "Stable terrain (8.7%): Slope 18.0\u00b0, low cumulative antecedent trigger."
+      "spatial_explanation": "Stable terrain (4.5%): Slope 18.0\u00b0, low cumulative antecedent trigger."
     },
     {
       "zone_id": "ZONE-073",
       "latitude": 27.2411,
       "longitude": 88.4867,
-      "risk_probability": 0.0866,
+      "risk_probability": 0.0455,
       "static_susceptibility": 0.3234,
       "risk_level": "LOW",
       "slope_degrees": 18.0,
       "distance_to_nh10_km": 1.17,
       "nearest_settlement": "Bardang / Majhitar",
       "affected_infrastructure": "Connecting Hill Slopes",
-      "spatial_explanation": "Stable terrain (8.7%): Slope 18.0\u00b0, low cumulative antecedent trigger."
+      "spatial_explanation": "Stable terrain (4.5%): Slope 18.0\u00b0, low cumulative antecedent trigger."
     },
     {
       "zone_id": "ZONE-063",
       "latitude": 27.2267,
       "longitude": 88.4867,
-      "risk_probability": 0.0866,
+      "risk_probability": 0.0455,
       "static_susceptibility": 0.3212,
       "risk_level": "LOW",
       "slope_degrees": 18.0,
       "distance_to_nh10_km": 1.47,
       "nearest_settlement": "Bardang / Majhitar",
       "affected_infrastructure": "Connecting Hill Slopes",
-      "spatial_explanation": "Stable terrain (8.7%): Slope 18.0\u00b0, low cumulative antecedent trigger."
+      "spatial_explanation": "Stable terrain (4.5%): Slope 18.0\u00b0, low cumulative antecedent trigger."
     },
     {
       "zone_id": "ZONE-072",
       "latitude": 27.2411,
       "longitude": 88.4733,
-      "risk_probability": 0.0866,
+      "risk_probability": 0.0455,
       "static_susceptibility": 0.3212,
       "risk_level": "LOW",
       "slope_degrees": 18.0,
       "distance_to_nh10_km": 2.46,
       "nearest_settlement": "Bardang / Majhitar",
       "affected_infrastructure": "Connecting Hill Slopes",
-      "spatial_explanation": "Stable terrain (8.7%): Slope 18.0\u00b0, low cumulative antecedent trigger."
+      "spatial_explanation": "Stable terrain (4.5%): Slope 18.0\u00b0, low cumulative antecedent trigger."
     }
   ]
 }
