@@ -1,5 +1,5 @@
 {
-  "analysis_timestamp_utc": "2026-09-10T01:13:44.260318+00:00",
+  "analysis_timestamp_utc": "2026-09-10T06:10:11.533264+00:00",
   "corridor": "Rangpo-Singtam / NH-10 Highway Lifeline (Sikkim)",
   "overall_corridor_threat_level": "LOW",
   "total_corridor_length_km": 12.8,
@@ -11,7 +11,7 @@
       "length_km": 3.2,
       "criticality": "EXTREME",
       "chronic_slide_zone": false,
-      "calculated_blockage_probability": 0.349,
+      "calculated_blockage_probability": 0.342,
       "blockage_risk_tier": "LOW",
       "operational_status": "OPEN",
       "recommended_action": "Routine automated surveillance; normal speed limits."
@@ -22,7 +22,7 @@
       "length_km": 3.4,
       "criticality": "EXTREME",
       "chronic_slide_zone": true,
-      "calculated_blockage_probability": 0.552,
+      "calculated_blockage_probability": 0.546,
       "blockage_risk_tier": "MODERATE",
       "operational_status": "CAUTION / PASSABLE",
       "recommended_action": "Intensify highway patrol; restrict night freight haulage."
@@ -33,7 +33,7 @@
       "length_km": 3.1,
       "criticality": "EXTREME",
       "chronic_slide_zone": true,
-      "calculated_blockage_probability": 0.624,
+      "calculated_blockage_probability": 0.617,
       "blockage_risk_tier": "MODERATE",
       "operational_status": "CAUTION / PASSABLE",
       "recommended_action": "Intensify highway patrol; restrict night freight haulage."
@@ -44,10 +44,10 @@
       "length_km": 3.1,
       "criticality": "EXTREME",
       "chronic_slide_zone": false,
-      "calculated_blockage_probability": 0.404,
-      "blockage_risk_tier": "MODERATE",
-      "operational_status": "CAUTION / PASSABLE",
-      "recommended_action": "Intensify highway patrol; restrict night freight haulage."
+      "calculated_blockage_probability": 0.397,
+      "blockage_risk_tier": "LOW",
+      "operational_status": "OPEN",
+      "recommended_action": "Routine automated surveillance; normal speed limits."
     }
   ],
   "exposed_critical_infrastructure": [
@@ -67,7 +67,7 @@
     }
   ],
   "disaster_cascade_chain": {
-    "primary_trigger": "Monsoonal precipitation accumulation (34.7mm / 72h)",
+    "primary_trigger": "Monsoonal precipitation accumulation (33.3mm / 72h)",
     "subsurface_mechanism": "Saturation of colluvial saprolite mantle -> Pore-water pressure head elevation",
     "geotechnical_consequence": "Reduction in effective normal stress on 20\u00b0-35\u00b0 hill slopes",
     "infrastructure_consequence": "Debris slide spillage onto NH-10 Majhitar-Bardang highway carriage",
