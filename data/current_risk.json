@@ -1,12 +1,12 @@
 {
   "system_status": "OPERATIONAL",
-  "generated_at_utc": "2026-09-09T23:24:17.936193+00:00",
+  "generated_at_utc": "2026-09-10T01:13:40.311472+00:00",
   "corridor": "Rangpo-Singtam / NH-10 Corridor, Sikkim",
   "data_mode": "LIVE",
   "telemetry_freshness": {
     "status": "FRESH",
-    "last_observation_utc": "2026-09-09T23:00:00+00:00",
-    "age_hours": 0.4,
+    "last_observation_utc": "2026-09-10T01:00:00+00:00",
+    "age_hours": 0.23,
     "is_fresh": true
   },
   "overall_corridor_risk": {
@@ -21,19 +21,19 @@
       "location": "Rangpo",
       "latitude": 27.177,
       "longitude": 88.533,
-      "timestamp_utc": "2026-09-09T23:24:17.926406+00:00",
-      "latest_observation_utc": "2026-09-09T23:00:00+00:00",
+      "timestamp_utc": "2026-09-10T01:13:40.298892+00:00",
+      "latest_observation_utc": "2026-09-10T01:00:00+00:00",
       "data_status": "CONNECTED",
       "data_mode": "LIVE",
       "risk_probability": 0.0077,
       "static_susceptibility": 0.476,
-      "dynamic_trigger": 0.3269,
+      "dynamic_trigger": 0.3256,
       "calibration_status": "Sigmoid Calibrated (Platt Scaling cv=3)",
       "risk_level": "LOW",
       "model_version": "HistGradientBoosting v1.0.0 (Calibrated)",
       "rainfall_1h_mm": 0.0,
       "rainfall_24h_mm": 10.5,
-      "rainfall_72h_mm": 31.3,
+      "rainfall_72h_mm": 31.1,
       "rainfall_7d_mm": 68.9,
       "elevation_m": 306.95,
       "slope_degrees": 13.38,
@@ -41,14 +41,14 @@
       "aspect_direction": "W",
       "historical_landslide_density": 18.5,
       "contributing_factors": [
-        "Antecedent Soil Saturation (72h): 31.3 mm",
+        "Antecedent Soil Saturation (72h): 31.1 mm",
         "Moderate Slope Angle: 13.4 deg",
         "Historical Shear Zone Proximity: 1.24 km (18.5 slides/km2)"
       ],
       "explainability_breakdown": [
         {
           "factor": "Antecedent Soil Saturation (72h)",
-          "value": "31.3 mm",
+          "value": "31.1 mm",
           "impact": "HIGH_RISK_DRIVER",
           "description": "Prolonged rainfall has saturated the saprolite pore space, elevating pore-water pressure."
         },
@@ -71,8 +71,8 @@
       "location": "Singtam",
       "latitude": 27.234,
       "longitude": 88.501,
-      "timestamp_utc": "2026-09-09T23:24:17.936156+00:00",
-      "latest_observation_utc": "2026-09-09T23:00:00+00:00",
+      "timestamp_utc": "2026-09-10T01:13:40.311428+00:00",
+      "latest_observation_utc": "2026-09-10T01:00:00+00:00",
       "data_status": "CONNECTED",
       "data_mode": "LIVE",
       "risk_probability": 0.091,
