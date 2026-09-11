@@ -1,12 +1,12 @@
 {
   "system_status": "OPERATIONAL",
-  "generated_at_utc": "2026-09-10T23:17:11.504408+00:00",
+  "generated_at_utc": "2026-09-11T01:15:39.895482+00:00",
   "corridor": "Rangpo-Singtam / NH-10 Corridor, Sikkim",
   "data_mode": "LIVE",
   "telemetry_freshness": {
     "status": "FRESH",
-    "last_observation_utc": "2026-09-10T23:00:00+00:00",
-    "age_hours": 0.29,
+    "last_observation_utc": "2026-09-11T01:00:00+00:00",
+    "age_hours": 0.26,
     "is_fresh": true
   },
   "overall_corridor_risk": {
@@ -21,8 +21,8 @@
       "location": "Rangpo",
       "latitude": 27.177,
       "longitude": 88.533,
-      "timestamp_utc": "2026-09-10T23:17:11.492167+00:00",
-      "latest_observation_utc": "2026-09-10T23:00:00+00:00",
+      "timestamp_utc": "2026-09-11T01:15:39.884483+00:00",
+      "latest_observation_utc": "2026-09-11T01:00:00+00:00",
       "data_status": "CONNECTED",
       "data_mode": "LIVE",
       "risk_probability": 0.0077,
@@ -71,8 +71,8 @@
       "location": "Singtam",
       "latitude": 27.234,
       "longitude": 88.501,
-      "timestamp_utc": "2026-09-10T23:17:11.504339+00:00",
-      "latest_observation_utc": "2026-09-10T23:00:00+00:00",
+      "timestamp_utc": "2026-09-11T01:15:39.895443+00:00",
+      "latest_observation_utc": "2026-09-11T01:00:00+00:00",
       "data_status": "CONNECTED",
       "data_mode": "LIVE",
       "risk_probability": 0.091,
